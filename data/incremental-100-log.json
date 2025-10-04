@@ -292,5 +292,11 @@
     "id": "inc-049",
     "category": "refactoring",
     "task": "Add absUrl JSDoc"
+  },
+  {
+    "at": "2026-09-03T22:10:33.662Z",
+    "id": "inc-050",
+    "category": "refactoring",
+    "task": "Add buildLlms JSDoc"
   }
 ]

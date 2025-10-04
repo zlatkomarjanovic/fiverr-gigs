@@ -1,3 +1,4 @@
+/** @param {{ origin: string, sellerName: string, gigs: object[], updated?: string }} opts */
 export function buildLlms({ origin, sellerName, gigs, updated }) {
   return `# ${sellerName} Fiverr gigs
 
