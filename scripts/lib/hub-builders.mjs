@@ -6,6 +6,7 @@ export function hubVersion() {
   return HUB_VERSION;
 }
 
+/** @param {string} siteOrigin @param {string} path */
 export function absUrl(siteOrigin, path) {
   return siteOrigin ? `${siteOrigin}${path}` : path;
 }
