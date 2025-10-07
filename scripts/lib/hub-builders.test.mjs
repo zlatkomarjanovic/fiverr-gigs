@@ -21,3 +21,7 @@ test("absUrl joins origin and path", () => {
   assert.equal(absUrl("https://ex.com", "/rss.xml"), "https://ex.com/rss.xml");
   assert.equal(absUrl("", "/rss.xml"), "/rss.xml");
 });
+
+test("hubVersion returns semver", () => {
+  assert.match(hubVersion(), /^\d+\.\d+\.\d+$/);
+});
