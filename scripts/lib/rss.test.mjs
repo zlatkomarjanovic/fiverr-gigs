@@ -15,3 +15,8 @@ test("buildRss escapes titles and sets xml:lang", () => {
   assert.match(xml, /Build &quot;fast&quot;/);
   assert.ok(xml.indexOf("/services/a.html") < xml.indexOf("/services/b.html"));
 });
+
+test("buildRss includes ttl", () => {
+  const xml = buildRss({ origin: "https://ex.com", sellerName: "S", updated: "2026-01-01", gigs: [] });
+  assert.match(xml, /<ttl>1440<\/ttl>/);
+});
