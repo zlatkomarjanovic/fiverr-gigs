@@ -316,5 +316,11 @@
     "id": "inc-053",
     "category": "tests",
     "task": "Test RSS ttl element"
+  },
+  {
+    "at": "2026-09-03T22:10:56.762Z",
+    "id": "inc-054",
+    "category": "tests",
+    "task": "Test sitemap XML comment"
   }
 ]
