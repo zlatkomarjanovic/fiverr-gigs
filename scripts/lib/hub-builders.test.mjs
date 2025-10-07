@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { sortedGigs, buildPersonLd, absUrl } from "./hub-builders.mjs";
+import { sortedGigs, buildPersonLd, absUrl, hubVersion } from "./hub-builders.mjs";
 
 test("sortedGigs orders by id", () => {
   const list = sortedGigs([{ id: "z" }, { id: "a" }]);
