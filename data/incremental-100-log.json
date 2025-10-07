@@ -364,5 +364,11 @@
     "id": "inc-061",
     "category": "a11y",
     "task": "Add role doc-subtitle to hero kicker"
+  },
+  {
+    "at": "2026-09-03T22:11:04.987Z",
+    "id": "inc-062",
+    "category": "a11y",
+    "task": "Mark decorative favicon aria-hidden"
   }
 ]
