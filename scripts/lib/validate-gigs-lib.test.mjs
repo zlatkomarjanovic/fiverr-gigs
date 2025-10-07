@@ -36,3 +36,10 @@ test("validateGigsData rejects duplicate shortTitle", () => {
   const errors = validateGigsData(broken);
   assert.ok(errors.some((e) => /Duplicate shortTitle/i.test(e)));
 });
+
+test("validateGigsData rejects empty seller", () => {
+  const gigs = loadGigs(ROOT);
+  const broken = structuredClone(gigs);
+  broken.seller = "   ";
+  assert.ok(validateGigsData(broken).some((e) => /seller must/i.test(e)));
+});
