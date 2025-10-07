@@ -340,5 +340,11 @@
     "id": "inc-057",
     "category": "tests",
     "task": "Test esc null coalescing"
+  },
+  {
+    "at": "2026-09-03T22:11:03.749Z",
+    "id": "inc-058",
+    "category": "tests",
+    "task": "Test buildRobots comment"
   }
 ]

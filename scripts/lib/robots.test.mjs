@@ -4,6 +4,7 @@ import { buildRobots } from "./robots.mjs";
 
 test("buildRobots references sitemap", () => {
   const txt = buildRobots({ origin: "https://example.com" });
+  assert.match(txt, /Crawl-delay not used/);
   assert.match(txt, /Allow: \//);
   assert.match(txt, /Sitemap: https:\/\/example.com\/sitemap.xml/);
 });
