@@ -44,3 +44,9 @@ test("relatedGigs prefers keyword overlap", () => {
   assert.equal(related[0].id, "webflow-seo-ready");
   assert.equal(related.length, 2);
 });
+
+test("relatedGigs never returns self", () => {
+  const g = { id: "a", primaryKeyword: "x", category: "c", subcategory: "s", searchTerms: ["x"], tags: ["x"] };
+  const related = relatedGigs(g, [g]);
+  assert.equal(related.length, 0);
+});

@@ -328,5 +328,11 @@
     "id": "inc-055",
     "category": "tests",
     "task": "Test validate empty seller"
+  },
+  {
+    "at": "2026-09-03T22:10:57.131Z",
+    "id": "inc-056",
+    "category": "tests",
+    "task": "Test relatedGigs excludes self"
   }
 ]
