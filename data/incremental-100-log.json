@@ -334,5 +334,11 @@
     "id": "inc-056",
     "category": "tests",
     "task": "Test relatedGigs excludes self"
+  },
+  {
+    "at": "2026-09-03T22:10:57.301Z",
+    "id": "inc-057",
+    "category": "tests",
+    "task": "Test esc null coalescing"
   }
 ]

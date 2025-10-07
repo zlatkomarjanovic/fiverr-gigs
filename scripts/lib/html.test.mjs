@@ -29,3 +29,7 @@ test("fiverrLink works without className on anchor", () => {
   assert.match(html, /sr-only/);
   assert.match(html, /opens in new tab/);
 });
+
+test("esc handles null", () => {
+  assert.equal(esc(null), "");
+});
