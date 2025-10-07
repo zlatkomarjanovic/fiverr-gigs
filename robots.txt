@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+# Crawl-delay not used — static site
 Sitemap: https://zlatkomarjanovic.github.io/fiverr-gigs/sitemap.xml

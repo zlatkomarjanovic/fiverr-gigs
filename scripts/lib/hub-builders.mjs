@@ -58,7 +58,7 @@ export function buildIndexCard(g) {
 export function buildIndexBody(gigs) {
   return `
   <section class="hero" aria-labelledby="hero-title">
-    <p class="kicker">Fiverr seller · ${esc(gigs.seller)}</p>
+    <p class="kicker" role="doc-subtitle">Fiverr seller · ${esc(gigs.seller)}</p>
     <h1 id="hero-title">${esc(gigs.sellerName)} — Webflow, AI apps, and vibe coding gigs</h1>
     <p class="lede">${gigs.gigs.length} live Fiverr services with clean, indexable URLs. Each page maps to one search lane so the gigs do not cannibalize each other.</p>
     <p>${fiverrLink(gigs.sellerUrl, "Open Fiverr profile", "btn")}</p>
