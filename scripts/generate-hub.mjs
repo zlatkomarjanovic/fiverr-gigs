@@ -62,10 +62,12 @@ const origin = SITE_ORIGIN || "https://example.com";
 const abs = (p) => absUrl(SITE_ORIGIN, p);
 const stylesPath = path.join(ROOT, "styles.css");
 if (!fs.existsSync(stylesPath)) {
-  throw new Error("styles.css is missing. The generator no longer emits CSS.");
+  console.error("[generate] styles.css is missing. The generator no longer emits CSS.");
+  process.exit(1);
 }
 if (fs.statSync(stylesPath).isDirectory()) {
-  throw new Error("styles.css is a directory — expected a CSS file.");
+  console.error("[generate] styles.css is a directory — expected a CSS file.");
+  process.exit(1);
 }
 
 const personLd = buildPersonLd(gigs);
