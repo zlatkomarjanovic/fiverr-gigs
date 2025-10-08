@@ -56,3 +56,11 @@ test("validateGigsData rejects invalid updated calendar dates", () => {
   const errors = validateGigsData(broken);
   assert.ok(errors.some((e) => /valid calendar date/i.test(e)));
 });
+
+test("validateGigsData rejects script tags in FAQ", () => {
+  const gigs = loadGigs(ROOT);
+  const broken = structuredClone(gigs);
+  broken.gigs[0].faq[0].a = "<script>alert(1)</script>";
+  const errors = validateGigsData(broken);
+  assert.ok(errors.some((e) => /script tags/i.test(e)));
+});
