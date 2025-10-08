@@ -17,6 +17,7 @@ export function buildRss({ origin, sellerName, gigs, updated }) {
     <title>${esc(sellerName)} Fiverr gigs</title>
     <link>${esc(origin)}/</link>
     <description>Live Fiverr services from ${esc(sellerName)}</description>
+    <language>en-us</language>
     <lastBuildDate>${pubDate}</lastBuildDate>
     <ttl>1440</ttl>
     <atom:link href="${esc(feedUrl)}" rel="self" type="application/rss+xml"/>
