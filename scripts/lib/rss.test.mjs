@@ -20,3 +20,8 @@ test("buildRss includes ttl", () => {
   const xml = buildRss({ origin: "https://ex.com", sellerName: "S", updated: "2026-01-01", gigs: [] });
   assert.match(xml, /<ttl>1440<\/ttl>/);
 });
+
+test("buildRss includes channel language", () => {
+  const xml = buildRss({ origin: "https://ex.com", sellerName: "S", updated: "2026-01-01", gigs: [] });
+  assert.match(xml, /<language>en-us<\/language>/);
+});
