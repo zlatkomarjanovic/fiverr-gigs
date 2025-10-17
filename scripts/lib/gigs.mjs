@@ -1,3 +1,4 @@
+/** @param {object} gig */
 export function gigTerms(gig) {
   return [gig.primaryKeyword, gig.category, gig.subcategory, ...(gig.searchTerms || []), ...(gig.tags || [])]
     .map((term) => String(term).toLowerCase());

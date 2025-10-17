@@ -268,5 +268,11 @@
     "id": "inc-045",
     "category": "feeds",
     "task": "Llms.txt Fiverr label on gig lines"
+  },
+  {
+    "at": "2026-09-03T22:10:32.941Z",
+    "id": "inc-046",
+    "category": "refactoring",
+    "task": "Export gigTerms from gigs module"
   }
 ]
