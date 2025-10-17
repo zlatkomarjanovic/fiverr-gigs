@@ -4,6 +4,7 @@ export function gigTerms(gig) {
     .map((term) => String(term).toLowerCase());
 }
 
+/** @param {object} gig @param {object[]} all @param {number} [limit] */
 export function relatedGigs(gig, all, limit = 4) {
   const mine = new Set(gigTerms(gig));
   return all

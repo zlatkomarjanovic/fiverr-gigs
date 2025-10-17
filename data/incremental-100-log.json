@@ -274,5 +274,11 @@
     "id": "inc-046",
     "category": "refactoring",
     "task": "Export gigTerms from gigs module"
+  },
+  {
+    "at": "2026-09-03T22:10:33.118Z",
+    "id": "inc-047",
+    "category": "refactoring",
+    "task": "JSDoc relatedGigs params"
   }
 ]
