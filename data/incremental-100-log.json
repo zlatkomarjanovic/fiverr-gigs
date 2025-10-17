@@ -256,5 +256,11 @@
     "id": "inc-043",
     "category": "feeds",
     "task": "RSS channel ttl element"
+  },
+  {
+    "at": "2026-09-03T22:10:32.555Z",
+    "id": "inc-044",
+    "category": "feeds",
+    "task": "Sitemap xmlns attribute explicit"
   }
 ]
