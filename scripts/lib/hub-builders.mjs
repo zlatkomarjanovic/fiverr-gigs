@@ -1,6 +1,6 @@
 import { esc, fiverrLink } from "./html.mjs";
 
-const HUB_VERSION = "1.1.0";
+const HUB_VERSION = "1.2.0";
 
 export function hubVersion() {
   return HUB_VERSION;
