@@ -190,5 +190,11 @@
     "id": "inc-032",
     "category": "seo",
     "task": "Add 404 noarchive robots flag"
+  },
+  {
+    "at": "2026-09-03T22:10:28.576Z",
+    "id": "inc-033",
+    "category": "seo",
+    "task": "Add twitter:image meta"
   }
 ]

@@ -59,6 +59,7 @@ export function renderLayout({
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="${esc(title)}">
   <meta name="twitter:description" content="${esc(description)}">
+  <meta name="twitter:image" content="${esc(ogImage)}">
   <meta name="twitter:url" content="${esc(canonPath)}">
   <link rel="alternate" type="application/rss+xml" href="${esc(abs("/rss.xml"))}" title="RSS">
   <link rel="sitemap" type="application/xml" href="${esc(abs("/sitemap.xml"))}">
