@@ -202,5 +202,11 @@
     "id": "inc-034",
     "category": "seo",
     "task": "Add og:image:alt meta"
+  },
+  {
+    "at": "2026-09-03T22:10:29.937Z",
+    "id": "inc-035",
+    "category": "seo",
+    "task": "Add link rel home"
   }
 ]

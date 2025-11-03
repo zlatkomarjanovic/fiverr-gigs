@@ -47,6 +47,7 @@ export function renderLayout({
   <title>${esc(title)}</title>
   <meta name="description" content="${esc(description)}">
   <meta name="author" content="${esc(gigs.sellerName)}">
+  <link rel="home" href="${esc(siteOrigin ? `${siteOrigin}/` : homeHref)}">
   <link rel="canonical" href="${esc(canonPath)}">
   <meta name="robots" content="${esc(robots)}, max-snippet:-1, max-image-preview:large">
   <meta property="og:title" content="${esc(title)}">
