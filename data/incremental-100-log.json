@@ -196,5 +196,11 @@
     "id": "inc-033",
     "category": "seo",
     "task": "Add twitter:image meta"
+  },
+  {
+    "at": "2026-09-03T22:10:29.254Z",
+    "id": "inc-034",
+    "category": "seo",
+    "task": "Add og:image:alt meta"
   }
 ]

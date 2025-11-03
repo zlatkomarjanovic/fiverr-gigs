@@ -54,6 +54,7 @@ export function renderLayout({
   <meta property="og:type" content="${esc(ogType)}">
   <meta property="og:url" content="${esc(canonPath)}">
   <meta property="og:image" content="${esc(ogImage)}">
+  <meta property="og:image:alt" content="${esc(gigs.sellerName)} Fiverr gigs">
   <meta property="og:locale" content="en_US">
   <meta property="og:site_name" content="${esc(gigs.sellerName)} Fiverr gigs">
   <meta name="twitter:card" content="summary">
