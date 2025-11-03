@@ -184,5 +184,11 @@
     "id": "inc-031",
     "category": "seo",
     "task": "Add combined robots snippet directive"
+  },
+  {
+    "at": "2026-09-03T22:10:28.398Z",
+    "id": "inc-032",
+    "category": "seo",
+    "task": "Add 404 noarchive robots flag"
   }
 ]

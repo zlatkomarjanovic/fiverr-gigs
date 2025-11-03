@@ -117,7 +117,7 @@ const notFoundHtml = renderLayout({
   title: `Page not found | ${gigs.sellerName}`,
   description: "This Fiverr gig index page does not exist. Browse the live gigs or open the Fiverr profile.",
   canonical: "/404.html",
-  robots: "noindex,follow",
+  robots: "noindex,follow,noarchive",
   jsonLd: {
     "@context": "https://schema.org",
     "@type": "WebPage",
