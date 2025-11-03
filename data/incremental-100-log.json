@@ -178,5 +178,11 @@
     "id": "inc-030",
     "category": "validation",
     "task": "Validate shortTitle trim whitespace"
+  },
+  {
+    "at": "2026-09-03T22:10:27.671Z",
+    "id": "inc-031",
+    "category": "seo",
+    "task": "Add combined robots snippet directive"
   }
 ]
