@@ -574,5 +574,11 @@
     "id": "inc-096",
     "category": "metadata",
     "task": "Add meta viewport fit cover"
+  },
+  {
+    "at": "2026-09-03T22:11:13.062Z",
+    "id": "inc-097",
+    "category": "metadata",
+    "task": "Add theme-color media light"
   }
 ]
