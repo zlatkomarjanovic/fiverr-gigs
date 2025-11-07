@@ -544,5 +544,11 @@
     "id": "inc-091",
     "category": "ui-polish",
     "task": "Use logical padding on hero"
+  },
+  {
+    "at": "2026-09-03T22:11:11.706Z",
+    "id": "inc-092",
+    "category": "ui-polish",
+    "task": "Link visited color subtle"
   }
 ]

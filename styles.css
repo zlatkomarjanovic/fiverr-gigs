@@ -189,3 +189,4 @@ main:focus { outline: none; }
   article.card { break-inside: avoid; }
 }
 details summary { list-style: disclosure-closed; }
+a:visited { color: var(--accent-ink); }
