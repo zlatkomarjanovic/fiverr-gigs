@@ -568,5 +568,11 @@
     "id": "inc-095",
     "category": "ui-polish",
     "task": "Nav font weight normal default"
+  },
+  {
+    "at": "2026-09-03T22:11:12.361Z",
+    "id": "inc-096",
+    "category": "metadata",
+    "task": "Add meta viewport fit cover"
   }
 ]
