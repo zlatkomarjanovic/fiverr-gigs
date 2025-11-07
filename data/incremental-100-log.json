@@ -556,5 +556,11 @@
     "id": "inc-093",
     "category": "ui-polish",
     "task": "Header strong weight"
+  },
+  {
+    "at": "2026-09-03T22:11:12.047Z",
+    "id": "inc-094",
+    "category": "ui-polish",
+    "task": "Details paragraph color muted"
   }
 ]
