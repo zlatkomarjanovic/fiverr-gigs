@@ -550,5 +550,11 @@
     "id": "inc-092",
     "category": "ui-polish",
     "task": "Link visited color subtle"
+  },
+  {
+    "at": "2026-09-03T22:11:11.875Z",
+    "id": "inc-093",
+    "category": "ui-polish",
+    "task": "Header strong weight"
   }
 ]

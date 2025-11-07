@@ -190,3 +190,4 @@ main:focus { outline: none; }
 }
 details summary { list-style: disclosure-closed; }
 a:visited { color: var(--accent-ink); }
+header strong { font-weight: 700; }
