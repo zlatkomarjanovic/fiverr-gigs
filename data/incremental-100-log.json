@@ -214,5 +214,11 @@
     "id": "inc-036",
     "category": "feeds",
     "task": "Add XML comment header to sitemap"
+  },
+  {
+    "at": "2026-09-03T22:10:30.848Z",
+    "id": "inc-037",
+    "category": "feeds",
+    "task": "Add XML comment header to RSS"
   }
 ]
