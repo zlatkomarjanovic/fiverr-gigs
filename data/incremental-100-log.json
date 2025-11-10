@@ -226,5 +226,11 @@
     "id": "inc-038",
     "category": "feeds",
     "task": "Add updated line to llms.txt"
+  },
+  {
+    "at": "2026-09-03T22:10:31.213Z",
+    "id": "inc-039",
+    "category": "feeds",
+    "task": "Include updated date in llms output"
   }
 ]
