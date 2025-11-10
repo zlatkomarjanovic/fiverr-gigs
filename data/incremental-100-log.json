@@ -238,5 +238,11 @@
     "id": "inc-040",
     "category": "feeds",
     "task": "Pass updated to buildLlms in generate"
+  },
+  {
+    "at": "2026-09-03T22:10:32.039Z",
+    "id": "inc-041",
+    "category": "feeds",
+    "task": "Add robots.txt generator comment"
   }
 ]
