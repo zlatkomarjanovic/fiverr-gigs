@@ -137,7 +137,7 @@ const notFoundHtml = renderLayout({
 try {
   writeHubFiles(ROOT, fs, path, {
     robots: buildRobots({ origin }),
-    llms: buildLlms({ origin, sellerName: gigs.sellerName, gigs: orderedGigs }),
+    llms: buildLlms({ origin, sellerName: gigs.sellerName, gigs: orderedGigs, updated: gigs.updated }),
     sitemap: buildSitemap({ origin, gigs: orderedGigs, updated: gigs.updated }),
     rss: buildRss({ origin, sellerName: gigs.sellerName, gigs: orderedGigs, updated: gigs.updated }),
     indexHtml,

@@ -232,5 +232,11 @@
     "id": "inc-039",
     "category": "feeds",
     "task": "Include updated date in llms output"
+  },
+  {
+    "at": "2026-09-03T22:10:31.384Z",
+    "id": "inc-040",
+    "category": "feeds",
+    "task": "Pass updated to buildLlms in generate"
   }
 ]
