@@ -208,5 +208,11 @@
     "id": "inc-035",
     "category": "seo",
     "task": "Add link rel home"
+  },
+  {
+    "at": "2026-09-03T22:10:30.668Z",
+    "id": "inc-036",
+    "category": "feeds",
+    "task": "Add XML comment header to sitemap"
   }
 ]
