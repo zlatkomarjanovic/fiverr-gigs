@@ -1,4 +1,4 @@
-export function buildLlms({ origin, sellerName, gigs }) {
+export function buildLlms({ origin, sellerName, gigs, updated }) {
   return `# ${sellerName} Fiverr gigs
 
 Index: ${origin}/

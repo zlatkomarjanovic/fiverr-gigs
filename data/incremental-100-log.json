@@ -220,5 +220,11 @@
     "id": "inc-037",
     "category": "feeds",
     "task": "Add XML comment header to RSS"
+  },
+  {
+    "at": "2026-09-03T22:10:31.028Z",
+    "id": "inc-038",
+    "category": "feeds",
+    "task": "Add updated line to llms.txt"
   }
 ]
