@@ -173,8 +173,11 @@ export function validateGigsData(data) {
     else urls.add(gig.url);
 
     if (!isNonEmptyString(gig?.primaryKeyword) || gig.primaryKeyword.trim().length < 2) fail(`${label}: primaryKeyword must be at least 2 characters`);
-    else if (keywords.has(gig.primaryKeyword)) fail(`Duplicate primaryKeyword: ${gig.primaryKeyword}`);
-    else keywords.add(gig.primaryKeyword);
+    else {
+      const keywordKey = gig.primaryKeyword.toLowerCase();
+      if (keywords.has(keywordKey)) fail(`Duplicate primaryKeyword (case-insensitive): ${gig.primaryKeyword}`);
+      keywords.add(keywordKey);
+    }
 
     if (!isNonEmptyString(gig?.summary)) fail(`${label}: summary must be a non-empty string`);
     else if (gig.summary.trim() !== gig.summary) fail(`${label}: summary must not have leading or trailing whitespace`);
