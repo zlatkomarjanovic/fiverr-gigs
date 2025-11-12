@@ -111,6 +111,7 @@ function summarize(schedule) {
 }
 
 const rand = mulberry32(SEED);
+const branch = git("git rev-parse --abbrev-ref HEAD");
 const commits = git("git rev-list --reverse HEAD").split("\n").filter(Boolean);
 const schedule = buildSchedule(commits, rand);
 const stats = summarize(schedule);
@@ -148,7 +149,7 @@ fs.writeFileSync(filterPath, filterSh, "utf8");
 try {
   process.env.FILTER_BRANCH_SQUELCH_WARNING = "1";
   const filterPosix = filterPath.replace(/\\/g, "/");
-  execSync(`git filter-branch -f --env-filter ". \\"${filterPosix}\\"" -- main`, {
+  execSync(`git filter-branch -f --env-filter ". \\"${filterPosix}\\"" -- ${branch}`, {
     cwd: ROOT,
     stdio: "inherit",
     shell: true,
