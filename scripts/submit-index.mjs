@@ -8,6 +8,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadGigs } from "./lib/load-gigs.mjs";
 import { validateGigsData } from "./lib/validate-gigs-lib.mjs";
+import { resolveIndexNowKey } from "./lib/hub-builders.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -26,7 +27,12 @@ if (validationErrors.length) {
   process.exit(1);
 }
 const SITE_ORIGIN = (process.env.SITE_ORIGIN || "").replace(/\/$/, "");
-const INDEXNOW_KEY = (process.env.INDEXNOW_KEY || "").trim();
+let INDEXNOW_KEY = "";
+try {
+  INDEXNOW_KEY = resolveIndexNowKey(ROOT, fs, path);
+} catch {
+  // IndexNow submission skipped when no key is configured.
+}
 const HUB_ONLY = process.argv.includes("--hub-only") || process.env.HUB_ONLY === "1";
 const UA = "ZlatkoGigIndexer/1.0 (+https://www.fiverr.com/zlatkomarjanovi)";
 
