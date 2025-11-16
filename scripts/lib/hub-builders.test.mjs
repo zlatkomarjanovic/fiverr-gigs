@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
-import { sortedGigs, buildPersonLd, absUrl, hubVersion, writeHubFiles } from "./hub-builders.mjs";
+import { sortedGigs, buildPersonLd, absUrl, hubVersion, writeHubFiles, buildTagList } from "./hub-builders.mjs";
 
 test("sortedGigs orders by id", () => {
   const list = sortedGigs([{ id: "z" }, { id: "a" }]);
@@ -27,6 +27,13 @@ test("absUrl joins origin and path", () => {
 
 test("hubVersion returns semver", () => {
   assert.match(hubVersion(), /^\d+\.\d+\.\d+$/);
+});
+
+test("buildTagList uses distinct aria labels", () => {
+  const search = buildTagList(["a"], "Search terms");
+  const tags = buildTagList(["b"], "Fiverr tags");
+  assert.match(search, /aria-label="Search terms"/);
+  assert.match(tags, /aria-label="Fiverr tags"/);
 });
 
 test("writeHubFiles removes stale service pages", () => {
