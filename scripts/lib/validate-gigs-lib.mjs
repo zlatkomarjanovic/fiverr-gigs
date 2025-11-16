@@ -50,6 +50,11 @@ export function validateGigsData(data) {
   const errors = [];
   const fail = (message) => errors.push(message);
 
+  if (typeof data !== "object" || data === null || Array.isArray(data)) {
+    fail("gigs.json root must be an object");
+    return errors;
+  }
+
   for (const key of REQUIRED_ROOT) {
     if (!(key in data)) fail(`Missing root field: ${key}`);
   }
