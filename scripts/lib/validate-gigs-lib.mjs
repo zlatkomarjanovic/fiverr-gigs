@@ -86,9 +86,15 @@ export function validateGigsData(data) {
       fail("updated must be YYYY-MM-DD");
     } else {
       const updatedDate = new Date(`${data.updated}T23:59:59.000Z`);
-      const maxFuture = new Date();
-      maxFuture.setUTCDate(maxFuture.getUTCDate() + 7);
-      if (updatedDate > maxFuture) fail("updated date must not be more than 7 days in the future");
+      if (Number.isNaN(updatedDate.getTime())) {
+        fail("updated must be a valid calendar date");
+      } else if (updatedDate.toISOString().slice(0, 10) !== data.updated) {
+        fail(`updated must be a valid calendar date (got ${data.updated})`);
+      } else {
+        const maxFuture = new Date();
+        maxFuture.setUTCDate(maxFuture.getUTCDate() + 7);
+        if (updatedDate > maxFuture) fail("updated date must not be more than 7 days in the future");
+      }
     }
   }
 
