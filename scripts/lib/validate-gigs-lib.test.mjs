@@ -43,3 +43,8 @@ test("validateGigsData rejects empty seller", () => {
   broken.seller = "   ";
   assert.ok(validateGigsData(broken).some((e) => /seller must/i.test(e)));
 });
+
+test("validateGigsData rejects non-object root", () => {
+  assert.deepEqual(validateGigsData([]), ["gigs.json root must be an object"]);
+  assert.deepEqual(validateGigsData(null), ["gigs.json root must be an object"]);
+});
