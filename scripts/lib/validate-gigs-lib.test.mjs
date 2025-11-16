@@ -48,3 +48,11 @@ test("validateGigsData rejects non-object root", () => {
   assert.deepEqual(validateGigsData([]), ["gigs.json root must be an object"]);
   assert.deepEqual(validateGigsData(null), ["gigs.json root must be an object"]);
 });
+
+test("validateGigsData rejects invalid updated calendar dates", () => {
+  const gigs = loadGigs(ROOT);
+  const broken = structuredClone(gigs);
+  broken.updated = "2026-02-31";
+  const errors = validateGigsData(broken);
+  assert.ok(errors.some((e) => /valid calendar date/i.test(e)));
+});
