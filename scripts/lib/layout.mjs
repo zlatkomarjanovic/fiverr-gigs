@@ -66,6 +66,7 @@ export function renderLayout({
   <meta name="twitter:image" content="${esc(ogImage)}">
   <meta name="twitter:url" content="${esc(canonPath)}">
   <link rel="alternate" type="application/rss+xml" href="${esc(abs("/rss.xml"))}" title="RSS">
+  <link rel="alternate" type="text/plain" href="${esc(abs("/llms.txt"))}" title="LLMs">
   <link rel="sitemap" type="application/xml" href="${esc(abs("/sitemap.xml"))}">
   ${gigs.githubUrl ? `<link rel="me" href="${esc(gigs.githubUrl)}">` : ""}
   <link rel="icon" href="${nested ? "../favicon.svg" : "favicon.svg"}" type="image/svg+xml">

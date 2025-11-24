@@ -25,6 +25,7 @@ test("renderLayout includes core meta and favicon", () => {
   assert.match(html, /twitter:url/);
   assert.match(html, /og:image/);
   assert.match(html, /generator" content="fiverr-gig-indexer/);
+  assert.match(html, /rel="alternate" type="text\/plain" href="https:\/\/example.com\/llms.txt"/);
 });
 
 test("renderLayout uses nested asset paths on service pages", () => {
