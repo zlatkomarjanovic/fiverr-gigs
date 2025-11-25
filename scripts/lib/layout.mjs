@@ -35,6 +35,7 @@ export function renderLayout({
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="generator" content="fiverr-gig-indexer ${hubVersion()}">
   <meta name="application-name" content="${esc(gigs.sellerName)} Fiverr gigs">
+  <meta name="apple-mobile-web-app-title" content="${esc(gigs.sellerName)}">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="copyright" content="${esc(gigs.sellerName)}">
   <meta name="rating" content="general">

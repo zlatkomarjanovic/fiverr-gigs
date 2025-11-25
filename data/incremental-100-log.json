@@ -580,5 +580,11 @@
     "id": "inc-097",
     "category": "metadata",
     "task": "Add theme-color media light"
+  },
+  {
+    "at": "2026-09-03T22:11:13.749Z",
+    "id": "inc-098",
+    "category": "metadata",
+    "task": "Add apple-mobile-web-app-title"
   }
 ]
