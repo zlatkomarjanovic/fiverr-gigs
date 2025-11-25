@@ -218,7 +218,16 @@ export function writeHubFiles(root, fs, path, { robots, llms, sitemap, rss, inde
   fs.writeFileSync(path.join(root, "rss.xml"), rss);
   fs.writeFileSync(path.join(root, "robots.txt"), robots);
   fs.writeFileSync(path.join(root, "llms.txt"), llms);
+
+  const servicesDir = path.join(root, "services");
+  fs.mkdirSync(servicesDir, { recursive: true });
+  const active = new Set(Object.keys(servicePages));
+  for (const name of fs.readdirSync(servicesDir)) {
+    if (name.endsWith(".html") && !active.has(name)) {
+      fs.unlinkSync(path.join(servicesDir, name));
+    }
+  }
   for (const [filename, html] of Object.entries(servicePages)) {
-    fs.writeFileSync(path.join(root, "services", filename), html);
+    fs.writeFileSync(path.join(servicesDir, filename), html);
   }
 }
