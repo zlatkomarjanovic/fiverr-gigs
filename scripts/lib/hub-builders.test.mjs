@@ -1,6 +1,9 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { sortedGigs, buildPersonLd, absUrl, hubVersion } from "./hub-builders.mjs";
+import fs from "node:fs";
+import os from "node:os";
+import path from "node:path";
+import { sortedGigs, buildPersonLd, absUrl, hubVersion, writeHubFiles } from "./hub-builders.mjs";
 
 test("sortedGigs orders by id", () => {
   const list = sortedGigs([{ id: "z" }, { id: "a" }]);
@@ -24,4 +27,26 @@ test("absUrl joins origin and path", () => {
 
 test("hubVersion returns semver", () => {
   assert.match(hubVersion(), /^\d+\.\d+\.\d+$/);
+});
+
+test("writeHubFiles removes stale service pages", () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), "hub-write-"));
+  const servicesDir = path.join(root, "services");
+  fs.mkdirSync(servicesDir, { recursive: true });
+  fs.writeFileSync(path.join(servicesDir, "removed-gig.html"), "<html></html>");
+  fs.writeFileSync(path.join(servicesDir, "kept-gig.html"), "<html>old</html>");
+
+  writeHubFiles(root, fs, path, {
+    robots: "User-agent: *\nAllow: /",
+    llms: "# test\n",
+    sitemap: "<?xml version=\"1.0\"?><urlset></urlset>",
+    rss: "<?xml version=\"1.0\"?><rss></rss>",
+    indexHtml: "<html>index</html>",
+    notFoundHtml: "<html>404</html>",
+    servicePages: { "kept-gig.html": "<html>new</html>" },
+  });
+
+  assert.equal(fs.existsSync(path.join(servicesDir, "removed-gig.html")), false);
+  assert.equal(fs.readFileSync(path.join(servicesDir, "kept-gig.html"), "utf8"), "<html>new</html>");
+  fs.rmSync(root, { recursive: true, force: true });
 });
