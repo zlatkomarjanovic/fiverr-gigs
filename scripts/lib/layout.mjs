@@ -34,6 +34,7 @@ export function renderLayout({
   <meta name="format-detection" content="telephone=no">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="generator" content="fiverr-gig-indexer ${hubVersion()}">
+  <meta name="msapplication-TileColor" content="#1f7a4d">
   <meta name="application-name" content="${esc(gigs.sellerName)} Fiverr gigs">
   <meta name="apple-mobile-web-app-title" content="${esc(gigs.sellerName)}">
   <meta name="mobile-web-app-capable" content="yes">
