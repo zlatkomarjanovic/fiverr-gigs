@@ -1,6 +1,6 @@
 {
   "name": "fiverr-gig-indexer",
-  "description": "Static Fiverr gig hub generator for zlatkomarjanovic.github.io/fiverr-gigs",
+  "description": "Static Fiverr gig hub generator (v1.2.0) for zlatkomarjanovic.github.io/fiverr-gigs",
   "version": "1.2.0",
   "private": true,
   "license": "UNLICENSED",

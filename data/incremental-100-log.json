@@ -592,5 +592,11 @@
     "id": "inc-099",
     "category": "metadata",
     "task": "Add msapplication-TileColor"
+  },
+  {
+    "at": "2026-09-03T22:11:15.151Z",
+    "id": "inc-100",
+    "category": "changelog",
+    "task": "Document v1.2.0 incremental sprint"
   }
 ]
