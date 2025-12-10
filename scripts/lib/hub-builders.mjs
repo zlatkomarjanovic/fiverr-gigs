@@ -25,8 +25,8 @@ export function sortedGigs(gigs) {
   return [...gigs].sort((a, b) => a.id.localeCompare(b.id));
 }
 
-export function buildTagList(tags) {
-  return `<ul class="tags" aria-label="Tags">${tags.map((t) => `<li>${esc(t)}</li>`).join("")}</ul>`;
+export function buildTagList(tags, label = "Tags") {
+  return `<ul class="tags" aria-label="${esc(label)}">${tags.map((t) => `<li>${esc(t)}</li>`).join("")}</ul>`;
 }
 
 export function buildFaqDetails(faq) {
@@ -81,9 +81,9 @@ export function buildServiceBody(g, related) {
     <section class="stack" aria-label="Gig details">
       <div class="panel">
         <h2>Search terms this gig should rank for</h2>
-        ${buildTagList(g.searchTerms)}
+        ${buildTagList(g.searchTerms, "Search terms")}
         <h3>Recommended Fiverr tags</h3>
-        ${buildTagList(g.tags)}
+        ${buildTagList(g.tags, "Fiverr tags")}
       </div>
       <div class="panel">
         <h2>What buyers get</h2>
