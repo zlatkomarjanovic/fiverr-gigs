@@ -532,5 +532,11 @@
     "id": "inc-089",
     "category": "security",
     "task": "Validate no mailto in gig url"
+  },
+  {
+    "at": "2026-09-03T22:11:10.796Z",
+    "id": "inc-090",
+    "category": "security",
+    "task": "Document JSON-LD script safety in layout"
   }
 ]
