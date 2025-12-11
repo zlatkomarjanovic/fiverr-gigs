@@ -144,6 +144,8 @@ export function validateGigsData(data) {
 
     if (!isNonEmptyString(gig?.url) || !gig.url.startsWith("https://www.fiverr.com/")) {
       fail(`${label}: url must be an https Fiverr gig URL`);
+    } else if (/^tel:/i.test(gig.url)) {
+      fail(`${label}: url must not use tel`);
     } else if (isForbiddenUrl(gig.url)) {
       fail(`${label}: url uses a forbidden protocol`);
     } else if (/\?/.test(gig.url)) {

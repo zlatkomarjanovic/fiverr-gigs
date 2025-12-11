@@ -508,5 +508,11 @@
     "id": "inc-085",
     "category": "performance",
     "task": "Add cache note to robots"
+  },
+  {
+    "at": "2026-09-03T22:11:10.102Z",
+    "id": "inc-086",
+    "category": "security",
+    "task": "Reject tel links in gig urls"
   }
 ]
