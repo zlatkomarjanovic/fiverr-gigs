@@ -1,6 +1,7 @@
 /** @param {unknown} s @returns {string} Escape text for HTML attribute and text node contexts. */
 export function esc(s) {
   return String(s ?? "")
+    .replace(/\0/g, "")
     .replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F]/g, "")
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")

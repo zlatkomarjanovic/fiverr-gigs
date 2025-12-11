@@ -514,5 +514,11 @@
     "id": "inc-086",
     "category": "security",
     "task": "Reject tel links in gig urls"
+  },
+  {
+    "at": "2026-09-03T22:11:10.276Z",
+    "id": "inc-087",
+    "category": "security",
+    "task": "Strip null bytes in esc"
   }
 ]
