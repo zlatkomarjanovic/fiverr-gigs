@@ -538,5 +538,11 @@
     "id": "inc-090",
     "category": "security",
     "task": "Document JSON-LD script safety in layout"
+  },
+  {
+    "at": "2026-09-03T22:11:11.530Z",
+    "id": "inc-091",
+    "category": "ui-polish",
+    "task": "Use logical padding on hero"
   }
 ]
