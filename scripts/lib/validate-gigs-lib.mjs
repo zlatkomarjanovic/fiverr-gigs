@@ -146,6 +146,8 @@ export function validateGigsData(data) {
       fail(`${label}: url must be an https Fiverr gig URL`);
     } else if (/^tel:/i.test(gig.url)) {
       fail(`${label}: url must not use tel`);
+    } else if (/^mailto:/i.test(gig.url)) {
+      fail(`${label}: url must not use mailto`);
     } else if (isForbiddenUrl(gig.url)) {
       fail(`${label}: url uses a forbidden protocol`);
     } else if (/\?/.test(gig.url)) {

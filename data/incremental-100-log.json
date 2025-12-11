@@ -526,5 +526,11 @@
     "id": "inc-088",
     "category": "security",
     "task": "Test null byte stripping"
+  },
+  {
+    "at": "2026-09-03T22:11:10.627Z",
+    "id": "inc-089",
+    "category": "security",
+    "task": "Validate no mailto in gig url"
   }
 ]
