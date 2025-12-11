@@ -520,5 +520,11 @@
     "id": "inc-087",
     "category": "security",
     "task": "Strip null bytes in esc"
+  },
+  {
+    "at": "2026-09-03T22:11:10.458Z",
+    "id": "inc-088",
+    "category": "security",
+    "task": "Test null byte stripping"
   }
 ]

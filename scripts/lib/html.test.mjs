@@ -33,3 +33,7 @@ test("fiverrLink works without className on anchor", () => {
 test("esc handles null", () => {
   assert.equal(esc(null), "");
 });
+
+test("esc strips null bytes", () => {
+  assert.equal(esc("a\0b"), "ab");
+});
