@@ -145,7 +145,7 @@ try {
     servicePages,
   });
 } catch (err) {
-  console.error(`Generate failed while writing hub files: ${err.message}`);
+  console.error(`[generate] Failed writing hub files: ${err.message}`);
   process.exit(1);
 }
 

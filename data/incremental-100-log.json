@@ -472,5 +472,11 @@
     "id": "inc-079",
     "category": "error-handling",
     "task": "Load gigs relative path in error"
+  },
+  {
+    "at": "2026-09-03T22:11:09.087Z",
+    "id": "inc-080",
+    "category": "error-handling",
+    "task": "Generate write failure hint"
   }
 ]
