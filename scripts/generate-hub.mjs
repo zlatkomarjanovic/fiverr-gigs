@@ -150,7 +150,7 @@ try {
   process.exit(1);
 }
 
-console.log(`Hub generated (v${hubVersion()}). IndexNow key: ${INDEXNOW_KEY}`);
+console.log(`Hub generated (v${hubVersion()}, ${gigCount} gigs). IndexNow key: ${INDEXNOW_KEY}`);
 if (!SITE_ORIGIN) {
   console.log("Set SITE_ORIGIN before deploy so sitemap/canonical/IndexNow use your real host.");
 }

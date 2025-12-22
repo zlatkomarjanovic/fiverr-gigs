@@ -496,5 +496,11 @@
     "id": "inc-083",
     "category": "performance",
     "task": "RSS reuse pubDate export"
+  },
+  {
+    "at": "2026-09-03T22:11:09.756Z",
+    "id": "inc-084",
+    "category": "performance",
+    "task": "Use gigCount in index log"
   }
 ]
