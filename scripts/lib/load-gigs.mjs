@@ -4,7 +4,7 @@ import path from "node:path";
 export function loadGigs(root) {
   const file = path.join(root, "data", "gigs.json");
   if (!fs.existsSync(file)) {
-    throw new Error(`Missing ${path.relative(root, file)}. Add gig data before generating.`);
+    throw new Error(`Missing ${path.relative(root, file).replace(/\\/g, "/")}. Add gig data before generating.`);
   }
 
   let raw;

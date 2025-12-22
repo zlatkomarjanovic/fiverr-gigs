@@ -466,5 +466,11 @@
     "id": "inc-078",
     "category": "error-handling",
     "task": "Submit validation stderr prefix"
+  },
+  {
+    "at": "2026-09-03T22:11:08.910Z",
+    "id": "inc-079",
+    "category": "error-handling",
+    "task": "Load gigs relative path in error"
   }
 ]
