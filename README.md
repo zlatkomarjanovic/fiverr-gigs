@@ -127,3 +127,5 @@ Incremental improvements are logged in [`data/incremental-100-log.json`](data/in
 The shared layout ends with an HTML comment hook before `</body>`. To add privacy-friendly analytics (Plausible, Fathom, etc.), edit `scripts/lib/layout.mjs` and insert your script tag there, then run `npm run generate`.
 
 See [`CONTRIBUTING.md`](CONTRIBUTING.md) for the contributor workflow.
+
+The hub ships no client-side JavaScript — only static HTML and CSS.

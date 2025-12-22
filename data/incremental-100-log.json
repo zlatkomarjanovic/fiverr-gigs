@@ -478,5 +478,11 @@
     "id": "inc-080",
     "category": "error-handling",
     "task": "Generate write failure hint"
+  },
+  {
+    "at": "2026-09-03T22:11:09.251Z",
+    "id": "inc-081",
+    "category": "performance",
+    "task": "Document static site no runtime JS"
   }
 ]
