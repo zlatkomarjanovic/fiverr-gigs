@@ -70,6 +70,7 @@ if (fs.statSync(stylesPath).isDirectory()) {
 
 const personLd = buildPersonLd(gigs);
 const orderedGigs = sortedGigs(gigs.gigs);
+const gigCount = orderedGigs.length;
 const relatedMap = new Map(
   orderedGigs.map((g) => [g.id, relatedGigs(g, orderedGigs)]),
 );
