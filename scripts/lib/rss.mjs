@@ -1,5 +1,6 @@
 import { esc } from "./html.mjs";
 
+/** @param {string} updated YYYY-MM-DD */
 export function rssPubDate(updated) {
   return new Date(`${updated}T12:00:00.000Z`).toUTCString();
 }
