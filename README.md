@@ -34,7 +34,7 @@ npm run generate
 `generate` reads `data/gigs.json` and writes:
 
 - `index.html`, `services/*.html`, `404.html`
-- `sitemap.xml`, `rss.xml`, `robots.txt`, `llms.txt`
+- `sitemap.xml`, `rss.xml`, `robots.txt`, `llms.txt` (includes `Updated` date)
 - the public IndexNow verification file `{key}.txt` if a key already exists
 
 `styles.css` is **not** generated. Edit that file directly.

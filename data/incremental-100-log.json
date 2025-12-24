@@ -388,5 +388,11 @@
     "id": "inc-065",
     "category": "a11y",
     "task": "Increase focus outline on skip link"
+  },
+  {
+    "at": "2026-09-03T22:11:06.697Z",
+    "id": "inc-066",
+    "category": "docs",
+    "task": "Document llms.txt in README"
   }
 ]
