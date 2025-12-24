@@ -120,6 +120,8 @@ Validate exits **0** on success and **1** on any validation error.
 
 Improvement sprint tasks are tracked in [`data/improvement-backlog.json`](data/improvement-backlog.json) (**300/300 complete**). Regenerate with `npm run backlog`.
 
+Incremental improvements are logged in [`data/incremental-100-log.json`](data/incremental-100-log.json).
+
 ## Analytics (optional)
 
 The shared layout ends with an HTML comment hook before `</body>`. To add privacy-friendly analytics (Plausible, Fathom, etc.), edit `scripts/lib/layout.mjs` and insert your script tag there, then run `npm run generate`.

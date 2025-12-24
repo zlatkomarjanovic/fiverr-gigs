@@ -400,5 +400,11 @@
     "id": "inc-067",
     "category": "docs",
     "task": "Document hub version in README"
+  },
+  {
+    "at": "2026-09-03T22:11:07.040Z",
+    "id": "inc-068",
+    "category": "docs",
+    "task": "Add incremental log to README"
   }
 ]
