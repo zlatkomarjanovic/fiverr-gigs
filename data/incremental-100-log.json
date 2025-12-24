@@ -406,5 +406,11 @@
     "id": "inc-068",
     "category": "docs",
     "task": "Add incremental log to README"
+  },
+  {
+    "at": "2026-09-03T22:11:07.213Z",
+    "id": "inc-069",
+    "category": "docs",
+    "task": "CONTRIBUTING validate exit codes"
   }
 ]

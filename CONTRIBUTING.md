@@ -46,6 +46,8 @@ Unit tests live under `scripts/lib/*.test.mjs`.
 
 ## Pull requests
 
+Validate exits with code **1** on failure.
+
 CI runs `npm run check` and fails if generated files are out of date. Keep commits focused and use conventional commit messages (`feat:`, `fix:`, `docs:`, etc.).
 
 ## Security
