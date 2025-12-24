@@ -188,3 +188,4 @@ main:focus { outline: none; }
 @media print {
   article.card { break-inside: avoid; }
 }
+details summary { list-style: disclosure-closed; }
