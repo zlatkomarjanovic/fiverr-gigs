@@ -418,5 +418,11 @@
     "id": "inc-070",
     "category": "docs",
     "task": "CONTRIBUTING print styles note"
+  },
+  {
+    "at": "2026-09-03T22:11:07.559Z",
+    "id": "inc-071",
+    "category": "dx",
+    "task": "Bump package version to 1.2.0"
   }
 ]
