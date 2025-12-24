@@ -412,5 +412,11 @@
     "id": "inc-069",
     "category": "docs",
     "task": "CONTRIBUTING validate exit codes"
+  },
+  {
+    "at": "2026-09-03T22:11:07.386Z",
+    "id": "inc-070",
+    "category": "docs",
+    "task": "CONTRIBUTING print styles note"
   }
 ]

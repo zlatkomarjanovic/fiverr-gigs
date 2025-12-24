@@ -53,3 +53,5 @@ CI runs `npm run check` and fails if generated files are out of date. Keep commi
 ## Security
 
 The validator rejects dangerous URL protocols (`javascript:`, `data:`, `file:`, `vbscript:`), blocks `<script>` tags in FAQ fields, and requires HTTPS profile links. Always set `SITE_ORIGIN` to your real `https://` GitHub Pages URL before generating canonicals.
+
+Print styles live in `styles.css` under `@media print`.
