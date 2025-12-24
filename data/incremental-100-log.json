@@ -424,5 +424,11 @@
     "id": "inc-071",
     "category": "dx",
     "task": "Bump package version to 1.2.0"
+  },
+  {
+    "at": "2026-09-03T22:11:07.718Z",
+    "id": "inc-072",
+    "category": "dx",
+    "task": "Add npm run build:check alias"
   }
 ]

@@ -22,6 +22,7 @@
     "build": "npm run validate && npm run generate",
     "check": "node scripts/check-node.mjs && npm run validate && npm test && npm run generate",
     "verify": "npm run check",
+    "build:check": "npm run check",
     "test": "node --test scripts/lib/*.test.mjs",
     "backlog": "node scripts/generate-backlog.mjs",
     "submit": "node scripts/submit-index.mjs",
