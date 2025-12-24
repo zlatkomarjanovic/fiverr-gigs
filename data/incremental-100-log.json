@@ -370,5 +370,11 @@
     "id": "inc-062",
     "category": "a11y",
     "task": "Mark decorative favicon aria-hidden"
+  },
+  {
+    "at": "2026-09-03T22:11:05.681Z",
+    "id": "inc-063",
+    "category": "a11y",
+    "task": "Add lang attribute note in layout"
   }
 ]
