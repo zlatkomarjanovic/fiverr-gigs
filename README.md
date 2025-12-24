@@ -114,6 +114,7 @@ Validate exits **0** on success and **1** on any validation error.
 
 ## Changelog
 
+- **1.2.0** — Incremental polish: design tokens, validation, feeds, 100 micro-improvements.
 - **1.1.0** — Hub builders refactor, expanded validation/security rules, favicon, RSS atom self link, 300-task backlog completed.
 - **1.0.x** — Initial static hub generator, CI, layout extraction, improvement sprint.
 

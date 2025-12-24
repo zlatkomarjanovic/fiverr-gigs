@@ -394,5 +394,11 @@
     "id": "inc-066",
     "category": "docs",
     "task": "Document llms.txt in README"
+  },
+  {
+    "at": "2026-09-03T22:11:06.868Z",
+    "id": "inc-067",
+    "category": "docs",
+    "task": "Document hub version in README"
   }
 ]
