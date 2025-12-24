@@ -138,7 +138,7 @@ a { underline-offset: 2px; }
 .stack { max-width: 48rem; }
 .crumbs { padding-bottom: 0.5rem; }
 .card h2 a:focus-visible { text-decoration: underline; }
-.skip-link:focus-visible { top: 0.75rem; outline: 2px solid var(--card); outline-offset: 2px; }
+.skip-link:focus-visible { top: 0.75rem; outline: 3px solid var(--card); outline-offset: 2px; }
 .btn.ghost:focus-visible { outline-color: var(--accent); }
 details[open] summary { color: var(--accent-ink); }
 main:focus { outline: none; }
