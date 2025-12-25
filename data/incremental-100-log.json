@@ -250,5 +250,11 @@
     "id": "inc-042",
     "category": "feeds",
     "task": "Add Crawl-delay hint comment in robots"
+  },
+  {
+    "at": "2026-09-03T22:10:32.389Z",
+    "id": "inc-043",
+    "category": "feeds",
+    "task": "RSS channel ttl element"
   }
 ]
