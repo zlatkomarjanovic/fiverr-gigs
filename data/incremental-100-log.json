@@ -244,5 +244,11 @@
     "id": "inc-041",
     "category": "feeds",
     "task": "Add robots.txt generator comment"
+  },
+  {
+    "at": "2026-09-03T22:10:32.221Z",
+    "id": "inc-042",
+    "category": "feeds",
+    "task": "Add Crawl-delay hint comment in robots"
   }
 ]
