@@ -5,4 +5,4 @@ if (current < required) {
   console.error(`Node ${required}+ required (found ${process.version}).`);
   process.exit(1);
 }
-console.log(`Node ${process.version} OK.`);
+console.log(`Node ${process.version} OK (requires ${required}+).`);

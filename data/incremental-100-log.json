@@ -442,5 +442,11 @@
     "id": "inc-074",
     "category": "dx",
     "task": "Script generate:verbose echo"
+  },
+  {
+    "at": "2026-09-03T22:11:08.209Z",
+    "id": "inc-075",
+    "category": "dx",
+    "task": "check-node prints required version"
   }
 ]
