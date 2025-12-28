@@ -16,7 +16,7 @@ try {
 
 const errors = validateGigsData(data);
 if (errors.length) {
-  console.error(`gigs.json failed ${errors.length} check${errors.length === 1 ? "" : "s"}:`);
+  console.error(`[validate] gigs.json failed ${errors.length} check${errors.length === 1 ? "" : "s"}:`);
   for (const error of errors) console.error(`- ${error}`);
   process.exit(1);
 }
