@@ -9,6 +9,7 @@ import { fileURLToPath } from "node:url";
 import { loadGigs } from "./lib/load-gigs.mjs";
 import { validateGigsData } from "./lib/validate-gigs-lib.mjs";
 import { resolveIndexNowKey } from "./lib/hub-builders.mjs";
+import { escapeXml } from "./lib/xml.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -68,16 +69,6 @@ function xmlRpcPing(name, homepage) {
     <param><value><string>${escapeXml(SITE_ORIGIN ? `${SITE_ORIGIN}/rss.xml` : homepage)}</string></value></param>
   </params>
 </methodCall>`;
-}
-
-function escapeXml(s) {
-  return String(s).replace(/[<>&'"]/g, (c) => ({
-    "<": "&lt;",
-    ">": "&gt;",
-    "&": "&amp;",
-    "'": "&apos;",
-    '"': "&quot;",
-  }[c]));
 }
 
 async function fetchSafe(url, options = {}, timeoutMs = 20000) {
