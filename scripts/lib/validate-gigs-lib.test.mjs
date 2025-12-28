@@ -64,3 +64,12 @@ test("validateGigsData rejects script tags in FAQ", () => {
   const errors = validateGigsData(broken);
   assert.ok(errors.some((e) => /script tags/i.test(e)));
 });
+
+test("validateGigsData rejects duplicate primaryKeyword case-insensitively", () => {
+  const gigs = loadGigs(ROOT);
+  const broken = structuredClone(gigs);
+  broken.gigs[1].primaryKeyword = broken.gigs[0].primaryKeyword.toUpperCase();
+  broken.gigs[1].searchTerms = [...broken.gigs[1].searchTerms, broken.gigs[0].primaryKeyword.toUpperCase()];
+  const errors = validateGigsData(broken);
+  assert.ok(errors.some((e) => /Duplicate primaryKeyword/i.test(e)));
+});
