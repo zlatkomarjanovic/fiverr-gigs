@@ -3,6 +3,7 @@
   "description": "Static Fiverr gig hub generator for zlatkomarjanovic.github.io/fiverr-gigs",
   "version": "1.2.0",
   "private": true,
+  "license": "UNLICENSED",
   "type": "module",
   "homepage": "https://zlatkomarjanovic.github.io/fiverr-gigs/",
   "repository": {
