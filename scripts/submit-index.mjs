@@ -21,7 +21,7 @@ try {
 
 const validationErrors = validateGigsData(gigs);
 if (validationErrors.length) {
-  console.error(`gigs.json failed ${validationErrors.length} check${validationErrors.length === 1 ? "" : "s"}:`);
+  console.error(`[submit] gigs.json failed ${validationErrors.length} check${validationErrors.length === 1 ? "" : "s"}:`);
   for (const error of validationErrors) console.error(`- ${error}`);
   process.exit(1);
 }
