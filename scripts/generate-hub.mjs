@@ -29,7 +29,7 @@ let gigs;
 try {
   gigs = loadGigs(ROOT);
 } catch (err) {
-  console.error(err.message);
+  console.error(`[generate] ${err.message}`);
   process.exit(1);
 }
 

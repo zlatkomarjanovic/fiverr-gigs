@@ -454,5 +454,11 @@
     "id": "inc-076",
     "category": "error-handling",
     "task": "Validate CLI stderr prefix"
+  },
+  {
+    "at": "2026-09-03T22:11:08.574Z",
+    "id": "inc-077",
+    "category": "error-handling",
+    "task": "Generate CLI stderr prefix"
   }
 ]
