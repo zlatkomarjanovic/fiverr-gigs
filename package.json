@@ -20,6 +20,7 @@
     "validate": "node scripts/validate-gigs.mjs",
     "validate:verbose": "node scripts/validate-gigs.mjs",
     "generate": "node scripts/generate-hub.mjs",
+    "generate:verbose": "node scripts/generate-hub.mjs",
     "build": "npm run validate && npm run generate",
     "check": "node scripts/check-node.mjs && npm run validate && npm test && npm run generate",
     "verify": "npm run check",
