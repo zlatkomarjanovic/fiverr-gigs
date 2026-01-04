@@ -62,6 +62,23 @@ if (data.updated && !/^\d{4}-\d{2}-\d{2}$/.test(data.updated)) {
   fail("updated must be YYYY-MM-DD");
 }
 
+function isHttpsUrl(value) {
+  try {
+    const url = new URL(value);
+    return url.protocol === "https:";
+  } catch {
+    return false;
+  }
+}
+
+if (data.sellerSite && !isHttpsUrl(data.sellerSite)) {
+  fail("sellerSite must be an https URL");
+}
+
+if (data.githubUrl && !isHttpsUrl(data.githubUrl)) {
+  fail("githubUrl must be an https URL");
+}
+
 const ids = new Set();
 const slugs = new Set();
 const urls = new Set();
