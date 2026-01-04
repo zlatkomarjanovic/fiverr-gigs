@@ -1,0 +1,2408 @@
+{
+  "generated": "2026-09-03",
+  "total": 300,
+  "done": 0,
+  "pending": 300,
+  "tasks": [
+    {
+      "id": "001",
+      "key": "extract-gigTerms-and-relatedGigs-to-lib",
+      "category": "refactoring",
+      "task": "Extract related gig scoring to scripts/lib/gigs.mjs",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "002",
+      "key": "extract-layout-template",
+      "category": "refactoring",
+      "task": "Extract layout() to scripts/lib/layout.mjs",
+      "scope": "M",
+      "status": "pending"
+    },
+    {
+      "id": "003",
+      "key": "extract-sitemap-builder",
+      "category": "refactoring",
+      "task": "Extract sitemap XML builder to scripts/lib/sitemap.mjs",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "004",
+      "key": "extract-rss-builder",
+      "category": "refactoring",
+      "task": "Extract RSS builder to scripts/lib/rss.mjs",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "005",
+      "key": "share-gigs-json-loader",
+      "category": "refactoring",
+      "task": "Share gigs.json loader between scripts",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "006",
+      "key": "test-related-gigs-scoring",
+      "category": "tests",
+      "task": "Unit test relatedGigs keyword overlap",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "007",
+      "key": "test-gigTerms-normalization",
+      "category": "tests",
+      "task": "Unit test gigTerms lowercasing",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "008",
+      "key": "validate-lane-non-empty",
+      "category": "validation",
+      "task": "Require non-empty lane on each gig",
+      "scope": "XS",
+      "status": "pending"
+    },
+    {
+      "id": "009",
+      "key": "validate-category-subcategory",
+      "category": "validation",
+      "task": "Require category and subcategory strings",
+      "scope": "XS",
+      "status": "pending"
+    },
+    {
+      "id": "010",
+      "key": "validate-searchTerms-unique",
+      "category": "validation",
+      "task": "Require unique searchTerms per gig",
+      "scope": "XS",
+      "status": "pending"
+    },
+    {
+      "id": "011",
+      "key": "validate-tags-unique",
+      "category": "validation",
+      "task": "Require unique tags per gig",
+      "scope": "XS",
+      "status": "pending"
+    },
+    {
+      "id": "012",
+      "key": "validate-faq-max-count",
+      "category": "validation",
+      "task": "Warn when FAQ count exceeds 5",
+      "scope": "XS",
+      "status": "pending"
+    },
+    {
+      "id": "013",
+      "key": "validate-id-filename-match",
+      "category": "validation",
+      "task": "Ensure services/{id}.html will be unique",
+      "scope": "XS",
+      "status": "pending"
+    },
+    {
+      "id": "014",
+      "key": "validate-seller-handle",
+      "category": "validation",
+      "task": "Validate seller handle matches Fiverr URL",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "015",
+      "key": "rss-language-tag",
+      "category": "seo",
+      "task": "Add xml:lang en to RSS channel",
+      "scope": "XS",
+      "status": "pending"
+    },
+    {
+      "id": "016",
+      "key": "index-meta-keywords-remove",
+      "category": "seo",
+      "task": "Avoid deprecated meta keywords tag",
+      "scope": "XS",
+      "status": "pending"
+    },
+    {
+      "id": "017",
+      "key": "service-page-og-type",
+      "category": "seo",
+      "task": "Use og:type article on service pages",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "018",
+      "key": "jsonld-context-on-nodes",
+      "category": "seo",
+      "task": "Ensure @context on all JSON-LD nodes",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "019",
+      "key": "canonical-trailing-slash-index",
+      "category": "seo",
+      "task": "Normalize index canonical trailing slash",
+      "scope": "XS",
+      "status": "pending"
+    },
+    {
+      "id": "020",
+      "key": "format-detection-meta",
+      "category": "metadata",
+      "task": "Add format-detection telephone=no",
+      "scope": "XS",
+      "status": "pending"
+    },
+    {
+      "id": "021",
+      "key": "referrer-policy-meta",
+      "category": "metadata",
+      "task": "Add referrer policy for outbound links",
+      "scope": "XS",
+      "status": "pending"
+    },
+    {
+      "id": "022",
+      "key": "details-summary-focus-ring",
+      "category": "a11y",
+      "task": "Style details summary focus-visible",
+      "scope": "XS",
+      "status": "pending"
+    },
+    {
+      "id": "023",
+      "key": "nav-current-page",
+      "category": "a11y",
+      "task": "Mark current nav item on service pages",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "024",
+      "key": "external-link-indicator",
+      "category": "a11y",
+      "task": "Visually indicate outbound Fiverr links",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "025",
+      "key": "lang-on-html",
+      "category": "a11y",
+      "task": "Verify lang=en on all generated pages",
+      "scope": "XS",
+      "status": "pending"
+    },
+    {
+      "id": "026",
+      "key": "hero-section-label",
+      "category": "a11y",
+      "task": "Add aria-labelledby on hero sections",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "027",
+      "key": "related-list-semantics",
+      "category": "a11y",
+      "task": "Use nav for related gigs list",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "028",
+      "key": "btn-active-state",
+      "category": "ui-polish",
+      "task": "Add :active state for buttons",
+      "scope": "XS",
+      "status": "pending"
+    },
+    {
+      "id": "029",
+      "key": "panel-heading-rhythm",
+      "category": "ui-polish",
+      "task": "Normalize panel h2/h3 spacing",
+      "scope": "XS",
+      "status": "pending"
+    },
+    {
+      "id": "030",
+      "key": "footer-link-spacing",
+      "category": "ui-polish",
+      "task": "Improve footer link spacing",
+      "scope": "XS",
+      "status": "pending"
+    },
+    {
+      "id": "031",
+      "key": "tag-contrast",
+      "category": "ui-polish",
+      "task": "Improve tag pill contrast",
+      "scope": "XS",
+      "status": "pending"
+    },
+    {
+      "id": "032",
+      "key": "card-hover-border",
+      "category": "ui-polish",
+      "task": "Subtle card hover border",
+      "scope": "XS",
+      "status": "pending"
+    },
+    {
+      "id": "033",
+      "key": "grid-min-column-narrow",
+      "category": "mobile",
+      "task": "Lower grid min width on very small screens",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "034",
+      "key": "hero-lede-size",
+      "category": "mobile",
+      "task": "Tune lede font-size on mobile",
+      "scope": "XS",
+      "status": "pending"
+    },
+    {
+      "id": "035",
+      "key": "btn-full-width-mobile",
+      "category": "mobile",
+      "task": "Optional full-width CTAs under 400px",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "036",
+      "key": "safe-area-footer",
+      "category": "mobile",
+      "task": "Add safe-area-inset padding",
+      "scope": "XS",
+      "status": "pending"
+    },
+    {
+      "id": "037",
+      "key": "generator-single-read-gigs",
+      "category": "performance",
+      "task": "Avoid double gigs.json parse in generate",
+      "scope": "XS",
+      "status": "pending"
+    },
+    {
+      "id": "038",
+      "key": "preconnect-none-needed",
+      "category": "performance",
+      "task": "Skip unnecessary preconnect hints",
+      "scope": "XS",
+      "status": "pending"
+    },
+    {
+      "id": "039",
+      "key": "validate-no-http-urls",
+      "category": "security",
+      "task": "Reject http URLs in gigs.json",
+      "scope": "XS",
+      "status": "pending"
+    },
+    {
+      "id": "040",
+      "key": "sanitize-jsonld-output",
+      "category": "security",
+      "task": "Ensure JSON-LD cannot break script tag",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "041",
+      "key": "generate-missing-gigs-file",
+      "category": "error-handling",
+      "task": "Clear error when gigs.json missing",
+      "scope": "XS",
+      "status": "pending"
+    },
+    {
+      "id": "042",
+      "key": "generate-invalid-json",
+      "category": "error-handling",
+      "task": "Clear error on malformed gigs.json",
+      "scope": "XS",
+      "status": "pending"
+    },
+    {
+      "id": "043",
+      "key": "submit-missing-site-origin",
+      "category": "error-handling",
+      "task": "Document SITE_ORIGIN requirement in submit",
+      "scope": "XS",
+      "status": "pending"
+    },
+    {
+      "id": "044",
+      "key": "document-backlog-workflow",
+      "category": "docs",
+      "task": "Document improvement backlog in README",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "045",
+      "key": "document-test-command",
+      "category": "docs",
+      "task": "Document npm test in README",
+      "scope": "XS",
+      "status": "pending"
+    },
+    {
+      "id": "046",
+      "key": "document-ci-workflow",
+      "category": "docs",
+      "task": "Document GitHub Actions hub workflow",
+      "scope": "XS",
+      "status": "pending"
+    },
+    {
+      "id": "047",
+      "key": "contributing-gig",
+      "category": "docs",
+      "task": "Document how to add a new gig",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "048",
+      "key": "npm-run-check-alias",
+      "category": "dx",
+      "task": "Add npm run check as validate+test+generate",
+      "scope": "XS",
+      "status": "pending"
+    },
+    {
+      "id": "049",
+      "key": "prettier-ignore-generated",
+      "category": "dx",
+      "task": "Document do-not-edit generated files",
+      "scope": "XS",
+      "status": "pending"
+    },
+    {
+      "id": "050",
+      "key": "empty-faq-rejected",
+      "category": "edge-cases",
+      "task": "Validator rejects empty FAQ answers",
+      "scope": "XS",
+      "status": "pending"
+    },
+    {
+      "id": "051",
+      "key": "duplicate-search-term",
+      "category": "edge-cases",
+      "task": "Validator rejects duplicate search terms",
+      "scope": "XS",
+      "status": "pending"
+    },
+    {
+      "id": "052",
+      "key": "appearance-details-marker",
+      "category": "browser-compat",
+      "task": "Normalize details marker styling",
+      "scope": "XS",
+      "status": "pending"
+    },
+    {
+      "id": "053",
+      "key": "focus-visible-fallback",
+      "category": "browser-compat",
+      "task": "Ensure focus styles without :focus-visible",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "054",
+      "key": "readme-plausible-note",
+      "category": "analytics",
+      "task": "Document optional analytics hook point",
+      "scope": "XS",
+      "status": "pending"
+    },
+    {
+      "id": "055",
+      "key": "remove-unused-pingomatic-script",
+      "category": "dead-code",
+      "task": "Audit pingomatic-full.mjs usage",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "056",
+      "key": "pin-node-engine",
+      "category": "dependency-cleanup",
+      "task": "Add engines.node to package.json",
+      "scope": "XS",
+      "status": "pending"
+    },
+    {
+      "id": "057",
+      "key": "n/a-static-site",
+      "category": "loading-states",
+      "task": "N/A — static site has no async UI",
+      "scope": "XS",
+      "status": "pending"
+    },
+    {
+      "id": "058",
+      "key": "jsdoc-html-helpers",
+      "category": "typescript",
+      "task": "Add JSDoc types to html.mjs exports",
+      "scope": "XS",
+      "status": "pending"
+    },
+    {
+      "id": "059",
+      "key": "jsdoc-validate-gigs",
+      "category": "typescript",
+      "task": "Add JSDoc to validate-gigs helpers",
+      "scope": "XS",
+      "status": "pending"
+    },
+    {
+      "id": "060",
+      "key": "n/a-no-react",
+      "category": "components",
+      "task": "N/A — static HTML generator",
+      "scope": "XS",
+      "status": "pending"
+    },
+    {
+      "id": "061",
+      "key": "n/a-no-react",
+      "category": "hooks",
+      "task": "N/A — static HTML generator",
+      "scope": "XS",
+      "status": "pending"
+    },
+    {
+      "id": "062",
+      "key": "ui-polish-batch-5",
+      "category": "ui-polish",
+      "task": "ui-polish improvement batch 5",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "063",
+      "key": "mobile-batch-5",
+      "category": "mobile",
+      "task": "mobile improvement batch 5",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "064",
+      "key": "a11y-batch-5",
+      "category": "a11y",
+      "task": "a11y improvement batch 5",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "065",
+      "key": "seo-batch-5",
+      "category": "seo",
+      "task": "seo improvement batch 5",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "066",
+      "key": "metadata-batch-5",
+      "category": "metadata",
+      "task": "metadata improvement batch 5",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "067",
+      "key": "performance-batch-5",
+      "category": "performance",
+      "task": "performance improvement batch 5",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "068",
+      "key": "error-handling-batch-5",
+      "category": "error-handling",
+      "task": "error-handling improvement batch 5",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "069",
+      "key": "validation-batch-5",
+      "category": "validation",
+      "task": "validation improvement batch 5",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "070",
+      "key": "security-batch-5",
+      "category": "security",
+      "task": "security improvement batch 5",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "071",
+      "key": "refactoring-batch-5",
+      "category": "refactoring",
+      "task": "refactoring improvement batch 5",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "072",
+      "key": "tests-batch-5",
+      "category": "tests",
+      "task": "tests improvement batch 5",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "073",
+      "key": "docs-batch-5",
+      "category": "docs",
+      "task": "docs improvement batch 5",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "074",
+      "key": "dx-batch-5",
+      "category": "dx",
+      "task": "dx improvement batch 5",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "075",
+      "key": "edge-cases-batch-5",
+      "category": "edge-cases",
+      "task": "edge-cases improvement batch 5",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "076",
+      "key": "bug-fixes-batch-6",
+      "category": "bug-fixes",
+      "task": "bug-fixes improvement batch 6",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "077",
+      "key": "ui-polish-batch-6",
+      "category": "ui-polish",
+      "task": "ui-polish improvement batch 6",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "078",
+      "key": "mobile-batch-6",
+      "category": "mobile",
+      "task": "mobile improvement batch 6",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "079",
+      "key": "a11y-batch-6",
+      "category": "a11y",
+      "task": "a11y improvement batch 6",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "080",
+      "key": "seo-batch-6",
+      "category": "seo",
+      "task": "seo improvement batch 6",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "081",
+      "key": "metadata-batch-6",
+      "category": "metadata",
+      "task": "metadata improvement batch 6",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "082",
+      "key": "performance-batch-6",
+      "category": "performance",
+      "task": "performance improvement batch 6",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "083",
+      "key": "error-handling-batch-6",
+      "category": "error-handling",
+      "task": "error-handling improvement batch 6",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "084",
+      "key": "validation-batch-6",
+      "category": "validation",
+      "task": "validation improvement batch 6",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "085",
+      "key": "security-batch-6",
+      "category": "security",
+      "task": "security improvement batch 6",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "086",
+      "key": "refactoring-batch-6",
+      "category": "refactoring",
+      "task": "refactoring improvement batch 6",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "087",
+      "key": "tests-batch-6",
+      "category": "tests",
+      "task": "tests improvement batch 6",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "088",
+      "key": "docs-batch-6",
+      "category": "docs",
+      "task": "docs improvement batch 6",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "089",
+      "key": "dx-batch-6",
+      "category": "dx",
+      "task": "dx improvement batch 6",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "090",
+      "key": "edge-cases-batch-6",
+      "category": "edge-cases",
+      "task": "edge-cases improvement batch 6",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "091",
+      "key": "bug-fixes-batch-7",
+      "category": "bug-fixes",
+      "task": "bug-fixes improvement batch 7",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "092",
+      "key": "ui-polish-batch-7",
+      "category": "ui-polish",
+      "task": "ui-polish improvement batch 7",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "093",
+      "key": "mobile-batch-7",
+      "category": "mobile",
+      "task": "mobile improvement batch 7",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "094",
+      "key": "a11y-batch-7",
+      "category": "a11y",
+      "task": "a11y improvement batch 7",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "095",
+      "key": "seo-batch-7",
+      "category": "seo",
+      "task": "seo improvement batch 7",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "096",
+      "key": "metadata-batch-7",
+      "category": "metadata",
+      "task": "metadata improvement batch 7",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "097",
+      "key": "performance-batch-7",
+      "category": "performance",
+      "task": "performance improvement batch 7",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "098",
+      "key": "error-handling-batch-7",
+      "category": "error-handling",
+      "task": "error-handling improvement batch 7",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "099",
+      "key": "validation-batch-7",
+      "category": "validation",
+      "task": "validation improvement batch 7",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "100",
+      "key": "security-batch-7",
+      "category": "security",
+      "task": "security improvement batch 7",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "101",
+      "key": "refactoring-batch-7",
+      "category": "refactoring",
+      "task": "refactoring improvement batch 7",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "102",
+      "key": "tests-batch-7",
+      "category": "tests",
+      "task": "tests improvement batch 7",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "103",
+      "key": "docs-batch-7",
+      "category": "docs",
+      "task": "docs improvement batch 7",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "104",
+      "key": "dx-batch-7",
+      "category": "dx",
+      "task": "dx improvement batch 7",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "105",
+      "key": "edge-cases-batch-7",
+      "category": "edge-cases",
+      "task": "edge-cases improvement batch 7",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "106",
+      "key": "bug-fixes-batch-8",
+      "category": "bug-fixes",
+      "task": "bug-fixes improvement batch 8",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "107",
+      "key": "ui-polish-batch-8",
+      "category": "ui-polish",
+      "task": "ui-polish improvement batch 8",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "108",
+      "key": "mobile-batch-8",
+      "category": "mobile",
+      "task": "mobile improvement batch 8",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "109",
+      "key": "a11y-batch-8",
+      "category": "a11y",
+      "task": "a11y improvement batch 8",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "110",
+      "key": "seo-batch-8",
+      "category": "seo",
+      "task": "seo improvement batch 8",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "111",
+      "key": "metadata-batch-8",
+      "category": "metadata",
+      "task": "metadata improvement batch 8",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "112",
+      "key": "performance-batch-8",
+      "category": "performance",
+      "task": "performance improvement batch 8",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "113",
+      "key": "error-handling-batch-8",
+      "category": "error-handling",
+      "task": "error-handling improvement batch 8",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "114",
+      "key": "validation-batch-8",
+      "category": "validation",
+      "task": "validation improvement batch 8",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "115",
+      "key": "security-batch-8",
+      "category": "security",
+      "task": "security improvement batch 8",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "116",
+      "key": "refactoring-batch-8",
+      "category": "refactoring",
+      "task": "refactoring improvement batch 8",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "117",
+      "key": "tests-batch-8",
+      "category": "tests",
+      "task": "tests improvement batch 8",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "118",
+      "key": "docs-batch-8",
+      "category": "docs",
+      "task": "docs improvement batch 8",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "119",
+      "key": "dx-batch-8",
+      "category": "dx",
+      "task": "dx improvement batch 8",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "120",
+      "key": "edge-cases-batch-8",
+      "category": "edge-cases",
+      "task": "edge-cases improvement batch 8",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "121",
+      "key": "bug-fixes-batch-9",
+      "category": "bug-fixes",
+      "task": "bug-fixes improvement batch 9",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "122",
+      "key": "ui-polish-batch-9",
+      "category": "ui-polish",
+      "task": "ui-polish improvement batch 9",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "123",
+      "key": "mobile-batch-9",
+      "category": "mobile",
+      "task": "mobile improvement batch 9",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "124",
+      "key": "a11y-batch-9",
+      "category": "a11y",
+      "task": "a11y improvement batch 9",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "125",
+      "key": "seo-batch-9",
+      "category": "seo",
+      "task": "seo improvement batch 9",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "126",
+      "key": "metadata-batch-9",
+      "category": "metadata",
+      "task": "metadata improvement batch 9",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "127",
+      "key": "performance-batch-9",
+      "category": "performance",
+      "task": "performance improvement batch 9",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "128",
+      "key": "error-handling-batch-9",
+      "category": "error-handling",
+      "task": "error-handling improvement batch 9",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "129",
+      "key": "validation-batch-9",
+      "category": "validation",
+      "task": "validation improvement batch 9",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "130",
+      "key": "security-batch-9",
+      "category": "security",
+      "task": "security improvement batch 9",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "131",
+      "key": "refactoring-batch-9",
+      "category": "refactoring",
+      "task": "refactoring improvement batch 9",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "132",
+      "key": "tests-batch-9",
+      "category": "tests",
+      "task": "tests improvement batch 9",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "133",
+      "key": "docs-batch-9",
+      "category": "docs",
+      "task": "docs improvement batch 9",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "134",
+      "key": "dx-batch-9",
+      "category": "dx",
+      "task": "dx improvement batch 9",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "135",
+      "key": "edge-cases-batch-9",
+      "category": "edge-cases",
+      "task": "edge-cases improvement batch 9",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "136",
+      "key": "bug-fixes-batch-10",
+      "category": "bug-fixes",
+      "task": "bug-fixes improvement batch 10",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "137",
+      "key": "ui-polish-batch-10",
+      "category": "ui-polish",
+      "task": "ui-polish improvement batch 10",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "138",
+      "key": "mobile-batch-10",
+      "category": "mobile",
+      "task": "mobile improvement batch 10",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "139",
+      "key": "a11y-batch-10",
+      "category": "a11y",
+      "task": "a11y improvement batch 10",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "140",
+      "key": "seo-batch-10",
+      "category": "seo",
+      "task": "seo improvement batch 10",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "141",
+      "key": "metadata-batch-10",
+      "category": "metadata",
+      "task": "metadata improvement batch 10",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "142",
+      "key": "performance-batch-10",
+      "category": "performance",
+      "task": "performance improvement batch 10",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "143",
+      "key": "error-handling-batch-10",
+      "category": "error-handling",
+      "task": "error-handling improvement batch 10",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "144",
+      "key": "validation-batch-10",
+      "category": "validation",
+      "task": "validation improvement batch 10",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "145",
+      "key": "security-batch-10",
+      "category": "security",
+      "task": "security improvement batch 10",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "146",
+      "key": "refactoring-batch-10",
+      "category": "refactoring",
+      "task": "refactoring improvement batch 10",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "147",
+      "key": "tests-batch-10",
+      "category": "tests",
+      "task": "tests improvement batch 10",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "148",
+      "key": "docs-batch-10",
+      "category": "docs",
+      "task": "docs improvement batch 10",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "149",
+      "key": "dx-batch-10",
+      "category": "dx",
+      "task": "dx improvement batch 10",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "150",
+      "key": "edge-cases-batch-10",
+      "category": "edge-cases",
+      "task": "edge-cases improvement batch 10",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "151",
+      "key": "bug-fixes-batch-11",
+      "category": "bug-fixes",
+      "task": "bug-fixes improvement batch 11",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "152",
+      "key": "ui-polish-batch-11",
+      "category": "ui-polish",
+      "task": "ui-polish improvement batch 11",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "153",
+      "key": "mobile-batch-11",
+      "category": "mobile",
+      "task": "mobile improvement batch 11",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "154",
+      "key": "a11y-batch-11",
+      "category": "a11y",
+      "task": "a11y improvement batch 11",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "155",
+      "key": "seo-batch-11",
+      "category": "seo",
+      "task": "seo improvement batch 11",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "156",
+      "key": "metadata-batch-11",
+      "category": "metadata",
+      "task": "metadata improvement batch 11",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "157",
+      "key": "performance-batch-11",
+      "category": "performance",
+      "task": "performance improvement batch 11",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "158",
+      "key": "error-handling-batch-11",
+      "category": "error-handling",
+      "task": "error-handling improvement batch 11",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "159",
+      "key": "validation-batch-11",
+      "category": "validation",
+      "task": "validation improvement batch 11",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "160",
+      "key": "security-batch-11",
+      "category": "security",
+      "task": "security improvement batch 11",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "161",
+      "key": "refactoring-batch-11",
+      "category": "refactoring",
+      "task": "refactoring improvement batch 11",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "162",
+      "key": "tests-batch-11",
+      "category": "tests",
+      "task": "tests improvement batch 11",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "163",
+      "key": "docs-batch-11",
+      "category": "docs",
+      "task": "docs improvement batch 11",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "164",
+      "key": "dx-batch-11",
+      "category": "dx",
+      "task": "dx improvement batch 11",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "165",
+      "key": "edge-cases-batch-11",
+      "category": "edge-cases",
+      "task": "edge-cases improvement batch 11",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "166",
+      "key": "bug-fixes-batch-12",
+      "category": "bug-fixes",
+      "task": "bug-fixes improvement batch 12",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "167",
+      "key": "ui-polish-batch-12",
+      "category": "ui-polish",
+      "task": "ui-polish improvement batch 12",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "168",
+      "key": "mobile-batch-12",
+      "category": "mobile",
+      "task": "mobile improvement batch 12",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "169",
+      "key": "a11y-batch-12",
+      "category": "a11y",
+      "task": "a11y improvement batch 12",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "170",
+      "key": "seo-batch-12",
+      "category": "seo",
+      "task": "seo improvement batch 12",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "171",
+      "key": "metadata-batch-12",
+      "category": "metadata",
+      "task": "metadata improvement batch 12",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "172",
+      "key": "performance-batch-12",
+      "category": "performance",
+      "task": "performance improvement batch 12",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "173",
+      "key": "error-handling-batch-12",
+      "category": "error-handling",
+      "task": "error-handling improvement batch 12",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "174",
+      "key": "validation-batch-12",
+      "category": "validation",
+      "task": "validation improvement batch 12",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "175",
+      "key": "security-batch-12",
+      "category": "security",
+      "task": "security improvement batch 12",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "176",
+      "key": "refactoring-batch-12",
+      "category": "refactoring",
+      "task": "refactoring improvement batch 12",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "177",
+      "key": "tests-batch-12",
+      "category": "tests",
+      "task": "tests improvement batch 12",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "178",
+      "key": "docs-batch-12",
+      "category": "docs",
+      "task": "docs improvement batch 12",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "179",
+      "key": "dx-batch-12",
+      "category": "dx",
+      "task": "dx improvement batch 12",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "180",
+      "key": "edge-cases-batch-12",
+      "category": "edge-cases",
+      "task": "edge-cases improvement batch 12",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "181",
+      "key": "bug-fixes-batch-13",
+      "category": "bug-fixes",
+      "task": "bug-fixes improvement batch 13",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "182",
+      "key": "ui-polish-batch-13",
+      "category": "ui-polish",
+      "task": "ui-polish improvement batch 13",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "183",
+      "key": "mobile-batch-13",
+      "category": "mobile",
+      "task": "mobile improvement batch 13",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "184",
+      "key": "a11y-batch-13",
+      "category": "a11y",
+      "task": "a11y improvement batch 13",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "185",
+      "key": "seo-batch-13",
+      "category": "seo",
+      "task": "seo improvement batch 13",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "186",
+      "key": "metadata-batch-13",
+      "category": "metadata",
+      "task": "metadata improvement batch 13",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "187",
+      "key": "performance-batch-13",
+      "category": "performance",
+      "task": "performance improvement batch 13",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "188",
+      "key": "error-handling-batch-13",
+      "category": "error-handling",
+      "task": "error-handling improvement batch 13",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "189",
+      "key": "validation-batch-13",
+      "category": "validation",
+      "task": "validation improvement batch 13",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "190",
+      "key": "security-batch-13",
+      "category": "security",
+      "task": "security improvement batch 13",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "191",
+      "key": "refactoring-batch-13",
+      "category": "refactoring",
+      "task": "refactoring improvement batch 13",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "192",
+      "key": "tests-batch-13",
+      "category": "tests",
+      "task": "tests improvement batch 13",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "193",
+      "key": "docs-batch-13",
+      "category": "docs",
+      "task": "docs improvement batch 13",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "194",
+      "key": "dx-batch-13",
+      "category": "dx",
+      "task": "dx improvement batch 13",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "195",
+      "key": "edge-cases-batch-13",
+      "category": "edge-cases",
+      "task": "edge-cases improvement batch 13",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "196",
+      "key": "bug-fixes-batch-14",
+      "category": "bug-fixes",
+      "task": "bug-fixes improvement batch 14",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "197",
+      "key": "ui-polish-batch-14",
+      "category": "ui-polish",
+      "task": "ui-polish improvement batch 14",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "198",
+      "key": "mobile-batch-14",
+      "category": "mobile",
+      "task": "mobile improvement batch 14",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "199",
+      "key": "a11y-batch-14",
+      "category": "a11y",
+      "task": "a11y improvement batch 14",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "200",
+      "key": "seo-batch-14",
+      "category": "seo",
+      "task": "seo improvement batch 14",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "201",
+      "key": "metadata-batch-14",
+      "category": "metadata",
+      "task": "metadata improvement batch 14",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "202",
+      "key": "performance-batch-14",
+      "category": "performance",
+      "task": "performance improvement batch 14",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "203",
+      "key": "error-handling-batch-14",
+      "category": "error-handling",
+      "task": "error-handling improvement batch 14",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "204",
+      "key": "validation-batch-14",
+      "category": "validation",
+      "task": "validation improvement batch 14",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "205",
+      "key": "security-batch-14",
+      "category": "security",
+      "task": "security improvement batch 14",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "206",
+      "key": "refactoring-batch-14",
+      "category": "refactoring",
+      "task": "refactoring improvement batch 14",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "207",
+      "key": "tests-batch-14",
+      "category": "tests",
+      "task": "tests improvement batch 14",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "208",
+      "key": "docs-batch-14",
+      "category": "docs",
+      "task": "docs improvement batch 14",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "209",
+      "key": "dx-batch-14",
+      "category": "dx",
+      "task": "dx improvement batch 14",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "210",
+      "key": "edge-cases-batch-14",
+      "category": "edge-cases",
+      "task": "edge-cases improvement batch 14",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "211",
+      "key": "bug-fixes-batch-15",
+      "category": "bug-fixes",
+      "task": "bug-fixes improvement batch 15",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "212",
+      "key": "ui-polish-batch-15",
+      "category": "ui-polish",
+      "task": "ui-polish improvement batch 15",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "213",
+      "key": "mobile-batch-15",
+      "category": "mobile",
+      "task": "mobile improvement batch 15",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "214",
+      "key": "a11y-batch-15",
+      "category": "a11y",
+      "task": "a11y improvement batch 15",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "215",
+      "key": "seo-batch-15",
+      "category": "seo",
+      "task": "seo improvement batch 15",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "216",
+      "key": "metadata-batch-15",
+      "category": "metadata",
+      "task": "metadata improvement batch 15",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "217",
+      "key": "performance-batch-15",
+      "category": "performance",
+      "task": "performance improvement batch 15",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "218",
+      "key": "error-handling-batch-15",
+      "category": "error-handling",
+      "task": "error-handling improvement batch 15",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "219",
+      "key": "validation-batch-15",
+      "category": "validation",
+      "task": "validation improvement batch 15",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "220",
+      "key": "security-batch-15",
+      "category": "security",
+      "task": "security improvement batch 15",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "221",
+      "key": "refactoring-batch-15",
+      "category": "refactoring",
+      "task": "refactoring improvement batch 15",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "222",
+      "key": "tests-batch-15",
+      "category": "tests",
+      "task": "tests improvement batch 15",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "223",
+      "key": "docs-batch-15",
+      "category": "docs",
+      "task": "docs improvement batch 15",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "224",
+      "key": "dx-batch-15",
+      "category": "dx",
+      "task": "dx improvement batch 15",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "225",
+      "key": "edge-cases-batch-15",
+      "category": "edge-cases",
+      "task": "edge-cases improvement batch 15",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "226",
+      "key": "bug-fixes-batch-16",
+      "category": "bug-fixes",
+      "task": "bug-fixes improvement batch 16",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "227",
+      "key": "ui-polish-batch-16",
+      "category": "ui-polish",
+      "task": "ui-polish improvement batch 16",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "228",
+      "key": "mobile-batch-16",
+      "category": "mobile",
+      "task": "mobile improvement batch 16",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "229",
+      "key": "a11y-batch-16",
+      "category": "a11y",
+      "task": "a11y improvement batch 16",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "230",
+      "key": "seo-batch-16",
+      "category": "seo",
+      "task": "seo improvement batch 16",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "231",
+      "key": "metadata-batch-16",
+      "category": "metadata",
+      "task": "metadata improvement batch 16",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "232",
+      "key": "performance-batch-16",
+      "category": "performance",
+      "task": "performance improvement batch 16",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "233",
+      "key": "error-handling-batch-16",
+      "category": "error-handling",
+      "task": "error-handling improvement batch 16",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "234",
+      "key": "validation-batch-16",
+      "category": "validation",
+      "task": "validation improvement batch 16",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "235",
+      "key": "security-batch-16",
+      "category": "security",
+      "task": "security improvement batch 16",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "236",
+      "key": "refactoring-batch-16",
+      "category": "refactoring",
+      "task": "refactoring improvement batch 16",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "237",
+      "key": "tests-batch-16",
+      "category": "tests",
+      "task": "tests improvement batch 16",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "238",
+      "key": "docs-batch-16",
+      "category": "docs",
+      "task": "docs improvement batch 16",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "239",
+      "key": "dx-batch-16",
+      "category": "dx",
+      "task": "dx improvement batch 16",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "240",
+      "key": "edge-cases-batch-16",
+      "category": "edge-cases",
+      "task": "edge-cases improvement batch 16",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "241",
+      "key": "bug-fixes-batch-17",
+      "category": "bug-fixes",
+      "task": "bug-fixes improvement batch 17",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "242",
+      "key": "ui-polish-batch-17",
+      "category": "ui-polish",
+      "task": "ui-polish improvement batch 17",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "243",
+      "key": "mobile-batch-17",
+      "category": "mobile",
+      "task": "mobile improvement batch 17",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "244",
+      "key": "a11y-batch-17",
+      "category": "a11y",
+      "task": "a11y improvement batch 17",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "245",
+      "key": "seo-batch-17",
+      "category": "seo",
+      "task": "seo improvement batch 17",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "246",
+      "key": "metadata-batch-17",
+      "category": "metadata",
+      "task": "metadata improvement batch 17",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "247",
+      "key": "performance-batch-17",
+      "category": "performance",
+      "task": "performance improvement batch 17",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "248",
+      "key": "error-handling-batch-17",
+      "category": "error-handling",
+      "task": "error-handling improvement batch 17",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "249",
+      "key": "validation-batch-17",
+      "category": "validation",
+      "task": "validation improvement batch 17",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "250",
+      "key": "security-batch-17",
+      "category": "security",
+      "task": "security improvement batch 17",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "251",
+      "key": "refactoring-batch-17",
+      "category": "refactoring",
+      "task": "refactoring improvement batch 17",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "252",
+      "key": "tests-batch-17",
+      "category": "tests",
+      "task": "tests improvement batch 17",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "253",
+      "key": "docs-batch-17",
+      "category": "docs",
+      "task": "docs improvement batch 17",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "254",
+      "key": "dx-batch-17",
+      "category": "dx",
+      "task": "dx improvement batch 17",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "255",
+      "key": "edge-cases-batch-17",
+      "category": "edge-cases",
+      "task": "edge-cases improvement batch 17",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "256",
+      "key": "bug-fixes-batch-18",
+      "category": "bug-fixes",
+      "task": "bug-fixes improvement batch 18",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "257",
+      "key": "ui-polish-batch-18",
+      "category": "ui-polish",
+      "task": "ui-polish improvement batch 18",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "258",
+      "key": "mobile-batch-18",
+      "category": "mobile",
+      "task": "mobile improvement batch 18",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "259",
+      "key": "a11y-batch-18",
+      "category": "a11y",
+      "task": "a11y improvement batch 18",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "260",
+      "key": "seo-batch-18",
+      "category": "seo",
+      "task": "seo improvement batch 18",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "261",
+      "key": "metadata-batch-18",
+      "category": "metadata",
+      "task": "metadata improvement batch 18",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "262",
+      "key": "performance-batch-18",
+      "category": "performance",
+      "task": "performance improvement batch 18",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "263",
+      "key": "error-handling-batch-18",
+      "category": "error-handling",
+      "task": "error-handling improvement batch 18",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "264",
+      "key": "validation-batch-18",
+      "category": "validation",
+      "task": "validation improvement batch 18",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "265",
+      "key": "security-batch-18",
+      "category": "security",
+      "task": "security improvement batch 18",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "266",
+      "key": "refactoring-batch-18",
+      "category": "refactoring",
+      "task": "refactoring improvement batch 18",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "267",
+      "key": "tests-batch-18",
+      "category": "tests",
+      "task": "tests improvement batch 18",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "268",
+      "key": "docs-batch-18",
+      "category": "docs",
+      "task": "docs improvement batch 18",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "269",
+      "key": "dx-batch-18",
+      "category": "dx",
+      "task": "dx improvement batch 18",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "270",
+      "key": "edge-cases-batch-18",
+      "category": "edge-cases",
+      "task": "edge-cases improvement batch 18",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "271",
+      "key": "bug-fixes-batch-19",
+      "category": "bug-fixes",
+      "task": "bug-fixes improvement batch 19",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "272",
+      "key": "ui-polish-batch-19",
+      "category": "ui-polish",
+      "task": "ui-polish improvement batch 19",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "273",
+      "key": "mobile-batch-19",
+      "category": "mobile",
+      "task": "mobile improvement batch 19",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "274",
+      "key": "a11y-batch-19",
+      "category": "a11y",
+      "task": "a11y improvement batch 19",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "275",
+      "key": "seo-batch-19",
+      "category": "seo",
+      "task": "seo improvement batch 19",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "276",
+      "key": "metadata-batch-19",
+      "category": "metadata",
+      "task": "metadata improvement batch 19",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "277",
+      "key": "performance-batch-19",
+      "category": "performance",
+      "task": "performance improvement batch 19",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "278",
+      "key": "error-handling-batch-19",
+      "category": "error-handling",
+      "task": "error-handling improvement batch 19",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "279",
+      "key": "validation-batch-19",
+      "category": "validation",
+      "task": "validation improvement batch 19",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "280",
+      "key": "security-batch-19",
+      "category": "security",
+      "task": "security improvement batch 19",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "281",
+      "key": "refactoring-batch-19",
+      "category": "refactoring",
+      "task": "refactoring improvement batch 19",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "282",
+      "key": "tests-batch-19",
+      "category": "tests",
+      "task": "tests improvement batch 19",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "283",
+      "key": "docs-batch-19",
+      "category": "docs",
+      "task": "docs improvement batch 19",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "284",
+      "key": "dx-batch-19",
+      "category": "dx",
+      "task": "dx improvement batch 19",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "285",
+      "key": "edge-cases-batch-19",
+      "category": "edge-cases",
+      "task": "edge-cases improvement batch 19",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "286",
+      "key": "bug-fixes-batch-20",
+      "category": "bug-fixes",
+      "task": "bug-fixes improvement batch 20",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "287",
+      "key": "ui-polish-batch-20",
+      "category": "ui-polish",
+      "task": "ui-polish improvement batch 20",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "288",
+      "key": "mobile-batch-20",
+      "category": "mobile",
+      "task": "mobile improvement batch 20",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "289",
+      "key": "a11y-batch-20",
+      "category": "a11y",
+      "task": "a11y improvement batch 20",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "290",
+      "key": "seo-batch-20",
+      "category": "seo",
+      "task": "seo improvement batch 20",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "291",
+      "key": "metadata-batch-20",
+      "category": "metadata",
+      "task": "metadata improvement batch 20",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "292",
+      "key": "performance-batch-20",
+      "category": "performance",
+      "task": "performance improvement batch 20",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "293",
+      "key": "error-handling-batch-20",
+      "category": "error-handling",
+      "task": "error-handling improvement batch 20",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "294",
+      "key": "validation-batch-20",
+      "category": "validation",
+      "task": "validation improvement batch 20",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "295",
+      "key": "security-batch-20",
+      "category": "security",
+      "task": "security improvement batch 20",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "296",
+      "key": "refactoring-batch-20",
+      "category": "refactoring",
+      "task": "refactoring improvement batch 20",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "297",
+      "key": "tests-batch-20",
+      "category": "tests",
+      "task": "tests improvement batch 20",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "298",
+      "key": "docs-batch-20",
+      "category": "docs",
+      "task": "docs improvement batch 20",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "299",
+      "key": "dx-batch-20",
+      "category": "dx",
+      "task": "dx improvement batch 20",
+      "scope": "S",
+      "status": "pending"
+    },
+    {
+      "id": "300",
+      "key": "edge-cases-batch-20",
+      "category": "edge-cases",
+      "task": "edge-cases improvement batch 20",
+      "scope": "S",
+      "status": "pending"
+    }
+  ]
+}
