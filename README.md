@@ -66,5 +66,8 @@ Use `npm run submit -- --hub-only` to skip Fiverr URL pings.
 | --- | --- |
 | `npm run validate` | Check `gigs.json` required fields and uniqueness |
 | `npm run generate` | Rebuild the static hub |
+| `npm run check` | Validate, test, and regenerate the hub |
 | `npm run submit` | Ping archives / sitemaps / IndexNow |
 | `npm run index` | Generate, then submit |
+
+Improvement sprint tasks are tracked in [`data/improvement-backlog.json`](data/improvement-backlog.json). Regenerate the list with `node scripts/generate-backlog.mjs`.
