@@ -97,6 +97,7 @@ function layout({ title, description, canonical, jsonLd, body, robots = "index,f
   <meta name="twitter:description" content="${esc(description)}">
   <link rel="alternate" type="application/rss+xml" href="${esc(abs("/rss.xml"))}">
   <link rel="sitemap" type="application/xml" href="${esc(abs("/sitemap.xml"))}">
+  ${gigs.githubUrl ? `<link rel="me" href="${esc(gigs.githubUrl)}">` : ""}
   <link rel="stylesheet" href="${nested ? "../styles.css" : "styles.css"}">
   <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
 </head>
