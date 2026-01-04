@@ -4,6 +4,7 @@ import path from "node:path";
 import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { esc, fiverrLink } from "./lib/html.mjs";
+import { relatedGigs } from "./lib/gigs.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -46,24 +47,6 @@ if (!fs.existsSync(keyFile) || fs.readFileSync(keyFile, "utf8").trim() !== INDEX
 
 const origin = SITE_ORIGIN || "https://example.com";
 const abs = (p) => (SITE_ORIGIN ? `${SITE_ORIGIN}${p}` : p);
-
-function gigTerms(gig) {
-  return [gig.primaryKeyword, gig.category, gig.subcategory, ...(gig.searchTerms || []), ...(gig.tags || [])]
-    .map((term) => String(term).toLowerCase());
-}
-
-function relatedGigs(gig, all, limit = 4) {
-  const mine = new Set(gigTerms(gig));
-  return all
-    .filter((other) => other.id !== gig.id)
-    .map((other) => ({
-      other,
-      score: gigTerms(other).filter((term) => mine.has(term)).length,
-    }))
-    .sort((a, b) => b.score - a.score || a.other.shortTitle.localeCompare(b.other.shortTitle))
-    .slice(0, limit)
-    .map((entry) => entry.other);
-}
 
 if (!fs.existsSync(path.join(ROOT, "styles.css"))) {
   throw new Error("styles.css is missing. The generator no longer emits CSS.");
@@ -287,7 +270,7 @@ ${urls.map((u) => `  <url><loc>${esc(origin + u.loc)}</loc><lastmod>${u.lastmod}
 `;
 
 const rss = `<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0" xml:lang="en">
   <channel>
     <title>${esc(gigs.sellerName)} Fiverr gigs</title>
     <link>${esc(origin)}/</link>
