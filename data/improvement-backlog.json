@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 133,
-  "pending": 167,
+  "done": 134,
+  "pending": 166,
   "tasks": [
     {
       "id": "001",
@@ -1074,7 +1074,7 @@
       "category": "dx",
       "task": "Add npm run backlog script",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "135",

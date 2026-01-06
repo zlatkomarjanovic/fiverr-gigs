@@ -263,5 +263,10 @@
     "at": "2026-09-03T22:04:53.501Z",
     "key": "docs-batch-9",
     "task": "Add scripts overview table to README"
+  },
+  {
+    "at": "2026-09-03T22:04:53.501Z",
+    "key": "dx-batch-9",
+    "task": "Add npm run backlog script"
   }
 ]
