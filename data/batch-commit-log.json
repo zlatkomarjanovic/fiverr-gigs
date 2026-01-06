@@ -253,5 +253,10 @@
     "at": "2026-09-03T22:04:53.500Z",
     "key": "refactoring-batch-9",
     "task": "Extract index card HTML builder"
+  },
+  {
+    "at": "2026-09-03T22:04:53.500Z",
+    "key": "tests-batch-9",
+    "task": "Test relatedGigs excludes self"
   }
 ]

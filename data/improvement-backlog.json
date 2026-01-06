@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 131,
-  "pending": 169,
+  "done": 132,
+  "pending": 168,
   "tasks": [
     {
       "id": "001",
@@ -1058,7 +1058,7 @@
       "category": "tests",
       "task": "Test relatedGigs excludes self",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "133",
