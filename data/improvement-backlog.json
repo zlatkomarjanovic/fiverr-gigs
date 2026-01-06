@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 132,
-  "pending": 168,
+  "done": 133,
+  "pending": 167,
   "tasks": [
     {
       "id": "001",
@@ -1066,7 +1066,7 @@
       "category": "docs",
       "task": "Add scripts overview table to README",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "134",

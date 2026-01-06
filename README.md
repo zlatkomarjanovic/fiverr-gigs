@@ -119,3 +119,4 @@ GitHub Actions workflow [`.github/workflows/hub.yml`](.github/workflows/hub.yml)
 2. Fails if generation would change tracked files (commit the regenerated output)
 
 Set `SITE_ORIGIN` in the workflow env to match the live GitHub Pages host.
+## Add a gig

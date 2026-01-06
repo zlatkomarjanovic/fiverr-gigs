@@ -258,5 +258,10 @@
     "at": "2026-09-03T22:04:53.500Z",
     "key": "tests-batch-9",
     "task": "Test relatedGigs excludes self"
+  },
+  {
+    "at": "2026-09-03T22:04:53.501Z",
+    "key": "docs-batch-9",
+    "task": "Add scripts overview table to README"
   }
 ]
