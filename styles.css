@@ -93,6 +93,7 @@ nav a[aria-current="page"] { font-weight: 700; color: var(--accent-ink); }
 .tags li { font: 12px/1 Arial, sans-serif; border: 1px solid var(--line); border-radius: 999px; padding: 0.28rem 0.5rem; color: var(--ink); background: var(--card); }
 .btn {
   display: inline-block;
+  border-radius: var(--radius-sm);
   background: var(--accent);
   color: #fff;
   text-decoration: none;

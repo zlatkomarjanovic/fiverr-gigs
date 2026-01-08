@@ -28,5 +28,11 @@
     "id": "inc-005",
     "category": "ui-polish",
     "task": "Use shadow token on card hover"
+  },
+  {
+    "at": "2026-09-03T22:10:23.479Z",
+    "id": "inc-006",
+    "category": "ui-polish",
+    "task": "Round buttons with radius-sm"
   }
 ]
