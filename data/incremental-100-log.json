@@ -46,5 +46,11 @@
     "id": "inc-008",
     "category": "ui-polish",
     "task": "Add --space-xs spacing token"
+  },
+  {
+    "at": "2026-09-03T22:10:23.969Z",
+    "id": "inc-009",
+    "category": "ui-polish",
+    "task": "Use space token in tag gap"
   }
 ]
