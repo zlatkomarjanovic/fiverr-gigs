@@ -166,3 +166,4 @@ main:focus { outline: none; }
   .hero .kicker { letter-spacing: 0.06em; }
 }
 .btn, a.btn { touch-action: manipulation; -webkit-tap-highlight-color: rgba(31, 122, 77, 0.15); }
+.meta strong { color: var(--ink); }
