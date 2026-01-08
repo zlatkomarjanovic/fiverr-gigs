@@ -22,5 +22,11 @@
     "id": "inc-004",
     "category": "ui-polish",
     "task": "Add --shadow-card token"
+  },
+  {
+    "at": "2026-09-03T22:10:23.321Z",
+    "id": "inc-005",
+    "category": "ui-polish",
+    "task": "Use shadow token on card hover"
   }
 ]
