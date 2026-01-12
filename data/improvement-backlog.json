@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 185,
-  "pending": 115,
+  "done": 186,
+  "pending": 114,
   "tasks": [
     {
       "id": "001",
@@ -1490,7 +1490,7 @@
       "category": "metadata",
       "task": "Add revisit-after weekly hint meta",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "187",
