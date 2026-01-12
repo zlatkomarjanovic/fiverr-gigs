@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 187,
-  "pending": 113,
+  "done": 188,
+  "pending": 112,
   "tasks": [
     {
       "id": "001",
@@ -1506,7 +1506,7 @@
       "category": "error-handling",
       "task": "Abort generate on unwritable services dir",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "189",
