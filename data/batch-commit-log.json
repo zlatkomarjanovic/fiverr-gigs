@@ -678,5 +678,10 @@
     "at": "2026-09-03T22:04:53.558Z",
     "key": "metadata-batch-15",
     "task": "Add coverage worldwide meta"
+  },
+  {
+    "at": "2026-09-03T22:04:53.559Z",
+    "key": "performance-batch-15",
+    "task": "Avoid duplicate esc calls in tags loop helper"
   }
 ]
