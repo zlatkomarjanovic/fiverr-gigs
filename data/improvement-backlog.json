@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 215,
-  "pending": 85,
+  "done": 216,
+  "pending": 84,
   "tasks": [
     {
       "id": "001",
@@ -1730,7 +1730,7 @@
       "category": "metadata",
       "task": "Add coverage worldwide meta",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "217",
