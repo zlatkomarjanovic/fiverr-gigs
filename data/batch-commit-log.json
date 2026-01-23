@@ -663,5 +663,10 @@
     "at": "2026-09-03T22:04:53.556Z",
     "key": "mobile-batch-15",
     "task": "Compact panel padding under 480px"
+  },
+  {
+    "at": "2026-09-03T22:04:53.557Z",
+    "key": "a11y-batch-15",
+    "task": "Ensure crumbs ordered list semantics"
   }
 ]
