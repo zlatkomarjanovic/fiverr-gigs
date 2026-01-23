@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 214,
-  "pending": 86,
+  "done": 215,
+  "pending": 85,
   "tasks": [
     {
       "id": "001",
@@ -1722,7 +1722,7 @@
       "category": "seo",
       "task": "Link rel alternate canonical for RSS",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "216",

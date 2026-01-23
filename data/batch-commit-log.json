@@ -668,5 +668,10 @@
     "at": "2026-09-03T22:04:53.557Z",
     "key": "a11y-batch-15",
     "task": "Ensure crumbs ordered list semantics"
+  },
+  {
+    "at": "2026-09-03T22:04:53.557Z",
+    "key": "seo-batch-15",
+    "task": "Link rel alternate canonical for RSS"
   }
 ]
