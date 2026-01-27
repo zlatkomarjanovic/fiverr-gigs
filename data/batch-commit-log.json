@@ -743,5 +743,10 @@
     "at": "2026-09-03T22:04:53.567Z",
     "key": "a11y-batch-16",
     "task": "Add aria-label to tag lists on cards"
+  },
+  {
+    "at": "2026-09-03T22:04:53.567Z",
+    "key": "seo-batch-16",
+    "task": "Add SearchAction potential on WebSite schema"
   }
 ]
