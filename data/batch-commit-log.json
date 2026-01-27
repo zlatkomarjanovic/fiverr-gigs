@@ -738,5 +738,10 @@
     "at": "2026-09-03T22:04:53.566Z",
     "key": "mobile-batch-16",
     "task": "Slightly smaller details summary on mobile"
+  },
+  {
+    "at": "2026-09-03T22:04:53.567Z",
+    "key": "a11y-batch-16",
+    "task": "Add aria-label to tag lists on cards"
   }
 ]

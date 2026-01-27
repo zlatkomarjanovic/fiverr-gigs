@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 228,
-  "pending": 72,
+  "done": 229,
+  "pending": 71,
   "tasks": [
     {
       "id": "001",
@@ -1834,7 +1834,7 @@
       "category": "a11y",
       "task": "Add aria-label to tag lists on cards",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "230",
