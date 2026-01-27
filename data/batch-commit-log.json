@@ -748,5 +748,10 @@
     "at": "2026-09-03T22:04:53.567Z",
     "key": "seo-batch-16",
     "task": "Add SearchAction potential on WebSite schema"
+  },
+  {
+    "at": "2026-09-03T22:04:53.568Z",
+    "key": "metadata-batch-16",
+    "task": "Add category meta for gig hub"
   }
 ]

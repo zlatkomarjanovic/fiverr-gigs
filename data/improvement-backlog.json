@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 230,
-  "pending": 70,
+  "done": 231,
+  "pending": 69,
   "tasks": [
     {
       "id": "001",
@@ -1850,7 +1850,7 @@
       "category": "metadata",
       "task": "Add category meta for gig hub",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "232",
