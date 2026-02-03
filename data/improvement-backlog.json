@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 291,
-  "pending": 9,
+  "done": 292,
+  "pending": 8,
   "tasks": [
     {
       "id": "001",
@@ -2338,7 +2338,7 @@
       "category": "performance",
       "task": "Document no runtime JS on static pages",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "293",

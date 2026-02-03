@@ -1053,5 +1053,10 @@
     "at": "2026-09-03T22:04:53.610Z",
     "key": "metadata-batch-20",
     "task": "Add locale meta alternate none"
+  },
+  {
+    "at": "2026-09-03T22:04:53.610Z",
+    "key": "performance-batch-20",
+    "task": "Document no runtime JS on static pages"
   }
 ]
