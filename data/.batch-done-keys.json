@@ -213,5 +213,6 @@
   "performance-batch-20",
   "error-handling-batch-20",
   "validation-batch-20",
-  "security-batch-20"
+  "security-batch-20",
+  "refactoring-batch-20"
 ]
