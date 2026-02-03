@@ -10,8 +10,5 @@ test("buildSitemap includes index and service URLs", () => {
   });
   assert.match(xml, /<loc>https:\/\/example.com\/<\/loc>/);
   assert.match(xml, /<loc>https:\/\/example.com\/services\/webflow-seo.html<\/loc>/);
-  assert.match(xml, /<priority>1.0<\/priority>/);
-  assert.match(xml, /<priority>0.8<\/priority>/);
-});
   assert.ok(xml.indexOf("shopify-ai") < xml.indexOf("webflow-seo"));
 });

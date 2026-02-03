@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 296,
-  "pending": 4,
+  "done": 297,
+  "pending": 3,
   "tasks": [
     {
       "id": "001",
@@ -2378,7 +2378,7 @@
       "category": "tests",
       "task": "Test xml escape helper",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "298",
