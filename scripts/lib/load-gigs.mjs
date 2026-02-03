@@ -14,12 +14,6 @@ export function loadGigs(root) {
     throw new Error(`Cannot read data/gigs.json: ${err.message}`);
   }
 
-  try {
-    return JSON.parse(raw);
-  } catch (err) {
-    throw new Error(`data/gigs.json is not valid JSON: ${err.message}`);
-  }
-}
   if (raw.charCodeAt(0) === 0xfeff) raw = raw.slice(1);
 
   try {

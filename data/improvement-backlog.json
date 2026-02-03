@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 292,
-  "pending": 8,
+  "done": 293,
+  "pending": 7,
   "tasks": [
     {
       "id": "001",
@@ -2346,7 +2346,7 @@
       "category": "error-handling",
       "task": "Warn on duplicate n/a backlog keys",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "294",

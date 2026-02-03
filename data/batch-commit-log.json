@@ -1058,5 +1058,10 @@
     "at": "2026-09-03T22:04:53.610Z",
     "key": "performance-batch-20",
     "task": "Document no runtime JS on static pages"
+  },
+  {
+    "at": "2026-09-03T22:04:53.611Z",
+    "key": "error-handling-batch-20",
+    "task": "Warn on duplicate n/a backlog keys"
   }
 ]
