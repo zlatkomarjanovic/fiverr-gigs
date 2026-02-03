@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 294,
-  "pending": 6,
+  "done": 295,
+  "pending": 5,
   "tasks": [
     {
       "id": "001",
@@ -2362,7 +2362,7 @@
       "category": "security",
       "task": "Reject gig urls with query parameters",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "296",

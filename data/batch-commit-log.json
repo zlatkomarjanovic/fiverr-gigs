@@ -1068,5 +1068,10 @@
     "at": "2026-09-03T22:04:53.612Z",
     "key": "validation-batch-20",
     "task": "Validate updated date not in far future"
+  },
+  {
+    "at": "2026-09-03T22:04:53.612Z",
+    "key": "security-batch-20",
+    "task": "Reject gig urls with query parameters"
   }
 ]
