@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 293,
-  "pending": 7,
+  "done": 294,
+  "pending": 6,
   "tasks": [
     {
       "id": "001",
@@ -2354,7 +2354,7 @@
       "category": "validation",
       "task": "Validate updated date not in far future",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "295",

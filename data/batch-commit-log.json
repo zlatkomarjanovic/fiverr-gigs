@@ -1063,5 +1063,10 @@
     "at": "2026-09-03T22:04:53.611Z",
     "key": "error-handling-batch-20",
     "task": "Warn on duplicate n/a backlog keys"
+  },
+  {
+    "at": "2026-09-03T22:04:53.612Z",
+    "key": "validation-batch-20",
+    "task": "Validate updated date not in far future"
   }
 ]
