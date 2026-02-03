@@ -1083,5 +1083,10 @@
     "at": "2026-09-03T22:04:53.614Z",
     "key": "tests-batch-20",
     "task": "Test xml escape helper"
+  },
+  {
+    "at": "2026-09-03T22:04:53.615Z",
+    "key": "docs-batch-20",
+    "task": "Add changelog section to README"
   }
 ]

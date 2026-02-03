@@ -47,6 +47,7 @@ Unit tests live under `scripts/lib/*.test.mjs`.
 ## Pull requests
 
 CI runs `npm run check` and fails if generated files are out of date. Keep commits focused and use conventional commit messages (`feat:`, `fix:`, `docs:`, etc.).
+
 ## Security
 
 The validator rejects dangerous URL protocols (`javascript:`, `data:`, `file:`, `vbscript:`), blocks `<script>` tags in FAQ fields, and requires HTTPS profile links. Always set `SITE_ORIGIN` to your real `https://` GitHub Pages URL before generating canonicals.

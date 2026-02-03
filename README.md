@@ -65,39 +65,6 @@ Use `npm run submit -- --hub-only` to skip Fiverr URL pings.
 | Command | What it does |
 | --- | --- |
 | `npm run validate` | Check `gigs.json` required fields and uniqueness |
-| `npm run generate` | Rebuild the static hub |
-| `npm run build` | Validate, then generate |
-| `npm run test` | Run unit tests under `scripts/lib/` |
-| `npm run check` | Validate, test, and regenerate the hub |
-| `npm run submit` | Ping archives / sitemaps / IndexNow |
-| `npm run index` | Generate, then submit |
-
-Do not hand-edit generated files (`index.html`, `services/*.html`, `404.html`, `sitemap.xml`, `rss.xml`, `robots.txt`, `llms.txt`, `{key}.txt`). Run `npm run generate` after changing `data/gigs.json`.
-
-## CI
-
-GitHub Actions workflow [`.github/workflows/hub.yml`](.github/workflows/hub.yml) runs on push and pull request to `main`:
-
-1. `npm run check` (validate → test → generate)
-2. Fails if generation would change tracked files (commit the regenerated output)
-
-Set `SITE_ORIGIN` in the workflow env to match the live GitHub Pages host.
-
-## Add a gig
-
-1. Edit [`data/gigs.json`](data/gigs.json) (see [`data/gigs.schema.json`](data/gigs.schema.json) for the expected shape): add an object with a unique kebab-case `id`, matching `slug` and Fiverr `url`, lane, category, search terms, tags (≤5), and FAQ (≤5).
-2. Run `npm run check` locally with `SITE_ORIGIN` set.
-3. Commit `data/gigs.json` plus regenerated HTML/XML files.
-
-Optional manual script: `scripts/pingomatic-full.mjs` is not wired to npm — run with Node only if you need legacy Ping-O-Matic pings.
-
-## Analytics (optional)
-
-The shared layout ends with an HTML comment hook before `</body>`. To add privacy-friendly analytics (Plausible, Fathom, etc.), edit `scripts/lib/layout.mjs` and insert your script tag there, then run `npm run generate`.
-
-Improvement sprint tasks are tracked in [`data/improvement-backlog.json`](data/improvement-backlog.json). Regenerate the list with `node scripts/generate-backlog.mjs`.
-
-See [`CONTRIBUTING.md`](CONTRIBUTING.md) for the contributor workflow.
 | `npm run validate:verbose` | Same as validate (alias for CI/local scripts) |
 | `npm run generate` | Rebuild the static hub |
 | `npm run build` | Validate, then generate |
@@ -108,7 +75,9 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md) for the contributor workflow.
 | `npm run submit` | Ping archives / sitemaps / IndexNow |
 | `npm run index` | Generate, then submit |
 | `npm run pingomatic` | Legacy Ping-O-Matic full check list |
+
 Static assets: [`favicon.svg`](favicon.svg) and [`styles.css`](styles.css) are hand-maintained (not generated).
+
 Do not hand-edit generated files (`index.html`, `services/*.html`, `404.html`, `sitemap.xml`, `rss.xml`, `robots.txt`, `llms.txt`, `{key}.txt`). Run `npm run generate` after changing `data/gigs.json`.
 
 ## CI
@@ -119,12 +88,17 @@ GitHub Actions workflow [`.github/workflows/hub.yml`](.github/workflows/hub.yml)
 2. Fails if generation would change tracked files (commit the regenerated output)
 
 Set `SITE_ORIGIN` in the workflow env to match the live GitHub Pages host.
+
 ## Add a gig
+
 1. Edit [`data/gigs.json`](data/gigs.json) (see [`data/gigs.schema.json`](data/gigs.schema.json) for the expected shape): add an object with a unique kebab-case `id`, matching `slug` and Fiverr `url`, lane, category, search terms, tags (≤5), and FAQ (≤5).
 2. Run `npm run check` locally with `SITE_ORIGIN` set.
 3. Commit `data/gigs.json` plus regenerated HTML/XML files.
+
 Optional: `npm run pingomatic` runs the legacy Ping-O-Matic full check list (`scripts/pingomatic-full.mjs`).
+
 ## Related gigs
+
 Related links on each service page come from keyword overlap (`scripts/lib/gigs.mjs`): primary keyword, category, subcategory, search terms, and tags are lowercased and scored; the top matches (excluding the current gig) are shown.
 
 ## Troubleshooting
