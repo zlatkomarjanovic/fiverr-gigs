@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 217,
-  "pending": 83,
+  "done": 218,
+  "pending": 82,
   "tasks": [
     {
       "id": "001",
@@ -1746,7 +1746,7 @@
       "category": "error-handling",
       "task": "Exit validate with code 1 on any error",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "219",
