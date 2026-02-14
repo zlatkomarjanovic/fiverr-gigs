@@ -873,5 +873,10 @@
     "at": "2026-09-03T22:04:53.585Z",
     "key": "edge-cases-batch-17",
     "task": "Handle SITE_ORIGIN with trailing slash"
+  },
+  {
+    "at": "2026-09-03T22:04:53.586Z",
+    "key": "bug-fixes-batch-18",
+    "task": "Record hub-only mode in submission log summary"
   }
 ]

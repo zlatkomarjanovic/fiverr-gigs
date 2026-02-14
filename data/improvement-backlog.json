@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 255,
-  "pending": 45,
+  "done": 256,
+  "pending": 44,
   "tasks": [
     {
       "id": "001",
@@ -2050,7 +2050,7 @@
       "category": "bug-fixes",
       "task": "Record hub-only mode in submission log summary",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "257",
