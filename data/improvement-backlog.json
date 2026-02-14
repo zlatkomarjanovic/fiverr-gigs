@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 259,
-  "pending": 41,
+  "done": 260,
+  "pending": 40,
   "tasks": [
     {
       "id": "001",
@@ -2082,7 +2082,7 @@
       "category": "seo",
       "task": "Person schema includes jobTitle Freelancer",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "261",
