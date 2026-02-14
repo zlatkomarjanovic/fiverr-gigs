@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 257,
-  "pending": 43,
+  "done": 258,
+  "pending": 42,
   "tasks": [
     {
       "id": "001",
@@ -2066,7 +2066,7 @@
       "category": "mobile",
       "task": "Smaller hero kicker on mobile",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "259",

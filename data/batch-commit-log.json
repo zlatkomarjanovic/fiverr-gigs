@@ -883,5 +883,10 @@
     "at": "2026-09-03T22:04:53.586Z",
     "key": "ui-polish-batch-18",
     "task": "Add breadcrumb bottom spacing"
+  },
+  {
+    "at": "2026-09-03T22:04:53.587Z",
+    "key": "mobile-batch-18",
+    "task": "Smaller hero kicker on mobile"
   }
 ]
