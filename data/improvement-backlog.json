@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 253,
-  "pending": 47,
+  "done": 254,
+  "pending": 46,
   "tasks": [
     {
       "id": "001",
@@ -2034,7 +2034,7 @@
       "category": "dx",
       "task": "Add repository field to package.json",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "255",
