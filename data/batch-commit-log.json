@@ -878,5 +878,10 @@
     "at": "2026-09-03T22:04:53.586Z",
     "key": "bug-fixes-batch-18",
     "task": "Record hub-only mode in submission log summary"
+  },
+  {
+    "at": "2026-09-03T22:04:53.586Z",
+    "key": "ui-polish-batch-18",
+    "task": "Add breadcrumb bottom spacing"
   }
 ]

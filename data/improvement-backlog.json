@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 256,
-  "pending": 44,
+  "done": 257,
+  "pending": 43,
   "tasks": [
     {
       "id": "001",
@@ -2058,7 +2058,7 @@
       "category": "ui-polish",
       "task": "Add breadcrumb bottom spacing",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "258",
