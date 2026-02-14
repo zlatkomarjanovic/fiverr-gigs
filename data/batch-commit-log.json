@@ -888,5 +888,10 @@
     "at": "2026-09-03T22:04:53.587Z",
     "key": "mobile-batch-18",
     "task": "Smaller hero kicker on mobile"
+  },
+  {
+    "at": "2026-09-03T22:04:53.587Z",
+    "key": "a11y-batch-18",
+    "task": "Focus ring on ghost buttons"
   }
 ]
