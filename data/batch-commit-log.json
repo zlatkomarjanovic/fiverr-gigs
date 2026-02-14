@@ -868,5 +868,10 @@
     "at": "2026-09-03T22:04:53.584Z",
     "key": "dx-batch-17",
     "task": "Add repository field to package.json"
+  },
+  {
+    "at": "2026-09-03T22:04:53.585Z",
+    "key": "edge-cases-batch-17",
+    "task": "Handle SITE_ORIGIN with trailing slash"
   }
 ]
