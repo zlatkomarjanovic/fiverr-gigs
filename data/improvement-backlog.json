@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 112,
-  "pending": 188,
+  "done": 113,
+  "pending": 187,
   "tasks": [
     {
       "id": "001",
@@ -906,7 +906,7 @@
       "category": "error-handling",
       "task": "Validate SITE_ORIGIN is https when set",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "114",

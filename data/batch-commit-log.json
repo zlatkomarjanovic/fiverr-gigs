@@ -158,5 +158,10 @@
     "at": "2026-09-03T22:04:53.486Z",
     "key": "performance-batch-8",
     "task": "Use single JSON.stringify for indexLd graph"
+  },
+  {
+    "at": "2026-09-03T22:04:53.487Z",
+    "key": "error-handling-batch-8",
+    "task": "Validate SITE_ORIGIN is https when set"
   }
 ]
