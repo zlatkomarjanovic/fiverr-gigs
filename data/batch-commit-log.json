@@ -143,5 +143,10 @@
     "at": "2026-09-03T22:04:53.484Z",
     "key": "a11y-batch-8",
     "task": "Mark footer links as navigation landmark"
+  },
+  {
+    "at": "2026-09-03T22:04:53.485Z",
+    "key": "seo-batch-8",
+    "task": "Emit RSS guid isPermaLink true"
   }
 ]

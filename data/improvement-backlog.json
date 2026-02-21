@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 109,
-  "pending": 191,
+  "done": 110,
+  "pending": 190,
   "tasks": [
     {
       "id": "001",
@@ -882,7 +882,7 @@
       "category": "seo",
       "task": "Emit RSS guid isPermaLink true",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "111",
