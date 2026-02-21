@@ -120,3 +120,47 @@ footer { padding: 0 0 max(3rem, env(safe-area-inset-bottom)); color: var(--muted
 .footer-links { display: flex; flex-wrap: wrap; gap: 0.35rem 0.75rem; margin-top: 0.35rem; }
 a:focus { outline: 2px solid var(--accent); outline-offset: 3px; }
 footer { padding: 0 0 max(3rem, env(safe-area-inset-bottom)); color: var(--muted); font-size: 0.92rem; border-top: 1px solid var(--line); margin-top: 2rem; padding-top: 1.25rem; }
+.footer-links a:not(:last-child)::after { content: "·"; margin-left: 0.75rem; color: var(--line); pointer-events: none; }
+a:focus { outline: 2px solid var(--accent); outline-offset: 3px; }
+::selection { background: var(--accent); color: #fff; }
+header { border-bottom: 1px solid var(--line); margin-bottom: 0.25rem; }
+h1 { text-wrap: balance; }
+html { text-rendering: optimizeLegibility; }
+body { -webkit-font-smoothing: antialiased; }
+.hero { padding: 1.5rem 0 1rem; }
+.btn { transition: background 0.15s ease, transform 0.1s ease; }
+article.card:hover { box-shadow: 0 4px 14px rgba(22, 20, 15, 0.08); }
+a { underline-offset: 2px; }
+.kicker { font-weight: 600; }
+.meta { line-height: 1.5; }
+.stack { max-width: 48rem; }
+.crumbs { padding-bottom: 0.5rem; }
+.card h2 a:focus-visible { text-decoration: underline; }
+.skip-link:focus-visible { top: 0.75rem; outline: 2px solid var(--card); outline-offset: 2px; }
+.btn.ghost:focus-visible { outline-color: var(--accent); }
+details[open] summary { color: var(--accent-ink); }
+main:focus { outline: none; }
+@media (prefers-reduced-motion: reduce) {
+  .btn:active { transform: none; }
+  .btn { transition: none; }
+}
+@media (prefers-contrast: more) {
+  article.card, .panel { border-width: 2px; }
+  .tags li { border-width: 2px; }
+}
+@media (max-width: 520px) {
+  header { padding-top: max(1.25rem, env(safe-area-inset-top)); padding-bottom: 0.75rem; }
+  header, main, footer { width: min(1080px, calc(100% - 1.25rem)); }
+  h1 { font-size: clamp(1.75rem, 8vw, 2.5rem); }
+  nav { gap: 0.15rem 0.65rem; }
+  footer { text-align: center; }
+  .stack { gap: 0.85rem; }
+  article.card, .panel { padding: 0.95rem 1rem; }
+  details summary { font-size: 1rem; }
+  .tags { gap: 0.28rem; }
+  .hero .kicker { font-size: 0.68rem; }
+}
+@media (max-width: 400px) {
+  .hero .kicker { letter-spacing: 0.06em; }
+}
+.btn, a.btn { touch-action: manipulation; -webkit-tap-highlight-color: rgba(31, 122, 77, 0.15); }

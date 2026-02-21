@@ -128,5 +128,10 @@
     "at": "2026-09-03T22:04:53.482Z",
     "key": "bug-fixes-batch-8",
     "task": "Strip UTF-8 BOM when loading gigs.json"
+  },
+  {
+    "at": "2026-09-03T22:04:53.483Z",
+    "key": "ui-polish-batch-8",
+    "task": "Add footer top border separator"
   }
 ]

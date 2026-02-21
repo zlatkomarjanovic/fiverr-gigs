@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 106,
-  "pending": 194,
+  "done": 107,
+  "pending": 193,
   "tasks": [
     {
       "id": "001",
@@ -858,7 +858,7 @@
       "category": "ui-polish",
       "task": "Add footer top border separator",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "108",
