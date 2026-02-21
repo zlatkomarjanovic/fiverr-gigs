@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 103,
-  "pending": 197,
+  "done": 104,
+  "pending": 196,
   "tasks": [
     {
       "id": "001",
@@ -834,7 +834,7 @@
       "category": "dx",
       "task": "Add npm run generate:check env hint script",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "105",

@@ -113,5 +113,10 @@
     "at": "2026-09-03T22:04:53.480Z",
     "key": "docs-batch-7",
     "task": "Document favicon.svg in README"
+  },
+  {
+    "at": "2026-09-03T22:04:53.480Z",
+    "key": "dx-batch-7",
+    "task": "Add npm run generate:check env hint script"
   }
 ]
