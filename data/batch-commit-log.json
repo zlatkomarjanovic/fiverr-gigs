@@ -148,5 +148,10 @@
     "at": "2026-09-03T22:04:53.485Z",
     "key": "seo-batch-8",
     "task": "Emit RSS guid isPermaLink true"
+  },
+  {
+    "at": "2026-09-03T22:04:53.486Z",
+    "key": "metadata-batch-8",
+    "task": "Add application-name meta"
   }
 ]
