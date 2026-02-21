@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 107,
-  "pending": 193,
+  "done": 108,
+  "pending": 192,
   "tasks": [
     {
       "id": "001",
@@ -866,7 +866,7 @@
       "category": "mobile",
       "task": "Reduce card padding on small phones",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "109",
