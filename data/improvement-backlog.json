@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 108,
-  "pending": 192,
+  "done": 109,
+  "pending": 191,
   "tasks": [
     {
       "id": "001",
@@ -874,7 +874,7 @@
       "category": "a11y",
       "task": "Mark footer links as navigation landmark",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "110",
