@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 104,
-  "pending": 196,
+  "done": 105,
+  "pending": 195,
   "tasks": [
     {
       "id": "001",
@@ -842,7 +842,7 @@
       "category": "edge-cases",
       "task": "Handle gig with exactly 5 FAQs",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "106",
