@@ -123,5 +123,10 @@
     "at": "2026-09-03T22:04:53.481Z",
     "key": "edge-cases-batch-7",
     "task": "Handle gig with exactly 5 FAQs"
+  },
+  {
+    "at": "2026-09-03T22:04:53.482Z",
+    "key": "bug-fixes-batch-8",
+    "task": "Strip UTF-8 BOM when loading gigs.json"
   }
 ]
