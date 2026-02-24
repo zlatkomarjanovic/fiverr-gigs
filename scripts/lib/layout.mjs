@@ -66,6 +66,7 @@ export function renderLayout({
       ${gigs.sellerSite ? `· <a href="${esc(gigs.sellerSite)}" target="_blank" rel="noopener noreferrer">Portfolio<span class="sr-only"> (opens in new tab)</span></a>` : ""}
     </p>
   </footer>
+  <!-- Optional analytics: inject Plausible, Fathom, or GA snippet here before </body> -->
 </body>
 </html>`;
 }

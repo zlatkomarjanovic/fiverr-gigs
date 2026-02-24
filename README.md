@@ -91,4 +91,8 @@ Set `SITE_ORIGIN` in the workflow env to match the live GitHub Pages host.
 
 Optional manual script: `scripts/pingomatic-full.mjs` is not wired to npm — run with Node only if you need legacy Ping-O-Matic pings.
 
+## Analytics (optional)
+
+The shared layout ends with an HTML comment hook before `</body>`. To add privacy-friendly analytics (Plausible, Fathom, etc.), edit `scripts/lib/layout.mjs` and insert your script tag there, then run `npm run generate`.
+
 Improvement sprint tasks are tracked in [`data/improvement-backlog.json`](data/improvement-backlog.json). Regenerate the list with `node scripts/generate-backlog.mjs`.
