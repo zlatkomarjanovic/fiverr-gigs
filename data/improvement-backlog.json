@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 26,
-  "pending": 274,
+  "done": 75,
+  "pending": 225,
   "tasks": [
     {
       "id": "001",
@@ -170,7 +170,7 @@
       "category": "refactoring",
       "task": "Extract layout() to scripts/lib/layout.mjs",
       "scope": "M",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "022",
@@ -178,7 +178,7 @@
       "category": "refactoring",
       "task": "Extract sitemap XML builder to scripts/lib/sitemap.mjs",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "023",
@@ -186,7 +186,7 @@
       "category": "refactoring",
       "task": "Extract RSS builder to scripts/lib/rss.mjs",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "024",
@@ -194,7 +194,7 @@
       "category": "refactoring",
       "task": "Share gigs.json loader between scripts",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "025",
@@ -218,7 +218,7 @@
       "category": "validation",
       "task": "Require non-empty lane on each gig",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "028",
@@ -226,7 +226,7 @@
       "category": "validation",
       "task": "Require category and subcategory strings",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "029",
@@ -234,7 +234,7 @@
       "category": "validation",
       "task": "Require unique searchTerms per gig",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "030",
@@ -242,7 +242,7 @@
       "category": "validation",
       "task": "Require unique tags per gig",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "031",
@@ -250,7 +250,7 @@
       "category": "validation",
       "task": "Warn when FAQ count exceeds 5",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "032",
@@ -258,7 +258,7 @@
       "category": "validation",
       "task": "Ensure services/{id}.html will be unique",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "033",
@@ -266,7 +266,7 @@
       "category": "validation",
       "task": "Validate seller handle matches Fiverr URL",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "034",
@@ -282,7 +282,7 @@
       "category": "seo",
       "task": "Avoid deprecated meta keywords tag",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "036",
@@ -290,7 +290,7 @@
       "category": "seo",
       "task": "Use og:type article on service pages",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "037",
@@ -298,7 +298,7 @@
       "category": "seo",
       "task": "Ensure @context on all JSON-LD nodes",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "038",
@@ -306,7 +306,7 @@
       "category": "seo",
       "task": "Normalize index canonical trailing slash",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "039",
@@ -314,7 +314,7 @@
       "category": "metadata",
       "task": "Add format-detection telephone=no",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "040",
@@ -322,7 +322,7 @@
       "category": "metadata",
       "task": "Add referrer policy for outbound links",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "041",
@@ -330,7 +330,7 @@
       "category": "a11y",
       "task": "Style details summary focus-visible",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "042",
@@ -338,7 +338,7 @@
       "category": "a11y",
       "task": "Mark current nav item on service pages",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "043",
@@ -346,7 +346,7 @@
       "category": "a11y",
       "task": "Visually indicate outbound Fiverr links",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "044",
@@ -354,7 +354,7 @@
       "category": "a11y",
       "task": "Verify lang=en on all generated pages",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "045",
@@ -362,7 +362,7 @@
       "category": "a11y",
       "task": "Add aria-labelledby on hero sections",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "046",
@@ -370,7 +370,7 @@
       "category": "a11y",
       "task": "Use nav for related gigs list",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "047",
@@ -386,7 +386,7 @@
       "category": "ui-polish",
       "task": "Normalize panel h2/h3 spacing",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "049",
@@ -394,7 +394,7 @@
       "category": "ui-polish",
       "task": "Improve footer link spacing",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "050",
@@ -402,7 +402,7 @@
       "category": "ui-polish",
       "task": "Improve tag pill contrast",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "051",
@@ -410,7 +410,7 @@
       "category": "ui-polish",
       "task": "Subtle card hover border",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "052",
@@ -418,7 +418,7 @@
       "category": "mobile",
       "task": "Lower grid min width on very small screens",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "053",
@@ -426,7 +426,7 @@
       "category": "mobile",
       "task": "Tune lede font-size on mobile",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "054",
@@ -434,7 +434,7 @@
       "category": "mobile",
       "task": "Optional full-width CTAs under 400px",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "055",
@@ -442,7 +442,7 @@
       "category": "mobile",
       "task": "Add safe-area-inset padding",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "056",
@@ -450,7 +450,7 @@
       "category": "performance",
       "task": "Avoid double gigs.json parse in generate",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "057",
@@ -458,7 +458,7 @@
       "category": "performance",
       "task": "Skip unnecessary preconnect hints",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "058",
@@ -466,7 +466,7 @@
       "category": "security",
       "task": "Reject http URLs in gigs.json",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "059",
@@ -474,7 +474,7 @@
       "category": "security",
       "task": "Ensure JSON-LD cannot break script tag",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "060",
@@ -482,7 +482,7 @@
       "category": "error-handling",
       "task": "Clear error when gigs.json missing",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "061",
@@ -490,7 +490,7 @@
       "category": "error-handling",
       "task": "Clear error on malformed gigs.json",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "062",
@@ -498,7 +498,7 @@
       "category": "error-handling",
       "task": "Document SITE_ORIGIN requirement in submit",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "063",
@@ -506,7 +506,7 @@
       "category": "docs",
       "task": "Document improvement backlog in README",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "064",
@@ -514,7 +514,7 @@
       "category": "docs",
       "task": "Document npm test in README",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "065",
@@ -522,7 +522,7 @@
       "category": "docs",
       "task": "Document GitHub Actions hub workflow",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "066",
@@ -546,7 +546,7 @@
       "category": "dx",
       "task": "Document do-not-edit generated files",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "069",
@@ -554,7 +554,7 @@
       "category": "edge-cases",
       "task": "Validator rejects empty FAQ answers",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "070",
@@ -562,7 +562,7 @@
       "category": "edge-cases",
       "task": "Validator rejects duplicate search terms",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "071",
@@ -570,7 +570,7 @@
       "category": "browser-compat",
       "task": "Normalize details marker styling",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "072",
@@ -578,7 +578,7 @@
       "category": "browser-compat",
       "task": "Ensure focus styles without :focus-visible",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "073",
@@ -594,7 +594,7 @@
       "category": "dead-code",
       "task": "Audit pingomatic-full.mjs usage",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "075",
@@ -618,7 +618,7 @@
       "category": "typescript",
       "task": "Add JSDoc types to html.mjs exports",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "078",
@@ -626,7 +626,7 @@
       "category": "typescript",
       "task": "Add JSDoc to validate-gigs helpers",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "079",
