@@ -1,0 +1,15 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+import { buildSitemap } from "./sitemap.mjs";
+
+test("buildSitemap includes index and service URLs", () => {
+  const xml = buildSitemap({
+    origin: "https://example.com",
+    updated: "2026-01-15",
+    gigs: [{ id: "webflow-seo" }, { id: "shopify-ai" }],
+  });
+  assert.match(xml, /<loc>https:\/\/example.com\/<\/loc>/);
+  assert.match(xml, /<loc>https:\/\/example.com\/services\/webflow-seo.html<\/loc>/);
+  assert.match(xml, /<priority>1.0<\/priority>/);
+  assert.match(xml, /<priority>0.8<\/priority>/);
+});
