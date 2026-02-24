@@ -2,9 +2,10 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { loadGigs } from "./lib/load-gigs.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const gigs = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "gigs.json"), "utf8"));
+const gigs = loadGigs(ROOT);
 const UA = "ZlatkoGigIndexer/1.0 (+https://www.fiverr.com/zlatkomarjanovi)";
 
 const CHECKS = [
