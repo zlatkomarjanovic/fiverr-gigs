@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 250,
-  "pending": 50,
+  "done": 251,
+  "pending": 49,
   "tasks": [
     {
       "id": "001",
@@ -2010,7 +2010,7 @@
       "category": "refactoring",
       "task": "Centralize INDEXNOW key resolution",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "252",

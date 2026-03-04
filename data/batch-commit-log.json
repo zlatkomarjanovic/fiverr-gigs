@@ -848,5 +848,10 @@
     "at": "2026-09-03T22:04:53.581Z",
     "key": "security-batch-17",
     "task": "rel noopener on all target blank links"
+  },
+  {
+    "at": "2026-09-03T22:04:53.582Z",
+    "key": "refactoring-batch-17",
+    "task": "Centralize INDEXNOW key resolution"
   }
 ]
