@@ -169,5 +169,6 @@
   "error-handling-batch-17",
   "validation-batch-17",
   "security-batch-17",
-  "refactoring-batch-17"
+  "refactoring-batch-17",
+  "tests-batch-17"
 ]
