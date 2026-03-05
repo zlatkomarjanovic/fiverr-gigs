@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 159,
-  "pending": 141,
+  "done": 160,
+  "pending": 140,
   "tasks": [
     {
       "id": "001",
@@ -1282,7 +1282,7 @@
       "category": "security",
       "task": "Reject file:// URLs in optional fields",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "161",
