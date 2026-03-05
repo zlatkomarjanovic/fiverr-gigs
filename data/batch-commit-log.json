@@ -378,5 +378,10 @@
     "at": "2026-09-03T22:04:53.517Z",
     "key": "metadata-batch-11",
     "task": "Add copyright meta with seller name"
+  },
+  {
+    "at": "2026-09-03T22:04:53.517Z",
+    "key": "performance-batch-11",
+    "task": "Minimize string concat in card template"
   }
 ]

@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 156,
-  "pending": 144,
+  "done": 157,
+  "pending": 143,
   "tasks": [
     {
       "id": "001",
@@ -1258,7 +1258,7 @@
       "category": "performance",
       "task": "Minimize string concat in card template",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "158",
