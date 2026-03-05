@@ -78,5 +78,6 @@
   "performance-batch-11",
   "error-handling-batch-11",
   "validation-batch-11",
-  "security-batch-11"
+  "security-batch-11",
+  "refactoring-batch-11"
 ]

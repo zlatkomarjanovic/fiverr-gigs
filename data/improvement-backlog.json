@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 160,
-  "pending": 140,
+  "done": 161,
+  "pending": 139,
   "tasks": [
     {
       "id": "001",
@@ -1290,7 +1290,7 @@
       "category": "refactoring",
       "task": "Move XML escape to lib/xml.mjs",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "162",
