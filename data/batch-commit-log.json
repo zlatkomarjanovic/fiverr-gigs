@@ -388,5 +388,10 @@
     "at": "2026-09-03T22:04:53.518Z",
     "key": "error-handling-batch-11",
     "task": "Report first validation error prominently"
+  },
+  {
+    "at": "2026-09-03T22:04:53.519Z",
+    "key": "validation-batch-11",
+    "task": "Require FAQ questions end with ? optional warn"
   }
 ]

@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 158,
-  "pending": 142,
+  "done": 159,
+  "pending": 141,
   "tasks": [
     {
       "id": "001",
@@ -1274,7 +1274,7 @@
       "category": "validation",
       "task": "Require FAQ questions end with ? optional warn",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "160",

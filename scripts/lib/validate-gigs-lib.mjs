@@ -198,3 +198,9 @@ export function validateGigsData(data) {
     else if (!isGithubUrl(data.githubUrl)) fail("githubUrl must be a github.com URL");
     else if (isForbiddenUrl(data.githubUrl)) fail("githubUrl uses a forbidden protocol");
   }
+  const ids = new Set();
+  const slugs = new Set();
+  const urls = new Set();
+  const keywords = new Set();
+  const shortTitles = new Set();
+  const titles = new Set();
