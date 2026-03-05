@@ -403,5 +403,10 @@
     "at": "2026-09-03T22:04:53.520Z",
     "key": "refactoring-batch-11",
     "task": "Move XML escape to lib/xml.mjs"
+  },
+  {
+    "at": "2026-09-03T22:04:53.521Z",
+    "key": "tests-batch-11",
+    "task": "Test validate shortTitle max length"
   }
 ]
