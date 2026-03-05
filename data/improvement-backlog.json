@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 155,
-  "pending": 145,
+  "done": 156,
+  "pending": 144,
   "tasks": [
     {
       "id": "001",
@@ -1250,7 +1250,7 @@
       "category": "metadata",
       "task": "Add copyright meta with seller name",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "157",

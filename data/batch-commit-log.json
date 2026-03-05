@@ -373,5 +373,10 @@
     "at": "2026-09-03T22:04:53.516Z",
     "key": "seo-batch-11",
     "task": "Add inLanguage en to Service schema"
+  },
+  {
+    "at": "2026-09-03T22:04:53.517Z",
+    "key": "metadata-batch-11",
+    "task": "Add copyright meta with seller name"
   }
 ]
