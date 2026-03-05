@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 153,
-  "pending": 147,
+  "done": 154,
+  "pending": 146,
   "tasks": [
     {
       "id": "001",
@@ -1234,7 +1234,7 @@
       "category": "a11y",
       "task": "Style details open state for visibility",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "155",
