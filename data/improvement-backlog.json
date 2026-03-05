@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 162,
-  "pending": 138,
+  "done": 163,
+  "pending": 137,
   "tasks": [
     {
       "id": "001",
@@ -1306,7 +1306,7 @@
       "category": "docs",
       "task": "Document security URL rules in CONTRIBUTING",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "164",
