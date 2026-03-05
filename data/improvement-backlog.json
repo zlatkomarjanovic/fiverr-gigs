@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 154,
-  "pending": 146,
+  "done": 155,
+  "pending": 145,
   "tasks": [
     {
       "id": "001",
@@ -1242,7 +1242,7 @@
       "category": "seo",
       "task": "Add inLanguage en to Service schema",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "156",

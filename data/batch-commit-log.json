@@ -368,5 +368,10 @@
     "at": "2026-09-03T22:04:53.515Z",
     "key": "a11y-batch-11",
     "task": "Style details open state for visibility"
+  },
+  {
+    "at": "2026-09-03T22:04:53.516Z",
+    "key": "seo-batch-11",
+    "task": "Add inLanguage en to Service schema"
   }
 ]
