@@ -383,5 +383,10 @@
     "at": "2026-09-03T22:04:53.517Z",
     "key": "performance-batch-11",
     "task": "Minimize string concat in card template"
+  },
+  {
+    "at": "2026-09-03T22:04:53.518Z",
+    "key": "error-handling-batch-11",
+    "task": "Report first validation error prominently"
   }
 ]
