@@ -2,6 +2,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { esc, fiverrLink } from "./lib/html.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const gigs = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "gigs.json"), "utf8"));
@@ -37,19 +38,6 @@ if (!fs.existsSync(keyFile) || fs.readFileSync(keyFile, "utf8").trim() !== INDEX
 
 const origin = SITE_ORIGIN || "https://example.com";
 const abs = (p) => (SITE_ORIGIN ? `${SITE_ORIGIN}${p}` : p);
-
-function esc(s) {
-  return String(s)
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;");
-}
-
-function fiverrLink(href, label, className) {
-  const cls = className ? ` class="${className}"` : "";
-  return `<a${cls} href="${esc(href)}" target="_blank" rel="noopener noreferrer">${label}</a>`;
-}
 
 function gigTerms(gig) {
   return [gig.primaryKeyword, gig.category, gig.subcategory, ...(gig.searchTerms || []), ...(gig.tags || [])]
