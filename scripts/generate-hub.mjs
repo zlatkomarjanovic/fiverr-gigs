@@ -83,6 +83,7 @@ function layout({ title, description, canonical, jsonLd, body, robots = "index,f
   <meta name="theme-color" content="#1f7a4d">
   <title>${esc(title)}</title>
   <meta name="description" content="${esc(description)}">
+  <meta name="author" content="${esc(gigs.sellerName)}">
   <link rel="canonical" href="${esc(canon)}">
   <meta name="robots" content="${esc(robots)}">
   <meta property="og:title" content="${esc(title)}">
@@ -95,12 +96,13 @@ function layout({ title, description, canonical, jsonLd, body, robots = "index,f
   <meta name="twitter:title" content="${esc(title)}">
   <meta name="twitter:description" content="${esc(description)}">
   <link rel="alternate" type="application/rss+xml" href="${esc(abs("/rss.xml"))}">
+  <link rel="sitemap" type="application/xml" href="${esc(abs("/sitemap.xml"))}">
   <link rel="stylesheet" href="${nested ? "../styles.css" : "styles.css"}">
   <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
 </head>
 <body>
   <a class="skip-link" href="#content">Skip to content</a>
-  <header>
+  <header role="banner">
     <a href="${homeHref}"><strong>${esc(gigs.sellerName)}</strong></a>
     <nav aria-label="Primary">
       <a href="${nested ? "../index.html#gigs" : "#gigs"}">Gigs</a>
@@ -108,7 +110,7 @@ function layout({ title, description, canonical, jsonLd, body, robots = "index,f
     </nav>
   </header>
   <main id="content">${body}</main>
-  <footer>
+  <footer role="contentinfo">
     <p>Official Fiverr gigs for ${esc(gigs.sellerName)}. Clean URLs only — no tracking parameters.</p>
     <p>
       <a href="${homeHref}">Hub home</a>
@@ -150,6 +152,13 @@ const indexLd = {
   "@context": "https://schema.org",
   "@graph": [
     personLd,
+    {
+      "@type": "WebSite",
+      name: `${gigs.sellerName} Fiverr gigs`,
+      url: SITE_ORIGIN ? `${SITE_ORIGIN}/` : origin,
+      description: "Indexable directory of live Fiverr services by Zlatko Marjanović.",
+      publisher: personLd,
+    },
     {
       "@type": "ItemList",
       name: `${gigs.sellerName} Fiverr gigs`,
