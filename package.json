@@ -6,6 +6,7 @@
     "validate": "node scripts/validate-gigs.mjs",
     "generate": "node scripts/generate-hub.mjs",
     "build": "npm run validate && npm run generate",
+    "test": "node --test scripts/lib/*.test.mjs",
     "submit": "node scripts/submit-index.mjs",
     "index": "node scripts/generate-hub.mjs && node scripts/submit-index.mjs"
   }
