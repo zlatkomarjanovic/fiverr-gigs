@@ -1,0 +1,23 @@
+name: Hub
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Validate gigs.json
+        run: npm run validate
+      - name: Generate hub
+        run: npm run generate
+        env:
+          SITE_ORIGIN: https://zlatkomarjanovic.github.io/fiverr-gigs
+      - name: Fail if generate changed tracked files
+        run: git diff --exit-code
