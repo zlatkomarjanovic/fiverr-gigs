@@ -1,10 +1,18 @@
 #!/usr/bin/env node
 import fs from "node:fs";
 import path from "node:path";
+import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { esc, fiverrLink } from "./lib/html.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+
+const validate = spawnSync(process.execPath, [path.join(ROOT, "scripts", "validate-gigs.mjs")], {
+  cwd: ROOT,
+  stdio: "inherit",
+});
+if (validate.status !== 0) process.exit(validate.status ?? 1);
+
 const gigs = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "gigs.json"), "utf8"));
 const SITE_ORIGIN = (process.env.SITE_ORIGIN || "").replace(/\/$/, "");
 const KEY_CACHE = path.join(ROOT, "data", "indexnow-key.txt");
