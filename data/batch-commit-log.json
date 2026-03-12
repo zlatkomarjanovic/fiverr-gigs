@@ -633,5 +633,10 @@
     "at": "2026-09-03T22:04:53.552Z",
     "key": "tests-batch-14",
     "task": "Test renderLayout twitter:url"
+  },
+  {
+    "at": "2026-09-03T22:04:53.553Z",
+    "key": "docs-batch-14",
+    "task": "Document IndexNow key rotation"
   }
 ]
