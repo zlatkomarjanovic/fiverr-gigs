@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 208,
-  "pending": 92,
+  "done": 209,
+  "pending": 91,
   "tasks": [
     {
       "id": "001",
@@ -1674,7 +1674,7 @@
       "category": "dx",
       "task": "Add VS Code settings recommendation",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "210",

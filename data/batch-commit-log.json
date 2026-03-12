@@ -638,5 +638,10 @@
     "at": "2026-09-03T22:04:53.553Z",
     "key": "docs-batch-14",
     "task": "Document IndexNow key rotation"
+  },
+  {
+    "at": "2026-09-03T22:04:53.553Z",
+    "key": "dx-batch-14",
+    "task": "Add VS Code settings recommendation"
   }
 ]
