@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 205,
-  "pending": 95,
+  "done": 206,
+  "pending": 94,
   "tasks": [
     {
       "id": "001",
@@ -1650,7 +1650,7 @@
       "category": "refactoring",
       "task": "Share pubDate helper between rss modules",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "207",
