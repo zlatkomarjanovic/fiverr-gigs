@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 212,
-  "pending": 88,
+  "done": 213,
+  "pending": 87,
   "tasks": [
     {
       "id": "001",
@@ -1706,7 +1706,7 @@
       "category": "mobile",
       "task": "Compact panel padding under 480px",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "214",
