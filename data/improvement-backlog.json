@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 206,
-  "pending": 94,
+  "done": 207,
+  "pending": 93,
   "tasks": [
     {
       "id": "001",
@@ -1658,7 +1658,7 @@
       "category": "tests",
       "task": "Test renderLayout twitter:url",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "208",

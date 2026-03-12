@@ -628,5 +628,10 @@
     "at": "2026-09-03T22:04:53.551Z",
     "key": "refactoring-batch-14",
     "task": "Share pubDate helper between rss modules"
+  },
+  {
+    "at": "2026-09-03T22:04:53.552Z",
+    "key": "tests-batch-14",
+    "task": "Test renderLayout twitter:url"
   }
 ]
