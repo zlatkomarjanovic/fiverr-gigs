@@ -618,5 +618,10 @@
     "at": "2026-09-03T22:04:53.550Z",
     "key": "validation-batch-14",
     "task": "Reject duplicate titles case-insensitive"
+  },
+  {
+    "at": "2026-09-03T22:04:53.550Z",
+    "key": "security-batch-14",
+    "task": "Disallow vbscript: protocol in urls"
   }
 ]

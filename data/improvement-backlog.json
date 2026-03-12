@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 204,
-  "pending": 96,
+  "done": 205,
+  "pending": 95,
   "tasks": [
     {
       "id": "001",
@@ -1642,7 +1642,7 @@
       "category": "security",
       "task": "Disallow vbscript: protocol in urls",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "206",
