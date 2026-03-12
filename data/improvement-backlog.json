@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 210,
-  "pending": 90,
+  "done": 211,
+  "pending": 89,
   "tasks": [
     {
       "id": "001",
@@ -1690,7 +1690,7 @@
       "category": "bug-fixes",
       "task": "Validate robots meta content is escaped in layout",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "212",

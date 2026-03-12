@@ -648,5 +648,10 @@
     "at": "2026-09-03T22:04:53.554Z",
     "key": "edge-cases-batch-14",
     "task": "Handle quote in FAQ answer JSON-LD"
+  },
+  {
+    "at": "2026-09-03T22:04:53.555Z",
+    "key": "bug-fixes-batch-15",
+    "task": "Validate robots meta content is escaped in layout"
   }
 ]
