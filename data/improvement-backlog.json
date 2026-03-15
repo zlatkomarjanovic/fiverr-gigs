@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 265,
-  "pending": 35,
+  "done": 266,
+  "pending": 34,
   "tasks": [
     {
       "id": "001",
@@ -2130,7 +2130,7 @@
       "category": "refactoring",
       "task": "Extract hub file writers function",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "267",
