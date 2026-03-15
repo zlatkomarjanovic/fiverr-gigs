@@ -908,5 +908,10 @@
     "at": "2026-09-03T22:04:53.590Z",
     "key": "performance-batch-18",
     "task": "Use template literals over concat in layout"
+  },
+  {
+    "at": "2026-09-03T22:04:53.590Z",
+    "key": "error-handling-batch-18",
+    "task": "Validate gigs.schema.json exists note in docs"
   }
 ]

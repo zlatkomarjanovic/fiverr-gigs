@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 262,
-  "pending": 38,
+  "done": 263,
+  "pending": 37,
   "tasks": [
     {
       "id": "001",
@@ -2106,7 +2106,7 @@
       "category": "error-handling",
       "task": "Validate gigs.schema.json exists note in docs",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "264",
