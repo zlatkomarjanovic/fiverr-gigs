@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 264,
-  "pending": 36,
+  "done": 265,
+  "pending": 35,
   "tasks": [
     {
       "id": "001",
@@ -2122,7 +2122,7 @@
       "category": "security",
       "task": "Content-Type implied text/html static only",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "266",
