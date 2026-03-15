@@ -913,5 +913,10 @@
     "at": "2026-09-03T22:04:53.590Z",
     "key": "error-handling-batch-18",
     "task": "Validate gigs.schema.json exists note in docs"
+  },
+  {
+    "at": "2026-09-03T22:04:53.591Z",
+    "key": "validation-batch-18",
+    "task": "Reject searchTerms longer than 50 chars"
   }
 ]

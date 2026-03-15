@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 263,
-  "pending": 37,
+  "done": 264,
+  "pending": 36,
   "tasks": [
     {
       "id": "001",
@@ -2114,7 +2114,7 @@
       "category": "validation",
       "task": "Reject searchTerms longer than 50 chars",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "265",
