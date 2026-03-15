@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 261,
-  "pending": 39,
+  "done": 262,
+  "pending": 38,
   "tasks": [
     {
       "id": "001",
@@ -2098,7 +2098,7 @@
       "category": "performance",
       "task": "Use template literals over concat in layout",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "263",
