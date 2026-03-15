@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 260,
-  "pending": 40,
+  "done": 261,
+  "pending": 39,
   "tasks": [
     {
       "id": "001",
@@ -2090,7 +2090,7 @@
       "category": "metadata",
       "task": "Add identifier meta with gig id",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "262",
