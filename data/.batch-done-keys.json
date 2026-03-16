@@ -93,5 +93,6 @@
   "performance-batch-12",
   "error-handling-batch-12",
   "validation-batch-12",
-  "security-batch-12"
+  "security-batch-12",
+  "refactoring-batch-12"
 ]
