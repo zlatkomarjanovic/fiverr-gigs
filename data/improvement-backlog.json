@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 83,
-  "pending": 217,
+  "done": 84,
+  "pending": 216,
   "tasks": [
     {
       "id": "001",
@@ -674,7 +674,7 @@
       "category": "validation",
       "task": "Require shortTitle max 60 characters",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "085",

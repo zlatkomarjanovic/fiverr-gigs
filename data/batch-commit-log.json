@@ -13,5 +13,10 @@
     "at": "2026-09-03T22:04:53.465Z",
     "key": "error-handling-batch-6",
     "task": "Try/catch around pingomatic main"
+  },
+  {
+    "at": "2026-09-03T22:04:53.466Z",
+    "key": "validation-batch-6",
+    "task": "Require shortTitle max 60 characters"
   }
 ]

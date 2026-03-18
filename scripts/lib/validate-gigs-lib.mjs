@@ -131,3 +131,23 @@ export function validateGigsData(data) {
 
   return errors;
 }
+function isForbiddenUrl(value) {
+  return /^(javascript|data|file|vbscript):/i.test(String(value).trim());
+}
+
+function isGithubUrl(value) {
+  try {
+    return new URL(value).hostname === "github.com";
+  } catch {
+    return false;
+  }
+}
+
+function hasScriptTag(value) {
+  return /<script\b/i.test(String(value));
+}
+
+/** @param {unknown} data @returns {string[]} Validation error messages; empty when valid. */
+export function validateGigsData(data) {
+  const errors = [];
+  const fail = (message) => errors.push(message);
