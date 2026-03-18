@@ -261,3 +261,52 @@ fs.writeFileSync(path.join(ROOT, "llms.txt"), llms);
 
 console.log(`Hub generated. IndexNow key: ${INDEXNOW_KEY}`);
 console.log("Set SITE_ORIGIN before deploy so sitemap/canonical/IndexNow use your real host.");
+import { relatedGigs } from "./lib/gigs.mjs";
+import { loadGigs } from "./lib/load-gigs.mjs";
+import { validateGigsData } from "./lib/validate-gigs-lib.mjs";
+import { renderLayout } from "./lib/layout.mjs";
+import { buildSitemap } from "./lib/sitemap.mjs";
+import { buildRss } from "./lib/rss.mjs";
+import { buildRobots } from "./lib/robots.mjs";
+import { buildLlms } from "./lib/llms.mjs";
+import {
+  absUrl,
+  buildIndexBody,
+  buildIndexLd,
+  buildPersonLd,
+  buildServiceBody,
+  buildServiceJsonLd,
+  hubVersion,
+  resolveIndexNowKey,
+  sortedGigs,
+  writeHubFiles,
+} from "./lib/hub-builders.mjs";
+
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+
+let gigs;
+try {
+  gigs = loadGigs(ROOT);
+} catch (err) {
+  console.error(err.message);
+  process.exit(1);
+}
+
+const validationErrors = validateGigsData(gigs);
+if (validationErrors.length) {
+  console.error(`gigs.json failed ${validationErrors.length} check${validationErrors.length === 1 ? "" : "s"}:`);
+  for (const error of validationErrors) console.error(`- ${error}`);
+  process.exit(1);
+}
+
+const SITE_ORIGIN = (process.env.SITE_ORIGIN || "").replace(/\/$/, "");
+if (!SITE_ORIGIN) {
+  console.warn("Warning: SITE_ORIGIN is unset — canonicals and sitemap will use https://example.com.");
+}
+
+let INDEXNOW_KEY;
+try {
+  INDEXNOW_KEY = resolveIndexNowKey(ROOT, fs, path);
+} catch (err) {
+  console.error(err.message);
+  process.exit(1);

@@ -3,5 +3,10 @@
     "at": "2026-09-03T22:04:53.462Z",
     "key": "metadata-batch-6",
     "task": "Add generator meta tag with hub version"
+  },
+  {
+    "at": "2026-09-03T22:04:53.463Z",
+    "key": "performance-batch-6",
+    "task": "Avoid re-sorting gigs array in generate loop"
   }
 ]

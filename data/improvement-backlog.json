@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 81,
-  "pending": 219,
+  "done": 82,
+  "pending": 218,
   "tasks": [
     {
       "id": "001",
@@ -658,7 +658,7 @@
       "category": "performance",
       "task": "Avoid re-sorting gigs array in generate loop",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "083",
