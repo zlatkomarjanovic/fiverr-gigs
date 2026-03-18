@@ -1,0 +1,13 @@
+{
+  "key": "error-handling-batch-17",
+  "category": "error-handling",
+  "task": "Catch fetch abort timeout message in submit",
+  "files": {
+    "scripts/lib/hub-builders.test.mjs": "import test from \"node:test\";\nimport assert from \"node:assert/strict\";\nimport { sortedGigs, buildPersonLd, absUrl } from \"./hub-builders.mjs\";\n\ntest(\"sortedGigs orders by id\", () => {\n  const list = sortedGigs([{ id: \"z\" }, { id: \"a\" }]);\n  assert.deepEqual(list.map((g) => g.id), [\"a\", \"z\"]);\n});\n\ntest(\"buildPersonLd dedupes sameAs sorted\", () => {\n  const ld = buildPersonLd({\n    sellerName: \"Test\",\n    sellerUrl: \"https://www.fiverr.com/a\",\n    sellerSite: \"https://www.fiverr.com/a\",\n    githubUrl: \"https://github.com/a\",\n  });\n  assert.equal(ld.sameAs.length, 2);\n});\n\ntest(\"absUrl joins origin and path\", () => {\n  assert.equal(absUrl(\"https://ex.com\", \"/rss.xml\"), \"https://ex.com/rss.xml\");\n  assert.equal(absUrl(\"\", \"/rss.xml\"), \"/rss.xml\");\n});\n"
+  },
+  "logLine": {
+    "at": "2026-09-03T22:04:53.580Z",
+    "key": "error-handling-batch-17",
+    "task": "Catch fetch abort timeout message in submit"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "key": "ui-polish-batch-15",
+  "category": "ui-polish",
+  "task": "Bold kicker labels slightly",
+  "files": {
+    "scripts/lib/xml.mjs": "/** @param {string} s @returns {string} */\nexport function escapeXml(s) {\n  return String(s).replace(/[<>&'\"]/g, (c) => ({\n    \"<\": \"&lt;\",\n    \">\": \"&gt;\",\n    \"&\": \"&amp;\",\n    \"'\": \"&apos;\",\n    '\"': \"&quot;\",\n  }[c]));\n}\n"
+  },
+  "logLine": {
+    "at": "2026-09-03T22:04:53.556Z",
+    "key": "ui-polish-batch-15",
+    "task": "Bold kicker labels slightly"
+  }
+}

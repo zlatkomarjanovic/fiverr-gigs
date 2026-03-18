@@ -1,0 +1,13 @@
+{
+  "key": "tests-batch-7",
+  "category": "tests",
+  "task": "Test buildSitemap sorts urls",
+  "files": {
+    "scripts/lib/rss.test.mjs": "import test from \"node:test\";\nimport assert from \"node:assert/strict\";\nimport { buildRss } from \"./rss.mjs\";\n\ntest(\"buildRss escapes titles and sets xml:lang\", () => {\n  const xml = buildRss({\n    origin: \"https://example.com\",\n    sellerName: \"Tom & Co\",\n    updated: \"2026-01-15\",\n    gigs: [{ id: \"a\", title: 'Build \"fast\"', summary: \"Summary\" }],\n  });\n  assert.match(xml, /xml:lang=\"en\"/);\n  assert.match(xml, /Tom &amp; Co Fiverr gigs/);\n  assert.match(xml, /Build &quot;fast&quot;/);\n});\n    gigs: [{ id: \"b\", title: 'Build \"fast\"', summary: \"Summary\" }, { id: \"a\", title: \"A\", summary: \"S\" }],\n  assert.match(xml, /atom:link href=\"https:\\/\\/example.com\\/rss.xml\"/);\n  assert.match(xml, /guid isPermaLink=\"true\"/);\n  assert.match(xml, /Build &quot;fast&quot;/);\n  assert.ok(xml.indexOf(\"/services/a.html\") < xml.indexOf(\"/services/b.html\"));\n});\n"
+  },
+  "logLine": {
+    "at": "2026-09-03T22:04:53.479Z",
+    "key": "tests-batch-7",
+    "task": "Test buildSitemap sorts urls"
+  }
+}

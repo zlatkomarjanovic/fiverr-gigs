@@ -1,0 +1,13 @@
+{
+  "key": "mobile-batch-15",
+  "category": "mobile",
+  "task": "Compact panel padding under 480px",
+  "files": {
+    "scripts/check-node.mjs": "#!/usr/bin/env node\nconst required = 20;\nconst current = Number(process.versions.node.split(\".\")[0]);\nif (current < required) {\n  console.error(`Node ${required}+ required (found ${process.version}).`);\n  process.exit(1);\n}\nconsole.log(`Node ${process.version} OK.`);\n"
+  },
+  "logLine": {
+    "at": "2026-09-03T22:04:53.556Z",
+    "key": "mobile-batch-15",
+    "task": "Compact panel padding under 480px"
+  }
+}

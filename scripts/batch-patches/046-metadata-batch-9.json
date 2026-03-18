@@ -1,0 +1,13 @@
+{
+  "key": "metadata-batch-9",
+  "category": "metadata",
+  "task": "Add mobile-web-app-capable meta",
+  "files": {
+    ".vscode/extensions.json": "{\n  \"recommendations\": [\"dbaeumer.vscode-eslint\"]\n}\n"
+  },
+  "logLine": {
+    "at": "2026-09-03T22:04:53.496Z",
+    "key": "metadata-batch-9",
+    "task": "Add mobile-web-app-capable meta"
+  }
+}

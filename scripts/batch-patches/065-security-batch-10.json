@@ -1,0 +1,13 @@
+{
+  "key": "security-batch-10",
+  "category": "security",
+  "task": "Ensure JSON-LD cannot include </script",
+  "files": {
+    "scripts/lib/xml.mjs": "/** @param {string} s @returns {string} */\nexport function escapeXml(s) {\n  return String(s).replace(/[<>&'\"]/g, (c) => ({\n    \"<\": \"&lt;\",\n    \">\": \"&gt;\",\n    \"&\": \"&amp;\",\n    \"'\": \"&apos;\",\n    '\"': \"&quot;\",\n  }[c]));\n}\n"
+  },
+  "logLine": {
+    "at": "2026-09-03T22:04:53.509Z",
+    "key": "security-batch-10",
+    "task": "Ensure JSON-LD cannot include </script"
+  }
+}

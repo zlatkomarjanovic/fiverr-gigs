@@ -1,0 +1,13 @@
+{
+  "key": "performance-batch-9",
+  "category": "performance",
+  "task": "Skip writing key file when unchanged",
+  "files": {
+    ".vscode/settings.json": "{\n  \"files.associations\": {\n    \"*.mjs\": \"javascript\"\n  },\n  \"editor.formatOnSave\": false\n}\n"
+  },
+  "logLine": {
+    "at": "2026-09-03T22:04:53.497Z",
+    "key": "performance-batch-9",
+    "task": "Skip writing key file when unchanged"
+  }
+}

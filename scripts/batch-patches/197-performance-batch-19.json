@@ -1,0 +1,13 @@
+{
+  "key": "performance-batch-19",
+  "category": "performance",
+  "task": "Single pass validate gig uniqueness sets",
+  "files": {
+    ".vscode/settings.json": "{\n  \"files.associations\": {\n    \"*.mjs\": \"javascript\"\n  },\n  \"editor.formatOnSave\": false\n}\n"
+  },
+  "logLine": {
+    "at": "2026-09-03T22:04:53.600Z",
+    "key": "performance-batch-19",
+    "task": "Single pass validate gig uniqueness sets"
+  }
+}

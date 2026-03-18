@@ -1,0 +1,13 @@
+{
+  "key": "performance-batch-16",
+  "category": "performance",
+  "task": "Read gigs.json once in pingomatic",
+  "files": {
+    "scripts/lib/xml.mjs": "/** @param {string} s @returns {string} */\nexport function escapeXml(s) {\n  return String(s).replace(/[<>&'\"]/g, (c) => ({\n    \"<\": \"&lt;\",\n    \">\": \"&gt;\",\n    \"&\": \"&amp;\",\n    \"'\": \"&apos;\",\n    '\"': \"&quot;\",\n  }[c]));\n}\n"
+  },
+  "logLine": {
+    "at": "2026-09-03T22:04:53.569Z",
+    "key": "performance-batch-16",
+    "task": "Read gigs.json once in pingomatic"
+  }
+}

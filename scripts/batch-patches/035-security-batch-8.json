@@ -1,0 +1,13 @@
+{
+  "key": "security-batch-8",
+  "category": "security",
+  "task": "Strip control chars from esc() input",
+  "files": {
+    ".vscode/extensions.json": "{\n  \"recommendations\": [\"dbaeumer.vscode-eslint\"]\n}\n"
+  },
+  "logLine": {
+    "at": "2026-09-03T22:04:53.489Z",
+    "key": "security-batch-8",
+    "task": "Strip control chars from esc() input"
+  }
+}

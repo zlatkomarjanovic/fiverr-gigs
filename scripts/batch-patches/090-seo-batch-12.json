@@ -1,0 +1,13 @@
+{
+  "key": "seo-batch-12",
+  "category": "seo",
+  "task": "Add breadcrumb item scope on service pages",
+  "files": {
+    "scripts/check.cmd": "#!/usr/bin/env cmd\n@echo off\nsetlocal\nif \"%SITE_ORIGIN%\"==\"\" set SITE_ORIGIN=https://zlatkomarjanovic.github.io/fiverr-gigs\ncall npm run check\n"
+  },
+  "logLine": {
+    "at": "2026-09-03T22:04:53.526Z",
+    "key": "seo-batch-12",
+    "task": "Add breadcrumb item scope on service pages"
+  }
+}

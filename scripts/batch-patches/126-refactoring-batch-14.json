@@ -1,0 +1,13 @@
+{
+  "key": "refactoring-batch-14",
+  "category": "refactoring",
+  "task": "Share pubDate helper between rss modules",
+  "files": {
+    ".vscode/extensions.json": "{\n  \"recommendations\": [\"dbaeumer.vscode-eslint\"]\n}\n"
+  },
+  "logLine": {
+    "at": "2026-09-03T22:04:53.551Z",
+    "key": "refactoring-batch-14",
+    "task": "Share pubDate helper between rss modules"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "key": "bug-fixes-batch-14",
+  "category": "bug-fixes",
+  "task": "Use path.join consistently in load-gigs errors",
+  "files": {
+    ".vscode/extensions.json": "{\n  \"recommendations\": [\"dbaeumer.vscode-eslint\"]\n}\n"
+  },
+  "logLine": {
+    "at": "2026-09-03T22:04:53.545Z",
+    "key": "bug-fixes-batch-14",
+    "task": "Use path.join consistently in load-gigs errors"
+  }
+}

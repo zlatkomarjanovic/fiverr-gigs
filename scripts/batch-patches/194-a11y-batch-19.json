@@ -1,0 +1,13 @@
+{
+  "key": "a11y-batch-19",
+  "category": "a11y",
+  "task": "High visibility focus on skip link",
+  "files": {
+    "scripts/check.cmd": "#!/usr/bin/env cmd\n@echo off\nsetlocal\nif \"%SITE_ORIGIN%\"==\"\" set SITE_ORIGIN=https://zlatkomarjanovic.github.io/fiverr-gigs\ncall npm run check\n"
+  },
+  "logLine": {
+    "at": "2026-09-03T22:04:53.598Z",
+    "key": "a11y-batch-19",
+    "task": "High visibility focus on skip link"
+  }
+}

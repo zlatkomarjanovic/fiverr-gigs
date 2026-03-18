@@ -1,0 +1,13 @@
+{
+  "key": "refactoring-batch-11",
+  "category": "refactoring",
+  "task": "Move XML escape to lib/xml.mjs",
+  "files": {
+    ".vscode/extensions.json": "{\n  \"recommendations\": [\"dbaeumer.vscode-eslint\"]\n}\n"
+  },
+  "logLine": {
+    "at": "2026-09-03T22:04:53.520Z",
+    "key": "refactoring-batch-11",
+    "task": "Move XML escape to lib/xml.mjs"
+  }
+}

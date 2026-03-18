@@ -1,0 +1,18 @@
+{
+  "key": "dx-batch-20",
+  "category": "dx",
+  "task": "Add npm run verify alias for check",
+  "files": {
+    "package.json": "{\n  \"name\": \"fiverr-gig-indexer\",\n  \"description\": \"Static Fiverr gig hub generator for zlatkomarjanovic.github.io/fiverr-gigs\",\n  \"version\": \"1.1.0\",\n  \"private\": true,\n  \"type\": \"module\",\n  \"homepage\": \"https://zlatkomarjanovic.github.io/fiverr-gigs/\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/zlatkomarjanovic/fiverr-gigs.git\"\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/zlatkomarjanovic/fiverr-gigs/issues\"\n  },\n  \"engines\": {\n    \"node\": \">=20\"\n  },\n  \"scripts\": {\n    \"validate\": \"node scripts/validate-gigs.mjs\",\n    \"validate:verbose\": \"node scripts/validate-gigs.mjs\",\n    \"generate\": \"node scripts/generate-hub.mjs\",\n    \"build\": \"npm run validate && npm run generate\",\n    \"check\": \"node scripts/check-node.mjs && npm run validate && npm test && npm run generate\",\n    \"verify\": \"npm run check\",\n    \"test\": \"node --test scripts/lib/*.test.mjs\",\n    \"backlog\": \"node scripts/generate-backlog.mjs\",\n    \"submit\": \"node scripts/submit-index.mjs\",\n    \"index\": \"node scripts/generate-hub.mjs && node scripts/submit-index.mjs\",\n    \"pingomatic\": \"node scripts/pingomatic-full.mjs\"\n  }\n}\n",
+    "scripts/check-node.mjs": "#!/usr/bin/env node\nconst required = 20;\nconst current = Number(process.versions.node.split(\".\")[0]);\nif (current < required) {\n  console.error(`Node ${required}+ required (found ${process.version}).`);\n  process.exit(1);\n}\nconsole.log(`Node ${process.version} OK.`);\n",
+    "scripts/check.cmd": "#!/usr/bin/env cmd\n@echo off\nsetlocal\nif \"%SITE_ORIGIN%\"==\"\" set SITE_ORIGIN=https://zlatkomarjanovic.github.io/fiverr-gigs\ncall npm run check\n",
+    ".editorconfig": "root = true\n\n[*]\ncharset = utf-8\nend_of_line = lf\ninsert_final_newline = true\nindent_style = space\nindent_size = 2\ntrim_trailing_whitespace = true\n\n[*.md]\ntrim_trailing_whitespace = false\n",
+    ".vscode/extensions.json": "{\n  \"recommendations\": [\"dbaeumer.vscode-eslint\"]\n}\n",
+    ".vscode/settings.json": "{\n  \"files.associations\": {\n    \"*.mjs\": \"javascript\"\n  },\n  \"editor.formatOnSave\": false\n}\n"
+  },
+  "logLine": {
+    "at": "2026-09-03T22:04:53.615Z",
+    "key": "dx-batch-20",
+    "task": "Add npm run verify alias for check"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "key": "refactoring-batch-8",
+  "category": "refactoring",
+  "task": "Extract service page body builder",
+  "files": {
+    ".vscode/settings.json": "{\n  \"files.associations\": {\n    \"*.mjs\": \"javascript\"\n  },\n  \"editor.formatOnSave\": false\n}\n"
+  },
+  "logLine": {
+    "at": "2026-09-03T22:04:53.490Z",
+    "key": "refactoring-batch-8",
+    "task": "Extract service page body builder"
+  }
+}

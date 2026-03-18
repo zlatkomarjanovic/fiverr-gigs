@@ -1,9 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 80,
-  "pending": 0,
-  "cancelled": 220,
+  "done": 81,
+  "pending": 219,
   "tasks": [
     {
       "id": "001",
@@ -639,7 +638,7 @@
     },
     {
       "id": "080",
-      "key": "n/a-no-react",
+      "key": "n/a-no-react-hooks",
       "category": "hooks",
       "task": "N/A — static HTML generator",
       "scope": "XS",
@@ -649,1761 +648,1761 @@
       "id": "081",
       "key": "metadata-batch-6",
       "category": "metadata",
-      "task": "metadata improvement batch 6 (sprint placeholder)",
-      "scope": "S",
-      "status": "cancelled"
+      "task": "Add generator meta tag with hub version",
+      "scope": "XS",
+      "status": "done"
     },
     {
       "id": "082",
       "key": "performance-batch-6",
       "category": "performance",
-      "task": "performance improvement batch 6 (sprint placeholder)",
-      "scope": "S",
-      "status": "cancelled"
+      "task": "Avoid re-sorting gigs array in generate loop",
+      "scope": "XS",
+      "status": "pending"
     },
     {
       "id": "083",
       "key": "error-handling-batch-6",
       "category": "error-handling",
-      "task": "error-handling improvement batch 6 (sprint placeholder)",
-      "scope": "S",
-      "status": "cancelled"
+      "task": "Try/catch around pingomatic main",
+      "scope": "XS",
+      "status": "pending"
     },
     {
       "id": "084",
       "key": "validation-batch-6",
       "category": "validation",
-      "task": "validation improvement batch 6 (sprint placeholder)",
-      "scope": "S",
-      "status": "cancelled"
+      "task": "Require shortTitle max 60 characters",
+      "scope": "XS",
+      "status": "pending"
     },
     {
       "id": "085",
       "key": "security-batch-6",
       "category": "security",
-      "task": "security improvement batch 6 (sprint placeholder)",
-      "scope": "S",
-      "status": "cancelled"
+      "task": "Reject javascript: URLs in gigs.json",
+      "scope": "XS",
+      "status": "pending"
     },
     {
       "id": "086",
       "key": "refactoring-batch-6",
       "category": "refactoring",
-      "task": "refactoring improvement batch 6 (sprint placeholder)",
-      "scope": "S",
-      "status": "cancelled"
+      "task": "Extract absUrl helper in generate-hub",
+      "scope": "XS",
+      "status": "pending"
     },
     {
       "id": "087",
       "key": "tests-batch-6",
       "category": "tests",
-      "task": "tests improvement batch 6 (sprint placeholder)",
-      "scope": "S",
-      "status": "cancelled"
+      "task": "Test esc strips control characters",
+      "scope": "XS",
+      "status": "pending"
     },
     {
       "id": "088",
       "key": "docs-batch-6",
       "category": "docs",
-      "task": "docs improvement batch 6 (sprint placeholder)",
-      "scope": "S",
-      "status": "cancelled"
+      "task": "Document SITE_ORIGIN in CONTRIBUTING",
+      "scope": "XS",
+      "status": "pending"
     },
     {
       "id": "089",
       "key": "dx-batch-6",
       "category": "dx",
-      "task": "dx improvement batch 6 (sprint placeholder)",
-      "scope": "S",
-      "status": "cancelled"
+      "task": "Add npm run validate:verbose alias",
+      "scope": "XS",
+      "status": "pending"
     },
     {
       "id": "090",
       "key": "edge-cases-batch-6",
       "category": "edge-cases",
-      "task": "edge-cases improvement batch 6 (sprint placeholder)",
-      "scope": "S",
-      "status": "cancelled"
+      "task": "Handle gig with exactly 5 tags",
+      "scope": "XS",
+      "status": "pending"
     },
     {
       "id": "091",
       "key": "bug-fixes-batch-7",
       "category": "bug-fixes",
-      "task": "bug-fixes improvement batch 7 (sprint placeholder)",
-      "scope": "S",
-      "status": "cancelled"
+      "task": "Sort gigs by id in sitemap and RSS output",
+      "scope": "XS",
+      "status": "pending"
     },
     {
       "id": "092",
       "key": "ui-polish-batch-7",
       "category": "ui-polish",
-      "task": "ui-polish improvement batch 7 (sprint placeholder)",
-      "scope": "S",
-      "status": "cancelled"
+      "task": "Add header bottom border separator",
+      "scope": "XS",
+      "status": "pending"
     },
     {
       "id": "093",
       "key": "mobile-batch-7",
       "category": "mobile",
-      "task": "mobile improvement batch 7 (sprint placeholder)",
-      "scope": "S",
-      "status": "cancelled"
+      "task": "Tighten main horizontal margins under 400px",
+      "scope": "XS",
+      "status": "pending"
     },
     {
       "id": "094",
       "key": "a11y-batch-7",
       "category": "a11y",
-      "task": "a11y improvement batch 7 (sprint placeholder)",
-      "scope": "S",
-      "status": "cancelled"
+      "task": "Wrap breadcrumbs in nav landmark",
+      "scope": "XS",
+      "status": "pending"
     },
     {
       "id": "095",
       "key": "seo-batch-7",
       "category": "seo",
-      "task": "seo improvement batch 7 (sprint placeholder)",
-      "scope": "S",
-      "status": "cancelled"
+      "task": "Add og:image fallback using favicon absolute URL",
+      "scope": "XS",
+      "status": "pending"
     },
     {
       "id": "096",
       "key": "metadata-batch-7",
       "category": "metadata",
-      "task": "metadata improvement batch 7 (sprint placeholder)",
-      "scope": "S",
-      "status": "cancelled"
+      "task": "Add dcterms.modified from gigs.updated",
+      "scope": "XS",
+      "status": "pending"
     },
     {
       "id": "097",
       "key": "performance-batch-7",
       "category": "performance",
-      "task": "performance improvement batch 7 (sprint placeholder)",
-      "scope": "S",
-      "status": "cancelled"
+      "task": "Precompute related gigs map once per generate",
+      "scope": "XS",
+      "status": "pending"
     },
     {
       "id": "098",
       "key": "error-handling-batch-7",
       "category": "error-handling",
-      "task": "error-handling improvement batch 7 (sprint placeholder)",
-      "scope": "S",
-      "status": "cancelled"
+      "task": "Clear message when styles.css is a directory",
+      "scope": "XS",
+      "status": "pending"
     },
     {
       "id": "099",
       "key": "validation-batch-7",
       "category": "validation",
-      "task": "validation improvement batch 7 (sprint placeholder)",
-      "scope": "S",
-      "status": "cancelled"
+      "task": "Require slug matches kebab-case pattern",
+      "scope": "XS",
+      "status": "pending"
     },
     {
       "id": "100",
       "key": "security-batch-7",
       "category": "security",
-      "task": "security improvement batch 7 (sprint placeholder)",
-      "scope": "S",
-      "status": "cancelled"
+      "task": "Reject data: URLs in seller links",
+      "scope": "XS",
+      "status": "pending"
     },
     {
       "id": "101",
       "key": "refactoring-batch-7",
       "category": "refactoring",
-      "task": "refactoring improvement batch 7 (sprint placeholder)",
-      "scope": "S",
-      "status": "cancelled"
+      "task": "Extract personLd builder function",
+      "scope": "XS",
+      "status": "pending"
     },
     {
       "id": "102",
       "key": "tests-batch-7",
       "category": "tests",
-      "task": "tests improvement batch 7 (sprint placeholder)",
-      "scope": "S",
-      "status": "cancelled"
+      "task": "Test buildSitemap sorts urls",
+      "scope": "XS",
+      "status": "pending"
     },
     {
       "id": "103",
       "key": "docs-batch-7",
       "category": "docs",
-      "task": "docs improvement batch 7 (sprint placeholder)",
-      "scope": "S",
-      "status": "cancelled"
+      "task": "Document favicon.svg in README",
+      "scope": "XS",
+      "status": "pending"
     },
     {
       "id": "104",
       "key": "dx-batch-7",
       "category": "dx",
-      "task": "dx improvement batch 7 (sprint placeholder)",
-      "scope": "S",
-      "status": "cancelled"
+      "task": "Add npm run generate:check env hint script",
+      "scope": "XS",
+      "status": "pending"
     },
     {
       "id": "105",
       "key": "edge-cases-batch-7",
       "category": "edge-cases",
-      "task": "edge-cases improvement batch 7 (sprint placeholder)",
-      "scope": "S",
-      "status": "cancelled"
+      "task": "Handle gig with exactly 5 FAQs",
+      "scope": "XS",
+      "status": "pending"
     },
     {
       "id": "106",
       "key": "bug-fixes-batch-8",
       "category": "bug-fixes",
-      "task": "bug-fixes improvement batch 8 (sprint placeholder)",
-      "scope": "S",
-      "status": "cancelled"
+      "task": "Strip UTF-8 BOM when loading gigs.json",
+      "scope": "XS",
+      "status": "pending"
     },
     {
       "id": "107",
       "key": "ui-polish-batch-8",
       "category": "ui-polish",
-      "task": "ui-polish improvement batch 8 (sprint placeholder)",
-      "scope": "S",
-      "status": "cancelled"
+      "task": "Add footer top border separator",
+      "scope": "XS",
+      "status": "pending"
     },
     {
       "id": "108",
       "key": "mobile-batch-8",
       "category": "mobile",
-      "task": "mobile improvement batch 8 (sprint placeholder)",
-      "scope": "S",
-      "status": "cancelled"
+      "task": "Reduce card padding on small phones",
+      "scope": "XS",
+      "status": "pending"
     },
     {
       "id": "109",
       "key": "a11y-batch-8",
       "category": "a11y",
-      "task": "a11y improvement batch 8 (sprint placeholder)",
-      "scope": "S",
-      "status": "cancelled"
+      "task": "Mark footer links as navigation landmark",
+      "scope": "XS",
+      "status": "pending"
     },
     {
       "id": "110",
       "key": "seo-batch-8",
       "category": "seo",
-      "task": "seo improvement batch 8 (sprint placeholder)",
-      "scope": "S",
-      "status": "cancelled"
+      "task": "Emit RSS guid isPermaLink true",
+      "scope": "XS",
+      "status": "pending"
     },
     {
       "id": "111",
       "key": "metadata-batch-8",
       "category": "metadata",
-      "task": "metadata improvement batch 8 (sprint placeholder)",
-      "scope": "S",
-      "status": "cancelled"
+      "task": "Add application-name meta",
+      "scope": "XS",
+      "status": "pending"
     },
     {
       "id": "112",
       "key": "performance-batch-8",
       "category": "performance",
-      "task": "performance improvement batch 8 (sprint placeholder)",
-      "scope": "S",
-      "status": "cancelled"
+      "task": "Use single JSON.stringify for indexLd graph",
+      "scope": "XS",
+      "status": "pending"
     },
     {
       "id": "113",
       "key": "error-handling-batch-8",
       "category": "error-handling",
-      "task": "error-handling improvement batch 8 (sprint placeholder)",
-      "scope": "S",
-      "status": "cancelled"
+      "task": "Validate SITE_ORIGIN is https when set",
+      "scope": "XS",
+      "status": "pending"
     },
     {
       "id": "114",
       "key": "validation-batch-8",
       "category": "validation",
-      "task": "validation improvement batch 8 (sprint placeholder)",
-      "scope": "S",
-      "status": "cancelled"
+      "task": "Require at least 3 searchTerms per gig",
+      "scope": "XS",
+      "status": "pending"
     },
     {
       "id": "115",
       "key": "security-batch-8",
       "category": "security",
-      "task": "security improvement batch 8 (sprint placeholder)",
-      "scope": "S",
-      "status": "cancelled"
+      "task": "Strip control chars from esc() input",
+      "scope": "XS",
+      "status": "pending"
     },
     {
       "id": "116",
       "key": "refactoring-batch-8",
       "category": "refactoring",
-      "task": "refactoring improvement batch 8 (sprint placeholder)",
-      "scope": "S",
-      "status": "cancelled"
+      "task": "Extract service page body builder",
+      "scope": "XS",
+      "status": "pending"
     },
     {
       "id": "117",
       "key": "tests-batch-8",
       "category": "tests",
-      "task": "tests improvement batch 8 (sprint placeholder)",
-      "scope": "S",
-      "status": "cancelled"
+      "task": "Test buildRss includes atom link",
+      "scope": "XS",
+      "status": "pending"
     },
     {
       "id": "118",
       "key": "docs-batch-8",
       "category": "docs",
-      "task": "docs improvement batch 8 (sprint placeholder)",
-      "scope": "S",
-      "status": "cancelled"
+      "task": "Document batch backlog completion",
+      "scope": "XS",
+      "status": "pending"
     },
     {
       "id": "119",
       "key": "dx-batch-8",
       "category": "dx",
-      "task": "dx improvement batch 8 (sprint placeholder)",
-      "scope": "S",
-      "status": "cancelled"
+      "task": "Add node version check script",
+      "scope": "XS",
+      "status": "pending"
     },
     {
       "id": "120",
       "key": "edge-cases-batch-8",
       "category": "edge-cases",
-      "task": "edge-cases improvement batch 8 (sprint placeholder)",
-      "scope": "S",
-      "status": "cancelled"
+      "task": "Handle missing optional sellerSite",
+      "scope": "XS",
+      "status": "pending"
     },
     {
       "id": "121",
       "key": "bug-fixes-batch-9",
       "category": "bug-fixes",
-      "task": "bug-fixes improvement batch 9 (sprint placeholder)",
+      "task": "Coerce undefined in esc() to empty string safely",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "122",
       "key": "ui-polish-batch-9",
       "category": "ui-polish",
-      "task": "ui-polish improvement batch 9 (sprint placeholder)",
+      "task": "Subtle card box-shadow on hover",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "123",
       "key": "mobile-batch-9",
       "category": "mobile",
-      "task": "mobile improvement batch 9 (sprint placeholder)",
+      "task": "Clamp h1 smaller on mobile breakpoints",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "124",
       "key": "a11y-batch-9",
       "category": "a11y",
-      "task": "a11y improvement batch 9 (sprint placeholder)",
+      "task": "Disable btn transform under reduced motion",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "125",
       "key": "seo-batch-9",
       "category": "seo",
-      "task": "seo improvement batch 9 (sprint placeholder)",
+      "task": "Add WebPage dateModified from gigs.updated",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "126",
       "key": "metadata-batch-9",
       "category": "metadata",
-      "task": "metadata improvement batch 9 (sprint placeholder)",
+      "task": "Add mobile-web-app-capable meta",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "127",
       "key": "performance-batch-9",
       "category": "performance",
-      "task": "performance improvement batch 9 (sprint placeholder)",
+      "task": "Skip writing key file when unchanged",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "128",
       "key": "error-handling-batch-9",
       "category": "error-handling",
-      "task": "error-handling improvement batch 9 (sprint placeholder)",
+      "task": "submit-index try/catch loadGigs",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "129",
       "key": "validation-batch-9",
       "category": "validation",
-      "task": "validation improvement batch 9 (sprint placeholder)",
+      "task": "Require primaryKeyword in searchTerms",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "130",
       "key": "security-batch-9",
       "category": "security",
-      "task": "security improvement batch 9 (sprint placeholder)",
+      "task": "Validate no script tags in FAQ answers",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "131",
       "key": "refactoring-batch-9",
       "category": "refactoring",
-      "task": "refactoring improvement batch 9 (sprint placeholder)",
+      "task": "Extract index card HTML builder",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "132",
       "key": "tests-batch-9",
       "category": "tests",
-      "task": "tests improvement batch 9 (sprint placeholder)",
+      "task": "Test relatedGigs excludes self",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "133",
       "key": "docs-batch-9",
       "category": "docs",
-      "task": "docs improvement batch 9 (sprint placeholder)",
+      "task": "Add scripts overview table to README",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "134",
       "key": "dx-batch-9",
       "category": "dx",
-      "task": "dx improvement batch 9 (sprint placeholder)",
+      "task": "Add npm run backlog script",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "135",
       "key": "edge-cases-batch-9",
       "category": "edge-cases",
-      "task": "edge-cases improvement batch 9 (sprint placeholder)",
+      "task": "Handle missing optional githubUrl",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "136",
       "key": "bug-fixes-batch-10",
       "category": "bug-fixes",
-      "task": "bug-fixes improvement batch 10 (sprint placeholder)",
+      "task": "Exclude current gig from relatedGigs results",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "137",
       "key": "ui-polish-batch-10",
       "category": "ui-polish",
-      "task": "ui-polish improvement batch 10 (sprint placeholder)",
+      "task": "Use text-wrap balance on h1 headings",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "138",
       "key": "mobile-batch-10",
       "category": "mobile",
-      "task": "mobile improvement batch 10 (sprint placeholder)",
+      "task": "Stack nav with tighter gap on mobile",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "139",
       "key": "a11y-batch-10",
       "category": "a11y",
-      "task": "a11y improvement batch 10 (sprint placeholder)",
+      "task": "Thicken borders when prefers-contrast",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "140",
       "key": "seo-batch-10",
       "category": "seo",
-      "task": "seo improvement batch 10 (sprint placeholder)",
+      "task": "Include numberOfItems in ItemList schema",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "141",
       "key": "metadata-batch-10",
       "category": "metadata",
-      "task": "metadata improvement batch 10 (sprint placeholder)",
+      "task": "Add X-UA-Compatible edge mode meta",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "142",
       "key": "performance-batch-10",
       "category": "performance",
-      "task": "performance improvement batch 10 (sprint placeholder)",
+      "task": "Batch fs.writeFileSync with sorted gig ids",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "143",
       "key": "error-handling-batch-10",
       "category": "error-handling",
-      "task": "error-handling improvement batch 10 (sprint placeholder)",
+      "task": "generate try/catch write service pages",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "144",
       "key": "validation-batch-10",
       "category": "validation",
-      "task": "validation improvement batch 10 (sprint placeholder)",
+      "task": "Reject empty string tags after trim",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "145",
       "key": "security-batch-10",
       "category": "security",
-      "task": "security improvement batch 10 (sprint placeholder)",
+      "task": "Ensure JSON-LD cannot include </script",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "146",
       "key": "refactoring-batch-10",
       "category": "refactoring",
-      "task": "refactoring improvement batch 10 (sprint placeholder)",
+      "task": "Extract breadcrumb HTML builder",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "147",
       "key": "tests-batch-10",
       "category": "tests",
-      "task": "tests improvement batch 10 (sprint placeholder)",
+      "task": "Test validate rejects javascript urls",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "148",
       "key": "docs-batch-10",
       "category": "docs",
-      "task": "docs improvement batch 10 (sprint placeholder)",
+      "task": "Document validate exit codes",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "149",
       "key": "dx-batch-10",
       "category": "dx",
-      "task": "dx improvement batch 10 (sprint placeholder)",
+      "task": "Add npm run test:watch note in package",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "150",
       "key": "edge-cases-batch-10",
       "category": "edge-cases",
-      "task": "edge-cases improvement batch 10 (sprint placeholder)",
+      "task": "Handle single gig hub",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "151",
       "key": "bug-fixes-batch-11",
       "category": "bug-fixes",
-      "task": "bug-fixes improvement batch 11 (sprint placeholder)",
+      "task": "Reject gig ids with leading or trailing whitespace",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "152",
       "key": "ui-polish-batch-11",
       "category": "ui-polish",
-      "task": "ui-polish improvement batch 11 (sprint placeholder)",
+      "task": "Increase hero section bottom padding",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "153",
       "key": "mobile-batch-11",
       "category": "mobile",
-      "task": "mobile improvement batch 11 (sprint placeholder)",
+      "task": "Center footer text on narrow viewports",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "154",
       "key": "a11y-batch-11",
       "category": "a11y",
-      "task": "a11y improvement batch 11 (sprint placeholder)",
+      "task": "Style details open state for visibility",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "155",
       "key": "seo-batch-11",
       "category": "seo",
-      "task": "seo improvement batch 11 (sprint placeholder)",
+      "task": "Add inLanguage en to Service schema",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "156",
       "key": "metadata-batch-11",
       "category": "metadata",
-      "task": "metadata improvement batch 11 (sprint placeholder)",
+      "task": "Add copyright meta with seller name",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "157",
       "key": "performance-batch-11",
       "category": "performance",
-      "task": "performance improvement batch 11 (sprint placeholder)",
+      "task": "Minimize string concat in card template",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "158",
       "key": "error-handling-batch-11",
       "category": "error-handling",
-      "task": "error-handling improvement batch 11 (sprint placeholder)",
+      "task": "Report first validation error prominently",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "159",
       "key": "validation-batch-11",
       "category": "validation",
-      "task": "validation improvement batch 11 (sprint placeholder)",
+      "task": "Require FAQ questions end with ? optional warn",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "160",
       "key": "security-batch-11",
       "category": "security",
-      "task": "security improvement batch 11 (sprint placeholder)",
+      "task": "Reject file:// URLs in optional fields",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "161",
       "key": "refactoring-batch-11",
       "category": "refactoring",
-      "task": "refactoring improvement batch 11 (sprint placeholder)",
+      "task": "Move XML escape to lib/xml.mjs",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "162",
       "key": "tests-batch-11",
       "category": "tests",
-      "task": "tests improvement batch 11 (sprint placeholder)",
+      "task": "Test validate shortTitle max length",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "163",
       "key": "docs-batch-11",
       "category": "docs",
-      "task": "docs improvement batch 11 (sprint placeholder)",
+      "task": "Document security URL rules in CONTRIBUTING",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "164",
       "key": "dx-batch-11",
       "category": "dx",
-      "task": "dx improvement batch 11 (sprint placeholder)",
+      "task": "Add pregenerate validate in build chain",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "165",
       "key": "edge-cases-batch-11",
       "category": "edge-cases",
-      "task": "edge-cases improvement batch 11 (sprint placeholder)",
+      "task": "Handle very long slug in url validation",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "166",
       "key": "bug-fixes-batch-12",
       "category": "bug-fixes",
-      "task": "bug-fixes improvement batch 12 (sprint placeholder)",
+      "task": "Warn when SITE_ORIGIN is unset during generate",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "167",
       "key": "ui-polish-batch-12",
       "category": "ui-polish",
-      "task": "ui-polish improvement batch 12 (sprint placeholder)",
+      "task": "Add smooth btn background transition",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "168",
       "key": "mobile-batch-12",
       "category": "mobile",
-      "task": "mobile improvement batch 12 (sprint placeholder)",
+      "task": "Add touch-action manipulation on buttons",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "169",
       "key": "a11y-batch-12",
       "category": "a11y",
-      "task": "a11y improvement batch 12 (sprint placeholder)",
+      "task": "Darken muted text for WCAG contrast",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "170",
       "key": "seo-batch-12",
       "category": "seo",
-      "task": "seo improvement batch 12 (sprint placeholder)",
+      "task": "Add breadcrumb item scope on service pages",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "171",
       "key": "metadata-batch-12",
       "category": "metadata",
-      "task": "metadata improvement batch 12 (sprint placeholder)",
+      "task": "Add rating general meta",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "172",
       "key": "performance-batch-12",
       "category": "performance",
-      "task": "performance improvement batch 12 (sprint placeholder)",
+      "task": "Cache abs() origin prefix in generate",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "173",
       "key": "error-handling-batch-12",
       "category": "error-handling",
-      "task": "error-handling improvement batch 12 (sprint placeholder)",
+      "task": "Handle missing INDEXNOW key file gracefully",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "174",
       "key": "validation-batch-12",
       "category": "validation",
-      "task": "validation improvement batch 12 (sprint placeholder)",
+      "task": "Validate lane max length 80",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "175",
       "key": "security-batch-12",
       "category": "security",
-      "task": "security improvement batch 12 (sprint placeholder)",
+      "task": "Validate githubUrl host is github.com",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "176",
       "key": "refactoring-batch-12",
       "category": "refactoring",
-      "task": "refactoring improvement batch 12 (sprint placeholder)",
+      "task": "Extract indexLd graph builder",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "177",
       "key": "tests-batch-12",
       "category": "tests",
-      "task": "tests improvement batch 12 (sprint placeholder)",
+      "task": "Test validate slug kebab-case",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "178",
       "key": "docs-batch-12",
       "category": "docs",
-      "task": "docs improvement batch 12 (sprint placeholder)",
+      "task": "Add troubleshooting section to README",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "179",
       "key": "dx-batch-12",
       "category": "dx",
-      "task": "dx improvement batch 12 (sprint placeholder)",
+      "task": "Add shell script wrapper for Windows",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "180",
       "key": "edge-cases-batch-12",
       "category": "edge-cases",
-      "task": "edge-cases improvement batch 12 (sprint placeholder)",
+      "task": "Handle unicode in sellerName esc",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "181",
       "key": "bug-fixes-batch-13",
       "category": "bug-fixes",
-      "task": "bug-fixes improvement batch 13 (sprint placeholder)",
+      "task": "Add atom self link to RSS channel",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "182",
       "key": "ui-polish-batch-13",
       "category": "ui-polish",
-      "task": "ui-polish improvement batch 13 (sprint placeholder)",
+      "task": "Normalize panel border-radius token",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "183",
       "key": "mobile-batch-13",
       "category": "mobile",
-      "task": "mobile improvement batch 13 (sprint placeholder)",
+      "task": "Customize tap highlight color for links",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "184",
       "key": "a11y-batch-13",
       "category": "a11y",
-      "task": "a11y improvement batch 13 (sprint placeholder)",
+      "task": "Skip link uses focus-visible ring",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "185",
       "key": "seo-batch-13",
       "category": "seo",
-      "task": "seo improvement batch 13 (sprint placeholder)",
+      "task": "Index page meta description under 160 chars check",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "186",
       "key": "metadata-batch-13",
       "category": "metadata",
-      "task": "metadata improvement batch 13 (sprint placeholder)",
+      "task": "Add revisit-after weekly hint meta",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "187",
       "key": "performance-batch-13",
       "category": "performance",
-      "task": "performance improvement batch 13 (sprint placeholder)",
+      "task": "Lazy read styles.css existence once",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "188",
       "key": "error-handling-batch-13",
       "category": "error-handling",
-      "task": "error-handling improvement batch 13 (sprint placeholder)",
+      "task": "Abort generate on unwritable services dir",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "189",
       "key": "validation-batch-13",
       "category": "validation",
-      "task": "validation improvement batch 13 (sprint placeholder)",
+      "task": "Validate category max length 40",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "190",
       "key": "security-batch-13",
       "category": "security",
-      "task": "security improvement batch 13 (sprint placeholder)",
+      "task": "Validate sellerSite has valid hostname",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "191",
       "key": "refactoring-batch-13",
       "category": "refactoring",
-      "task": "refactoring improvement batch 13 (sprint placeholder)",
+      "task": "Extract serviceLd graph builder",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "192",
       "key": "tests-batch-13",
       "category": "tests",
-      "task": "tests improvement batch 13 (sprint placeholder)",
+      "task": "Test loadGigs strips BOM",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "193",
       "key": "docs-batch-13",
       "category": "docs",
-      "task": "docs improvement batch 13 (sprint placeholder)",
+      "task": "Document generated vs source files list",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "194",
       "key": "dx-batch-13",
       "category": "dx",
-      "task": "dx improvement batch 13 (sprint placeholder)",
+      "task": "Add .editorconfig for repo",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "195",
       "key": "edge-cases-batch-13",
       "category": "edge-cases",
-      "task": "edge-cases improvement batch 13 (sprint placeholder)",
+      "task": "Handle ampersand in gig title RSS",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "196",
       "key": "bug-fixes-batch-14",
       "category": "bug-fixes",
-      "task": "bug-fixes improvement batch 14 (sprint placeholder)",
+      "task": "Use path.join consistently in load-gigs errors",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "197",
       "key": "ui-polish-batch-14",
       "category": "ui-polish",
-      "task": "ui-polish improvement batch 14 (sprint placeholder)",
+      "task": "Set link underline-offset for readability",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "198",
       "key": "mobile-batch-14",
       "category": "mobile",
-      "task": "mobile improvement batch 14 (sprint placeholder)",
+      "task": "Reduce stack gap on mobile",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "199",
       "key": "a11y-batch-14",
       "category": "a11y",
-      "task": "a11y improvement batch 14 (sprint placeholder)",
+      "task": "Underline card title links on focus",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "200",
       "key": "seo-batch-14",
       "category": "seo",
-      "task": "seo improvement batch 14 (sprint placeholder)",
+      "task": "Service page title pattern consistency",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "201",
       "key": "metadata-batch-14",
       "category": "metadata",
-      "task": "metadata improvement batch 14 (sprint placeholder)",
+      "task": "Add distribution global meta",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "202",
       "key": "performance-batch-14",
       "category": "performance",
-      "task": "performance improvement batch 14 (sprint placeholder)",
+      "task": "Reuse pubDate string for all RSS items",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "203",
       "key": "error-handling-batch-14",
       "category": "error-handling",
-      "task": "error-handling improvement batch 14 (sprint placeholder)",
+      "task": "Surface JSON parse line hint on invalid gigs",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "204",
       "key": "validation-batch-14",
       "category": "validation",
-      "task": "validation improvement batch 14 (sprint placeholder)",
+      "task": "Reject duplicate titles case-insensitive",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "205",
       "key": "security-batch-14",
       "category": "security",
-      "task": "security improvement batch 14 (sprint placeholder)",
+      "task": "Disallow vbscript: protocol in urls",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "206",
       "key": "refactoring-batch-14",
       "category": "refactoring",
-      "task": "refactoring improvement batch 14 (sprint placeholder)",
+      "task": "Share pubDate helper between rss modules",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "207",
       "key": "tests-batch-14",
       "category": "tests",
-      "task": "tests improvement batch 14 (sprint placeholder)",
+      "task": "Test renderLayout twitter:url",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "208",
       "key": "docs-batch-14",
       "category": "docs",
-      "task": "docs improvement batch 14 (sprint placeholder)",
+      "task": "Document IndexNow key rotation",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "209",
       "key": "dx-batch-14",
       "category": "dx",
-      "task": "dx improvement batch 14 (sprint placeholder)",
+      "task": "Add VS Code settings recommendation",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "210",
       "key": "edge-cases-batch-14",
       "category": "edge-cases",
-      "task": "edge-cases improvement batch 14 (sprint placeholder)",
+      "task": "Handle quote in FAQ answer JSON-LD",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "211",
       "key": "bug-fixes-batch-15",
       "category": "bug-fixes",
-      "task": "bug-fixes improvement batch 15 (sprint placeholder)",
+      "task": "Validate robots meta content is escaped in layout",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "212",
       "key": "ui-polish-batch-15",
       "category": "ui-polish",
-      "task": "ui-polish improvement batch 15 (sprint placeholder)",
+      "task": "Bold kicker labels slightly",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "213",
       "key": "mobile-batch-15",
       "category": "mobile",
-      "task": "mobile improvement batch 15 (sprint placeholder)",
+      "task": "Compact panel padding under 480px",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "214",
       "key": "a11y-batch-15",
       "category": "a11y",
-      "task": "a11y improvement batch 15 (sprint placeholder)",
+      "task": "Ensure crumbs ordered list semantics",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "215",
       "key": "seo-batch-15",
       "category": "seo",
-      "task": "seo improvement batch 15 (sprint placeholder)",
+      "task": "Link rel alternate canonical for RSS",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "216",
       "key": "metadata-batch-15",
       "category": "metadata",
-      "task": "metadata improvement batch 15 (sprint placeholder)",
+      "task": "Add coverage worldwide meta",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "217",
       "key": "performance-batch-15",
       "category": "performance",
-      "task": "performance improvement batch 15 (sprint placeholder)",
+      "task": "Avoid duplicate esc calls in tags loop helper",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "218",
       "key": "error-handling-batch-15",
       "category": "error-handling",
-      "task": "error-handling improvement batch 15 (sprint placeholder)",
+      "task": "Exit validate with code 1 on any error",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "219",
       "key": "validation-batch-15",
       "category": "validation",
-      "task": "validation improvement batch 15 (sprint placeholder)",
+      "task": "Require sellerName min length 2",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "220",
       "key": "security-batch-15",
       "category": "security",
-      "task": "security improvement batch 15 (sprint placeholder)",
+      "task": "Escape ampersands in XML builders",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "221",
       "key": "refactoring-batch-15",
       "category": "refactoring",
-      "task": "refactoring improvement batch 15 (sprint placeholder)",
+      "task": "Extract tag list HTML helper",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "222",
       "key": "tests-batch-15",
       "category": "tests",
-      "task": "tests improvement batch 15 (sprint placeholder)",
+      "task": "Test buildRobots single sitemap line",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "223",
       "key": "docs-batch-15",
       "category": "docs",
-      "task": "docs improvement batch 15 (sprint placeholder)",
+      "task": "Document hub-only submit flag",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "224",
       "key": "dx-batch-15",
       "category": "dx",
-      "task": "dx improvement batch 15 (sprint placeholder)",
+      "task": "Add npm run clean generated note",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "225",
       "key": "edge-cases-batch-15",
       "category": "edge-cases",
-      "task": "edge-cases improvement batch 15 (sprint placeholder)",
+      "task": "Handle related gigs when no overlap",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "226",
       "key": "bug-fixes-batch-16",
       "category": "bug-fixes",
-      "task": "bug-fixes improvement batch 16 (sprint placeholder)",
+      "task": "Stable sort sameAs links in Person schema",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "227",
       "key": "ui-polish-batch-16",
       "category": "ui-polish",
-      "task": "ui-polish improvement batch 16 (sprint placeholder)",
+      "task": "Tune meta paragraph line-height",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "228",
       "key": "mobile-batch-16",
       "category": "mobile",
-      "task": "mobile improvement batch 16 (sprint placeholder)",
+      "task": "Slightly smaller details summary on mobile",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "229",
       "key": "a11y-batch-16",
       "category": "a11y",
-      "task": "a11y improvement batch 16 (sprint placeholder)",
+      "task": "Add aria-label to tag lists on cards",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "230",
       "key": "seo-batch-16",
       "category": "seo",
-      "task": "seo improvement batch 16 (sprint placeholder)",
+      "task": "Add SearchAction potential on WebSite schema",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "231",
       "key": "metadata-batch-16",
       "category": "metadata",
-      "task": "metadata improvement batch 16 (sprint placeholder)",
+      "task": "Add category meta for gig hub",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "232",
       "key": "performance-batch-16",
       "category": "performance",
-      "task": "performance improvement batch 16 (sprint placeholder)",
+      "task": "Read gigs.json once in pingomatic",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "233",
       "key": "error-handling-batch-16",
       "category": "error-handling",
-      "task": "error-handling improvement batch 16 (sprint placeholder)",
+      "task": "Log hub URL count zero when SITE_ORIGIN missing",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "234",
       "key": "validation-batch-16",
       "category": "validation",
-      "task": "validation improvement batch 16 (sprint placeholder)",
+      "task": "Validate gig url path includes seller handle",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "235",
       "key": "security-batch-16",
       "category": "security",
-      "task": "security improvement batch 16 (sprint placeholder)",
+      "task": "No inline event handlers in generated HTML",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "236",
       "key": "refactoring-batch-16",
       "category": "refactoring",
-      "task": "refactoring improvement batch 16 (sprint placeholder)",
+      "task": "Extract FAQ details HTML helper",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "237",
       "key": "tests-batch-16",
       "category": "tests",
-      "task": "tests improvement batch 16 (sprint placeholder)",
+      "task": "Test buildLlms includes book urls",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "238",
       "key": "docs-batch-16",
       "category": "docs",
-      "task": "docs improvement batch 16 (sprint placeholder)",
+      "task": "Add JSON schema validation note",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "239",
       "key": "dx-batch-16",
       "category": "dx",
-      "task": "dx improvement batch 16 (sprint placeholder)",
+      "task": "Add package.json description field",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "240",
       "key": "edge-cases-batch-16",
       "category": "edge-cases",
-      "task": "edge-cases improvement batch 16 (sprint placeholder)",
+      "task": "Handle empty HUB_ONLY submit",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "241",
       "key": "bug-fixes-batch-17",
       "category": "bug-fixes",
-      "task": "bug-fixes improvement batch 17 (sprint placeholder)",
+      "task": "Trim INDEXNOW_KEY whitespace in submit",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "242",
       "key": "ui-polish-batch-17",
       "category": "ui-polish",
-      "task": "ui-polish improvement batch 17 (sprint placeholder)",
+      "task": "Cap stack section readable width",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "243",
       "key": "mobile-batch-17",
       "category": "mobile",
-      "task": "mobile improvement batch 17 (sprint placeholder)",
+      "task": "Tighter tag pill gap on mobile",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "244",
       "key": "a11y-batch-17",
       "category": "a11y",
-      "task": "a11y improvement batch 17 (sprint placeholder)",
+      "task": "Label FAQ stack region on service pages",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "245",
       "key": "seo-batch-17",
       "category": "seo",
-      "task": "seo improvement batch 17 (sprint placeholder)",
+      "task": "FAQ schema only when questions exist",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "246",
       "key": "metadata-batch-17",
       "category": "metadata",
-      "task": "metadata improvement batch 17 (sprint placeholder)",
+      "task": "Add pagename meta on service pages",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "247",
       "key": "performance-batch-17",
       "category": "performance",
-      "task": "performance improvement batch 17 (sprint placeholder)",
+      "task": "Limit submission log results array growth note",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "248",
       "key": "error-handling-batch-17",
       "category": "error-handling",
-      "task": "error-handling improvement batch 17 (sprint placeholder)",
+      "task": "Catch fetch abort timeout message in submit",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "249",
       "key": "validation-batch-17",
       "category": "validation",
-      "task": "validation improvement batch 17 (sprint placeholder)",
+      "task": "Require subcategory max length 40",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "250",
       "key": "security-batch-17",
       "category": "security",
-      "task": "security improvement batch 17 (sprint placeholder)",
+      "task": "rel noopener on all target blank links",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "251",
       "key": "refactoring-batch-17",
       "category": "refactoring",
-      "task": "refactoring improvement batch 17 (sprint placeholder)",
+      "task": "Centralize INDEXNOW key resolution",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "252",
       "key": "tests-batch-17",
       "category": "tests",
-      "task": "tests improvement batch 17 (sprint placeholder)",
+      "task": "Test gigTerms empty searchTerms edge",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "253",
       "key": "docs-batch-17",
       "category": "docs",
-      "task": "docs improvement batch 17 (sprint placeholder)",
+      "task": "Document npm run pingomatic",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "254",
       "key": "dx-batch-17",
       "category": "dx",
-      "task": "dx improvement batch 17 (sprint placeholder)",
+      "task": "Add repository field to package.json",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "255",
       "key": "edge-cases-batch-17",
       "category": "edge-cases",
-      "task": "edge-cases improvement batch 17 (sprint placeholder)",
+      "task": "Handle SITE_ORIGIN with trailing slash",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "256",
       "key": "bug-fixes-batch-18",
       "category": "bug-fixes",
-      "task": "bug-fixes improvement batch 18 (sprint placeholder)",
+      "task": "Record hub-only mode in submission log summary",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "257",
       "key": "ui-polish-batch-18",
       "category": "ui-polish",
-      "task": "ui-polish improvement batch 18 (sprint placeholder)",
+      "task": "Add breadcrumb bottom spacing",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "258",
       "key": "mobile-batch-18",
       "category": "mobile",
-      "task": "mobile improvement batch 18 (sprint placeholder)",
+      "task": "Smaller hero kicker on mobile",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "259",
       "key": "a11y-batch-18",
       "category": "a11y",
-      "task": "a11y improvement batch 18 (sprint placeholder)",
+      "task": "Focus ring on ghost buttons",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "260",
       "key": "seo-batch-18",
       "category": "seo",
-      "task": "seo improvement batch 18 (sprint placeholder)",
+      "task": "Person schema includes jobTitle Freelancer",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "261",
       "key": "metadata-batch-18",
       "category": "metadata",
-      "task": "metadata improvement batch 18 (sprint placeholder)",
+      "task": "Add identifier meta with gig id",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "262",
       "key": "performance-batch-18",
       "category": "performance",
-      "task": "performance improvement batch 18 (sprint placeholder)",
+      "task": "Use template literals over concat in layout",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "263",
       "key": "error-handling-batch-18",
       "category": "error-handling",
-      "task": "error-handling improvement batch 18 (sprint placeholder)",
+      "task": "Validate gigs.schema.json exists note in docs",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "264",
       "key": "validation-batch-18",
       "category": "validation",
-      "task": "validation improvement batch 18 (sprint placeholder)",
+      "task": "Reject searchTerms longer than 50 chars",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "265",
       "key": "security-batch-18",
       "category": "security",
-      "task": "security improvement batch 18 (sprint placeholder)",
+      "task": "Content-Type implied text/html static only",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "266",
       "key": "refactoring-batch-18",
       "category": "refactoring",
-      "task": "refactoring improvement batch 18 (sprint placeholder)",
+      "task": "Extract hub file writers function",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "267",
       "key": "tests-batch-18",
       "category": "tests",
-      "task": "tests improvement batch 18 (sprint placeholder)",
+      "task": "Test validate future updated date",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "268",
       "key": "docs-batch-18",
       "category": "docs",
-      "task": "docs improvement batch 18 (sprint placeholder)",
+      "task": "Add GitHub Pages deploy note",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "269",
       "key": "dx-batch-18",
       "category": "dx",
-      "task": "dx improvement batch 18 (sprint placeholder)",
+      "task": "Add bugs url to package.json",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "270",
       "key": "edge-cases-batch-18",
       "category": "edge-cases",
-      "task": "edge-cases improvement batch 18 (sprint placeholder)",
+      "task": "Handle canonical root vs index.html",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "271",
       "key": "bug-fixes-batch-19",
       "category": "bug-fixes",
-      "task": "bug-fixes improvement batch 19 (sprint placeholder)",
+      "task": "Guard generate when services dir is a file",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "272",
       "key": "ui-polish-batch-19",
       "category": "ui-polish",
-      "task": "ui-polish improvement batch 19 (sprint placeholder)",
+      "task": "Enable text-rendering optimizeLegibility",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "273",
       "key": "mobile-batch-19",
       "category": "mobile",
-      "task": "mobile improvement batch 19 (sprint placeholder)",
+      "task": "Safe-area padding on header",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "274",
       "key": "a11y-batch-19",
       "category": "a11y",
-      "task": "a11y improvement batch 19 (sprint placeholder)",
+      "task": "High visibility focus on skip link",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "275",
       "key": "seo-batch-19",
       "category": "seo",
-      "task": "seo improvement batch 19 (sprint placeholder)",
+      "task": "Offer priceCurrency USD placeholder in schema",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "276",
       "key": "metadata-batch-19",
       "category": "metadata",
-      "task": "metadata improvement batch 19 (sprint placeholder)",
+      "task": "Add directory classification meta",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "277",
       "key": "performance-batch-19",
       "category": "performance",
-      "task": "performance improvement batch 19 (sprint placeholder)",
+      "task": "Single pass validate gig uniqueness sets",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "278",
       "key": "error-handling-batch-19",
       "category": "error-handling",
-      "task": "error-handling improvement batch 19 (sprint placeholder)",
+      "task": "Graceful empty related gigs list rendering",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "279",
       "key": "validation-batch-19",
       "category": "validation",
-      "task": "validation improvement batch 19 (sprint placeholder)",
+      "task": "Require description min length 80",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "280",
       "key": "security-batch-19",
       "category": "security",
-      "task": "security improvement batch 19 (sprint placeholder)",
+      "task": "IndexNow key hex format validation",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "281",
       "key": "refactoring-batch-19",
       "category": "refactoring",
-      "task": "refactoring improvement batch 19 (sprint placeholder)",
+      "task": "Extract validate CLI runner",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "282",
       "key": "tests-batch-19",
       "category": "tests",
-      "task": "tests improvement batch 19 (sprint placeholder)",
+      "task": "Test validate min searchTerms count",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "283",
       "key": "docs-batch-19",
       "category": "docs",
-      "task": "docs improvement batch 19 (sprint placeholder)",
+      "task": "Document related gigs algorithm",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "284",
       "key": "dx-batch-19",
       "category": "dx",
-      "task": "dx improvement batch 19 (sprint placeholder)",
+      "task": "Add homepage field to package.json",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "285",
       "key": "edge-cases-batch-19",
       "category": "edge-cases",
-      "task": "edge-cases improvement batch 19 (sprint placeholder)",
+      "task": "Handle nested service path detection",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "286",
       "key": "bug-fixes-batch-20",
       "category": "bug-fixes",
-      "task": "bug-fixes improvement batch 20 (sprint placeholder)",
+      "task": "Normalize gig updated date comparison in validator",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "287",
       "key": "ui-polish-batch-20",
       "category": "ui-polish",
-      "task": "ui-polish improvement batch 20 (sprint placeholder)",
+      "task": "Antialiased body text on macOS",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "288",
       "key": "mobile-batch-20",
       "category": "mobile",
-      "task": "mobile improvement batch 20 (sprint placeholder)",
+      "task": "Prevent iOS text size adjust on headings",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "289",
       "key": "a11y-batch-20",
       "category": "a11y",
-      "task": "a11y improvement batch 20 (sprint placeholder)",
+      "task": "Service hero meta readable at 200% zoom",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "290",
       "key": "seo-batch-20",
       "category": "seo",
-      "task": "seo improvement batch 20 (sprint placeholder)",
+      "task": "Hub home WebSite name matches title tag",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "291",
       "key": "metadata-batch-20",
       "category": "metadata",
-      "task": "metadata improvement batch 20 (sprint placeholder)",
+      "task": "Add locale meta alternate none",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "292",
       "key": "performance-batch-20",
       "category": "performance",
-      "task": "performance improvement batch 20 (sprint placeholder)",
+      "task": "Document no runtime JS on static pages",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "293",
       "key": "error-handling-batch-20",
       "category": "error-handling",
-      "task": "error-handling improvement batch 20 (sprint placeholder)",
+      "task": "Warn on duplicate n/a backlog keys",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "294",
       "key": "validation-batch-20",
       "category": "validation",
-      "task": "validation improvement batch 20 (sprint placeholder)",
+      "task": "Validate updated date not in far future",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "295",
       "key": "security-batch-20",
       "category": "security",
-      "task": "security improvement batch 20 (sprint placeholder)",
+      "task": "Reject gig urls with query parameters",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "296",
       "key": "refactoring-batch-20",
       "category": "refactoring",
-      "task": "refactoring improvement batch 20 (sprint placeholder)",
+      "task": "Extract submit hubUrls builder",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "297",
       "key": "tests-batch-20",
       "category": "tests",
-      "task": "tests improvement batch 20 (sprint placeholder)",
+      "task": "Test xml escape helper",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "298",
       "key": "docs-batch-20",
       "category": "docs",
-      "task": "docs improvement batch 20 (sprint placeholder)",
+      "task": "Add changelog section to README",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "299",
       "key": "dx-batch-20",
       "category": "dx",
-      "task": "dx improvement batch 20 (sprint placeholder)",
+      "task": "Add npm run verify alias for check",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     },
     {
       "id": "300",
       "key": "edge-cases-batch-20",
       "category": "edge-cases",
-      "task": "edge-cases improvement batch 20 (sprint placeholder)",
+      "task": "Handle duplicate sameAs deduplication",
       "scope": "S",
-      "status": "cancelled"
+      "status": "pending"
     }
   ]
 }

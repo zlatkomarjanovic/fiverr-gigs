@@ -1,0 +1,13 @@
+{
+  "key": "performance-batch-13",
+  "category": "performance",
+  "task": "Lazy read styles.css existence once",
+  "files": {
+    "scripts/lib/xml.test.mjs": "import test from \"node:test\";\nimport assert from \"node:assert/strict\";\nimport { escapeXml } from \"./xml.mjs\";\n\ntest(\"escapeXml escapes special characters\", () => {\n  assert.equal(escapeXml(`Tom & \"Co\"`), \"Tom &amp; &quot;Co&quot;\");\n});\n"
+  },
+  "logLine": {
+    "at": "2026-09-03T22:04:53.538Z",
+    "key": "performance-batch-13",
+    "task": "Lazy read styles.css existence once"
+  }
+}

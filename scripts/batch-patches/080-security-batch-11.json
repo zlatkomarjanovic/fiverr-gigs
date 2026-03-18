@@ -1,0 +1,13 @@
+{
+  "key": "security-batch-11",
+  "category": "security",
+  "task": "Reject file:// URLs in optional fields",
+  "files": {
+    ".editorconfig": "root = true\n\n[*]\ncharset = utf-8\nend_of_line = lf\ninsert_final_newline = true\nindent_style = space\nindent_size = 2\ntrim_trailing_whitespace = true\n\n[*.md]\ntrim_trailing_whitespace = false\n"
+  },
+  "logLine": {
+    "at": "2026-09-03T22:04:53.519Z",
+    "key": "security-batch-11",
+    "task": "Reject file:// URLs in optional fields"
+  }
+}

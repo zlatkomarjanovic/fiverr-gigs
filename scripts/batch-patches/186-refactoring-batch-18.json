@@ -1,0 +1,13 @@
+{
+  "key": "refactoring-batch-18",
+  "category": "refactoring",
+  "task": "Extract hub file writers function",
+  "files": {
+    ".vscode/extensions.json": "{\n  \"recommendations\": [\"dbaeumer.vscode-eslint\"]\n}\n"
+  },
+  "logLine": {
+    "at": "2026-09-03T22:04:53.592Z",
+    "key": "refactoring-batch-18",
+    "task": "Extract hub file writers function"
+  }
+}

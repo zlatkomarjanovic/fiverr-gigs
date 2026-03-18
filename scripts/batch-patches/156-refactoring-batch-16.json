@@ -1,0 +1,13 @@
+{
+  "key": "refactoring-batch-16",
+  "category": "refactoring",
+  "task": "Extract FAQ details HTML helper",
+  "files": {
+    ".vscode/extensions.json": "{\n  \"recommendations\": [\"dbaeumer.vscode-eslint\"]\n}\n"
+  },
+  "logLine": {
+    "at": "2026-09-03T22:04:53.572Z",
+    "key": "refactoring-batch-16",
+    "task": "Extract FAQ details HTML helper"
+  }
+}

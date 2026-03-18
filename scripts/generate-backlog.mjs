@@ -5,11 +5,13 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { buildBatchTasks } from "./lib/backlog-batch-tasks.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = path.join(ROOT, "data", "improvement-backlog.json");
+const DONE_FILE = path.join(ROOT, "data", ".batch-done-keys.json");
 
-const completed = new Set([
+const baseCompleted = [
   "build-npm-script",
   "extract-html-helpers",
   "validate-before-generate",
@@ -89,7 +91,15 @@ const completed = new Set([
   "readme-plausible-note",
   "n/a-static-site",
   "n/a-no-react",
-]);
+  "n/a-no-react-hooks",
+];
+
+function loadBatchDone() {
+  if (!fs.existsSync(DONE_FILE)) return [];
+  return JSON.parse(fs.readFileSync(DONE_FILE, "utf8"));
+}
+
+const completed = new Set([...baseCompleted, ...loadBatchDone()]);
 
 const historical = [
   ["dx", "build-npm-script", "Add npm run build as validate then generate", "XS"],
@@ -174,25 +184,22 @@ const explicit = [
   ["typescript", "jsdoc-html-helpers", "Add JSDoc types to html.mjs exports", "XS"],
   ["typescript", "jsdoc-validate-gigs", "Add JSDoc to validate-gigs helpers", "XS"],
   ["components", "n/a-no-react", "N/A — static HTML generator", "XS"],
-  ["hooks", "n/a-no-react", "N/A — static HTML generator", "XS"],
+  ["hooks", "n/a-no-react-hooks", "N/A — static HTML generator", "XS"],
 ];
 
-const fillerCategories = [
-  "bug-fixes", "ui-polish", "mobile", "a11y", "seo", "metadata", "performance",
-  "error-handling", "validation", "security", "refactoring", "tests", "docs", "dx", "edge-cases",
-];
+const batchTasks = buildBatchTasks();
 
 const tasks = [];
 let seq = 1;
 
-function add(category, key, task, scope, status = "pending") {
+function add(category, key, task, scope) {
   tasks.push({
     id: String(seq++).padStart(3, "0"),
     key,
     category,
     task,
     scope,
-    status: completed.has(key) ? "done" : status,
+    status: completed.has(key) ? "done" : "pending",
   });
 }
 
@@ -200,11 +207,8 @@ for (const [category, key, task, scope] of [...historical, ...explicit]) {
   add(category, key, task, scope);
 }
 
-while (tasks.length < 300) {
-  const category = fillerCategories[tasks.length % fillerCategories.length];
-  const n = Math.floor(tasks.length / fillerCategories.length) + 1;
-  const key = `${category}-batch-${n}`;
-  add(category, key, `${category} improvement batch ${n} (sprint placeholder)`, n <= 3 ? "XS" : "S", "cancelled");
+for (const batch of batchTasks) {
+  add(batch.category, batch.key, batch.task, batch.scope);
 }
 
 const payload = {
@@ -212,9 +216,8 @@ const payload = {
   total: tasks.length,
   done: tasks.filter((t) => t.status === "done").length,
   pending: tasks.filter((t) => t.status === "pending").length,
-  cancelled: tasks.filter((t) => t.status === "cancelled").length,
   tasks,
 };
 
 fs.writeFileSync(OUT, `${JSON.stringify(payload, null, 2)}\n`);
-console.log(`Wrote ${payload.total} tasks (${payload.done} done, ${payload.pending} pending, ${payload.cancelled} cancelled).`);
+console.log(`Wrote ${payload.total} tasks (${payload.done} done, ${payload.pending} pending).`);

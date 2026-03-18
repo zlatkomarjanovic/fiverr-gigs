@@ -1,0 +1,13 @@
+{
+  "key": "security-batch-6",
+  "category": "security",
+  "task": "Reject javascript: URLs in gigs.json",
+  "files": {
+    "scripts/lib/html.mjs": "/** @param {unknown} s @returns {string} Escape text for HTML attribute and text node contexts. */\nexport function esc(s) {\n  return String(s)\n    .replace(/&/g, \"&amp;\")\n    .replace(/</g, \"&lt;\")\n    .replace(/>/g, \"&gt;\")\n    .replace(/\"/g, \"&quot;\");\n}\n\n/** @param {string} href @param {string} label @param {string} [className] @returns {string} Outbound Fiverr CTA with noopener. */\nexport function fiverrLink(href, label, className) {\n  const cls = className ? ` class=\"${className}\"` : \"\";\n  return `<a${cls} href=\"${esc(href)}\" target=\"_blank\" rel=\"noopener noreferrer\">${label}<span class=\"sr-only\"> (opens in new tab)</span></a>`;\n}\n  return String(s ?? \"\")\n    .replace(/[\\u0000-\\u0008\\u000B\\u000C\\u000E-\\u001F\\u007F]/g, \"\")\n    .replace(/&/g, \"&amp;\")\n    .replace(/</g, \"&lt;\")\n    .replace(/>/g, \"&gt;\")\n    .replace(/\"/g, \"&quot;\");\n}\n\n/** @param {string} href @param {string} label @param {string} [className] @returns {string} Outbound Fiverr CTA with noopener. */\nexport function fiverrLink(href, label, className) {\n  const cls = className ? ` class=\"${className}\"` : \"\";\n  return `<a${cls} href=\"${esc(href)}\" target=\"_blank\" rel=\"noopener noreferrer\">${label}<span class=\"sr-only\"> (opens in new tab)</span></a>`;\n}\n"
+  },
+  "logLine": {
+    "at": "2026-09-03T22:04:53.466Z",
+    "key": "security-batch-6",
+    "task": "Reject javascript: URLs in gigs.json"
+  }
+}
