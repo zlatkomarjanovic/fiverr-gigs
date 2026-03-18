@@ -8,5 +8,10 @@
     "at": "2026-09-03T22:04:53.463Z",
     "key": "performance-batch-6",
     "task": "Avoid re-sorting gigs array in generate loop"
+  },
+  {
+    "at": "2026-09-03T22:04:53.465Z",
+    "key": "error-handling-batch-6",
+    "task": "Try/catch around pingomatic main"
   }
 ]

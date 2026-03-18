@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 82,
-  "pending": 218,
+  "done": 83,
+  "pending": 217,
   "tasks": [
     {
       "id": "001",
@@ -666,7 +666,7 @@
       "category": "error-handling",
       "task": "Try/catch around pingomatic main",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "084",

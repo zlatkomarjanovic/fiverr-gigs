@@ -255,3 +255,7 @@ async function main() {
 }
 
 main();
+if (SITE_ORIGIN && !/^https:\/\//i.test(SITE_ORIGIN)) {
+  console.error("SITE_ORIGIN must use https when set.");
+  process.exit(1);
+}
