@@ -23,5 +23,10 @@
     "at": "2026-09-03T22:04:53.466Z",
     "key": "security-batch-6",
     "task": "Reject javascript: URLs in gigs.json"
+  },
+  {
+    "at": "2026-09-03T22:04:53.467Z",
+    "key": "refactoring-batch-6",
+    "task": "Extract absUrl helper in generate-hub"
   }
 ]
