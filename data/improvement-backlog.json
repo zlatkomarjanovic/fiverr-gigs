@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 88,
-  "pending": 212,
+  "done": 89,
+  "pending": 211,
   "tasks": [
     {
       "id": "001",
@@ -714,7 +714,7 @@
       "category": "dx",
       "task": "Add npm run validate:verbose alias",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "090",

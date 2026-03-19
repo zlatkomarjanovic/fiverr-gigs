@@ -16,3 +16,32 @@
     "pingomatic": "node scripts/pingomatic-full.mjs"
   }
 }
+  "description": "Static Fiverr gig hub generator for zlatkomarjanovic.github.io/fiverr-gigs",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "homepage": "https://zlatkomarjanovic.github.io/fiverr-gigs/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zlatkomarjanovic/fiverr-gigs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zlatkomarjanovic/fiverr-gigs/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "validate": "node scripts/validate-gigs.mjs",
+    "validate:verbose": "node scripts/validate-gigs.mjs",
+    "generate": "node scripts/generate-hub.mjs",
+    "build": "npm run validate && npm run generate",
+    "check": "node scripts/check-node.mjs && npm run validate && npm test && npm run generate",
+    "verify": "npm run check",
+    "test": "node --test scripts/lib/*.test.mjs",
+    "backlog": "node scripts/generate-backlog.mjs",
+    "submit": "node scripts/submit-index.mjs",
+    "index": "node scripts/generate-hub.mjs && node scripts/submit-index.mjs",
+    "pingomatic": "node scripts/pingomatic-full.mjs"
+  }
+}

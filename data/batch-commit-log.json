@@ -38,5 +38,10 @@
     "at": "2026-09-03T22:04:53.468Z",
     "key": "docs-batch-6",
     "task": "Document SITE_ORIGIN in CONTRIBUTING"
+  },
+  {
+    "at": "2026-09-03T22:04:53.469Z",
+    "key": "dx-batch-6",
+    "task": "Add npm run validate:verbose alias"
   }
 ]
