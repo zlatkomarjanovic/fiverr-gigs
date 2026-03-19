@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 87,
-  "pending": 213,
+  "done": 88,
+  "pending": 212,
   "tasks": [
     {
       "id": "001",
@@ -706,7 +706,7 @@
       "category": "docs",
       "task": "Document SITE_ORIGIN in CONTRIBUTING",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "089",

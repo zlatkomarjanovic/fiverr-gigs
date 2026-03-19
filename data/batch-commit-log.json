@@ -33,5 +33,10 @@
     "at": "2026-09-03T22:04:53.468Z",
     "key": "tests-batch-6",
     "task": "Test esc strips control characters"
+  },
+  {
+    "at": "2026-09-03T22:04:53.468Z",
+    "key": "docs-batch-6",
+    "task": "Document SITE_ORIGIN in CONTRIBUTING"
   }
 ]

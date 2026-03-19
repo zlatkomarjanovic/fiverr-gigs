@@ -98,3 +98,13 @@ The shared layout ends with an HTML comment hook before `</body>`. To add privac
 Improvement sprint tasks are tracked in [`data/improvement-backlog.json`](data/improvement-backlog.json). Regenerate the list with `node scripts/generate-backlog.mjs`.
 
 See [`CONTRIBUTING.md`](CONTRIBUTING.md) for the contributor workflow.
+| `npm run validate:verbose` | Same as validate (alias for CI/local scripts) |
+| `npm run generate` | Rebuild the static hub |
+| `npm run build` | Validate, then generate |
+| `npm run test` | Run unit tests under `scripts/lib/` |
+| `npm run check` | Node version check, validate, test, generate |
+| `npm run verify` | Alias for `npm run check` |
+| `npm run backlog` | Regenerate `data/improvement-backlog.json` |
+| `npm run submit` | Ping archives / sitemaps / IndexNow |
+| `npm run index` | Generate, then submit |
+| `npm run pingomatic` | Legacy Ping-O-Matic full check list |
