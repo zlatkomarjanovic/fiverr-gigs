@@ -13,3 +13,4 @@ test("buildRss escapes titles and sets xml:lang", () => {
   assert.match(xml, /Tom &amp; Co Fiverr gigs/);
   assert.match(xml, /Build &quot;fast&quot;/);
 });
+    gigs: [{ id: "b", title: 'Build "fast"', summary: "Summary" }, { id: "a", title: "A", summary: "S" }],

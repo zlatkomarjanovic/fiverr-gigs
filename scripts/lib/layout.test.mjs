@@ -44,3 +44,26 @@ test("renderLayout uses nested asset paths on service pages", () => {
   assert.match(html, /og:type" content="article"/);
   assert.match(html, /aria-current="page">Gigs/);
 });
+  assert.match(html, /twitter:url/);
+  assert.match(html, /og:image/);
+  assert.match(html, /generator" content="fiverr-gig-indexer/);
+});
+
+test("renderLayout uses nested asset paths on service pages", () => {
+  const html = renderLayout({
+    gigs,
+    siteOrigin: "https://example.com",
+    abs: (p) => `https://example.com${p}`,
+    title: "Service",
+    description: "Summary",
+    canonical: "/services/webflow.html",
+    jsonLd: { "@context": "https://schema.org", "@type": "WebPage", name: "Service" },
+    body: "<p>Body</p>",
+    ogType: "article",
+    navCurrent: "gigs",
+  });
+  assert.match(html, /href="\.\.\/favicon.svg"/);
+  assert.match(html, /href="\.\.\/styles.css"/);
+  assert.match(html, /og:type" content="article"/);
+  assert.match(html, /aria-current="page">Gigs/);
+});
