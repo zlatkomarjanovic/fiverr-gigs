@@ -18,5 +18,10 @@
     "at": "2026-09-03T22:04:53.466Z",
     "key": "validation-batch-6",
     "task": "Require shortTitle max 60 characters"
+  },
+  {
+    "at": "2026-09-03T22:04:53.466Z",
+    "key": "security-batch-6",
+    "task": "Reject javascript: URLs in gigs.json"
   }
 ]

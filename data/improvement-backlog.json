@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 84,
-  "pending": 216,
+  "done": 85,
+  "pending": 215,
   "tasks": [
     {
       "id": "001",
@@ -682,7 +682,7 @@
       "category": "security",
       "task": "Reject javascript: URLs in gigs.json",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "086",
