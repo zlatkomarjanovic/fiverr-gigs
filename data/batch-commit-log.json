@@ -613,5 +613,10 @@
     "at": "2026-09-03T22:04:53.549Z",
     "key": "error-handling-batch-14",
     "task": "Surface JSON parse line hint on invalid gigs"
+  },
+  {
+    "at": "2026-09-03T22:04:53.550Z",
+    "key": "validation-batch-14",
+    "task": "Reject duplicate titles case-insensitive"
   }
 ]

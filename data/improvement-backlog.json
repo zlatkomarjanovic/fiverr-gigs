@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 203,
-  "pending": 97,
+  "done": 204,
+  "pending": 96,
   "tasks": [
     {
       "id": "001",
@@ -1634,7 +1634,7 @@
       "category": "validation",
       "task": "Reject duplicate titles case-insensitive",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "205",
