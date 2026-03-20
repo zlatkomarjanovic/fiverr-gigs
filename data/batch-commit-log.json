@@ -593,5 +593,10 @@
     "at": "2026-09-03T22:04:53.546Z",
     "key": "a11y-batch-14",
     "task": "Underline card title links on focus"
+  },
+  {
+    "at": "2026-09-03T22:04:53.547Z",
+    "key": "seo-batch-14",
+    "task": "Service page title pattern consistency"
   }
 ]

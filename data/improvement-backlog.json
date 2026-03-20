@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 199,
-  "pending": 101,
+  "done": 200,
+  "pending": 100,
   "tasks": [
     {
       "id": "001",
@@ -1602,7 +1602,7 @@
       "category": "seo",
       "task": "Service page title pattern consistency",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "201",
