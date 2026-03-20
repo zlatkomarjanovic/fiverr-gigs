@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 196,
-  "pending": 104,
+  "done": 197,
+  "pending": 103,
   "tasks": [
     {
       "id": "001",
@@ -1578,7 +1578,7 @@
       "category": "ui-polish",
       "task": "Set link underline-offset for readability",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "198",
