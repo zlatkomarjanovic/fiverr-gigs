@@ -583,5 +583,10 @@
     "at": "2026-09-03T22:04:53.545Z",
     "key": "ui-polish-batch-14",
     "task": "Set link underline-offset for readability"
+  },
+  {
+    "at": "2026-09-03T22:04:53.546Z",
+    "key": "mobile-batch-14",
+    "task": "Reduce stack gap on mobile"
   }
 ]
