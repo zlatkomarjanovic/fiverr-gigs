@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 198,
-  "pending": 102,
+  "done": 199,
+  "pending": 101,
   "tasks": [
     {
       "id": "001",
@@ -1594,7 +1594,7 @@
       "category": "a11y",
       "task": "Underline card title links on focus",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "200",

@@ -588,5 +588,10 @@
     "at": "2026-09-03T22:04:53.546Z",
     "key": "mobile-batch-14",
     "task": "Reduce stack gap on mobile"
+  },
+  {
+    "at": "2026-09-03T22:04:53.546Z",
+    "key": "a11y-batch-14",
+    "task": "Underline card title links on focus"
   }
 ]
