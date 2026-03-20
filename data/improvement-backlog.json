@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 200,
-  "pending": 100,
+  "done": 201,
+  "pending": 99,
   "tasks": [
     {
       "id": "001",
@@ -1610,7 +1610,7 @@
       "category": "metadata",
       "task": "Add distribution global meta",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "202",
