@@ -608,5 +608,10 @@
     "at": "2026-09-03T22:04:53.549Z",
     "key": "performance-batch-14",
     "task": "Reuse pubDate string for all RSS items"
+  },
+  {
+    "at": "2026-09-03T22:04:53.549Z",
+    "key": "error-handling-batch-14",
+    "task": "Surface JSON parse line hint on invalid gigs"
   }
 ]
