@@ -603,5 +603,10 @@
     "at": "2026-09-03T22:04:53.548Z",
     "key": "metadata-batch-14",
     "task": "Add distribution global meta"
+  },
+  {
+    "at": "2026-09-03T22:04:53.549Z",
+    "key": "performance-batch-14",
+    "task": "Reuse pubDate string for all RSS items"
   }
 ]
