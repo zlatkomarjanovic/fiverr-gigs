@@ -22,3 +22,32 @@ export function buildRss({ origin, sellerName, gigs, updated }) {
 </rss>
 `;
 }
+export function rssPubDate(updated) {
+  return new Date(`${updated}T12:00:00.000Z`).toUTCString();
+}
+
+export function buildRss({ origin, sellerName, gigs, updated }) {
+  const pubDate = rssPubDate(updated);
+  const sorted = [...gigs].sort((a, b) => a.id.localeCompare(b.id));
+  const feedUrl = `${origin}/rss.xml`;
+
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xml:lang="en" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>${esc(sellerName)} Fiverr gigs</title>
+    <link>${esc(origin)}/</link>
+    <description>Live Fiverr services from ${esc(sellerName)}</description>
+    <lastBuildDate>${pubDate}</lastBuildDate>
+    <atom:link href="${esc(feedUrl)}" rel="self" type="application/rss+xml"/>
+    ${sorted.map((g) => `
+    <item>
+      <title>${esc(g.title)}</title>
+      <link>${esc(`${origin}/services/${g.id}.html`)}</link>
+      <guid isPermaLink="true">${esc(`${origin}/services/${g.id}.html`)}</guid>
+      <description>${esc(g.summary)}</description>
+      <pubDate>${pubDate}</pubDate>
+    </item>`).join("")}
+  </channel>
+</rss>
+`;
+}

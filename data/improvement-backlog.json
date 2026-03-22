@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 90,
-  "pending": 210,
+  "done": 91,
+  "pending": 209,
   "tasks": [
     {
       "id": "001",
@@ -730,7 +730,7 @@
       "category": "bug-fixes",
       "task": "Sort gigs by id in sitemap and RSS output",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "092",

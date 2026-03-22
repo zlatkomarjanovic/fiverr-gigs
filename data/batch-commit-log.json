@@ -48,5 +48,10 @@
     "at": "2026-09-03T22:04:53.470Z",
     "key": "edge-cases-batch-6",
     "task": "Handle gig with exactly 5 tags"
+  },
+  {
+    "at": "2026-09-03T22:04:53.471Z",
+    "key": "bug-fixes-batch-7",
+    "task": "Sort gigs by id in sitemap and RSS output"
   }
 ]
