@@ -119,3 +119,4 @@ details p { margin: 0.45rem 0 0; }
 footer { padding: 0 0 max(3rem, env(safe-area-inset-bottom)); color: var(--muted); font-size: 0.92rem; }
 .footer-links { display: flex; flex-wrap: wrap; gap: 0.35rem 0.75rem; margin-top: 0.35rem; }
 a:focus { outline: 2px solid var(--accent); outline-offset: 3px; }
+footer { padding: 0 0 max(3rem, env(safe-area-inset-bottom)); color: var(--muted); font-size: 0.92rem; border-top: 1px solid var(--line); margin-top: 2rem; padding-top: 1.25rem; }
