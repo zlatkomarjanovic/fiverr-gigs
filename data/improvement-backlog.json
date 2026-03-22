@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 94,
-  "pending": 206,
+  "done": 95,
+  "pending": 205,
   "tasks": [
     {
       "id": "001",
@@ -762,7 +762,7 @@
       "category": "seo",
       "task": "Add og:image fallback using favicon absolute URL",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "096",
