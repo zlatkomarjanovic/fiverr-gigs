@@ -63,5 +63,10 @@
     "at": "2026-09-03T22:04:53.472Z",
     "key": "mobile-batch-7",
     "task": "Tighten main horizontal margins under 400px"
+  },
+  {
+    "at": "2026-09-03T22:04:53.473Z",
+    "key": "a11y-batch-7",
+    "task": "Wrap breadcrumbs in nav landmark"
   }
 ]
