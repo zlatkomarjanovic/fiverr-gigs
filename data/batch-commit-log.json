@@ -73,5 +73,10 @@
     "at": "2026-09-03T22:04:53.474Z",
     "key": "seo-batch-7",
     "task": "Add og:image fallback using favicon absolute URL"
+  },
+  {
+    "at": "2026-09-03T22:04:53.474Z",
+    "key": "metadata-batch-7",
+    "task": "Add dcterms.modified from gigs.updated"
   }
 ]
