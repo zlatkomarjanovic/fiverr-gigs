@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 96,
-  "pending": 204,
+  "done": 97,
+  "pending": 203,
   "tasks": [
     {
       "id": "001",
@@ -778,7 +778,7 @@
       "category": "performance",
       "task": "Precompute related gigs map once per generate",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "098",

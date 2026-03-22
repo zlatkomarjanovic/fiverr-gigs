@@ -78,5 +78,10 @@
     "at": "2026-09-03T22:04:53.474Z",
     "key": "metadata-batch-7",
     "task": "Add dcterms.modified from gigs.updated"
+  },
+  {
+    "at": "2026-09-03T22:04:53.475Z",
+    "key": "performance-batch-7",
+    "task": "Precompute related gigs map once per generate"
   }
 ]

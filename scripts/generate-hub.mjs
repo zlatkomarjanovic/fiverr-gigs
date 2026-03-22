@@ -310,3 +310,103 @@ try {
 } catch (err) {
   console.error(err.message);
   process.exit(1);
+const keyFile = path.join(ROOT, `${INDEXNOW_KEY}.txt`);
+if (!fs.existsSync(keyFile) || fs.readFileSync(keyFile, "utf8").trim() !== INDEXNOW_KEY) {
+  fs.writeFileSync(keyFile, INDEXNOW_KEY);
+}
+
+const origin = SITE_ORIGIN || "https://example.com";
+const abs = (p) => absUrl(SITE_ORIGIN, p);
+const stylesPath = path.join(ROOT, "styles.css");
+if (!fs.existsSync(stylesPath)) {
+  throw new Error("styles.css is missing. The generator no longer emits CSS.");
+}
+if (fs.statSync(stylesPath).isDirectory()) {
+  throw new Error("styles.css is a directory — expected a CSS file.");
+}
+
+const personLd = buildPersonLd(gigs);
+const orderedGigs = sortedGigs(gigs.gigs);
+const relatedMap = new Map(
+  orderedGigs.map((g) => [g.id, relatedGigs(g, orderedGigs)]),
+);
+
+const indexHtml = renderLayout({
+  gigs,
+  siteOrigin: SITE_ORIGIN,
+  abs,
+  title: `${gigs.sellerName} Fiverr gigs — Webflow, AI, Shopify, n8n`,
+  description: "Indexable directory of Zlatko Marjanović Fiverr gigs: Webflow websites, vibe coding, Next.js SaaS, Shopify, Framer, n8n agents, and AI voice receptionists.",
+  canonical: "/",
+  jsonLd: buildIndexLd(gigs, SITE_ORIGIN, origin, personLd),
+  body: buildIndexBody({ ...gigs, gigs: orderedGigs }),
+  navCurrent: "gigs",
+  pageMeta: { updated: gigs.updated, pagename: "hub-home" },
+});
+
+const servicesDir = path.join(ROOT, "services");
+if (fs.existsSync(servicesDir) && !fs.statSync(servicesDir).isDirectory()) {
+  throw new Error("services path exists but is not a directory.");
+}
+fs.mkdirSync(servicesDir, { recursive: true });
+
+const servicePages = {};
+for (const g of orderedGigs) {
+  const related = relatedMap.get(g.id) || [];
+  servicePages[`${g.id}.html`] = renderLayout({
+    gigs,
+    siteOrigin: SITE_ORIGIN,
+    abs,
+    title: `${g.shortTitle} | ${gigs.sellerName} on Fiverr`,
+    description: g.summary,
+    canonical: `/services/${g.id}.html`,
+    jsonLd: buildServiceJsonLd(g, gigs, SITE_ORIGIN, personLd),
+    body: buildServiceBody(g, related),
+    ogType: "article",
+    pageMeta: { updated: gigs.updated, pagename: g.id, gigId: g.id },
+  });
+}
+
+const notFoundHtml = renderLayout({
+  gigs,
+  siteOrigin: SITE_ORIGIN,
+  abs,
+  title: `Page not found | ${gigs.sellerName}`,
+  description: "This Fiverr gig index page does not exist. Browse the live gigs or open the Fiverr profile.",
+  canonical: "/404.html",
+  robots: "noindex,follow",
+  jsonLd: {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: "Page not found",
+    url: SITE_ORIGIN ? `${SITE_ORIGIN}/404.html` : "/404.html",
+    dateModified: gigs.updated,
+  },
+  body: `
+    <section class="hero" aria-labelledby="not-found-title">
+      <p class="kicker">404</p>
+      <h1 id="not-found-title">This page is not in the gig index</h1>
+      <p class="lede">The URL may be outdated or typed incorrectly. The live Fiverr services are on the hub home page.</p>
+      <p><a class="btn" href="index.html">Back to all gigs</a></p>
+    </section>`,
+});
+
+try {
+  writeHubFiles(ROOT, fs, path, {
+    robots: buildRobots({ origin }),
+    llms: buildLlms({ origin, sellerName: gigs.sellerName, gigs: orderedGigs }),
+    sitemap: buildSitemap({ origin, gigs: orderedGigs, updated: gigs.updated }),
+    rss: buildRss({ origin, sellerName: gigs.sellerName, gigs: orderedGigs, updated: gigs.updated }),
+    indexHtml,
+    notFoundHtml,
+    servicePages,
+  });
+} catch (err) {
+  console.error(`Generate failed while writing hub files: ${err.message}`);
+  process.exit(1);
+}
+
+console.log(`Hub generated (v${hubVersion()}). IndexNow key: ${INDEXNOW_KEY}`);
+if (!SITE_ORIGIN) {
+  console.log("Set SITE_ORIGIN before deploy so sitemap/canonical/IndexNow use your real host.");
+}
