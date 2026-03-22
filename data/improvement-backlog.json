@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 97,
-  "pending": 203,
+  "done": 98,
+  "pending": 202,
   "tasks": [
     {
       "id": "001",
@@ -786,7 +786,7 @@
       "category": "error-handling",
       "task": "Clear message when styles.css is a directory",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "099",

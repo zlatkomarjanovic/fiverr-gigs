@@ -83,5 +83,10 @@
     "at": "2026-09-03T22:04:53.475Z",
     "key": "performance-batch-7",
     "task": "Precompute related gigs map once per generate"
+  },
+  {
+    "at": "2026-09-03T22:04:53.476Z",
+    "key": "error-handling-batch-7",
+    "task": "Clear message when styles.css is a directory"
   }
 ]

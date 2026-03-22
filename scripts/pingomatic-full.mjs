@@ -145,3 +145,17 @@ async function ping(target) {
   } finally {
     clearTimeout(timer);
   }
+(async () => {
+const results = [];
+for (const target of targets) {
+  const row = await ping(target);
+  results.push(row);
+  console.log(`${row.accepted ? "OK" : "FAIL"} ${row.status} fwd=${row.forwarded || "?"} ${target.url}`);
+}
+
+fs.writeFileSync(path.join(ROOT, "data", "pingomatic-full.json"), JSON.stringify({ at: new Date().toISOString(), results }, null, 2));
+console.log(`Wrote data/pingomatic-full.json (${results.filter((r) => r.accepted).length}/${results.length} accepted)`);
+})().catch((err) => {
+  console.error(err.message || err);
+  process.exit(1);
+});
