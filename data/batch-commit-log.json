@@ -448,5 +448,10 @@
     "at": "2026-09-03T22:04:53.526Z",
     "key": "seo-batch-12",
     "task": "Add breadcrumb item scope on service pages"
+  },
+  {
+    "at": "2026-09-03T22:04:53.527Z",
+    "key": "metadata-batch-12",
+    "task": "Add rating general meta"
   }
 ]
