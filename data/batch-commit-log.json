@@ -458,5 +458,10 @@
     "at": "2026-09-03T22:04:53.527Z",
     "key": "performance-batch-12",
     "task": "Cache abs() origin prefix in generate"
+  },
+  {
+    "at": "2026-09-03T22:04:53.528Z",
+    "key": "error-handling-batch-12",
+    "task": "Handle missing INDEXNOW key file gracefully"
   }
 ]
