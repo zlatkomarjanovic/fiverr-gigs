@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 171,
-  "pending": 129,
+  "done": 172,
+  "pending": 128,
   "tasks": [
     {
       "id": "001",
@@ -1378,7 +1378,7 @@
       "category": "performance",
       "task": "Cache abs() origin prefix in generate",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "173",
