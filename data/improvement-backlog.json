@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 173,
-  "pending": 127,
+  "done": 174,
+  "pending": 126,
   "tasks": [
     {
       "id": "001",
@@ -1394,7 +1394,7 @@
       "category": "validation",
       "task": "Validate lane max length 80",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "175",

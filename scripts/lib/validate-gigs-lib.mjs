@@ -204,3 +204,5 @@ export function validateGigsData(data) {
   const keywords = new Set();
   const shortTitles = new Set();
   const titles = new Set();
+  for (const [index, gig] of (data.gigs || []).entries()) {
+    const label = gig?.id || `#${index}`;
