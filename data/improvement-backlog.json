@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 174,
-  "pending": 126,
+  "done": 175,
+  "pending": 125,
   "tasks": [
     {
       "id": "001",
@@ -1402,7 +1402,7 @@
       "category": "security",
       "task": "Validate githubUrl host is github.com",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "176",
