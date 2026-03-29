@@ -284,7 +284,7 @@ const rss = `<?xml version="1.0" encoding="UTF-8"?>
     <title>${esc(gigs.sellerName)} Fiverr gigs</title>
     <link>${esc(origin)}/</link>
     <description>Live Fiverr services from ${esc(gigs.sellerName)}</description>
-    <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
+    <lastBuildDate>${new Date(`${gigs.updated}T12:00:00.000Z`).toUTCString()}</lastBuildDate>
     ${gigs.gigs.map((g) => `
     <item>
       <title>${esc(g.title)}</title>
