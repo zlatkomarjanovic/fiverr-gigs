@@ -182,7 +182,7 @@ for (const g of gigs.gigs) {
       <div class="panel">
         <h2>What buyers get</h2>
         <p>${esc(g.summary)}</p>
-        ${g.faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join("")}
+        ${g.faq.map((f) => `<details><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join("")}
       </div>
       <div class="panel">
         <h2>Related gigs</h2>

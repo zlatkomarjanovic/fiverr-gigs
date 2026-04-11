@@ -58,4 +58,11 @@ article.card, .panel {
 .hero { padding: 1.5rem 0 0.5rem; }
 .meta { color: var(--muted); font-size: 0.95rem; }
 .stack { display: grid; gap: 1rem; padding-bottom: 3rem; }
+details { margin: 0.85rem 0 0; }
+details summary {
+  cursor: pointer;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.05rem;
+}
+details p { margin: 0.45rem 0 0; }
 footer { padding: 0 0 3rem; color: var(--muted); font-size: 0.92rem; }
