@@ -54,6 +54,7 @@ article.card, .panel {
   font: 600 0.92rem/1 Arial, sans-serif;
 }
 .btn.ghost { background: transparent; color: var(--accent-ink); border: 1px solid var(--line); }
+.card .btn { margin: 0 0.5rem 0.4rem 0; }
 .hero { padding: 1.5rem 0 0.5rem; }
 .meta { color: var(--muted); font-size: 0.95rem; }
 .stack { display: grid; gap: 1rem; padding-bottom: 3rem; }
