@@ -151,7 +151,7 @@ export function validateGigsData(data) {
     } else if (urls.has(gig.url)) fail(`Duplicate url: ${gig.url}`);
     else urls.add(gig.url);
 
-    if (!isNonEmptyString(gig?.primaryKeyword)) fail(`${label}: primaryKeyword must be a non-empty string`);
+    if (!isNonEmptyString(gig?.primaryKeyword) || gig.primaryKeyword.trim().length < 2) fail(`${label}: primaryKeyword must be at least 2 characters`);
     else if (keywords.has(gig.primaryKeyword)) fail(`Duplicate primaryKeyword: ${gig.primaryKeyword}`);
     else keywords.add(gig.primaryKeyword);
 
