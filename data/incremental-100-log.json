@@ -142,5 +142,11 @@
     "id": "inc-024",
     "category": "validation",
     "task": "Require primaryKeyword min length 2"
+  },
+  {
+    "at": "2026-09-03T22:10:26.637Z",
+    "id": "inc-025",
+    "category": "validation",
+    "task": "Reject duplicate slug case-insensitive"
   }
 ]

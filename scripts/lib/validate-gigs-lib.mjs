@@ -106,6 +106,7 @@ export function validateGigsData(data) {
 
   const ids = new Set();
   const slugs = new Set();
+  const slugKeys = new Set();
   const urls = new Set();
   const keywords = new Set();
   const shortTitles = new Set();
