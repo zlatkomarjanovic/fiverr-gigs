@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 240,
-  "pending": 60,
+  "done": 241,
+  "pending": 59,
   "tasks": [
     {
       "id": "001",
@@ -1930,7 +1930,7 @@
       "category": "bug-fixes",
       "task": "Trim INDEXNOW_KEY whitespace in submit",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "242",
