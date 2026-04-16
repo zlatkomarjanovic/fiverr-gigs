@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 241,
-  "pending": 59,
+  "done": 242,
+  "pending": 58,
   "tasks": [
     {
       "id": "001",
@@ -1938,7 +1938,7 @@
       "category": "ui-polish",
       "task": "Cap stack section readable width",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "243",

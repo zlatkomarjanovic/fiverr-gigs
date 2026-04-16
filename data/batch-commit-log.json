@@ -803,5 +803,10 @@
     "at": "2026-09-03T22:04:53.575Z",
     "key": "bug-fixes-batch-17",
     "task": "Trim INDEXNOW_KEY whitespace in submit"
+  },
+  {
+    "at": "2026-09-03T22:04:53.576Z",
+    "key": "ui-polish-batch-17",
+    "task": "Cap stack section readable width"
   }
 ]
