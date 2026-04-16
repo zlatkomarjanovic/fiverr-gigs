@@ -808,5 +808,10 @@
     "at": "2026-09-03T22:04:53.576Z",
     "key": "ui-polish-batch-17",
     "task": "Cap stack section readable width"
+  },
+  {
+    "at": "2026-09-03T22:04:53.576Z",
+    "key": "mobile-batch-17",
+    "task": "Tighter tag pill gap on mobile"
   }
 ]
