@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 145,
-  "pending": 155,
+  "done": 146,
+  "pending": 154,
   "tasks": [
     {
       "id": "001",
@@ -1170,7 +1170,7 @@
       "category": "refactoring",
       "task": "Extract breadcrumb HTML builder",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "147",

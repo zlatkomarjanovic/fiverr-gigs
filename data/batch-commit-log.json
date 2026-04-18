@@ -323,5 +323,10 @@
     "at": "2026-09-03T22:04:53.509Z",
     "key": "security-batch-10",
     "task": "Ensure JSON-LD cannot include </script"
+  },
+  {
+    "at": "2026-09-03T22:04:53.510Z",
+    "key": "refactoring-batch-10",
+    "task": "Extract breadcrumb HTML builder"
   }
 ]
