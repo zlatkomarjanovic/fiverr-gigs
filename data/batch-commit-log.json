@@ -318,5 +318,10 @@
     "at": "2026-09-03T22:04:53.508Z",
     "key": "validation-batch-10",
     "task": "Reject empty string tags after trim"
+  },
+  {
+    "at": "2026-09-03T22:04:53.509Z",
+    "key": "security-batch-10",
+    "task": "Ensure JSON-LD cannot include </script"
   }
 ]

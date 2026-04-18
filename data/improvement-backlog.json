@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 144,
-  "pending": 156,
+  "done": 145,
+  "pending": 155,
   "tasks": [
     {
       "id": "001",
@@ -1162,7 +1162,7 @@
       "category": "security",
       "task": "Ensure JSON-LD cannot include </script",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "146",
