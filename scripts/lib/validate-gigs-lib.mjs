@@ -167,3 +167,34 @@ export function validateGigsData(data) {
   if (!isNonEmptyString(data.sellerName) || data.sellerName.trim().length < 2) {
     fail("sellerName must be at least 2 characters");
   }
+  if (data.updated) {
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(data.updated)) {
+      fail("updated must be YYYY-MM-DD");
+    } else {
+      const updatedDate = new Date(`${data.updated}T23:59:59.000Z`);
+      const maxFuture = new Date();
+      maxFuture.setUTCDate(maxFuture.getUTCDate() + 7);
+      if (updatedDate > maxFuture) fail("updated date must not be more than 7 days in the future");
+    }
+  }
+
+  if (data.seller && data.sellerUrl && !data.sellerUrl.includes(`/${data.seller}`)) {
+    fail("seller handle must match sellerUrl path");
+  }
+
+  if (data.sellerSite) {
+    if (!isHttpsUrl(data.sellerSite)) fail("sellerSite must be an https URL");
+    else if (isForbiddenUrl(data.sellerSite)) fail("sellerSite uses a forbidden protocol");
+    else {
+      try {
+        new URL(data.sellerSite).hostname;
+      } catch {
+        fail("sellerSite must have a valid hostname");
+      }
+    }
+  }
+  if (data.githubUrl) {
+    if (!isHttpsUrl(data.githubUrl)) fail("githubUrl must be an https URL");
+    else if (!isGithubUrl(data.githubUrl)) fail("githubUrl must be a github.com URL");
+    else if (isForbiddenUrl(data.githubUrl)) fail("githubUrl uses a forbidden protocol");
+  }
