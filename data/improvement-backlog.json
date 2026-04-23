@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 289,
-  "pending": 11,
+  "done": 290,
+  "pending": 10,
   "tasks": [
     {
       "id": "001",
@@ -2322,7 +2322,7 @@
       "category": "seo",
       "task": "Hub home WebSite name matches title tag",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "291",

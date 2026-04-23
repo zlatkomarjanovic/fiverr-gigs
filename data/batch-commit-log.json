@@ -1043,5 +1043,10 @@
     "at": "2026-09-03T22:04:53.608Z",
     "key": "a11y-batch-20",
     "task": "Service hero meta readable at 200% zoom"
+  },
+  {
+    "at": "2026-09-03T22:04:53.609Z",
+    "key": "seo-batch-20",
+    "task": "Hub home WebSite name matches title tag"
   }
 ]
