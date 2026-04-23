@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 287,
-  "pending": 13,
+  "done": 288,
+  "pending": 12,
   "tasks": [
     {
       "id": "001",
@@ -2306,7 +2306,7 @@
       "category": "mobile",
       "task": "Prevent iOS text size adjust on headings",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "289",

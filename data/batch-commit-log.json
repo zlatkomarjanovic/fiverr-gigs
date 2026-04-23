@@ -1033,5 +1033,10 @@
     "at": "2026-09-03T22:04:53.607Z",
     "key": "ui-polish-batch-20",
     "task": "Antialiased body text on macOS"
+  },
+  {
+    "at": "2026-09-03T22:04:53.608Z",
+    "key": "mobile-batch-20",
+    "task": "Prevent iOS text size adjust on headings"
   }
 ]
