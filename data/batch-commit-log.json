@@ -1048,5 +1048,10 @@
     "at": "2026-09-03T22:04:53.609Z",
     "key": "seo-batch-20",
     "task": "Hub home WebSite name matches title tag"
+  },
+  {
+    "at": "2026-09-03T22:04:53.610Z",
+    "key": "metadata-batch-20",
+    "task": "Add locale meta alternate none"
   }
 ]

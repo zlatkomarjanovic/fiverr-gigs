@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 290,
-  "pending": 10,
+  "done": 291,
+  "pending": 9,
   "tasks": [
     {
       "id": "001",
@@ -2330,7 +2330,7 @@
       "category": "metadata",
       "task": "Add locale meta alternate none",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "292",
