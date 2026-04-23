@@ -1028,5 +1028,10 @@
     "at": "2026-09-03T22:04:53.606Z",
     "key": "bug-fixes-batch-20",
     "task": "Normalize gig updated date comparison in validator"
+  },
+  {
+    "at": "2026-09-03T22:04:53.607Z",
+    "key": "ui-polish-batch-20",
+    "task": "Antialiased body text on macOS"
   }
 ]

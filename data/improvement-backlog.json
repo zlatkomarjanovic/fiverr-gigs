@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 286,
-  "pending": 14,
+  "done": 287,
+  "pending": 13,
   "tasks": [
     {
       "id": "001",
@@ -2298,7 +2298,7 @@
       "category": "ui-polish",
       "task": "Antialiased body text on macOS",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "288",
