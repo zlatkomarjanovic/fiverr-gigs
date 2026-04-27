@@ -1088,5 +1088,10 @@
     "at": "2026-09-03T22:04:53.615Z",
     "key": "docs-batch-20",
     "task": "Add changelog section to README"
+  },
+  {
+    "at": "2026-09-03T22:04:53.615Z",
+    "key": "dx-batch-20",
+    "task": "Add npm run verify alias for check"
   }
 ]

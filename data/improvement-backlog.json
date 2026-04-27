@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 298,
-  "pending": 2,
+  "done": 299,
+  "pending": 1,
   "tasks": [
     {
       "id": "001",
@@ -2394,7 +2394,7 @@
       "category": "dx",
       "task": "Add npm run verify alias for check",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "300",
