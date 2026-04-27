@@ -21,4 +21,4 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log(`gigs.json OK — ${data.gigs.length} gigs, unique ids/slugs/urls/keywords.`);
+console.log(`gigs.json OK — ${data.gigs.length} gigs, ${new Set(data.gigs.map((g) => g.shortTitle)).size} unique short titles.`);

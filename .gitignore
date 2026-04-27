@@ -2,3 +2,4 @@ node_modules/
 .DS_Store
 data/indexnow-key.txt
 data/submission-log.json
+scripts/batch-patches/
