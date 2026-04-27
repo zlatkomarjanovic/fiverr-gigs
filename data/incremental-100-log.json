@@ -4,5 +4,11 @@
     "id": "inc-001",
     "category": "ui-polish",
     "task": "Add --radius-sm design token"
+  },
+  {
+    "at": "2026-09-03T22:10:22.840Z",
+    "id": "inc-002",
+    "category": "ui-polish",
+    "task": "Add --radius-md design token"
   }
 ]
