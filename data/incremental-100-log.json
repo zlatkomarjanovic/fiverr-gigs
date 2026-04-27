@@ -10,5 +10,11 @@
     "id": "inc-002",
     "category": "ui-polish",
     "task": "Add --radius-md design token"
+  },
+  {
+    "at": "2026-09-03T22:10:22.998Z",
+    "id": "inc-003",
+    "category": "ui-polish",
+    "task": "Use radius token on cards"
   }
 ]
