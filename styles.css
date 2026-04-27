@@ -6,6 +6,7 @@
   --card: #fffdf8;
   --accent: #1f7a4d;
   --accent-ink: #073d24;
+  --radius-sm: 8px;
 }
 * { box-sizing: border-box; }
 .skip-link {
