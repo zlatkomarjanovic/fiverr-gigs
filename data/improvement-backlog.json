@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 299,
-  "pending": 1,
+  "done": 300,
+  "pending": 0,
   "tasks": [
     {
       "id": "001",
@@ -2402,7 +2402,7 @@
       "category": "edge-cases",
       "task": "Handle duplicate sameAs deduplication",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     }
   ]
 }
