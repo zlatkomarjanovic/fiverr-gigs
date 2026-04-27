@@ -8,6 +8,7 @@
   --accent-ink: #073d24;
   --radius-sm: 8px;
   --radius-md: 14px;
+  --shadow-card: 0 4px 14px rgba(22, 20, 15, 0.08);
 }
 * { box-sizing: border-box; }
 .skip-link {
