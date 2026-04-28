@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 195,
-  "pending": 105,
+  "done": 196,
+  "pending": 104,
   "tasks": [
     {
       "id": "001",
@@ -1570,7 +1570,7 @@
       "category": "bug-fixes",
       "task": "Use path.join consistently in load-gigs errors",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "197",

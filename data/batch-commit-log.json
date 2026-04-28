@@ -573,5 +573,10 @@
     "at": "2026-09-03T22:04:53.544Z",
     "key": "edge-cases-batch-13",
     "task": "Handle ampersand in gig title RSS"
+  },
+  {
+    "at": "2026-09-03T22:04:53.545Z",
+    "key": "bug-fixes-batch-14",
+    "task": "Use path.join consistently in load-gigs errors"
   }
 ]
