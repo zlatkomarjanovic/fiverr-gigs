@@ -206,3 +206,103 @@ export function validateGigsData(data) {
   const titles = new Set();
   for (const [index, gig] of (data.gigs || []).entries()) {
     const label = gig?.id || `#${index}`;
+    for (const key of REQUIRED_GIG) {
+      if (!(key in (gig || {}))) fail(`${label}: missing ${key}`);
+    }
+
+    if (!isNonEmptyString(gig?.id)) fail(`${label}: id must be a non-empty string`);
+    else if (gig.id.trim() !== gig.id) fail(`${label}: id must not have leading or trailing whitespace`);
+    else if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(gig.id)) fail(`${label}: id must be kebab-case (${gig.id})`);
+    else if (ids.has(gig.id)) fail(`Duplicate id: ${gig.id}`);
+    else ids.add(gig.id);
+
+    if (!isNonEmptyString(gig?.slug)) fail(`${label}: slug must be a non-empty string`);
+    else if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(gig.slug)) fail(`${label}: slug must be kebab-case (${gig.slug})`);
+    else if (slugs.has(gig.slug)) fail(`Duplicate slug: ${gig.slug}`);
+    else slugs.add(gig.slug);
+
+    if (!isNonEmptyString(gig?.lane)) fail(`${label}: lane must be a non-empty string`);
+    else if (gig.lane.length > 80) fail(`${label}: lane should be ≤80 chars (${gig.lane.length})`);
+    if (!isNonEmptyString(gig?.category)) fail(`${label}: category must be a non-empty string`);
+    else if (gig.category.length > 40) fail(`${label}: category should be ≤40 chars (${gig.category.length})`);
+    if (!isNonEmptyString(gig?.subcategory)) fail(`${label}: subcategory must be a non-empty string`);
+    else if (gig.subcategory.length > 40) fail(`${label}: subcategory should be ≤40 chars (${gig.subcategory.length})`);
+
+    if (!isNonEmptyString(gig?.url) || !gig.url.startsWith("https://www.fiverr.com/")) {
+      fail(`${label}: url must be an https Fiverr gig URL`);
+    } else if (isForbiddenUrl(gig.url)) {
+      fail(`${label}: url uses a forbidden protocol`);
+    } else if (/\?/.test(gig.url)) {
+      fail(`${label}: url must not include query parameters`);
+    } else if (gig.url.startsWith("http://")) {
+      fail(`${label}: url must not use http`);
+    } else if (!gig.url.endsWith(`/${gig.slug}`)) {
+      fail(`${label}: url must end with /${gig.slug}`);
+    } else if (data.seller && !gig.url.includes(`/${data.seller}/`)) {
+      fail(`${label}: url must include seller handle /${data.seller}/`);
+    } else if (urls.has(gig.url)) fail(`Duplicate url: ${gig.url}`);
+    else urls.add(gig.url);
+
+    if (!isNonEmptyString(gig?.primaryKeyword)) fail(`${label}: primaryKeyword must be a non-empty string`);
+    else if (keywords.has(gig.primaryKeyword)) fail(`Duplicate primaryKeyword: ${gig.primaryKeyword}`);
+    else keywords.add(gig.primaryKeyword);
+
+    if (!isNonEmptyString(gig?.summary)) fail(`${label}: summary must be a non-empty string`);
+    else if (gig.summary.length > 160) fail(`${label}: summary should be ≤160 chars (${gig.summary.length})`);
+
+    if (!isNonEmptyString(gig?.title)) fail(`${label}: title must be a non-empty string`);
+    else if (gig.title.length > 80) fail(`${label}: title should be ≤80 chars (${gig.title.length})`);
+    else {
+      const titleKey = gig.title.toLowerCase();
+      if (titles.has(titleKey)) fail(`Duplicate title (case-insensitive): ${gig.title}`);
+      titles.add(titleKey);
+    }
+
+    if (!isNonEmptyString(gig?.shortTitle)) fail(`${label}: shortTitle must be a non-empty string`);
+    else if (gig.shortTitle.length > 60) fail(`${label}: shortTitle should be ≤60 chars (${gig.shortTitle.length})`);
+    else if (shortTitles.has(gig.shortTitle)) fail(`Duplicate shortTitle: ${gig.shortTitle}`);
+    else shortTitles.add(gig.shortTitle);
+
+    if (!isNonEmptyString(gig?.description)) fail(`${label}: description must be a non-empty string`);
+    else if (gig.description.length < 80) fail(`${label}: description should be ≥80 chars (${gig.description.length})`);
+    else if (gig.description.length > 500) fail(`${label}: description should be ≤500 chars (${gig.description.length})`);
+
+    if (!isStringArray(gig?.searchTerms)) fail(`${label}: searchTerms must be a non-empty string array`);
+    else {
+      if (gig.searchTerms.length < 3) fail(`${label}: searchTerms must include at least 3 terms`);
+      hasUniqueStrings(gig.searchTerms, `${label}: searchTerms`, fail);
+      for (const term of gig.searchTerms) {
+        if (term.length > 50) fail(`${label}: searchTerms entries should be ≤50 chars (${term.length})`);
+      }
+      const termsLower = gig.searchTerms.map((t) => t.toLowerCase());
+      if (gig.primaryKeyword && !termsLower.includes(gig.primaryKeyword.toLowerCase())) {
+        fail(`${label}: primaryKeyword must appear in searchTerms`);
+      }
+    }
+
+    if (!isStringArray(gig?.tags)) fail(`${label}: tags must be a non-empty string array`);
+    else {
+      hasUniqueStrings(gig.tags, `${label}: tags`, fail);
+      for (const tag of gig.tags) {
+        if (tag.trim() !== tag || !tag.trim()) fail(`${label}: tags must not be empty or whitespace-only`);
+      }
+    }
+
+    if ((gig?.tags || []).length > 5) fail(`${label}: Fiverr allows at most 5 tags`);
+
+    if (!Array.isArray(gig?.faq) || gig.faq.length === 0) {
+      fail(`${label}: faq must be a non-empty array`);
+    } else {
+      if (gig.faq.length > 5) fail(`${label}: FAQ count should be ≤5 (${gig.faq.length})`);
+      for (const [faqIndex, item] of gig.faq.entries()) {
+        if (!isNonEmptyString(item?.q) || !isNonEmptyString(item?.a)) {
+          fail(`${label}: faq[${faqIndex}] needs non-empty q and a`);
+        } else if (hasScriptTag(item.a) || hasScriptTag(item.q)) {
+          fail(`${label}: faq[${faqIndex}] must not contain script tags`);
+        }
+      }
+    }
+  }
+
+  return errors;
+}
