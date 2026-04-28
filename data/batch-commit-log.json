@@ -568,5 +568,10 @@
     "at": "2026-09-03T22:04:53.543Z",
     "key": "dx-batch-13",
     "task": "Add .editorconfig for repo"
+  },
+  {
+    "at": "2026-09-03T22:04:53.544Z",
+    "key": "edge-cases-batch-13",
+    "task": "Handle ampersand in gig title RSS"
   }
 ]
