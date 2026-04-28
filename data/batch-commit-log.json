@@ -558,5 +558,10 @@
     "at": "2026-09-03T22:04:53.542Z",
     "key": "tests-batch-13",
     "task": "Test loadGigs strips BOM"
+  },
+  {
+    "at": "2026-09-03T22:04:53.542Z",
+    "key": "docs-batch-13",
+    "task": "Document generated vs source files list"
   }
 ]

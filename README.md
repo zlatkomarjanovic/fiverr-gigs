@@ -125,3 +125,28 @@ Set `SITE_ORIGIN` in the workflow env to match the live GitHub Pages host.
 3. Commit `data/gigs.json` plus regenerated HTML/XML files.
 Optional: `npm run pingomatic` runs the legacy Ping-O-Matic full check list (`scripts/pingomatic-full.mjs`).
 ## Related gigs
+Related links on each service page come from keyword overlap (`scripts/lib/gigs.mjs`): primary keyword, category, subcategory, search terms, and tags are lowercased and scored; the top matches (excluding the current gig) are shown.
+
+## Troubleshooting
+
+| Problem | Fix |
+| --- | --- |
+| `validate` fails after editing gigs | Read the error line — ids must be kebab-case, URLs must match slugs, and `primaryKeyword` must appear in `searchTerms`. |
+| `check` fails on git diff | Run `npm run generate` with `SITE_ORIGIN` set and commit regenerated HTML/XML. |
+| IndexNow skipped on submit | Set `SITE_ORIGIN` and `INDEXNOW_KEY` (or publish `{key}.txt` on the live host). |
+| Canonicals point at example.com | Export `SITE_ORIGIN` before `npm run generate`. |
+
+Validate exits **0** on success and **1** on any validation error.
+
+## Changelog
+
+- **1.1.0** — Hub builders refactor, expanded validation/security rules, favicon, RSS atom self link, 300-task backlog completed.
+- **1.0.x** — Initial static hub generator, CI, layout extraction, improvement sprint.
+
+Improvement sprint tasks are tracked in [`data/improvement-backlog.json`](data/improvement-backlog.json) (**300/300 complete**). Regenerate with `npm run backlog`.
+
+## Analytics (optional)
+
+The shared layout ends with an HTML comment hook before `</body>`. To add privacy-friendly analytics (Plausible, Fathom, etc.), edit `scripts/lib/layout.mjs` and insert your script tag there, then run `npm run generate`.
+
+See [`CONTRIBUTING.md`](CONTRIBUTING.md) for the contributor workflow.
