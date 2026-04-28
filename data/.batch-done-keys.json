@@ -108,5 +108,6 @@
   "performance-batch-13",
   "error-handling-batch-13",
   "validation-batch-13",
-  "security-batch-13"
+  "security-batch-13",
+  "refactoring-batch-13"
 ]

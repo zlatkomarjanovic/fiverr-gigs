@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 190,
-  "pending": 110,
+  "done": 191,
+  "pending": 109,
   "tasks": [
     {
       "id": "001",
@@ -1530,7 +1530,7 @@
       "category": "refactoring",
       "task": "Extract serviceLd graph builder",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "192",
