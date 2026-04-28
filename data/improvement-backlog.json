@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 191,
-  "pending": 109,
+  "done": 192,
+  "pending": 108,
   "tasks": [
     {
       "id": "001",
@@ -1538,7 +1538,7 @@
       "category": "tests",
       "task": "Test loadGigs strips BOM",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "193",

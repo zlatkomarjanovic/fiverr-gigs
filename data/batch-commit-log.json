@@ -553,5 +553,10 @@
     "at": "2026-09-03T22:04:53.541Z",
     "key": "refactoring-batch-13",
     "task": "Extract serviceLd graph builder"
+  },
+  {
+    "at": "2026-09-03T22:04:53.542Z",
+    "key": "tests-batch-13",
+    "task": "Test loadGigs strips BOM"
   }
 ]
