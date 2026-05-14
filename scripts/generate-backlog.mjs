@@ -9,7 +9,7 @@ import { fileURLToPath } from "node:url";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = path.join(ROOT, "data", "improvement-backlog.json");
 
-const completed = [
+const completed = new Set([
   "build-npm-script",
   "extract-html-helpers",
   "validate-before-generate",
@@ -29,6 +29,35 @@ const completed = [
   "card-aria-labelledby",
   "validate-https-profile-urls",
   "rel-me-github",
+  "extract-gigTerms-and-relatedGigs-to-lib",
+  "test-related-gigs-scoring",
+  "test-gigTerms-normalization",
+  "rss-language-tag",
+  "btn-active-state",
+  "npm-run-check-alias",
+  "pin-node-engine",
+]);
+
+const historical = [
+  ["dx", "build-npm-script", "Add npm run build as validate then generate", "XS"],
+  ["refactoring", "extract-html-helpers", "Extract HTML helpers to scripts/lib/html.mjs", "S"],
+  ["bug-fixes", "validate-before-generate", "Run gigs.json validation before generate", "XS"],
+  ["seo", "theme-color-meta", "Add theme-color and color-scheme meta tags", "XS"],
+  ["metadata", "author-meta", "Add author meta tag", "XS"],
+  ["seo", "sitemap-head-link", "Link sitemap from document head", "XS"],
+  ["seo", "website-schema", "Add WebSite schema on index", "S"],
+  ["a11y", "landmark-roles", "Add banner and contentinfo landmark roles", "XS"],
+  ["tests", "html-unit-tests", "Unit test HTML escape and Fiverr links", "S"],
+  ["ci", "ci-unit-tests", "Run unit tests in hub workflow", "XS"],
+  ["validation", "kebab-case-ids", "Require kebab-case gig ids", "XS"],
+  ["validation", "url-matches-slug", "Require gig URL to end with slug", "XS"],
+  ["validation", "seo-field-lengths", "Validate title summary description lengths", "S"],
+  ["seo", "rss-pubdate", "Add pubDate to RSS items", "XS"],
+  ["seo", "sitemap-priority", "Set sitemap priority values", "XS"],
+  ["ui-polish", "link-hover-underline", "Underline body links on hover", "XS"],
+  ["a11y", "card-aria-labelledby", "Label gig cards with aria-labelledby", "XS"],
+  ["validation", "validate-https-profile-urls", "Validate sellerSite and githubUrl are https", "XS"],
+  ["seo", "rel-me-github", "Add rel=me link to GitHub profile", "XS"],
 ];
 
 const explicit = [
@@ -110,11 +139,11 @@ function add(category, key, task, scope, status = "pending") {
     category,
     task,
     scope,
-    status: completed.includes(key) ? "done" : status,
+    status: completed.has(key) ? "done" : status,
   });
 }
 
-for (const [category, key, task, scope] of explicit) {
+for (const [category, key, task, scope] of [...historical, ...explicit]) {
   add(category, key, task, scope);
 }
 
