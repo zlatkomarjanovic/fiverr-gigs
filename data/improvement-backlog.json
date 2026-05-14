@@ -1,19 +1,171 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 0,
-  "pending": 300,
+  "done": 26,
+  "pending": 274,
   "tasks": [
     {
       "id": "001",
+      "key": "build-npm-script",
+      "category": "dx",
+      "task": "Add npm run build as validate then generate",
+      "scope": "XS",
+      "status": "done"
+    },
+    {
+      "id": "002",
+      "key": "extract-html-helpers",
+      "category": "refactoring",
+      "task": "Extract HTML helpers to scripts/lib/html.mjs",
+      "scope": "S",
+      "status": "done"
+    },
+    {
+      "id": "003",
+      "key": "validate-before-generate",
+      "category": "bug-fixes",
+      "task": "Run gigs.json validation before generate",
+      "scope": "XS",
+      "status": "done"
+    },
+    {
+      "id": "004",
+      "key": "theme-color-meta",
+      "category": "seo",
+      "task": "Add theme-color and color-scheme meta tags",
+      "scope": "XS",
+      "status": "done"
+    },
+    {
+      "id": "005",
+      "key": "author-meta",
+      "category": "metadata",
+      "task": "Add author meta tag",
+      "scope": "XS",
+      "status": "done"
+    },
+    {
+      "id": "006",
+      "key": "sitemap-head-link",
+      "category": "seo",
+      "task": "Link sitemap from document head",
+      "scope": "XS",
+      "status": "done"
+    },
+    {
+      "id": "007",
+      "key": "website-schema",
+      "category": "seo",
+      "task": "Add WebSite schema on index",
+      "scope": "S",
+      "status": "done"
+    },
+    {
+      "id": "008",
+      "key": "landmark-roles",
+      "category": "a11y",
+      "task": "Add banner and contentinfo landmark roles",
+      "scope": "XS",
+      "status": "done"
+    },
+    {
+      "id": "009",
+      "key": "html-unit-tests",
+      "category": "tests",
+      "task": "Unit test HTML escape and Fiverr links",
+      "scope": "S",
+      "status": "done"
+    },
+    {
+      "id": "010",
+      "key": "ci-unit-tests",
+      "category": "ci",
+      "task": "Run unit tests in hub workflow",
+      "scope": "XS",
+      "status": "done"
+    },
+    {
+      "id": "011",
+      "key": "kebab-case-ids",
+      "category": "validation",
+      "task": "Require kebab-case gig ids",
+      "scope": "XS",
+      "status": "done"
+    },
+    {
+      "id": "012",
+      "key": "url-matches-slug",
+      "category": "validation",
+      "task": "Require gig URL to end with slug",
+      "scope": "XS",
+      "status": "done"
+    },
+    {
+      "id": "013",
+      "key": "seo-field-lengths",
+      "category": "validation",
+      "task": "Validate title summary description lengths",
+      "scope": "S",
+      "status": "done"
+    },
+    {
+      "id": "014",
+      "key": "rss-pubdate",
+      "category": "seo",
+      "task": "Add pubDate to RSS items",
+      "scope": "XS",
+      "status": "done"
+    },
+    {
+      "id": "015",
+      "key": "sitemap-priority",
+      "category": "seo",
+      "task": "Set sitemap priority values",
+      "scope": "XS",
+      "status": "done"
+    },
+    {
+      "id": "016",
+      "key": "link-hover-underline",
+      "category": "ui-polish",
+      "task": "Underline body links on hover",
+      "scope": "XS",
+      "status": "done"
+    },
+    {
+      "id": "017",
+      "key": "card-aria-labelledby",
+      "category": "a11y",
+      "task": "Label gig cards with aria-labelledby",
+      "scope": "XS",
+      "status": "done"
+    },
+    {
+      "id": "018",
+      "key": "validate-https-profile-urls",
+      "category": "validation",
+      "task": "Validate sellerSite and githubUrl are https",
+      "scope": "XS",
+      "status": "done"
+    },
+    {
+      "id": "019",
+      "key": "rel-me-github",
+      "category": "seo",
+      "task": "Add rel=me link to GitHub profile",
+      "scope": "XS",
+      "status": "done"
+    },
+    {
+      "id": "020",
       "key": "extract-gigTerms-and-relatedGigs-to-lib",
       "category": "refactoring",
       "task": "Extract related gig scoring to scripts/lib/gigs.mjs",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
-      "id": "002",
+      "id": "021",
       "key": "extract-layout-template",
       "category": "refactoring",
       "task": "Extract layout() to scripts/lib/layout.mjs",
@@ -21,7 +173,7 @@
       "status": "pending"
     },
     {
-      "id": "003",
+      "id": "022",
       "key": "extract-sitemap-builder",
       "category": "refactoring",
       "task": "Extract sitemap XML builder to scripts/lib/sitemap.mjs",
@@ -29,7 +181,7 @@
       "status": "pending"
     },
     {
-      "id": "004",
+      "id": "023",
       "key": "extract-rss-builder",
       "category": "refactoring",
       "task": "Extract RSS builder to scripts/lib/rss.mjs",
@@ -37,7 +189,7 @@
       "status": "pending"
     },
     {
-      "id": "005",
+      "id": "024",
       "key": "share-gigs-json-loader",
       "category": "refactoring",
       "task": "Share gigs.json loader between scripts",
@@ -45,23 +197,23 @@
       "status": "pending"
     },
     {
-      "id": "006",
+      "id": "025",
       "key": "test-related-gigs-scoring",
       "category": "tests",
       "task": "Unit test relatedGigs keyword overlap",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
-      "id": "007",
+      "id": "026",
       "key": "test-gigTerms-normalization",
       "category": "tests",
       "task": "Unit test gigTerms lowercasing",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
-      "id": "008",
+      "id": "027",
       "key": "validate-lane-non-empty",
       "category": "validation",
       "task": "Require non-empty lane on each gig",
@@ -69,7 +221,7 @@
       "status": "pending"
     },
     {
-      "id": "009",
+      "id": "028",
       "key": "validate-category-subcategory",
       "category": "validation",
       "task": "Require category and subcategory strings",
@@ -77,7 +229,7 @@
       "status": "pending"
     },
     {
-      "id": "010",
+      "id": "029",
       "key": "validate-searchTerms-unique",
       "category": "validation",
       "task": "Require unique searchTerms per gig",
@@ -85,7 +237,7 @@
       "status": "pending"
     },
     {
-      "id": "011",
+      "id": "030",
       "key": "validate-tags-unique",
       "category": "validation",
       "task": "Require unique tags per gig",
@@ -93,7 +245,7 @@
       "status": "pending"
     },
     {
-      "id": "012",
+      "id": "031",
       "key": "validate-faq-max-count",
       "category": "validation",
       "task": "Warn when FAQ count exceeds 5",
@@ -101,7 +253,7 @@
       "status": "pending"
     },
     {
-      "id": "013",
+      "id": "032",
       "key": "validate-id-filename-match",
       "category": "validation",
       "task": "Ensure services/{id}.html will be unique",
@@ -109,7 +261,7 @@
       "status": "pending"
     },
     {
-      "id": "014",
+      "id": "033",
       "key": "validate-seller-handle",
       "category": "validation",
       "task": "Validate seller handle matches Fiverr URL",
@@ -117,15 +269,15 @@
       "status": "pending"
     },
     {
-      "id": "015",
+      "id": "034",
       "key": "rss-language-tag",
       "category": "seo",
       "task": "Add xml:lang en to RSS channel",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
-      "id": "016",
+      "id": "035",
       "key": "index-meta-keywords-remove",
       "category": "seo",
       "task": "Avoid deprecated meta keywords tag",
@@ -133,7 +285,7 @@
       "status": "pending"
     },
     {
-      "id": "017",
+      "id": "036",
       "key": "service-page-og-type",
       "category": "seo",
       "task": "Use og:type article on service pages",
@@ -141,7 +293,7 @@
       "status": "pending"
     },
     {
-      "id": "018",
+      "id": "037",
       "key": "jsonld-context-on-nodes",
       "category": "seo",
       "task": "Ensure @context on all JSON-LD nodes",
@@ -149,7 +301,7 @@
       "status": "pending"
     },
     {
-      "id": "019",
+      "id": "038",
       "key": "canonical-trailing-slash-index",
       "category": "seo",
       "task": "Normalize index canonical trailing slash",
@@ -157,7 +309,7 @@
       "status": "pending"
     },
     {
-      "id": "020",
+      "id": "039",
       "key": "format-detection-meta",
       "category": "metadata",
       "task": "Add format-detection telephone=no",
@@ -165,7 +317,7 @@
       "status": "pending"
     },
     {
-      "id": "021",
+      "id": "040",
       "key": "referrer-policy-meta",
       "category": "metadata",
       "task": "Add referrer policy for outbound links",
@@ -173,7 +325,7 @@
       "status": "pending"
     },
     {
-      "id": "022",
+      "id": "041",
       "key": "details-summary-focus-ring",
       "category": "a11y",
       "task": "Style details summary focus-visible",
@@ -181,7 +333,7 @@
       "status": "pending"
     },
     {
-      "id": "023",
+      "id": "042",
       "key": "nav-current-page",
       "category": "a11y",
       "task": "Mark current nav item on service pages",
@@ -189,7 +341,7 @@
       "status": "pending"
     },
     {
-      "id": "024",
+      "id": "043",
       "key": "external-link-indicator",
       "category": "a11y",
       "task": "Visually indicate outbound Fiverr links",
@@ -197,7 +349,7 @@
       "status": "pending"
     },
     {
-      "id": "025",
+      "id": "044",
       "key": "lang-on-html",
       "category": "a11y",
       "task": "Verify lang=en on all generated pages",
@@ -205,7 +357,7 @@
       "status": "pending"
     },
     {
-      "id": "026",
+      "id": "045",
       "key": "hero-section-label",
       "category": "a11y",
       "task": "Add aria-labelledby on hero sections",
@@ -213,7 +365,7 @@
       "status": "pending"
     },
     {
-      "id": "027",
+      "id": "046",
       "key": "related-list-semantics",
       "category": "a11y",
       "task": "Use nav for related gigs list",
@@ -221,15 +373,15 @@
       "status": "pending"
     },
     {
-      "id": "028",
+      "id": "047",
       "key": "btn-active-state",
       "category": "ui-polish",
       "task": "Add :active state for buttons",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
-      "id": "029",
+      "id": "048",
       "key": "panel-heading-rhythm",
       "category": "ui-polish",
       "task": "Normalize panel h2/h3 spacing",
@@ -237,7 +389,7 @@
       "status": "pending"
     },
     {
-      "id": "030",
+      "id": "049",
       "key": "footer-link-spacing",
       "category": "ui-polish",
       "task": "Improve footer link spacing",
@@ -245,7 +397,7 @@
       "status": "pending"
     },
     {
-      "id": "031",
+      "id": "050",
       "key": "tag-contrast",
       "category": "ui-polish",
       "task": "Improve tag pill contrast",
@@ -253,7 +405,7 @@
       "status": "pending"
     },
     {
-      "id": "032",
+      "id": "051",
       "key": "card-hover-border",
       "category": "ui-polish",
       "task": "Subtle card hover border",
@@ -261,7 +413,7 @@
       "status": "pending"
     },
     {
-      "id": "033",
+      "id": "052",
       "key": "grid-min-column-narrow",
       "category": "mobile",
       "task": "Lower grid min width on very small screens",
@@ -269,7 +421,7 @@
       "status": "pending"
     },
     {
-      "id": "034",
+      "id": "053",
       "key": "hero-lede-size",
       "category": "mobile",
       "task": "Tune lede font-size on mobile",
@@ -277,7 +429,7 @@
       "status": "pending"
     },
     {
-      "id": "035",
+      "id": "054",
       "key": "btn-full-width-mobile",
       "category": "mobile",
       "task": "Optional full-width CTAs under 400px",
@@ -285,7 +437,7 @@
       "status": "pending"
     },
     {
-      "id": "036",
+      "id": "055",
       "key": "safe-area-footer",
       "category": "mobile",
       "task": "Add safe-area-inset padding",
@@ -293,7 +445,7 @@
       "status": "pending"
     },
     {
-      "id": "037",
+      "id": "056",
       "key": "generator-single-read-gigs",
       "category": "performance",
       "task": "Avoid double gigs.json parse in generate",
@@ -301,7 +453,7 @@
       "status": "pending"
     },
     {
-      "id": "038",
+      "id": "057",
       "key": "preconnect-none-needed",
       "category": "performance",
       "task": "Skip unnecessary preconnect hints",
@@ -309,7 +461,7 @@
       "status": "pending"
     },
     {
-      "id": "039",
+      "id": "058",
       "key": "validate-no-http-urls",
       "category": "security",
       "task": "Reject http URLs in gigs.json",
@@ -317,7 +469,7 @@
       "status": "pending"
     },
     {
-      "id": "040",
+      "id": "059",
       "key": "sanitize-jsonld-output",
       "category": "security",
       "task": "Ensure JSON-LD cannot break script tag",
@@ -325,7 +477,7 @@
       "status": "pending"
     },
     {
-      "id": "041",
+      "id": "060",
       "key": "generate-missing-gigs-file",
       "category": "error-handling",
       "task": "Clear error when gigs.json missing",
@@ -333,7 +485,7 @@
       "status": "pending"
     },
     {
-      "id": "042",
+      "id": "061",
       "key": "generate-invalid-json",
       "category": "error-handling",
       "task": "Clear error on malformed gigs.json",
@@ -341,7 +493,7 @@
       "status": "pending"
     },
     {
-      "id": "043",
+      "id": "062",
       "key": "submit-missing-site-origin",
       "category": "error-handling",
       "task": "Document SITE_ORIGIN requirement in submit",
@@ -349,7 +501,7 @@
       "status": "pending"
     },
     {
-      "id": "044",
+      "id": "063",
       "key": "document-backlog-workflow",
       "category": "docs",
       "task": "Document improvement backlog in README",
@@ -357,7 +509,7 @@
       "status": "pending"
     },
     {
-      "id": "045",
+      "id": "064",
       "key": "document-test-command",
       "category": "docs",
       "task": "Document npm test in README",
@@ -365,7 +517,7 @@
       "status": "pending"
     },
     {
-      "id": "046",
+      "id": "065",
       "key": "document-ci-workflow",
       "category": "docs",
       "task": "Document GitHub Actions hub workflow",
@@ -373,7 +525,7 @@
       "status": "pending"
     },
     {
-      "id": "047",
+      "id": "066",
       "key": "contributing-gig",
       "category": "docs",
       "task": "Document how to add a new gig",
@@ -381,15 +533,15 @@
       "status": "pending"
     },
     {
-      "id": "048",
+      "id": "067",
       "key": "npm-run-check-alias",
       "category": "dx",
       "task": "Add npm run check as validate+test+generate",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
-      "id": "049",
+      "id": "068",
       "key": "prettier-ignore-generated",
       "category": "dx",
       "task": "Document do-not-edit generated files",
@@ -397,7 +549,7 @@
       "status": "pending"
     },
     {
-      "id": "050",
+      "id": "069",
       "key": "empty-faq-rejected",
       "category": "edge-cases",
       "task": "Validator rejects empty FAQ answers",
@@ -405,7 +557,7 @@
       "status": "pending"
     },
     {
-      "id": "051",
+      "id": "070",
       "key": "duplicate-search-term",
       "category": "edge-cases",
       "task": "Validator rejects duplicate search terms",
@@ -413,7 +565,7 @@
       "status": "pending"
     },
     {
-      "id": "052",
+      "id": "071",
       "key": "appearance-details-marker",
       "category": "browser-compat",
       "task": "Normalize details marker styling",
@@ -421,7 +573,7 @@
       "status": "pending"
     },
     {
-      "id": "053",
+      "id": "072",
       "key": "focus-visible-fallback",
       "category": "browser-compat",
       "task": "Ensure focus styles without :focus-visible",
@@ -429,7 +581,7 @@
       "status": "pending"
     },
     {
-      "id": "054",
+      "id": "073",
       "key": "readme-plausible-note",
       "category": "analytics",
       "task": "Document optional analytics hook point",
@@ -437,7 +589,7 @@
       "status": "pending"
     },
     {
-      "id": "055",
+      "id": "074",
       "key": "remove-unused-pingomatic-script",
       "category": "dead-code",
       "task": "Audit pingomatic-full.mjs usage",
@@ -445,15 +597,15 @@
       "status": "pending"
     },
     {
-      "id": "056",
+      "id": "075",
       "key": "pin-node-engine",
       "category": "dependency-cleanup",
       "task": "Add engines.node to package.json",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
-      "id": "057",
+      "id": "076",
       "key": "n/a-static-site",
       "category": "loading-states",
       "task": "N/A — static site has no async UI",
@@ -461,7 +613,7 @@
       "status": "pending"
     },
     {
-      "id": "058",
+      "id": "077",
       "key": "jsdoc-html-helpers",
       "category": "typescript",
       "task": "Add JSDoc types to html.mjs exports",
@@ -469,7 +621,7 @@
       "status": "pending"
     },
     {
-      "id": "059",
+      "id": "078",
       "key": "jsdoc-validate-gigs",
       "category": "typescript",
       "task": "Add JSDoc to validate-gigs helpers",
@@ -477,7 +629,7 @@
       "status": "pending"
     },
     {
-      "id": "060",
+      "id": "079",
       "key": "n/a-no-react",
       "category": "components",
       "task": "N/A — static HTML generator",
@@ -485,163 +637,11 @@
       "status": "pending"
     },
     {
-      "id": "061",
+      "id": "080",
       "key": "n/a-no-react",
       "category": "hooks",
       "task": "N/A — static HTML generator",
       "scope": "XS",
-      "status": "pending"
-    },
-    {
-      "id": "062",
-      "key": "ui-polish-batch-5",
-      "category": "ui-polish",
-      "task": "ui-polish improvement batch 5",
-      "scope": "S",
-      "status": "pending"
-    },
-    {
-      "id": "063",
-      "key": "mobile-batch-5",
-      "category": "mobile",
-      "task": "mobile improvement batch 5",
-      "scope": "S",
-      "status": "pending"
-    },
-    {
-      "id": "064",
-      "key": "a11y-batch-5",
-      "category": "a11y",
-      "task": "a11y improvement batch 5",
-      "scope": "S",
-      "status": "pending"
-    },
-    {
-      "id": "065",
-      "key": "seo-batch-5",
-      "category": "seo",
-      "task": "seo improvement batch 5",
-      "scope": "S",
-      "status": "pending"
-    },
-    {
-      "id": "066",
-      "key": "metadata-batch-5",
-      "category": "metadata",
-      "task": "metadata improvement batch 5",
-      "scope": "S",
-      "status": "pending"
-    },
-    {
-      "id": "067",
-      "key": "performance-batch-5",
-      "category": "performance",
-      "task": "performance improvement batch 5",
-      "scope": "S",
-      "status": "pending"
-    },
-    {
-      "id": "068",
-      "key": "error-handling-batch-5",
-      "category": "error-handling",
-      "task": "error-handling improvement batch 5",
-      "scope": "S",
-      "status": "pending"
-    },
-    {
-      "id": "069",
-      "key": "validation-batch-5",
-      "category": "validation",
-      "task": "validation improvement batch 5",
-      "scope": "S",
-      "status": "pending"
-    },
-    {
-      "id": "070",
-      "key": "security-batch-5",
-      "category": "security",
-      "task": "security improvement batch 5",
-      "scope": "S",
-      "status": "pending"
-    },
-    {
-      "id": "071",
-      "key": "refactoring-batch-5",
-      "category": "refactoring",
-      "task": "refactoring improvement batch 5",
-      "scope": "S",
-      "status": "pending"
-    },
-    {
-      "id": "072",
-      "key": "tests-batch-5",
-      "category": "tests",
-      "task": "tests improvement batch 5",
-      "scope": "S",
-      "status": "pending"
-    },
-    {
-      "id": "073",
-      "key": "docs-batch-5",
-      "category": "docs",
-      "task": "docs improvement batch 5",
-      "scope": "S",
-      "status": "pending"
-    },
-    {
-      "id": "074",
-      "key": "dx-batch-5",
-      "category": "dx",
-      "task": "dx improvement batch 5",
-      "scope": "S",
-      "status": "pending"
-    },
-    {
-      "id": "075",
-      "key": "edge-cases-batch-5",
-      "category": "edge-cases",
-      "task": "edge-cases improvement batch 5",
-      "scope": "S",
-      "status": "pending"
-    },
-    {
-      "id": "076",
-      "key": "bug-fixes-batch-6",
-      "category": "bug-fixes",
-      "task": "bug-fixes improvement batch 6",
-      "scope": "S",
-      "status": "pending"
-    },
-    {
-      "id": "077",
-      "key": "ui-polish-batch-6",
-      "category": "ui-polish",
-      "task": "ui-polish improvement batch 6",
-      "scope": "S",
-      "status": "pending"
-    },
-    {
-      "id": "078",
-      "key": "mobile-batch-6",
-      "category": "mobile",
-      "task": "mobile improvement batch 6",
-      "scope": "S",
-      "status": "pending"
-    },
-    {
-      "id": "079",
-      "key": "a11y-batch-6",
-      "category": "a11y",
-      "task": "a11y improvement batch 6",
-      "scope": "S",
-      "status": "pending"
-    },
-    {
-      "id": "080",
-      "key": "seo-batch-6",
-      "category": "seo",
-      "task": "seo improvement batch 6",
-      "scope": "S",
       "status": "pending"
     },
     {
