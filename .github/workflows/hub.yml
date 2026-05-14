@@ -13,12 +13,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - name: Validate gigs.json
-        run: npm run validate
-      - name: Run unit tests
-        run: npm test
-      - name: Generate hub
-        run: npm run generate
+      - name: Run checks
+        run: npm run check
         env:
           SITE_ORIGIN: https://zlatkomarjanovic.github.io/fiverr-gigs
       - name: Fail if generate changed tracked files

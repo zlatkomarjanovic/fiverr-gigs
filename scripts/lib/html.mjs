@@ -1,4 +1,4 @@
-/** Escape text for HTML attribute and text node contexts. */
+/** @param {unknown} s @returns {string} Escape text for HTML attribute and text node contexts. */
 export function esc(s) {
   return String(s)
     .replace(/&/g, "&amp;")
@@ -7,8 +7,8 @@ export function esc(s) {
     .replace(/"/g, "&quot;");
 }
 
-/** Outbound Fiverr CTA with noopener. */
+/** @param {string} href @param {string} label @param {string} [className] @returns {string} Outbound Fiverr CTA with noopener. */
 export function fiverrLink(href, label, className) {
   const cls = className ? ` class="${className}"` : "";
-  return `<a${cls} href="${esc(href)}" target="_blank" rel="noopener noreferrer">${label}</a>`;
+  return `<a${cls} href="${esc(href)}" target="_blank" rel="noopener noreferrer">${label}<span class="sr-only"> (opens in new tab)</span></a>`;
 }

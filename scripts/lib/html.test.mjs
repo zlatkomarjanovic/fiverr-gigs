@@ -17,7 +17,10 @@ test("fiverrLink adds noopener and escapes href", () => {
   assert.match(html, /href="https:\/\/example.com\?q=&quot;1&quot;"/);
 });
 
-test("fiverrLink works without className", () => {
+test("fiverrLink works without className on anchor", () => {
   const html = fiverrLink("https://www.fiverr.com/seller", "Profile");
-  assert.doesNotMatch(html, /class=/);
+  assert.match(html, /^<a href=/);
+  assert.doesNotMatch(html, /^<a [^>]*class=/);
+  assert.match(html, /sr-only/);
+  assert.match(html, /opens in new tab/);
 });
