@@ -6,9 +6,10 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { loadGigs } from "./lib/load-gigs.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const gigs = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "gigs.json"), "utf8"));
+const gigs = loadGigs(ROOT);
 const SITE_ORIGIN = (process.env.SITE_ORIGIN || "").replace(/\/$/, "");
 const INDEXNOW_KEY = (process.env.INDEXNOW_KEY || "").trim();
 const HUB_ONLY = process.argv.includes("--hub-only") || process.env.HUB_ONLY === "1";
