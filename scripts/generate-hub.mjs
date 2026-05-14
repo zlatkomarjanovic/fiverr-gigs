@@ -1,20 +1,32 @@
 #!/usr/bin/env node
 import fs from "node:fs";
 import path from "node:path";
-import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { esc, fiverrLink } from "./lib/html.mjs";
 import { relatedGigs } from "./lib/gigs.mjs";
+import { loadGigs } from "./lib/load-gigs.mjs";
+import { validateGigsData } from "./lib/validate-gigs-lib.mjs";
+import { renderLayout } from "./lib/layout.mjs";
+import { buildSitemap } from "./lib/sitemap.mjs";
+import { buildRss } from "./lib/rss.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
-const validate = spawnSync(process.execPath, [path.join(ROOT, "scripts", "validate-gigs.mjs")], {
-  cwd: ROOT,
-  stdio: "inherit",
-});
-if (validate.status !== 0) process.exit(validate.status ?? 1);
+let gigs;
+try {
+  gigs = loadGigs(ROOT);
+} catch (err) {
+  console.error(err.message);
+  process.exit(1);
+}
 
-const gigs = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "gigs.json"), "utf8"));
+const validationErrors = validateGigsData(gigs);
+if (validationErrors.length) {
+  console.error(`gigs.json failed ${validationErrors.length} check${validationErrors.length === 1 ? "" : "s"}:`);
+  for (const error of validationErrors) console.error(`- ${error}`);
+  process.exit(1);
+}
+
 const SITE_ORIGIN = (process.env.SITE_ORIGIN || "").replace(/\/$/, "");
 const KEY_CACHE = path.join(ROOT, "data", "indexnow-key.txt");
 
@@ -52,60 +64,6 @@ if (!fs.existsSync(path.join(ROOT, "styles.css"))) {
   throw new Error("styles.css is missing. The generator no longer emits CSS.");
 }
 
-function layout({ title, description, canonical, jsonLd, body, robots = "index,follow" }) {
-  const canon = SITE_ORIGIN ? `${SITE_ORIGIN}${canonical}` : canonical;
-  const nested = canonical.includes("/services/");
-  const homeHref = nested ? "../index.html" : "index.html";
-  const sitemapHref = nested ? "../sitemap.xml" : "sitemap.xml";
-  return `<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light">
-  <meta name="theme-color" content="#1f7a4d">
-  <title>${esc(title)}</title>
-  <meta name="description" content="${esc(description)}">
-  <meta name="author" content="${esc(gigs.sellerName)}">
-  <link rel="canonical" href="${esc(canon)}">
-  <meta name="robots" content="${esc(robots)}">
-  <meta property="og:title" content="${esc(title)}">
-  <meta property="og:description" content="${esc(description)}">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="${esc(canon)}">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:site_name" content="${esc(gigs.sellerName)} Fiverr gigs">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="${esc(title)}">
-  <meta name="twitter:description" content="${esc(description)}">
-  <link rel="alternate" type="application/rss+xml" href="${esc(abs("/rss.xml"))}">
-  <link rel="sitemap" type="application/xml" href="${esc(abs("/sitemap.xml"))}">
-  ${gigs.githubUrl ? `<link rel="me" href="${esc(gigs.githubUrl)}">` : ""}
-  <link rel="stylesheet" href="${nested ? "../styles.css" : "styles.css"}">
-  <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
-</head>
-<body>
-  <a class="skip-link" href="#content">Skip to content</a>
-  <header role="banner">
-    <a href="${homeHref}"><strong>${esc(gigs.sellerName)}</strong></a>
-    <nav aria-label="Primary">
-      <a href="${nested ? "../index.html#gigs" : "#gigs"}">Gigs</a>
-      ${fiverrLink(gigs.sellerUrl, "Fiverr profile")}
-    </nav>
-  </header>
-  <main id="content">${body}</main>
-  <footer role="contentinfo">
-    <p>Official Fiverr gigs for ${esc(gigs.sellerName)}. Clean URLs only — no tracking parameters.</p>
-    <p>
-      <a href="${homeHref}">Hub home</a>
-      · <a href="${sitemapHref}">Sitemap</a>
-      ${gigs.sellerSite ? `· <a href="${esc(gigs.sellerSite)}" target="_blank" rel="noopener noreferrer">Portfolio</a>` : ""}
-    </p>
-  </footer>
-</body>
-</html>`;
-}
-
 const personLd = {
   "@type": "Person",
   name: gigs.sellerName,
@@ -114,9 +72,9 @@ const personLd = {
 };
 
 const indexBody = `
-  <section class="hero">
+  <section class="hero" aria-labelledby="hero-title">
     <p class="kicker">Fiverr seller · ${esc(gigs.seller)}</p>
-    <h1>${esc(gigs.sellerName)} — Webflow, AI apps, and vibe coding gigs</h1>
+    <h1 id="hero-title">${esc(gigs.sellerName)} — Webflow, AI apps, and vibe coding gigs</h1>
     <p class="lede">${gigs.gigs.length} live Fiverr services with clean, indexable URLs. Each page maps to one search lane so the gigs do not cannibalize each other.</p>
     <p>${fiverrLink(gigs.sellerUrl, "Open Fiverr profile", "btn")}</p>
   </section>
@@ -157,12 +115,16 @@ const indexLd = {
   ],
 };
 
-fs.writeFileSync(path.join(ROOT, "index.html"), layout({
+fs.writeFileSync(path.join(ROOT, "index.html"), renderLayout({
+  gigs,
+  siteOrigin: SITE_ORIGIN,
+  abs,
   title: `${gigs.sellerName} Fiverr gigs — Webflow, AI, Shopify, n8n`,
   description: "Indexable directory of Zlatko Marjanović Fiverr gigs: Webflow websites, vibe coding, Next.js SaaS, Shopify, Framer, n8n agents, and AI voice receptionists.",
   canonical: "/",
   jsonLd: indexLd,
   body: indexBody,
+  navCurrent: "gigs",
 }));
 
 const servicesDir = path.join(ROOT, "services");
@@ -177,9 +139,9 @@ for (const g of gigs.gigs) {
         <li aria-current="page">${esc(g.shortTitle)}</li>
       </ol>
     </nav>
-    <section class="hero">
+    <section class="hero" aria-labelledby="service-title">
       <p class="kicker">${esc(g.category)} / ${esc(g.subcategory)}</p>
-      <h1>${esc(g.title)}</h1>
+      <h1 id="service-title">${esc(g.title)}</h1>
       <p class="lede">${esc(g.description)}</p>
       <p class="meta">Primary Fiverr search term: <strong>${esc(g.primaryKeyword)}</strong> · Lane: ${esc(g.lane)}</p>
       <p>${fiverrLink(g.url, "Open this gig on Fiverr", "btn")}</p>
@@ -198,7 +160,9 @@ for (const g of gigs.gigs) {
       </div>
       <div class="panel">
         <h2>Related gigs</h2>
+        <nav aria-label="Related gigs">
         <ul>${related.map((r) => `<li><a href="${esc(r.id)}.html">${esc(r.shortTitle)}</a> — ${esc(r.primaryKeyword)}</li>`).join("")}</ul>
+        </nav>
       </div>
     </section>`;
 
@@ -249,44 +213,18 @@ for (const g of gigs.gigs) {
     "@graph": faqLd ? [serviceLd, faqLd, breadcrumbLd] : [serviceLd, breadcrumbLd],
   };
 
-  fs.writeFileSync(path.join(servicesDir, `${g.id}.html`), layout({
+  fs.writeFileSync(path.join(servicesDir, `${g.id}.html`), renderLayout({
+    gigs,
+    siteOrigin: SITE_ORIGIN,
+    abs,
     title: `${g.shortTitle} | ${gigs.sellerName} on Fiverr`,
     description: g.summary,
     canonical: `/services/${g.id}.html`,
     jsonLd,
     body,
+    ogType: "article",
   }));
 }
-
-const urls = [
-  { loc: "/", lastmod: gigs.updated, priority: "1.0" },
-  ...gigs.gigs.map((g) => ({ loc: `/services/${g.id}.html`, lastmod: gigs.updated, priority: "0.8" })),
-];
-
-const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls.map((u) => `  <url><loc>${esc(origin + u.loc)}</loc><lastmod>${u.lastmod}</lastmod><changefreq>weekly</changefreq><priority>${u.priority}</priority></url>`).join("\n")}
-</urlset>
-`;
-
-const rss = `<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xml:lang="en">
-  <channel>
-    <title>${esc(gigs.sellerName)} Fiverr gigs</title>
-    <link>${esc(origin)}/</link>
-    <description>Live Fiverr services from ${esc(gigs.sellerName)}</description>
-    <lastBuildDate>${new Date(`${gigs.updated}T12:00:00.000Z`).toUTCString()}</lastBuildDate>
-    ${gigs.gigs.map((g) => `
-    <item>
-      <title>${esc(g.title)}</title>
-      <link>${esc(`${origin}/services/${g.id}.html`)}</link>
-      <guid>${esc(`${origin}/services/${g.id}.html`)}</guid>
-      <description>${esc(g.summary)}</description>
-      <pubDate>${new Date(`${gigs.updated}T12:00:00.000Z`).toUTCString()}</pubDate>
-    </item>`).join("")}
-  </channel>
-</rss>
-`;
 
 const robots = `User-agent: *
 Allow: /
@@ -300,7 +238,10 @@ Index: ${origin}/
 ${gigs.gigs.map((g) => `- [${g.title}](${origin}/services/${g.id}.html) — ${g.primaryKeyword}. Book: ${g.url}`).join("\n")}
 `;
 
-fs.writeFileSync(path.join(ROOT, "404.html"), layout({
+fs.writeFileSync(path.join(ROOT, "404.html"), renderLayout({
+  gigs,
+  siteOrigin: SITE_ORIGIN,
+  abs,
   title: `Page not found | ${gigs.sellerName}`,
   description: "This Fiverr gig index page does not exist. Browse the live gigs or open the Fiverr profile.",
   canonical: "/404.html",
@@ -312,16 +253,16 @@ fs.writeFileSync(path.join(ROOT, "404.html"), layout({
     url: SITE_ORIGIN ? `${SITE_ORIGIN}/404.html` : "/404.html",
   },
   body: `
-    <section class="hero">
+    <section class="hero" aria-labelledby="not-found-title">
       <p class="kicker">404</p>
-      <h1>This page is not in the gig index</h1>
+      <h1 id="not-found-title">This page is not in the gig index</h1>
       <p class="lede">The URL may be outdated or typed incorrectly. The live Fiverr services are on the hub home page.</p>
       <p><a class="btn" href="index.html">Back to all gigs</a></p>
     </section>`,
 }));
 
-fs.writeFileSync(path.join(ROOT, "sitemap.xml"), sitemap);
-fs.writeFileSync(path.join(ROOT, "rss.xml"), rss);
+fs.writeFileSync(path.join(ROOT, "sitemap.xml"), buildSitemap({ origin, gigs: gigs.gigs, updated: gigs.updated }));
+fs.writeFileSync(path.join(ROOT, "rss.xml"), buildRss({ origin, sellerName: gigs.sellerName, gigs: gigs.gigs, updated: gigs.updated }));
 fs.writeFileSync(path.join(ROOT, "robots.txt"), robots);
 fs.writeFileSync(path.join(ROOT, "llms.txt"), llms);
 
