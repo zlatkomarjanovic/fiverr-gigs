@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 239,
-  "pending": 61,
+  "done": 240,
+  "pending": 60,
   "tasks": [
     {
       "id": "001",
@@ -1922,7 +1922,7 @@
       "category": "edge-cases",
       "task": "Handle empty HUB_ONLY submit",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "241",

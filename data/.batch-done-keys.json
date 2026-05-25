@@ -157,5 +157,6 @@
   "refactoring-batch-16",
   "tests-batch-16",
   "docs-batch-16",
-  "dx-batch-16"
+  "dx-batch-16",
+  "edge-cases-batch-16"
 ]
