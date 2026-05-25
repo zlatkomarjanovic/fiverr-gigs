@@ -758,5 +758,10 @@
     "at": "2026-09-03T22:04:53.569Z",
     "key": "performance-batch-16",
     "task": "Read gigs.json once in pingomatic"
+  },
+  {
+    "at": "2026-09-03T22:04:53.570Z",
+    "key": "error-handling-batch-16",
+    "task": "Log hub URL count zero when SITE_ORIGIN missing"
   }
 ]
