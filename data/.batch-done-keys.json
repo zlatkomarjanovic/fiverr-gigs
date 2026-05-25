@@ -152,5 +152,6 @@
   "metadata-batch-16",
   "performance-batch-16",
   "error-handling-batch-16",
-  "validation-batch-16"
+  "validation-batch-16",
+  "security-batch-16"
 ]

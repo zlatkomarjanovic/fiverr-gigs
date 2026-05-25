@@ -768,5 +768,10 @@
     "at": "2026-09-03T22:04:53.570Z",
     "key": "validation-batch-16",
     "task": "Validate gig url path includes seller handle"
+  },
+  {
+    "at": "2026-09-03T22:04:53.571Z",
+    "key": "security-batch-16",
+    "task": "No inline event handlers in generated HTML"
   }
 ]
