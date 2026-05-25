@@ -773,5 +773,10 @@
     "at": "2026-09-03T22:04:53.571Z",
     "key": "security-batch-16",
     "task": "No inline event handlers in generated HTML"
+  },
+  {
+    "at": "2026-09-03T22:04:53.572Z",
+    "key": "refactoring-batch-16",
+    "task": "Extract FAQ details HTML helper"
   }
 ]

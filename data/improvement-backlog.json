@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 235,
-  "pending": 65,
+  "done": 236,
+  "pending": 64,
   "tasks": [
     {
       "id": "001",
@@ -1890,7 +1890,7 @@
       "category": "refactoring",
       "task": "Extract FAQ details HTML helper",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "237",

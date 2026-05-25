@@ -153,5 +153,6 @@
   "performance-batch-16",
   "error-handling-batch-16",
   "validation-batch-16",
-  "security-batch-16"
+  "security-batch-16",
+  "refactoring-batch-16"
 ]
