@@ -778,5 +778,10 @@
     "at": "2026-09-03T22:04:53.572Z",
     "key": "refactoring-batch-16",
     "task": "Extract FAQ details HTML helper"
+  },
+  {
+    "at": "2026-09-03T22:04:53.572Z",
+    "key": "tests-batch-16",
+    "task": "Test buildLlms includes book urls"
   }
 ]
