@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 231,
-  "pending": 69,
+  "done": 232,
+  "pending": 68,
   "tasks": [
     {
       "id": "001",
@@ -1858,7 +1858,7 @@
       "category": "performance",
       "task": "Read gigs.json once in pingomatic",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "233",
