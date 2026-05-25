@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 233,
-  "pending": 67,
+  "done": 234,
+  "pending": 66,
   "tasks": [
     {
       "id": "001",
@@ -1874,7 +1874,7 @@
       "category": "validation",
       "task": "Validate gig url path includes seller handle",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "235",
