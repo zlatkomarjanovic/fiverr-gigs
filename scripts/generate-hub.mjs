@@ -275,13 +275,13 @@ for (const g of gigs.gigs) {
 }
 
 const urls = [
-  { loc: "/", lastmod: gigs.updated },
-  ...gigs.gigs.map((g) => ({ loc: `/services/${g.id}.html`, lastmod: gigs.updated })),
+  { loc: "/", lastmod: gigs.updated, priority: "1.0" },
+  ...gigs.gigs.map((g) => ({ loc: `/services/${g.id}.html`, lastmod: gigs.updated, priority: "0.8" })),
 ];
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls.map((u) => `  <url><loc>${esc(origin + u.loc)}</loc><lastmod>${u.lastmod}</lastmod><changefreq>weekly</changefreq></url>`).join("\n")}
+${urls.map((u) => `  <url><loc>${esc(origin + u.loc)}</loc><lastmod>${u.lastmod}</lastmod><changefreq>weekly</changefreq><priority>${u.priority}</priority></url>`).join("\n")}
 </urlset>
 `;
 
