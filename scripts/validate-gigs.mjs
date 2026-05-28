@@ -75,6 +75,7 @@ for (const [index, gig] of (data.gigs || []).entries()) {
   }
 
   if (!isNonEmptyString(gig?.id)) fail(`${label}: id must be a non-empty string`);
+  else if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(gig.id)) fail(`${label}: id must be kebab-case (${gig.id})`);
   else if (ids.has(gig.id)) fail(`Duplicate id: ${gig.id}`);
   else ids.add(gig.id);
 
