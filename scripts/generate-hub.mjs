@@ -138,9 +138,9 @@ const indexBody = `
   </section>
   <section id="gigs" class="grid">
     ${gigs.gigs.map((g) => `
-      <article class="card">
+      <article class="card" aria-labelledby="gig-${esc(g.id)}">
         <p class="kicker">${esc(g.primaryKeyword)} · ${esc(g.lane)}</p>
-        <h2><a href="services/${esc(g.id)}.html">${esc(g.shortTitle)}</a></h2>
+        <h2 id="gig-${esc(g.id)}"><a href="services/${esc(g.id)}.html">${esc(g.shortTitle)}</a></h2>
         <p>${esc(g.summary)}</p>
         <ul class="tags">${g.tags.map((t) => `<li>${esc(t)}</li>`).join("")}</ul>
         ${fiverrLink(g.url, "View gig on Fiverr", "btn")}
