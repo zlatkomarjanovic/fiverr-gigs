@@ -85,12 +85,23 @@ for (const [index, gig] of (data.gigs || []).entries()) {
 
   if (!isNonEmptyString(gig?.url) || !gig.url.startsWith("https://www.fiverr.com/")) {
     fail(`${label}: url must be an https Fiverr gig URL`);
+  } else if (!gig.url.endsWith(`/${gig.slug}`)) {
+    fail(`${label}: url must end with /${gig.slug}`);
   } else if (urls.has(gig.url)) fail(`Duplicate url: ${gig.url}`);
   else urls.add(gig.url);
 
   if (!isNonEmptyString(gig?.primaryKeyword)) fail(`${label}: primaryKeyword must be a non-empty string`);
   else if (keywords.has(gig.primaryKeyword)) fail(`Duplicate primaryKeyword: ${gig.primaryKeyword}`);
   else keywords.add(gig.primaryKeyword);
+
+  if (!isNonEmptyString(gig?.summary)) fail(`${label}: summary must be a non-empty string`);
+  else if (gig.summary.length > 160) fail(`${label}: summary should be ≤160 chars for meta descriptions (${gig.summary.length})`);
+
+  if (!isNonEmptyString(gig?.description)) fail(`${label}: description must be a non-empty string`);
+  else if (gig.description.length > 500) fail(`${label}: description should be ≤500 chars (${gig.description.length})`);
+
+  if (!isNonEmptyString(gig?.title)) fail(`${label}: title must be a non-empty string`);
+  else if (gig.title.length > 80) fail(`${label}: title should be ≤80 chars (${gig.title.length})`);
 
   if (!isStringArray(gig?.searchTerms)) fail(`${label}: searchTerms must be a non-empty string array`);
   if (!isStringArray(gig?.tags)) fail(`${label}: tags must be a non-empty string array`);
