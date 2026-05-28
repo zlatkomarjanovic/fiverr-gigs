@@ -298,6 +298,7 @@ const rss = `<?xml version="1.0" encoding="UTF-8"?>
       <link>${esc(`${origin}/services/${g.id}.html`)}</link>
       <guid>${esc(`${origin}/services/${g.id}.html`)}</guid>
       <description>${esc(g.summary)}</description>
+      <pubDate>${new Date(`${gigs.updated}T12:00:00.000Z`).toUTCString()}</pubDate>
     </item>`).join("")}
   </channel>
 </rss>
