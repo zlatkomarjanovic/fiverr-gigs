@@ -813,5 +813,10 @@
     "at": "2026-09-03T22:04:53.576Z",
     "key": "mobile-batch-17",
     "task": "Tighter tag pill gap on mobile"
+  },
+  {
+    "at": "2026-09-03T22:04:53.577Z",
+    "key": "a11y-batch-17",
+    "task": "Label FAQ stack region on service pages"
   }
 ]

@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 243,
-  "pending": 57,
+  "done": 244,
+  "pending": 56,
   "tasks": [
     {
       "id": "001",
@@ -1954,7 +1954,7 @@
       "category": "a11y",
       "task": "Label FAQ stack region on service pages",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "245",
