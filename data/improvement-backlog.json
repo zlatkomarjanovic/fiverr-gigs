@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 248,
-  "pending": 52,
+  "done": 249,
+  "pending": 51,
   "tasks": [
     {
       "id": "001",
@@ -1994,7 +1994,7 @@
       "category": "validation",
       "task": "Require subcategory max length 40",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "250",

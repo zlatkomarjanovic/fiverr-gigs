@@ -838,5 +838,10 @@
     "at": "2026-09-03T22:04:53.580Z",
     "key": "error-handling-batch-17",
     "task": "Catch fetch abort timeout message in submit"
+  },
+  {
+    "at": "2026-09-03T22:04:53.581Z",
+    "key": "validation-batch-17",
+    "task": "Require subcategory max length 40"
   }
 ]
