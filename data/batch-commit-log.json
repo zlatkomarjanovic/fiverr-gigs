@@ -833,5 +833,10 @@
     "at": "2026-09-03T22:04:53.579Z",
     "key": "performance-batch-17",
     "task": "Limit submission log results array growth note"
+  },
+  {
+    "at": "2026-09-03T22:04:53.580Z",
+    "key": "error-handling-batch-17",
+    "task": "Catch fetch abort timeout message in submit"
   }
 ]
