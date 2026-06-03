@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 244,
-  "pending": 56,
+  "done": 245,
+  "pending": 55,
   "tasks": [
     {
       "id": "001",
@@ -1962,7 +1962,7 @@
       "category": "seo",
       "task": "FAQ schema only when questions exist",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "246",

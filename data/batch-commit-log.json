@@ -818,5 +818,10 @@
     "at": "2026-09-03T22:04:53.577Z",
     "key": "a11y-batch-17",
     "task": "Label FAQ stack region on service pages"
+  },
+  {
+    "at": "2026-09-03T22:04:53.578Z",
+    "key": "seo-batch-17",
+    "task": "FAQ schema only when questions exist"
   }
 ]
