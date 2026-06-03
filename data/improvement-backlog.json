@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 249,
-  "pending": 51,
+  "done": 250,
+  "pending": 50,
   "tasks": [
     {
       "id": "001",
@@ -2002,7 +2002,7 @@
       "category": "security",
       "task": "rel noopener on all target blank links",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "251",

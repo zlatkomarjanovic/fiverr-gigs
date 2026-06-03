@@ -843,5 +843,10 @@
     "at": "2026-09-03T22:04:53.581Z",
     "key": "validation-batch-17",
     "task": "Require subcategory max length 40"
+  },
+  {
+    "at": "2026-09-03T22:04:53.581Z",
+    "key": "security-batch-17",
+    "task": "rel noopener on all target blank links"
   }
 ]
