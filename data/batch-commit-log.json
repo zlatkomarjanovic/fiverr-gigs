@@ -823,5 +823,10 @@
     "at": "2026-09-03T22:04:53.578Z",
     "key": "seo-batch-17",
     "task": "FAQ schema only when questions exist"
+  },
+  {
+    "at": "2026-09-03T22:04:53.579Z",
+    "key": "metadata-batch-17",
+    "task": "Add pagename meta on service pages"
   }
 ]

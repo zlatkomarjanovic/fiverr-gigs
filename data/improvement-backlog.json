@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 245,
-  "pending": 55,
+  "done": 246,
+  "pending": 54,
   "tasks": [
     {
       "id": "001",
@@ -1970,7 +1970,7 @@
       "category": "metadata",
       "task": "Add pagename meta on service pages",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "247",
