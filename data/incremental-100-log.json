@@ -154,5 +154,11 @@
     "id": "inc-026",
     "category": "validation",
     "task": "Check slug lowercase uniqueness"
+  },
+  {
+    "at": "2026-09-03T22:10:26.974Z",
+    "id": "inc-027",
+    "category": "validation",
+    "task": "Validate FAQ question max length"
   }
 ]

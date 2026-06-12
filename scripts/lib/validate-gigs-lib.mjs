@@ -207,6 +207,8 @@ export function validateGigsData(data) {
     } else {
       if (gig.faq.length > 5) fail(`${label}: FAQ count should be ≤5 (${gig.faq.length})`);
       for (const [faqIndex, item] of gig.faq.entries()) {
+        if (item.q.length > 120) fail(`${label}: faq[${faqIndex}] question should be ≤120 chars`);
+        if (item.a.length > 500) fail(`${label}: faq[${faqIndex}] answer should be ≤500 chars`);
         if (!isNonEmptyString(item?.q) || !isNonEmptyString(item?.a)) {
           fail(`${label}: faq[${faqIndex}] needs non-empty q and a`);
         } else if (hasScriptTag(item.a) || hasScriptTag(item.q)) {
