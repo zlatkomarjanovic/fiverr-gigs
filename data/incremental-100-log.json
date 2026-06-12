@@ -160,5 +160,11 @@
     "id": "inc-027",
     "category": "validation",
     "task": "Validate FAQ question max length"
+  },
+  {
+    "at": "2026-09-03T22:10:27.147Z",
+    "id": "inc-028",
+    "category": "validation",
+    "task": "Reject numeric-only shortTitle"
   }
 ]
