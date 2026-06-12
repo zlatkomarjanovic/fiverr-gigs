@@ -128,7 +128,8 @@ export function validateGigsData(data) {
     if (!isNonEmptyString(gig?.slug)) fail(`${label}: slug must be a non-empty string`);
     else if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(gig.slug)) fail(`${label}: slug must be kebab-case (${gig.slug})`);
     else if (slugs.has(gig.slug)) fail(`Duplicate slug: ${gig.slug}`);
-    else slugs.add(gig.slug);
+    else if (slugKeys.has(gig.slug.toLowerCase())) fail(`Duplicate slug (case-insensitive): ${gig.slug}`);
+    else { slugs.add(gig.slug); slugKeys.add(gig.slug.toLowerCase()); }
 
     if (!isNonEmptyString(gig?.lane)) fail(`${label}: lane must be a non-empty string`);
     else if (gig.lane.length > 80) fail(`${label}: lane should be ≤80 chars (${gig.lane.length})`);
