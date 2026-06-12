@@ -68,8 +68,12 @@ export function validateGigsData(data) {
     fail("sellerUrl must not include query parameters");
   }
 
-  if (!isNonEmptyString(data.sellerName) || data.sellerName.trim().length < 2) {
+  if (!isNonEmptyString(data.sellerName) || !data.sellerName.trim()) {
+    fail("sellerName cannot be whitespace-only");
+  } else if (data.sellerName.trim().length < 2) {
     fail("sellerName must be at least 2 characters");
+  } else if (data.sellerName.length > 80) {
+    fail(`sellerName should be ≤80 chars (${data.sellerName.length})`);
   }
 
   if (data.updated) {

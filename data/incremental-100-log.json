@@ -166,5 +166,11 @@
     "id": "inc-028",
     "category": "validation",
     "task": "Reject numeric-only shortTitle"
+  },
+  {
+    "at": "2026-09-03T22:10:27.321Z",
+    "id": "inc-029",
+    "category": "validation",
+    "task": "Validate sellerName max length"
   }
 ]
