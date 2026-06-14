@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 136,
-  "pending": 164,
+  "done": 137,
+  "pending": 163,
   "tasks": [
     {
       "id": "001",
@@ -1098,7 +1098,7 @@
       "category": "ui-polish",
       "task": "Use text-wrap balance on h1 headings",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "138",

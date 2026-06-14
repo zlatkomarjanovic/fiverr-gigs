@@ -278,5 +278,10 @@
     "at": "2026-09-03T22:04:53.503Z",
     "key": "bug-fixes-batch-10",
     "task": "Exclude current gig from relatedGigs results"
+  },
+  {
+    "at": "2026-09-03T22:04:53.503Z",
+    "key": "ui-polish-batch-10",
+    "task": "Use text-wrap balance on h1 headings"
   }
 ]
