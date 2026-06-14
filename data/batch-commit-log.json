@@ -273,5 +273,10 @@
     "at": "2026-09-03T22:04:53.502Z",
     "key": "edge-cases-batch-9",
     "task": "Handle missing optional githubUrl"
+  },
+  {
+    "at": "2026-09-03T22:04:53.503Z",
+    "key": "bug-fixes-batch-10",
+    "task": "Exclude current gig from relatedGigs results"
   }
 ]
