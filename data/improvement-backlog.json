@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 140,
-  "pending": 160,
+  "done": 141,
+  "pending": 159,
   "tasks": [
     {
       "id": "001",
@@ -1130,7 +1130,7 @@
       "category": "metadata",
       "task": "Add X-UA-Compatible edge mode meta",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "142",
