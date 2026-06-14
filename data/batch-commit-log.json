@@ -293,5 +293,10 @@
     "at": "2026-09-03T22:04:53.505Z",
     "key": "a11y-batch-10",
     "task": "Thicken borders when prefers-contrast"
+  },
+  {
+    "at": "2026-09-03T22:04:53.505Z",
+    "key": "seo-batch-10",
+    "task": "Include numberOfItems in ItemList schema"
   }
 ]

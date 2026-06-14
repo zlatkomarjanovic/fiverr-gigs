@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 139,
-  "pending": 161,
+  "done": 140,
+  "pending": 160,
   "tasks": [
     {
       "id": "001",
@@ -1122,7 +1122,7 @@
       "category": "seo",
       "task": "Include numberOfItems in ItemList schema",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "141",
