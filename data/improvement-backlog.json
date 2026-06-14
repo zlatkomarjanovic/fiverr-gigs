@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 142,
-  "pending": 158,
+  "done": 143,
+  "pending": 157,
   "tasks": [
     {
       "id": "001",
@@ -1146,7 +1146,7 @@
       "category": "error-handling",
       "task": "generate try/catch write service pages",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "144",
