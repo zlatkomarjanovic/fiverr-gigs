@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 141,
-  "pending": 159,
+  "done": 142,
+  "pending": 158,
   "tasks": [
     {
       "id": "001",
@@ -1138,7 +1138,7 @@
       "category": "performance",
       "task": "Batch fs.writeFileSync with sorted gig ids",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "143",
