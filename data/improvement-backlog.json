@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 272,
-  "pending": 28,
+  "done": 273,
+  "pending": 27,
   "tasks": [
     {
       "id": "001",
@@ -2186,7 +2186,7 @@
       "category": "mobile",
       "task": "Safe-area padding on header",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "274",
