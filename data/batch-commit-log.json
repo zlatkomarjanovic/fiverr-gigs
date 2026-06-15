@@ -953,5 +953,10 @@
     "at": "2026-09-03T22:04:53.596Z",
     "key": "bug-fixes-batch-19",
     "task": "Guard generate when services dir is a file"
+  },
+  {
+    "at": "2026-09-03T22:04:53.596Z",
+    "key": "ui-polish-batch-19",
+    "task": "Enable text-rendering optimizeLegibility"
   }
 ]
