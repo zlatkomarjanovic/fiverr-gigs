@@ -968,5 +968,10 @@
     "at": "2026-09-03T22:04:53.598Z",
     "key": "a11y-batch-19",
     "task": "High visibility focus on skip link"
+  },
+  {
+    "at": "2026-09-03T22:04:53.598Z",
+    "key": "seo-batch-19",
+    "task": "Offer priceCurrency USD placeholder in schema"
   }
 ]

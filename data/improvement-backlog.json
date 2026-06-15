@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 274,
-  "pending": 26,
+  "done": 275,
+  "pending": 25,
   "tasks": [
     {
       "id": "001",
@@ -2202,7 +2202,7 @@
       "category": "seo",
       "task": "Offer priceCurrency USD placeholder in schema",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "276",
