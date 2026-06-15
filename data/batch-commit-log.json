@@ -978,5 +978,10 @@
     "at": "2026-09-03T22:04:53.599Z",
     "key": "metadata-batch-19",
     "task": "Add directory classification meta"
+  },
+  {
+    "at": "2026-09-03T22:04:53.600Z",
+    "key": "performance-batch-19",
+    "task": "Single pass validate gig uniqueness sets"
   }
 ]

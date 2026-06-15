@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 276,
-  "pending": 24,
+  "done": 277,
+  "pending": 23,
   "tasks": [
     {
       "id": "001",
@@ -2218,7 +2218,7 @@
       "category": "performance",
       "task": "Single pass validate gig uniqueness sets",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "278",
