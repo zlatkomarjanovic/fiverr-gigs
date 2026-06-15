@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 273,
-  "pending": 27,
+  "done": 274,
+  "pending": 26,
   "tasks": [
     {
       "id": "001",
@@ -2194,7 +2194,7 @@
       "category": "a11y",
       "task": "High visibility focus on skip link",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "275",
