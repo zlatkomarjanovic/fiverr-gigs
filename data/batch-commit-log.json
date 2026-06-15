@@ -973,5 +973,10 @@
     "at": "2026-09-03T22:04:53.598Z",
     "key": "seo-batch-19",
     "task": "Offer priceCurrency USD placeholder in schema"
+  },
+  {
+    "at": "2026-09-03T22:04:53.599Z",
+    "key": "metadata-batch-19",
+    "task": "Add directory classification meta"
   }
 ]
