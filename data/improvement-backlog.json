@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 277,
-  "pending": 23,
+  "done": 278,
+  "pending": 22,
   "tasks": [
     {
       "id": "001",
@@ -2226,7 +2226,7 @@
       "category": "error-handling",
       "task": "Graceful empty related gigs list rendering",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "279",
