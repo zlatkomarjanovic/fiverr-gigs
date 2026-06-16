@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 279,
-  "pending": 21,
+  "done": 280,
+  "pending": 20,
   "tasks": [
     {
       "id": "001",
@@ -2242,7 +2242,7 @@
       "category": "security",
       "task": "IndexNow key hex format validation",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "281",

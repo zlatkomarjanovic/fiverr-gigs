@@ -993,5 +993,10 @@
     "at": "2026-09-03T22:04:53.601Z",
     "key": "validation-batch-19",
     "task": "Require description min length 80"
+  },
+  {
+    "at": "2026-09-03T22:04:53.602Z",
+    "key": "security-batch-19",
+    "task": "IndexNow key hex format validation"
   }
 ]
