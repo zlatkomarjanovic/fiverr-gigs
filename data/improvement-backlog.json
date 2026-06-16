@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 280,
-  "pending": 20,
+  "done": 281,
+  "pending": 19,
   "tasks": [
     {
       "id": "001",
@@ -2250,7 +2250,7 @@
       "category": "refactoring",
       "task": "Extract validate CLI runner",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "282",

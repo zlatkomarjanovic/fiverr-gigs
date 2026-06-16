@@ -198,5 +198,6 @@
   "performance-batch-19",
   "error-handling-batch-19",
   "validation-batch-19",
-  "security-batch-19"
+  "security-batch-19",
+  "refactoring-batch-19"
 ]
