@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 284,
-  "pending": 16,
+  "done": 285,
+  "pending": 15,
   "tasks": [
     {
       "id": "001",
@@ -2282,7 +2282,7 @@
       "category": "edge-cases",
       "task": "Handle nested service path detection",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "286",
