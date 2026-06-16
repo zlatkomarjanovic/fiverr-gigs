@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 283,
-  "pending": 17,
+  "done": 284,
+  "pending": 16,
   "tasks": [
     {
       "id": "001",
@@ -2274,7 +2274,7 @@
       "category": "dx",
       "task": "Add homepage field to package.json",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "285",
