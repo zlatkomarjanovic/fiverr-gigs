@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 282,
-  "pending": 18,
+  "done": 283,
+  "pending": 17,
   "tasks": [
     {
       "id": "001",
@@ -2266,7 +2266,7 @@
       "category": "docs",
       "task": "Document related gigs algorithm",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "284",
