@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 278,
-  "pending": 22,
+  "done": 279,
+  "pending": 21,
   "tasks": [
     {
       "id": "001",
@@ -2234,7 +2234,7 @@
       "category": "validation",
       "task": "Require description min length 80",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "280",
