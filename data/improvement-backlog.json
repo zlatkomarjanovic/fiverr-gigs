@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 285,
-  "pending": 15,
+  "done": 286,
+  "pending": 14,
   "tasks": [
     {
       "id": "001",
@@ -2290,7 +2290,7 @@
       "category": "bug-fixes",
       "task": "Normalize gig updated date comparison in validator",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "287",
