@@ -27,6 +27,11 @@ body {
   font: 18px/1.55 "Iowan Old Style", "Palatino Linotype", Palatino, serif;
 }
 a { color: var(--accent-ink); }
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+.btn:focus-visible { outline-color: var(--accent-ink); }
 header, main, footer { width: min(1080px, calc(100% - 2rem)); margin: 0 auto; }
 header { padding: 2rem 0 1rem; display: flex; justify-content: space-between; gap: 0.75rem 1.25rem; align-items: center; flex-wrap: wrap; }
 header a { text-decoration: none; color: inherit; }
