@@ -58,5 +58,11 @@
     "id": "inc-010",
     "category": "ui-polish",
     "task": "Style strong tags in meta"
+  },
+  {
+    "at": "2026-09-03T22:10:24.333Z",
+    "id": "inc-011",
+    "category": "ui-polish",
+    "task": "Card title link no underline default"
   }
 ]
