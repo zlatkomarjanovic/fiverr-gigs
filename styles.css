@@ -172,3 +172,4 @@ main:focus { outline: none; }
 .panel { background: var(--card); }
 .hero .kicker { margin: 0 0 0.5rem; }
 .grid { padding-top: 1.5rem; }
+.footer-links a:hover { text-decoration: underline; }
