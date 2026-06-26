@@ -169,3 +169,4 @@ main:focus { outline: none; }
 .meta strong { color: var(--ink); }
 .card h2 a { text-decoration: none; }
 .card h2 a:hover { text-decoration: underline; }
+.panel { background: var(--card); }
