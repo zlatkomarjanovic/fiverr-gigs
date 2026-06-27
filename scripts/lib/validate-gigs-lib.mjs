@@ -175,6 +175,7 @@ export function validateGigsData(data) {
     }
 
     if (!isNonEmptyString(gig?.shortTitle)) fail(`${label}: shortTitle must be a non-empty string`);
+    else if (gig.shortTitle.trim() !== gig.shortTitle) fail(`${label}: shortTitle must not have leading or trailing whitespace`);
     else if (gig.shortTitle.length > 60) fail(`${label}: shortTitle should be ≤60 chars (${gig.shortTitle.length})`);
     else if (/^\d+$/.test(gig.shortTitle)) fail(`${label}: shortTitle cannot be numeric-only`);
     else if (shortTitles.has(gig.shortTitle)) fail(`Duplicate shortTitle: ${gig.shortTitle}`);

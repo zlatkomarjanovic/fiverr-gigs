@@ -172,5 +172,11 @@
     "id": "inc-029",
     "category": "validation",
     "task": "Validate sellerName max length"
+  },
+  {
+    "at": "2026-09-03T22:10:27.500Z",
+    "id": "inc-030",
+    "category": "validation",
+    "task": "Validate shortTitle trim whitespace"
   }
 ]
