@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 115,
-  "pending": 185,
+  "done": 116,
+  "pending": 184,
   "tasks": [
     {
       "id": "001",
@@ -930,7 +930,7 @@
       "category": "refactoring",
       "task": "Extract service page body builder",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "117",

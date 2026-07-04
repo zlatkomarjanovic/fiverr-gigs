@@ -173,5 +173,10 @@
     "at": "2026-09-03T22:04:53.489Z",
     "key": "security-batch-8",
     "task": "Strip control chars from esc() input"
+  },
+  {
+    "at": "2026-09-03T22:04:53.490Z",
+    "key": "refactoring-batch-8",
+    "task": "Extract service page body builder"
   }
 ]
