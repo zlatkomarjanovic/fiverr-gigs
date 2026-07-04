@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 113,
-  "pending": 187,
+  "done": 114,
+  "pending": 186,
   "tasks": [
     {
       "id": "001",
@@ -914,7 +914,7 @@
       "category": "validation",
       "task": "Require at least 3 searchTerms per gig",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "115",

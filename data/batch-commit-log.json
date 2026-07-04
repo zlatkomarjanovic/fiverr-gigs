@@ -163,5 +163,10 @@
     "at": "2026-09-03T22:04:53.487Z",
     "key": "error-handling-batch-8",
     "task": "Validate SITE_ORIGIN is https when set"
+  },
+  {
+    "at": "2026-09-03T22:04:53.488Z",
+    "key": "validation-batch-8",
+    "task": "Require at least 3 searchTerms per gig"
   }
 ]

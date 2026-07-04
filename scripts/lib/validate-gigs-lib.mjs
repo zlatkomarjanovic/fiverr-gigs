@@ -153,3 +153,14 @@ export function validateGigsData(data) {
   const fail = (message) => errors.push(message);
   for (const key of REQUIRED_ROOT) {
     if (!(key in data)) fail(`Missing root field: ${key}`);
+  if (!Array.isArray(data.gigs) || data.gigs.length === 0) {
+    fail("gigs must be a non-empty array");
+  }
+
+  if (data.sellerUrl && !/^https:\/\/www\.fiverr\.com\//.test(data.sellerUrl)) {
+    fail("sellerUrl must be an https Fiverr profile URL");
+  } else if (data.sellerUrl && isForbiddenUrl(data.sellerUrl)) {
+    fail("sellerUrl uses a forbidden protocol");
+  } else if (data.sellerUrl && /\?/.test(data.sellerUrl)) {
+    fail("sellerUrl must not include query parameters");
+  }
