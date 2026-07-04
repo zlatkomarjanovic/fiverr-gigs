@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 116,
-  "pending": 184,
+  "done": 117,
+  "pending": 183,
   "tasks": [
     {
       "id": "001",
@@ -938,7 +938,7 @@
       "category": "tests",
       "task": "Test buildRss includes atom link",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "118",

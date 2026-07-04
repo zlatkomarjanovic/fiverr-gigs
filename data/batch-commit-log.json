@@ -178,5 +178,10 @@
     "at": "2026-09-03T22:04:53.490Z",
     "key": "refactoring-batch-8",
     "task": "Extract service page body builder"
+  },
+  {
+    "at": "2026-09-03T22:04:53.490Z",
+    "key": "tests-batch-8",
+    "task": "Test buildRss includes atom link"
   }
 ]
