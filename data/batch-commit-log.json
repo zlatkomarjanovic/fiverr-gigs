@@ -183,5 +183,10 @@
     "at": "2026-09-03T22:04:53.490Z",
     "key": "tests-batch-8",
     "task": "Test buildRss includes atom link"
+  },
+  {
+    "at": "2026-09-03T22:04:53.491Z",
+    "key": "docs-batch-8",
+    "task": "Document batch backlog completion"
   }
 ]

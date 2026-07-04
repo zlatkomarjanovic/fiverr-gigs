@@ -109,3 +109,13 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md) for the contributor workflow.
 | `npm run index` | Generate, then submit |
 | `npm run pingomatic` | Legacy Ping-O-Matic full check list |
 Static assets: [`favicon.svg`](favicon.svg) and [`styles.css`](styles.css) are hand-maintained (not generated).
+Do not hand-edit generated files (`index.html`, `services/*.html`, `404.html`, `sitemap.xml`, `rss.xml`, `robots.txt`, `llms.txt`, `{key}.txt`). Run `npm run generate` after changing `data/gigs.json`.
+
+## CI
+
+GitHub Actions workflow [`.github/workflows/hub.yml`](.github/workflows/hub.yml) runs on push and pull request to `main`:
+
+1. `npm run check` (validate → test → generate)
+2. Fails if generation would change tracked files (commit the regenerated output)
+
+Set `SITE_ORIGIN` in the workflow env to match the live GitHub Pages host.
