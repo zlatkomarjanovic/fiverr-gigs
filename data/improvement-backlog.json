@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 118,
-  "pending": 182,
+  "done": 119,
+  "pending": 181,
   "tasks": [
     {
       "id": "001",
@@ -954,7 +954,7 @@
       "category": "dx",
       "task": "Add node version check script",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "120",
