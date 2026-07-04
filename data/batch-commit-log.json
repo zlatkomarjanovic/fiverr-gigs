@@ -168,5 +168,10 @@
     "at": "2026-09-03T22:04:53.488Z",
     "key": "validation-batch-8",
     "task": "Require at least 3 searchTerms per gig"
+  },
+  {
+    "at": "2026-09-03T22:04:53.489Z",
+    "key": "security-batch-8",
+    "task": "Strip control chars from esc() input"
   }
 ]
