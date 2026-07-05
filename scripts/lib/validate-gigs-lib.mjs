@@ -58,6 +58,8 @@ export function validateGigsData(data) {
     fail("gigs must be a non-empty array");
   }
 
+  if (data.seller && !isNonEmptyString(data.seller)) fail("seller must be a non-empty string");
+
   if (data.sellerUrl && !/^https:\/\/www\.fiverr\.com\//.test(data.sellerUrl)) {
     fail("sellerUrl must be an https Fiverr profile URL");
   } else if (data.sellerUrl && isForbiddenUrl(data.sellerUrl)) {

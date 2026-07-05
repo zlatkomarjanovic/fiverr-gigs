@@ -118,5 +118,11 @@
     "id": "inc-020",
     "category": "print",
     "task": "Page break inside cards"
+  },
+  {
+    "at": "2026-09-03T22:10:25.954Z",
+    "id": "inc-021",
+    "category": "validation",
+    "task": "Reject empty seller handle"
   }
 ]
