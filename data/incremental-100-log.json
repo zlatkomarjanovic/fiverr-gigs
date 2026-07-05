@@ -94,5 +94,11 @@
     "id": "inc-016",
     "category": "print",
     "task": "Hide skip link when printing"
+  },
+  {
+    "at": "2026-09-03T22:10:25.320Z",
+    "id": "inc-017",
+    "category": "print",
+    "task": "Print-friendly body font size"
   }
 ]

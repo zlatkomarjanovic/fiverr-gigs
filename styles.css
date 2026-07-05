@@ -176,3 +176,6 @@ main:focus { outline: none; }
 @media print {
   .skip-link { display: none; }
 }
+@media print {
+  body { font-size: 12pt; }
+}
