@@ -88,5 +88,11 @@
     "id": "inc-015",
     "category": "ui-polish",
     "task": "Footer link hover underline"
+  },
+  {
+    "at": "2026-09-03T22:10:25.162Z",
+    "id": "inc-016",
+    "category": "print",
+    "task": "Hide skip link when printing"
   }
 ]
