@@ -160,6 +160,7 @@ export function validateGigsData(data) {
     else if (gig.summary.length > 160) fail(`${label}: summary should be ≤160 chars (${gig.summary.length})`);
 
     if (!isNonEmptyString(gig?.title)) fail(`${label}: title must be a non-empty string`);
+    else if (gig.title.trim() !== gig.title) fail(`${label}: title must not have leading or trailing whitespace`);
     else if (gig.title.length > 80) fail(`${label}: title should be ≤80 chars (${gig.title.length})`);
     else {
       const titleKey = gig.title.toLowerCase();
