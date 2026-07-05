@@ -124,5 +124,11 @@
     "id": "inc-021",
     "category": "validation",
     "task": "Reject empty seller handle"
+  },
+  {
+    "at": "2026-09-03T22:10:26.122Z",
+    "id": "inc-022",
+    "category": "validation",
+    "task": "Reject whitespace-only summary"
   }
 ]

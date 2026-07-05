@@ -156,6 +156,7 @@ export function validateGigsData(data) {
     else keywords.add(gig.primaryKeyword);
 
     if (!isNonEmptyString(gig?.summary)) fail(`${label}: summary must be a non-empty string`);
+    else if (gig.summary.trim() !== gig.summary) fail(`${label}: summary must not have leading or trailing whitespace`);
     else if (gig.summary.length > 160) fail(`${label}: summary should be ≤160 chars (${gig.summary.length})`);
 
     if (!isNonEmptyString(gig?.title)) fail(`${label}: title must be a non-empty string`);
