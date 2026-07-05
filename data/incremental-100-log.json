@@ -100,5 +100,11 @@
     "id": "inc-017",
     "category": "print",
     "task": "Print-friendly body font size"
+  },
+  {
+    "at": "2026-09-03T22:10:25.477Z",
+    "id": "inc-018",
+    "category": "print",
+    "task": "Avoid card shadow in print"
   }
 ]

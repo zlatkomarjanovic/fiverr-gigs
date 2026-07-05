@@ -179,3 +179,6 @@ main:focus { outline: none; }
 @media print {
   body { font-size: 12pt; }
 }
+@media print {
+  article.card { box-shadow: none; border: 1px solid #ccc; }
+}
