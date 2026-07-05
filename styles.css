@@ -182,3 +182,6 @@ main:focus { outline: none; }
 @media print {
   article.card { box-shadow: none; border: 1px solid #ccc; }
 }
+@media print {
+  a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.85em; }
+}
