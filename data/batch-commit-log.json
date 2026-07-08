@@ -938,5 +938,10 @@
     "at": "2026-09-03T22:04:53.594Z",
     "key": "docs-batch-18",
     "task": "Add GitHub Pages deploy note"
+  },
+  {
+    "at": "2026-09-03T22:04:53.594Z",
+    "key": "dx-batch-18",
+    "task": "Add bugs url to package.json"
   }
 ]

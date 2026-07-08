@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 268,
-  "pending": 32,
+  "done": 269,
+  "pending": 31,
   "tasks": [
     {
       "id": "001",
@@ -2154,7 +2154,7 @@
       "category": "dx",
       "task": "Add bugs url to package.json",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "270",
