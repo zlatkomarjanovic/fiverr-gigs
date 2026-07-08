@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 269,
-  "pending": 31,
+  "done": 270,
+  "pending": 30,
   "tasks": [
     {
       "id": "001",
@@ -2162,7 +2162,7 @@
       "category": "edge-cases",
       "task": "Handle canonical root vs index.html",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "271",
