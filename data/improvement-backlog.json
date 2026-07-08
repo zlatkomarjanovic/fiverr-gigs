@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 267,
-  "pending": 33,
+  "done": 268,
+  "pending": 32,
   "tasks": [
     {
       "id": "001",
@@ -2146,7 +2146,7 @@
       "category": "docs",
       "task": "Add GitHub Pages deploy note",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "269",
