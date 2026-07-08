@@ -948,5 +948,10 @@
     "at": "2026-09-03T22:04:53.595Z",
     "key": "edge-cases-batch-18",
     "task": "Handle canonical root vs index.html"
+  },
+  {
+    "at": "2026-09-03T22:04:53.596Z",
+    "key": "bug-fixes-batch-19",
+    "task": "Guard generate when services dir is a file"
   }
 ]
