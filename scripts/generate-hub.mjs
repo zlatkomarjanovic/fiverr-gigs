@@ -75,6 +75,9 @@ if (!fs.existsSync(path.join(ROOT, "styles.css"))) {
 
 function layout({ title, description, canonical, jsonLd, body, robots = "index,follow" }) {
   const canon = SITE_ORIGIN ? `${SITE_ORIGIN}${canonical}` : canonical;
+  const nested = canonical.includes("/services/");
+  const homeHref = nested ? "../index.html" : "index.html";
+  const sitemapHref = nested ? "../sitemap.xml" : "sitemap.xml";
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -88,20 +91,25 @@ function layout({ title, description, canonical, jsonLd, body, robots = "index,f
   <meta property="og:description" content="${esc(description)}">
   <meta property="og:type" content="website">
   <link rel="alternate" type="application/rss+xml" href="${esc(abs("/rss.xml"))}">
-  <link rel="stylesheet" href="${canonical.includes("/services/") ? "../styles.css" : "styles.css"}">
+  <link rel="stylesheet" href="${nested ? "../styles.css" : "styles.css"}">
   <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
 </head>
 <body>
   <header>
-    <a href="${canonical.includes("/services/") ? "../index.html" : "index.html"}"><strong>${esc(gigs.sellerName)}</strong></a>
+    <a href="${homeHref}"><strong>${esc(gigs.sellerName)}</strong></a>
     <nav>
-      <a href="${canonical.includes("/services/") ? "../index.html#gigs" : "#gigs"}">Gigs</a>
+      <a href="${nested ? "../index.html#gigs" : "#gigs"}">Gigs</a>
       ${fiverrLink(gigs.sellerUrl, "Fiverr profile")}
     </nav>
   </header>
   <main>${body}</main>
   <footer>
     <p>Official Fiverr gigs for ${esc(gigs.sellerName)}. Clean URLs only — no tracking parameters.</p>
+    <p>
+      <a href="${homeHref}">Hub home</a>
+      · <a href="${sitemapHref}">Sitemap</a>
+      ${gigs.sellerSite ? `· <a href="${esc(gigs.sellerSite)}" target="_blank" rel="noopener noreferrer">Portfolio</a>` : ""}
+    </p>
   </footer>
 </body>
 </html>`;
