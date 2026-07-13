@@ -73,7 +73,7 @@ if (!fs.existsSync(path.join(ROOT, "styles.css"))) {
   throw new Error("styles.css is missing. The generator no longer emits CSS.");
 }
 
-function layout({ title, description, canonical, jsonLd, body }) {
+function layout({ title, description, canonical, jsonLd, body, robots = "index,follow" }) {
   const canon = SITE_ORIGIN ? `${SITE_ORIGIN}${canonical}` : canonical;
   return `<!DOCTYPE html>
 <html lang="en">
@@ -83,7 +83,7 @@ function layout({ title, description, canonical, jsonLd, body }) {
   <title>${esc(title)}</title>
   <meta name="description" content="${esc(description)}">
   <link rel="canonical" href="${esc(canon)}">
-  <meta name="robots" content="index,follow">
+  <meta name="robots" content="${esc(robots)}">
   <meta property="og:title" content="${esc(title)}">
   <meta property="og:description" content="${esc(description)}">
   <meta property="og:type" content="website">
@@ -254,6 +254,26 @@ const llms = `# ${gigs.sellerName} Fiverr gigs
 
 ${gigs.gigs.map((g) => `- [${g.title}](${g.url}) — ${g.primaryKeyword}`).join("\n")}
 `;
+
+fs.writeFileSync(path.join(ROOT, "404.html"), layout({
+  title: `Page not found | ${gigs.sellerName}`,
+  description: "This Fiverr gig index page does not exist. Browse the live gigs or open the Fiverr profile.",
+  canonical: "/404.html",
+  robots: "noindex,follow",
+  jsonLd: {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: "Page not found",
+    url: SITE_ORIGIN ? `${SITE_ORIGIN}/404.html` : "/404.html",
+  },
+  body: `
+    <section class="hero">
+      <p class="kicker">404</p>
+      <h1>This page is not in the gig index</h1>
+      <p class="lede">The URL may be outdated or typed incorrectly. The live Fiverr services are on the hub home page.</p>
+      <p><a class="btn" href="index.html">Back to all gigs</a></p>
+    </section>`,
+}));
 
 fs.writeFileSync(path.join(ROOT, "sitemap.xml"), sitemap);
 fs.writeFileSync(path.join(ROOT, "rss.xml"), rss);
