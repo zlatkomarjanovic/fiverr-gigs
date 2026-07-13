@@ -95,6 +95,7 @@ function layout({ title, description, canonical, jsonLd, body, robots = "index,f
   <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
 </head>
 <body>
+  <a class="skip-link" href="#content">Skip to content</a>
   <header>
     <a href="${homeHref}"><strong>${esc(gigs.sellerName)}</strong></a>
     <nav>
@@ -102,7 +103,7 @@ function layout({ title, description, canonical, jsonLd, body, robots = "index,f
       ${fiverrLink(gigs.sellerUrl, "Fiverr profile")}
     </nav>
   </header>
-  <main>${body}</main>
+  <main id="content">${body}</main>
   <footer>
     <p>Official Fiverr gigs for ${esc(gigs.sellerName)}. Clean URLs only — no tracking parameters.</p>
     <p>
