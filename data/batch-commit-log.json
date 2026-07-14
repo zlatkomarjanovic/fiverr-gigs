@@ -428,5 +428,10 @@
     "at": "2026-09-03T22:04:53.523Z",
     "key": "bug-fixes-batch-12",
     "task": "Warn when SITE_ORIGIN is unset during generate"
+  },
+  {
+    "at": "2026-09-03T22:04:53.524Z",
+    "key": "ui-polish-batch-12",
+    "task": "Add smooth btn background transition"
   }
 ]

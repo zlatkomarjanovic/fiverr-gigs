@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 166,
-  "pending": 134,
+  "done": 167,
+  "pending": 133,
   "tasks": [
     {
       "id": "001",
@@ -1338,7 +1338,7 @@
       "category": "ui-polish",
       "task": "Add smooth btn background transition",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "168",
