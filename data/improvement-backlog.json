@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 164,
-  "pending": 136,
+  "done": 165,
+  "pending": 135,
   "tasks": [
     {
       "id": "001",
@@ -1322,7 +1322,7 @@
       "category": "edge-cases",
       "task": "Handle very long slug in url validation",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "166",
