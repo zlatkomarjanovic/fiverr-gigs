@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 165,
-  "pending": 135,
+  "done": 166,
+  "pending": 134,
   "tasks": [
     {
       "id": "001",
@@ -1330,7 +1330,7 @@
       "category": "bug-fixes",
       "task": "Warn when SITE_ORIGIN is unset during generate",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "167",

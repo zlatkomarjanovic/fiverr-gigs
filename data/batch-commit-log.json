@@ -423,5 +423,10 @@
     "at": "2026-09-03T22:04:53.523Z",
     "key": "edge-cases-batch-11",
     "task": "Handle very long slug in url validation"
+  },
+  {
+    "at": "2026-09-03T22:04:53.523Z",
+    "key": "bug-fixes-batch-12",
+    "task": "Warn when SITE_ORIGIN is unset during generate"
   }
 ]
