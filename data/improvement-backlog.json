@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 163,
-  "pending": 137,
+  "done": 164,
+  "pending": 136,
   "tasks": [
     {
       "id": "001",
@@ -1314,7 +1314,7 @@
       "category": "dx",
       "task": "Add pregenerate validate in build chain",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "165",
