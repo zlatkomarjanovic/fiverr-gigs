@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 168,
-  "pending": 132,
+  "done": 169,
+  "pending": 131,
   "tasks": [
     {
       "id": "001",
@@ -1354,7 +1354,7 @@
       "category": "a11y",
       "task": "Darken muted text for WCAG contrast",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "170",
