@@ -303,7 +303,9 @@ Sitemap: ${origin}/sitemap.xml
 
 const llms = `# ${gigs.sellerName} Fiverr gigs
 
-${gigs.gigs.map((g) => `- [${g.title}](${g.url}) — ${g.primaryKeyword}`).join("\n")}
+Index: ${origin}/
+
+${gigs.gigs.map((g) => `- [${g.title}](${origin}/services/${g.id}.html) — ${g.primaryKeyword}. Book: ${g.url}`).join("\n")}
 `;
 
 fs.writeFileSync(path.join(ROOT, "404.html"), layout({
