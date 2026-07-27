@@ -733,5 +733,10 @@
     "at": "2026-09-03T22:04:53.565Z",
     "key": "ui-polish-batch-16",
     "task": "Tune meta paragraph line-height"
+  },
+  {
+    "at": "2026-09-03T22:04:53.566Z",
+    "key": "mobile-batch-16",
+    "task": "Slightly smaller details summary on mobile"
   }
 ]

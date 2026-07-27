@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 227,
-  "pending": 73,
+  "done": 228,
+  "pending": 72,
   "tasks": [
     {
       "id": "001",
@@ -1826,7 +1826,7 @@
       "category": "mobile",
       "task": "Slightly smaller details summary on mobile",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "229",
