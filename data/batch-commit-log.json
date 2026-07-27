@@ -718,5 +718,10 @@
     "at": "2026-09-03T22:04:53.563Z",
     "key": "dx-batch-15",
     "task": "Add npm run clean generated note"
+  },
+  {
+    "at": "2026-09-03T22:04:53.564Z",
+    "key": "edge-cases-batch-15",
+    "task": "Handle related gigs when no overlap"
   }
 ]

@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 224,
-  "pending": 76,
+  "done": 225,
+  "pending": 75,
   "tasks": [
     {
       "id": "001",
@@ -1802,7 +1802,7 @@
       "category": "edge-cases",
       "task": "Handle related gigs when no overlap",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "226",
