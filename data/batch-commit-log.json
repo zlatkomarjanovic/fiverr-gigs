@@ -708,5 +708,10 @@
     "at": "2026-09-03T22:04:53.562Z",
     "key": "tests-batch-15",
     "task": "Test buildRobots single sitemap line"
+  },
+  {
+    "at": "2026-09-03T22:04:53.563Z",
+    "key": "docs-batch-15",
+    "task": "Document hub-only submit flag"
   }
 ]
