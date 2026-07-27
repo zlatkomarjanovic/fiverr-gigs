@@ -713,5 +713,10 @@
     "at": "2026-09-03T22:04:53.563Z",
     "key": "docs-batch-15",
     "task": "Document hub-only submit flag"
+  },
+  {
+    "at": "2026-09-03T22:04:53.563Z",
+    "key": "dx-batch-15",
+    "task": "Add npm run clean generated note"
   }
 ]
