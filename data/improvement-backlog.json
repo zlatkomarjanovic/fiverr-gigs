@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 219,
-  "pending": 81,
+  "done": 220,
+  "pending": 80,
   "tasks": [
     {
       "id": "001",
@@ -1762,7 +1762,7 @@
       "category": "security",
       "task": "Escape ampersands in XML builders",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "221",
