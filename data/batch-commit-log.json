@@ -688,5 +688,10 @@
     "at": "2026-09-03T22:04:53.559Z",
     "key": "error-handling-batch-15",
     "task": "Exit validate with code 1 on any error"
+  },
+  {
+    "at": "2026-09-03T22:04:53.560Z",
+    "key": "validation-batch-15",
+    "task": "Require sellerName min length 2"
   }
 ]

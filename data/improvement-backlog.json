@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 218,
-  "pending": 82,
+  "done": 219,
+  "pending": 81,
   "tasks": [
     {
       "id": "001",
@@ -1754,7 +1754,7 @@
       "category": "validation",
       "task": "Require sellerName min length 2",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "220",
