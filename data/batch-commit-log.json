@@ -728,5 +728,10 @@
     "at": "2026-09-03T22:04:53.565Z",
     "key": "bug-fixes-batch-16",
     "task": "Stable sort sameAs links in Person schema"
+  },
+  {
+    "at": "2026-09-03T22:04:53.565Z",
+    "key": "ui-polish-batch-16",
+    "task": "Tune meta paragraph line-height"
   }
 ]
