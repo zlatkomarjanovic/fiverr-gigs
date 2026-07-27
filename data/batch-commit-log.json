@@ -698,5 +698,10 @@
     "at": "2026-09-03T22:04:53.560Z",
     "key": "security-batch-15",
     "task": "Escape ampersands in XML builders"
+  },
+  {
+    "at": "2026-09-03T22:04:53.561Z",
+    "key": "refactoring-batch-15",
+    "task": "Extract tag list HTML helper"
   }
 ]
