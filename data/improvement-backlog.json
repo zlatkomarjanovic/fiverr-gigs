@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 225,
-  "pending": 75,
+  "done": 226,
+  "pending": 74,
   "tasks": [
     {
       "id": "001",
@@ -1810,7 +1810,7 @@
       "category": "bug-fixes",
       "task": "Stable sort sameAs links in Person schema",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "227",

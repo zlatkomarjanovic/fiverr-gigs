@@ -723,5 +723,10 @@
     "at": "2026-09-03T22:04:53.564Z",
     "key": "edge-cases-batch-15",
     "task": "Handle related gigs when no overlap"
+  },
+  {
+    "at": "2026-09-03T22:04:53.565Z",
+    "key": "bug-fixes-batch-16",
+    "task": "Stable sort sameAs links in Person schema"
   }
 ]
