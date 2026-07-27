@@ -139,5 +139,6 @@
   "error-handling-batch-15",
   "validation-batch-15",
   "security-batch-15",
-  "refactoring-batch-15"
+  "refactoring-batch-15",
+  "tests-batch-15"
 ]
