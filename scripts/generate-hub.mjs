@@ -1,18 +1,39 @@
 #!/usr/bin/env node
 import fs from "node:fs";
 import path from "node:path";
-import crypto from "node:crypto";
 import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const gigs = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "gigs.json"), "utf8"));
 const SITE_ORIGIN = (process.env.SITE_ORIGIN || "").replace(/\/$/, "");
-const keyPath = path.join(ROOT, "data", "indexnow-key.txt");
-const INDEXNOW_KEY = (process.env.INDEXNOW_KEY || (fs.existsSync(keyPath)
-  ? fs.readFileSync(keyPath, "utf8").trim()
-  : crypto.randomBytes(16).toString("hex")));
+const KEY_CACHE = path.join(ROOT, "data", "indexnow-key.txt");
 
-fs.writeFileSync(keyPath, INDEXNOW_KEY);
+function resolveIndexNowKey() {
+  const fromEnv = (process.env.INDEXNOW_KEY || "").trim();
+  if (fromEnv) return fromEnv;
+
+  if (fs.existsSync(KEY_CACHE)) {
+    const cached = fs.readFileSync(KEY_CACHE, "utf8").trim();
+    if (cached) return cached;
+  }
+
+  const published = fs.readdirSync(ROOT).find((name) => {
+    if (!/^[a-f0-9]{32}\.txt$/i.test(name)) return false;
+    const body = fs.readFileSync(path.join(ROOT, name), "utf8").trim();
+    return body.toLowerCase() === name.slice(0, -4).toLowerCase();
+  });
+  if (published) return published.slice(0, -4);
+
+  throw new Error(
+    "IndexNow key missing. Set INDEXNOW_KEY or add the public {key}.txt verification file. Generate will not mint a new key.",
+  );
+}
+
+const INDEXNOW_KEY = resolveIndexNowKey();
+const keyFile = path.join(ROOT, `${INDEXNOW_KEY}.txt`);
+if (!fs.existsSync(keyFile) || fs.readFileSync(keyFile, "utf8").trim() !== INDEXNOW_KEY) {
+  fs.writeFileSync(keyFile, INDEXNOW_KEY);
+}
 
 const origin = SITE_ORIGIN || "https://example.com";
 const abs = (p) => (SITE_ORIGIN ? `${SITE_ORIGIN}${p}` : p);
@@ -265,7 +286,6 @@ fs.writeFileSync(path.join(ROOT, "sitemap.xml"), sitemap);
 fs.writeFileSync(path.join(ROOT, "rss.xml"), rss);
 fs.writeFileSync(path.join(ROOT, "robots.txt"), robots);
 fs.writeFileSync(path.join(ROOT, "llms.txt"), llms);
-fs.writeFileSync(path.join(ROOT, `${INDEXNOW_KEY}.txt`), INDEXNOW_KEY);
 
 console.log(`Hub generated. IndexNow key: ${INDEXNOW_KEY}`);
 console.log("Set SITE_ORIGIN before deploy so sitemap/canonical/IndexNow use your real host.");
