@@ -1,0 +1,10 @@
+{
+  "name": "fiverr-gig-indexer",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate": "node scripts/generate-hub.mjs",
+    "submit": "node scripts/submit-index.mjs",
+    "index": "node scripts/generate-hub.mjs && node scripts/submit-index.mjs"
+  }
+}

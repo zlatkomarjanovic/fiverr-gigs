@@ -1,0 +1,236 @@
+{
+  "seller": "zlatkomarjanovi",
+  "sellerName": "Zlatko Marjanović",
+  "sellerUrl": "https://www.fiverr.com/zlatkomarjanovi",
+  "updated": "2026-09-03",
+  "gigs": [
+    {
+      "id": "webflow-website-seo",
+      "slug": "create-a-professional-responsive-webflow-website-with-seo",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/create-a-professional-responsive-webflow-website-with-seo",
+      "title": "I will create a professional Webflow website with SEO",
+      "shortTitle": "Webflow website with SEO",
+      "primaryKeyword": "webflow website",
+      "lane": "full marketing site",
+      "searchTerms": ["webflow website", "webflow designer", "webflow development", "responsive webflow", "webflow seo"],
+      "tags": ["webflow website", "webflow design", "website redesign", "landing page", "cms website"],
+      "category": "Website Design",
+      "subcategory": "Webflow",
+      "summary": "Full marketing websites in Webflow: structure, CMS, responsive layout, and on-page SEO so the site can rank and convert.",
+      "description": "Hire a Webflow designer to build a professional, responsive website with SEO baked in from the first section. This gig is for complete marketing sites: homepage, inner pages, CMS collections, and a crawlable information architecture. Titles, meta descriptions, heading order, alt text, and internal links are set before launch so Google and buyers can find the pages. The work is production Webflow, not a template dump.",
+      "faq": [
+        { "q": "What is included in a professional Webflow website?", "a": "Information architecture, responsive Webflow build, CMS where needed, on-page SEO, and a launch-ready site you can edit without a developer." },
+        { "q": "Do you handle Webflow SEO?", "a": "Yes. Canonical URLs, title tags, meta descriptions, heading hierarchy, image alt text, and internal links are part of the build." }
+      ]
+    },
+    {
+      "id": "ai-website-saas",
+      "slug": "design-and-vibe-code-your-custom-ai-website-saas-or-web-app",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/design-and-vibe-code-your-custom-ai-website-saas-or-web-app",
+      "title": "I will design and vibe code your AI website or SaaS",
+      "shortTitle": "AI website or SaaS",
+      "primaryKeyword": "ai website",
+      "lane": "greenfield AI product",
+      "searchTerms": ["ai website", "vibe coding", "ai saas", "ai web app", "custom ai website"],
+      "tags": ["ai website", "vibe coding", "ai saas", "web app", "ai developer"],
+      "category": "Programming & Tech",
+      "subcategory": "AI Development",
+      "summary": "Design and vibe-code a custom AI website, SaaS, or web app from a blank canvas through a usable first product.",
+      "description": "Need a custom AI website, SaaS, or web app built with vibe coding? This gig is for new products: UX, interface, and working software in one engagement. Typical builds include AI chat, generation tools, dashboards, auth, and billing-ready structure. You get a designed product, not a disconnected mockup.",
+      "faq": [
+        { "q": "What does vibe code an AI website mean?", "a": "It means designing the product and implementing it with modern AI-assisted development so you get a working AI website or SaaS, not just slides." },
+        { "q": "Can you build an AI SaaS MVP?", "a": "Yes. Scope usually covers the core user flow, AI feature, and a clean UI ready for first users." }
+      ]
+    },
+    {
+      "id": "vibe-coding-consultant",
+      "slug": "be-your-ai-vibe-coding-consultant-and-fix-your-web-app",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/be-your-ai-vibe-coding-consultant-and-fix-your-web-app",
+      "title": "I will be your AI vibe coding consultant and fix your app",
+      "shortTitle": "Vibe coding consultant",
+      "primaryKeyword": "vibe coding",
+      "lane": "rescue and pair programming",
+      "searchTerms": ["vibe coding", "fix web app", "ai coding consultant", "debug website", "ai developer"],
+      "tags": ["vibe coding", "bug fix", "web app", "code review", "ai developer"],
+      "category": "Programming & Tech",
+      "subcategory": "Consulting",
+      "summary": "Pair-program, review, and fix an existing web app that was vibe-coded and is now broken, slow, or stuck.",
+      "description": "Already have a vibe-coded web app that is buggy, unfinished, or impossible to ship? This consulting gig is the rescue lane: review the repo, fix the blockers, and leave you with a path you can keep building on. Use it for broken deploys, auth issues, AI feature failures, and messy generated code.",
+      "faq": [
+        { "q": "Can you fix a vibe-coded web app?", "a": "Yes. This gig is specifically for existing apps that need a consultant to debug, stabilize, and unblock development." },
+        { "q": "Do I need to start a new project?", "a": "No. Bring the current repo, error, or staging URL and the work starts from what you already have." }
+      ]
+    },
+    {
+      "id": "nextjs-saas-claude",
+      "slug": "build-your-next-js-saas-mvp-using-claude-code",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/build-your-next-js-saas-mvp-using-claude-code",
+      "title": "I will build your Next.js SaaS MVP using Claude Code",
+      "shortTitle": "Next.js SaaS MVP",
+      "primaryKeyword": "next js",
+      "lane": "Next.js + Claude Code MVP",
+      "searchTerms": ["next js", "saas mvp", "claude code", "next.js saas", "mvp development"],
+      "tags": ["next js", "saas mvp", "claude code", "next.js", "mvp website"],
+      "category": "Programming & Tech",
+      "subcategory": "Web Application",
+      "summary": "Ship a Next.js SaaS MVP with Claude Code: app router, auth, database, and the first paid workflow.",
+      "description": "This gig is for founders who want a Next.js SaaS MVP built with Claude Code. The stack is App Router, a real data model, authentication, and the one workflow that makes the product worth paying for. Claude Code is used as the production assistant, not as a gimmick in the title.",
+      "faq": [
+        { "q": "What stack do you use for a Next.js SaaS MVP?", "a": "Next.js App Router, a production database, auth, and Claude Code for fast, reviewed implementation." },
+        { "q": "Is Claude Code actually used?", "a": "Yes. The gig is scoped around Claude Code as the build accelerator, with human review on architecture and quality." }
+      ]
+    },
+    {
+      "id": "shopify-ai",
+      "slug": "build-or-optimize-your-shopify-store-with-ai-powered-design",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/build-or-optimize-your-shopify-store-with-ai-powered-design",
+      "title": "I will build or optimize your Shopify store with AI design",
+      "shortTitle": "Shopify store",
+      "primaryKeyword": "shopify store",
+      "lane": "commerce",
+      "searchTerms": ["shopify store", "shopify website", "shopify expert", "shopify design", "shopify optimization"],
+      "tags": ["shopify store", "shopify website", "shopify expert", "store design", "shopify seo"],
+      "category": "Website Design",
+      "subcategory": "Shopify",
+      "summary": "Build a new Shopify store or rebuild an existing one with AI-assisted design, conversion, and catalog structure.",
+      "description": "Get a Shopify store built or optimized with AI-powered design. New stores get theme setup, collections, product templates, and checkout-ready pages. Existing stores get a conversion and design pass: homepage, product page, navigation, and speed. The goal is a store that looks current and sells.",
+      "faq": [
+        { "q": "Can you optimize an existing Shopify store?", "a": "Yes. The gig covers both new builds and optimization of live stores that need better design and conversion." },
+        { "q": "Do you work with Shopify themes?", "a": "Yes. Theme setup, sections, product templates, and store design are in scope." }
+      ]
+    },
+    {
+      "id": "ai-mobile-app",
+      "slug": "build-your-ai-mobile-app-for-ios-and-android",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/build-your-ai-mobile-app-for-ios-and-android",
+      "title": "I will build your AI mobile app for iOS and Android",
+      "shortTitle": "AI mobile app",
+      "primaryKeyword": "mobile app",
+      "lane": "cross-platform mobile",
+      "searchTerms": ["mobile app", "ai app", "ios android app", "ai mobile app", "cross platform app"],
+      "tags": ["mobile app", "ai app", "ios app", "android app", "cross platform"],
+      "category": "Programming & Tech",
+      "subcategory": "Mobile Apps",
+      "summary": "Cross-platform AI mobile app for iOS and Android, from the first screen to a store-ready build path.",
+      "description": "Build an AI mobile app that runs on iOS and Android. This gig is for productized mobile experiences: AI chat, assistants, generators, or industry tools with a shared codebase. You get the app structure, AI integration, and a release path for both stores.",
+      "faq": [
+        { "q": "Do you build for both iOS and Android?", "a": "Yes. The gig is scoped as one AI mobile app shipped to both iOS and Android." },
+        { "q": "What kind of AI features can you add?", "a": "Chat, assistants, generation, voice, and API-backed features that belong in a mobile product." }
+      ]
+    },
+    {
+      "id": "n8n-ai-agents",
+      "slug": "build-n8n-ai-agents-and-workflow-automations",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/build-n8n-ai-agents-and-workflow-automations",
+      "title": "I will build n8n AI agents and workflow automations",
+      "shortTitle": "n8n AI agents",
+      "primaryKeyword": "n8n",
+      "lane": "automation",
+      "searchTerms": ["n8n", "ai agent", "n8n automation", "workflow automation", "ai agents"],
+      "tags": ["n8n", "ai agent", "automation", "workflow", "ai automation"],
+      "category": "Programming & Tech",
+      "subcategory": "AI Development",
+      "summary": "n8n AI agents and workflow automations that connect your tools, trigger on events, and take action without manual work.",
+      "description": "This is the n8n gig: AI agents and workflow automations inside n8n. Typical work includes lead routing, inbox agents, CRM updates, content pipelines, and multi-step agents that call tools. You get documented workflows you can run and extend.",
+      "faq": [
+        { "q": "What can an n8n AI agent do?", "a": "Read inputs, call tools, update your apps, and complete multi-step jobs such as lead handling, reporting, or support triage." },
+        { "q": "Do you only build n8n workflows?", "a": "This gig is dedicated to n8n agents and automations so search relevance stays on n8n, not generic Zapier work." }
+      ]
+    },
+    {
+      "id": "framer-website",
+      "slug": "design-and-develop-a-modern-responsive-framer-website",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/design-and-develop-a-modern-responsive-framer-website",
+      "title": "I will design and develop a modern Framer website",
+      "shortTitle": "Framer website",
+      "primaryKeyword": "framer website",
+      "lane": "Framer marketing site",
+      "searchTerms": ["framer website", "framer designer", "framer development", "framer landing page", "modern website"],
+      "tags": ["framer website", "framer design", "landing page", "website design", "framer cms"],
+      "category": "Website Design",
+      "subcategory": "Framer",
+      "summary": "Modern, responsive Framer websites for launches, studios, and products that need motion and a sharp visual system.",
+      "description": "Design and develop a modern responsive Framer website. This lane is Framer-only so it does not compete with the Webflow gigs. Work covers layout, components, CMS, interactions, and a site that feels current on mobile and desktop.",
+      "faq": [
+        { "q": "Do you design and develop in Framer?", "a": "Yes. Design and production build happen in Framer, including responsive layouts and components." },
+        { "q": "Is this the same as a Webflow website?", "a": "No. Choose this gig for Framer. Choose the Webflow gigs for Webflow." }
+      ]
+    },
+    {
+      "id": "lovable-base44",
+      "slug": "build-your-lovable-or-base44-prototype-into-a-production-app",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/build-your-lovable-or-base44-prototype-into-a-production-app",
+      "title": "I will turn your Lovable or Base44 prototype into production",
+      "shortTitle": "Lovable / Base44 to production",
+      "primaryKeyword": "lovable",
+      "lane": "prototype to production",
+      "searchTerms": ["lovable", "base44", "lovable to production", "base44 app", "ai prototype"],
+      "tags": ["lovable", "base44", "mvp website", "web app", "ai prototype"],
+      "category": "Programming & Tech",
+      "subcategory": "Web Application",
+      "summary": "Take a Lovable or Base44 prototype and turn it into a production app with real auth, data, and deploy.",
+      "description": "If you already have a Lovable or Base44 prototype, this gig is the production step. The work is hardening: authentication, database, environment, error handling, and a deploy you can give to users. It is not a generic vibe-coding gig. It starts from your Lovable or Base44 output.",
+      "faq": [
+        { "q": "Can you productionize a Lovable prototype?", "a": "Yes. This gig exists to take Lovable or Base44 output and make it a production app." },
+        { "q": "Do I need to rebuild from scratch?", "a": "Usually no. The starting point is your existing prototype, then the gaps that block real users." }
+      ]
+    },
+    {
+      "id": "webflow-seo-ready",
+      "slug": "design-and-setup-your-custom-webflow-website-seo-ready",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/design-and-setup-your-custom-webflow-website-seo-ready",
+      "title": "I will design and set up your SEO-ready Webflow site",
+      "shortTitle": "SEO-ready Webflow setup",
+      "primaryKeyword": "webflow seo",
+      "lane": "setup, launch, and SEO foundation",
+      "searchTerms": ["webflow seo", "webflow setup", "webflow expert", "seo ready website", "webflow cms"],
+      "tags": ["webflow seo", "webflow expert", "webflow cms", "seo website", "site setup"],
+      "category": "Website Design",
+      "subcategory": "Webflow",
+      "summary": "Custom Webflow setup that is SEO-ready: collections, pages, and launch configuration for a site that can rank.",
+      "description": "This Webflow gig is the setup and SEO-ready launch lane, not the full redesign lane. Use it for a custom Webflow website that needs correct CMS setup, page templates, SEO fields, and a clean go-live. Buyers searching Webflow SEO and Webflow setup should land here. Buyers wanting a complete new marketing site should use the Webflow website gig.",
+      "faq": [
+        { "q": "How is this different from the other Webflow gig?", "a": "This one is Webflow setup and SEO-ready launch. The other is a full professional website build and redesign." },
+        { "q": "What does SEO-ready mean in Webflow?", "a": "SEO fields, titles, slugs, heading structure, CMS template SEO, and a site configured to be indexed." }
+      ]
+    },
+    {
+      "id": "claude-code-consultant",
+      "slug": "be-your-claude-code-consultant-for-ai-apps-and-vibe-coding",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/be-your-claude-code-consultant-for-ai-apps-and-vibe-coding",
+      "title": "I will be your Claude Code consultant for AI apps",
+      "shortTitle": "Claude Code consultant",
+      "primaryKeyword": "claude code",
+      "lane": "Claude Code coaching",
+      "searchTerms": ["claude code", "claude code consultant", "vibe coding consultant", "ai coding", "cursor claude"],
+      "tags": ["claude code", "ai coding", "cursor ai", "ai apps", "code mentor"],
+      "category": "Programming & Tech",
+      "subcategory": "Consulting",
+      "summary": "Claude Code consulting for AI apps and vibe coding: workflows, prompts, repo setup, and pairing on the hard parts.",
+      "description": "Be your Claude Code consultant for AI apps and vibe coding. This is the teaching and pairing gig, not the emergency fix gig. Sessions cover Claude Code setup, repo strategy, agent workflows, and how to ship AI features without generating a mess. Use the other consulting gig when the app is already broken and needs a rescue.",
+      "faq": [
+        { "q": "Is this Claude Code coaching or a full build?", "a": "It is consulting and pairing around Claude Code. For a full Next.js MVP, use the Next.js SaaS gig." },
+        { "q": "Do you help with vibe coding workflow?", "a": "Yes. The focus is Claude Code, AI apps, and a vibe coding workflow you can keep using." }
+      ]
+    },
+    {
+      "id": "ai-voice-receptionist",
+      "slug": "build-an-ai-voice-receptionist-and-appointment-booking-agent",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/build-an-ai-voice-receptionist-and-appointment-booking-agent",
+      "title": "I will build an AI voice receptionist and booking agent",
+      "shortTitle": "AI voice receptionist",
+      "primaryKeyword": "ai receptionist",
+      "lane": "voice agents",
+      "searchTerms": ["ai receptionist", "voice agent", "ai voice agent", "appointment booking", "ai booking agent"],
+      "tags": ["ai receptionist", "voice agent", "ai voice", "booking agent", "ai phone"],
+      "category": "Programming & Tech",
+      "subcategory": "AI Development",
+      "summary": "AI voice receptionist that answers calls, qualifies the caller, and books appointments into your calendar.",
+      "description": "Build an AI voice receptionist and appointment booking agent. The product answers the phone, follows your script, captures details, and books into a calendar or CRM. This gig is for clinics, agencies, local services, and anyone losing calls after hours.",
+      "faq": [
+        { "q": "What is an AI voice receptionist?", "a": "A phone agent that greets callers, answers common questions, and books appointments without a human on the line." },
+        { "q": "Can it book appointments?", "a": "Yes. Booking into a calendar or scheduling tool is the core outcome of this gig." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://zlatkomarjanovic.github.io/fiverr-gigs/sitemap.xml
