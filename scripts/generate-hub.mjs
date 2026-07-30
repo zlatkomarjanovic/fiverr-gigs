@@ -51,58 +51,9 @@ function fiverrLink(href, label, className) {
   return `<a${cls} href="${esc(href)}" target="_blank" rel="noopener noreferrer">${label}</a>`;
 }
 
-const css = `:root {
-  --bg: #f4efe6;
-  --ink: #16140f;
-  --muted: #5c564b;
-  --line: #d8d0c2;
-  --card: #fffdf8;
-  --accent: #1f7a4d;
-  --accent-ink: #073d24;
+if (!fs.existsSync(path.join(ROOT, "styles.css"))) {
+  throw new Error("styles.css is missing. The generator no longer emits CSS.");
 }
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body {
-  margin: 0;
-  color: var(--ink);
-  background: var(--bg);
-  font: 18px/1.55 "Iowan Old Style", "Palatino Linotype", Palatino, serif;
-}
-a { color: var(--accent-ink); }
-header, main, footer { width: min(1080px, calc(100% - 2rem)); margin: 0 auto; }
-header { padding: 2rem 0 1rem; display: flex; justify-content: space-between; gap: 1rem; align-items: baseline; }
-header a { text-decoration: none; color: inherit; }
-nav { display: flex; gap: 1rem; font-size: 0.95rem; }
-h1, h2, h3 { font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; letter-spacing: -0.02em; line-height: 1.15; }
-h1 { font-size: clamp(2.1rem, 5vw, 3.6rem); margin: 0 0 0.6rem; }
-.lede { font-size: 1.2rem; color: var(--muted); max-width: 40rem; }
-.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; padding: 1.5rem 0 3rem; }
-article.card, .panel {
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  padding: 1.1rem 1.15rem 1.2rem;
-}
-.kicker { text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.72rem; color: var(--muted); font-family: Arial, sans-serif; }
-.card h2 { font-size: 1.25rem; margin: 0.35rem 0 0.45rem; }
-.card p { margin: 0 0 0.8rem; color: var(--muted); font-size: 0.98rem; }
-.tags { display: flex; flex-wrap: wrap; gap: 0.35rem; margin: 0 0 0.9rem; padding: 0; list-style: none; }
-.tags li { font: 12px/1 Arial, sans-serif; border: 1px solid var(--line); border-radius: 999px; padding: 0.28rem 0.5rem; color: var(--muted); }
-.btn {
-  display: inline-block;
-  background: var(--accent);
-  color: #fff;
-  text-decoration: none;
-  border-radius: 999px;
-  padding: 0.55rem 0.9rem;
-  font: 600 0.92rem/1 Arial, sans-serif;
-}
-.btn.ghost { background: transparent; color: var(--accent-ink); border: 1px solid var(--line); }
-.hero { padding: 1.5rem 0 0.5rem; }
-.meta { color: var(--muted); font-size: 0.95rem; }
-.stack { display: grid; gap: 1rem; padding-bottom: 3rem; }
-footer { padding: 0 0 3rem; color: var(--muted); font-size: 0.92rem; }
-`;
 
 function layout({ title, description, canonical, jsonLd, body }) {
   const canon = SITE_ORIGIN ? `${SITE_ORIGIN}${canonical}` : canonical;
@@ -182,7 +133,6 @@ const indexLd = {
   ],
 };
 
-fs.writeFileSync(path.join(ROOT, "styles.css"), css);
 fs.writeFileSync(path.join(ROOT, "index.html"), layout({
   title: `${gigs.sellerName} Fiverr gigs — Webflow, AI, Shopify, n8n`,
   description: "Indexable directory of Zlatko Marjanović Fiverr gigs: Webflow websites, vibe coding, Next.js SaaS, Shopify, Framer, n8n agents, and AI voice receptionists.",
