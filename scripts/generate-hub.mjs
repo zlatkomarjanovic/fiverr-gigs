@@ -144,7 +144,7 @@ const indexBody = `
   <section class="hero">
     <p class="kicker">Fiverr seller · ${esc(gigs.seller)}</p>
     <h1>${esc(gigs.sellerName)} — Webflow, AI apps, and vibe coding gigs</h1>
-    <p class="lede">Twelve live Fiverr services with clean, indexable URLs. Each page maps to one search lane so the gigs do not cannibalize each other.</p>
+    <p class="lede">${gigs.gigs.length} live Fiverr services with clean, indexable URLs. Each page maps to one search lane so the gigs do not cannibalize each other.</p>
     <p><a class="btn" href="${esc(gigs.sellerUrl)}">Open Fiverr profile</a></p>
   </section>
   <section id="gigs" class="grid">
