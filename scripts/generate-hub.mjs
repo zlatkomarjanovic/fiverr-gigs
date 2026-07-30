@@ -46,6 +46,11 @@ function esc(s) {
     .replace(/"/g, "&quot;");
 }
 
+function fiverrLink(href, label, className) {
+  const cls = className ? ` class="${className}"` : "";
+  return `<a${cls} href="${esc(href)}" target="_blank" rel="noopener noreferrer">${label}</a>`;
+}
+
 const css = `:root {
   --bg: #f4efe6;
   --ink: #16140f;
@@ -122,7 +127,7 @@ function layout({ title, description, canonical, jsonLd, body }) {
     <a href="${canonical.includes("/services/") ? "../index.html" : "index.html"}"><strong>${esc(gigs.sellerName)}</strong></a>
     <nav>
       <a href="${canonical.includes("/services/") ? "../index.html#gigs" : "#gigs"}">Gigs</a>
-      <a href="${esc(gigs.sellerUrl)}">Fiverr profile</a>
+      ${fiverrLink(gigs.sellerUrl, "Fiverr profile")}
     </nav>
   </header>
   <main>${body}</main>
@@ -145,7 +150,7 @@ const indexBody = `
     <p class="kicker">Fiverr seller · ${esc(gigs.seller)}</p>
     <h1>${esc(gigs.sellerName)} — Webflow, AI apps, and vibe coding gigs</h1>
     <p class="lede">${gigs.gigs.length} live Fiverr services with clean, indexable URLs. Each page maps to one search lane so the gigs do not cannibalize each other.</p>
-    <p><a class="btn" href="${esc(gigs.sellerUrl)}">Open Fiverr profile</a></p>
+    <p>${fiverrLink(gigs.sellerUrl, "Open Fiverr profile", "btn")}</p>
   </section>
   <section id="gigs" class="grid">
     ${gigs.gigs.map((g) => `
@@ -154,7 +159,7 @@ const indexBody = `
         <h2><a href="services/${esc(g.id)}.html">${esc(g.shortTitle)}</a></h2>
         <p>${esc(g.summary)}</p>
         <ul class="tags">${g.tags.map((t) => `<li>${esc(t)}</li>`).join("")}</ul>
-        <a class="btn" href="${esc(g.url)}">View gig on Fiverr</a>
+        ${fiverrLink(g.url, "View gig on Fiverr", "btn")}
         <a class="btn ghost" href="services/${esc(g.id)}.html">Index page</a>
       </article>`).join("")}
   </section>`;
@@ -197,7 +202,7 @@ for (const g of gigs.gigs) {
       <h1>${esc(g.title)}</h1>
       <p class="lede">${esc(g.description)}</p>
       <p class="meta">Primary Fiverr search term: <strong>${esc(g.primaryKeyword)}</strong> · Lane: ${esc(g.lane)}</p>
-      <p><a class="btn" href="${esc(g.url)}">Open this gig on Fiverr</a></p>
+      <p>${fiverrLink(g.url, "Open this gig on Fiverr", "btn")}</p>
     </section>
     <section class="stack">
       <div class="panel">
