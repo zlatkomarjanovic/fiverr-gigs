@@ -208,5 +208,10 @@
     "at": "2026-09-03T22:04:53.494Z",
     "key": "ui-polish-batch-9",
     "task": "Subtle card box-shadow on hover"
+  },
+  {
+    "at": "2026-09-03T22:04:53.494Z",
+    "key": "mobile-batch-9",
+    "task": "Clamp h1 smaller on mobile breakpoints"
   }
 ]
