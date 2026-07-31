@@ -248,5 +248,10 @@
     "at": "2026-09-03T22:04:53.499Z",
     "key": "security-batch-9",
     "task": "Validate no script tags in FAQ answers"
+  },
+  {
+    "at": "2026-09-03T22:04:53.500Z",
+    "key": "refactoring-batch-9",
+    "task": "Extract index card HTML builder"
   }
 ]

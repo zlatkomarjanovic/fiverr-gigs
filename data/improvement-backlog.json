@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 130,
-  "pending": 170,
+  "done": 131,
+  "pending": 169,
   "tasks": [
     {
       "id": "001",
@@ -1050,7 +1050,7 @@
       "category": "refactoring",
       "task": "Extract index card HTML builder",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "132",
