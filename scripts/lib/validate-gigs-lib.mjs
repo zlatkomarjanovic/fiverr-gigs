@@ -164,3 +164,6 @@ export function validateGigsData(data) {
   } else if (data.sellerUrl && /\?/.test(data.sellerUrl)) {
     fail("sellerUrl must not include query parameters");
   }
+  if (!isNonEmptyString(data.sellerName) || data.sellerName.trim().length < 2) {
+    fail("sellerName must be at least 2 characters");
+  }

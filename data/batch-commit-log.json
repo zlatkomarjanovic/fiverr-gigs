@@ -238,5 +238,10 @@
     "at": "2026-09-03T22:04:53.498Z",
     "key": "error-handling-batch-9",
     "task": "submit-index try/catch loadGigs"
+  },
+  {
+    "at": "2026-09-03T22:04:53.498Z",
+    "key": "validation-batch-9",
+    "task": "Require primaryKeyword in searchTerms"
   }
 ]

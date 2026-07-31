@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 128,
-  "pending": 172,
+  "done": 129,
+  "pending": 171,
   "tasks": [
     {
       "id": "001",
@@ -1034,7 +1034,7 @@
       "category": "validation",
       "task": "Require primaryKeyword in searchTerms",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "130",
