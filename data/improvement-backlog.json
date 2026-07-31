@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 125,
-  "pending": 175,
+  "done": 126,
+  "pending": 174,
   "tasks": [
     {
       "id": "001",
@@ -1010,7 +1010,7 @@
       "category": "metadata",
       "task": "Add mobile-web-app-capable meta",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "127",
