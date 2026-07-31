@@ -243,5 +243,10 @@
     "at": "2026-09-03T22:04:53.498Z",
     "key": "validation-batch-9",
     "task": "Require primaryKeyword in searchTerms"
+  },
+  {
+    "at": "2026-09-03T22:04:53.499Z",
+    "key": "security-batch-9",
+    "task": "Validate no script tags in FAQ answers"
   }
 ]
