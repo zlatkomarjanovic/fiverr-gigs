@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 127,
-  "pending": 173,
+  "done": 128,
+  "pending": 172,
   "tasks": [
     {
       "id": "001",
@@ -1026,7 +1026,7 @@
       "category": "error-handling",
       "task": "submit-index try/catch loadGigs",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "129",
