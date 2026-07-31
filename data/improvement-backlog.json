@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 126,
-  "pending": 174,
+  "done": 127,
+  "pending": 173,
   "tasks": [
     {
       "id": "001",
@@ -1018,7 +1018,7 @@
       "category": "performance",
       "task": "Skip writing key file when unchanged",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "128",
