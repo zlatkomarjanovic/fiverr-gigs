@@ -218,5 +218,10 @@
     "at": "2026-09-03T22:04:53.495Z",
     "key": "a11y-batch-9",
     "task": "Disable btn transform under reduced motion"
+  },
+  {
+    "at": "2026-09-03T22:04:53.496Z",
+    "key": "seo-batch-9",
+    "task": "Add WebPage dateModified from gigs.updated"
   }
 ]

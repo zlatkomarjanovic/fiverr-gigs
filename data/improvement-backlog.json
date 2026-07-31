@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 124,
-  "pending": 176,
+  "done": 125,
+  "pending": 175,
   "tasks": [
     {
       "id": "001",
@@ -1002,7 +1002,7 @@
       "category": "seo",
       "task": "Add WebPage dateModified from gigs.updated",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "126",
