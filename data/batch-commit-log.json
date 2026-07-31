@@ -213,5 +213,10 @@
     "at": "2026-09-03T22:04:53.494Z",
     "key": "mobile-batch-9",
     "task": "Clamp h1 smaller on mobile breakpoints"
+  },
+  {
+    "at": "2026-09-03T22:04:53.495Z",
+    "key": "a11y-batch-9",
+    "task": "Disable btn transform under reduced motion"
   }
 ]
