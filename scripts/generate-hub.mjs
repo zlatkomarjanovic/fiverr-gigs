@@ -205,8 +205,7 @@ for (const g of gigs.gigs) {
       </div>
     </section>`;
 
-  const jsonLd = {
-    "@context": "https://schema.org",
+  const serviceLd = {
     "@type": "Service",
     name: g.title,
     description: g.description,
@@ -220,6 +219,20 @@ for (const g of gigs.gigs) {
       availability: "https://schema.org/InStock",
     },
     mainEntityOfPage: g.url,
+  };
+  const faqLd = g.faq.length
+    ? {
+      "@type": "FAQPage",
+      mainEntity: g.faq.map((item) => ({
+        "@type": "Question",
+        name: item.q,
+        acceptedAnswer: { "@type": "Answer", text: item.a },
+      })),
+    }
+    : null;
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": faqLd ? [serviceLd, faqLd] : [serviceLd],
   };
 
   fs.writeFileSync(path.join(servicesDir, `${g.id}.html`), layout({
