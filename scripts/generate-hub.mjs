@@ -125,8 +125,8 @@ function layout({ title, description, canonical, jsonLd, body, robots = "index,f
 const personLd = {
   "@type": "Person",
   name: gigs.sellerName,
-  url: gigs.sellerUrl,
-  sameAs: [gigs.sellerUrl],
+  url: gigs.sellerSite || gigs.sellerUrl,
+  sameAs: [...new Set([gigs.sellerUrl, gigs.sellerSite, gigs.githubUrl].filter(Boolean))],
 };
 
 const indexBody = `
