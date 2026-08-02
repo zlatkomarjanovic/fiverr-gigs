@@ -180,6 +180,12 @@ fs.mkdirSync(servicesDir, { recursive: true });
 for (const g of gigs.gigs) {
   const related = relatedGigs(g, gigs.gigs);
   const body = `
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="../index.html">Gigs</a></li>
+        <li aria-current="page">${esc(g.shortTitle)}</li>
+      </ol>
+    </nav>
     <section class="hero">
       <p class="kicker">${esc(g.category)} / ${esc(g.subcategory)}</p>
       <h1>${esc(g.title)}</h1>
@@ -220,6 +226,23 @@ for (const g of gigs.gigs) {
     },
     mainEntityOfPage: g.url,
   };
+  const breadcrumbLd = {
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Gigs",
+        item: SITE_ORIGIN ? `${SITE_ORIGIN}/` : "../index.html",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: g.shortTitle,
+        item: SITE_ORIGIN ? `${SITE_ORIGIN}/services/${g.id}.html` : `${g.id}.html`,
+      },
+    ],
+  };
   const faqLd = g.faq.length
     ? {
       "@type": "FAQPage",
@@ -232,7 +255,7 @@ for (const g of gigs.gigs) {
     : null;
   const jsonLd = {
     "@context": "https://schema.org",
-    "@graph": faqLd ? [serviceLd, faqLd] : [serviceLd],
+    "@graph": faqLd ? [serviceLd, faqLd, breadcrumbLd] : [serviceLd, breadcrumbLd],
   };
 
   fs.writeFileSync(path.join(servicesDir, `${g.id}.html`), layout({
