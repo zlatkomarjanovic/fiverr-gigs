@@ -98,7 +98,7 @@ function layout({ title, description, canonical, jsonLd, body, robots = "index,f
   <a class="skip-link" href="#content">Skip to content</a>
   <header>
     <a href="${homeHref}"><strong>${esc(gigs.sellerName)}</strong></a>
-    <nav>
+    <nav aria-label="Primary">
       <a href="${nested ? "../index.html#gigs" : "#gigs"}">Gigs</a>
       ${fiverrLink(gigs.sellerUrl, "Fiverr profile")}
     </nav>
