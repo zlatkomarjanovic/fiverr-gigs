@@ -90,6 +90,12 @@ function layout({ title, description, canonical, jsonLd, body, robots = "index,f
   <meta property="og:title" content="${esc(title)}">
   <meta property="og:description" content="${esc(description)}">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="${esc(canon)}">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="${esc(gigs.sellerName)} Fiverr gigs">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="${esc(title)}">
+  <meta name="twitter:description" content="${esc(description)}">
   <link rel="alternate" type="application/rss+xml" href="${esc(abs("/rss.xml"))}">
   <link rel="stylesheet" href="${nested ? "../styles.css" : "styles.css"}">
   <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
