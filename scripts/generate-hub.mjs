@@ -159,7 +159,7 @@ const indexLd = {
       itemListElement: gigs.gigs.map((g, i) => ({
         "@type": "ListItem",
         position: i + 1,
-        url: g.url,
+        url: SITE_ORIGIN ? `${SITE_ORIGIN}/services/${g.id}.html` : `services/${g.id}.html`,
         name: g.title,
       })),
     },
@@ -288,8 +288,8 @@ const rss = `<?xml version="1.0" encoding="UTF-8"?>
     ${gigs.gigs.map((g) => `
     <item>
       <title>${esc(g.title)}</title>
-      <link>${esc(g.url)}</link>
-      <guid>${esc(g.url)}</guid>
+      <link>${esc(`${origin}/services/${g.id}.html`)}</link>
+      <guid>${esc(`${origin}/services/${g.id}.html`)}</guid>
       <description>${esc(g.summary)}</description>
     </item>`).join("")}
   </channel>
