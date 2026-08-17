@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 178,
-  "pending": 122,
+  "done": 179,
+  "pending": 121,
   "tasks": [
     {
       "id": "001",
@@ -1434,7 +1434,7 @@
       "category": "dx",
       "task": "Add shell script wrapper for Windows",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "180",
