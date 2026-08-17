@@ -498,5 +498,10 @@
     "at": "2026-09-03T22:04:53.533Z",
     "key": "edge-cases-batch-12",
     "task": "Handle unicode in sellerName esc"
+  },
+  {
+    "at": "2026-09-03T22:04:53.534Z",
+    "key": "bug-fixes-batch-13",
+    "task": "Add atom self link to RSS channel"
   }
 ]

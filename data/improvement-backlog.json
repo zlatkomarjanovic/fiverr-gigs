@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 180,
-  "pending": 120,
+  "done": 181,
+  "pending": 119,
   "tasks": [
     {
       "id": "001",
@@ -1450,7 +1450,7 @@
       "category": "bug-fixes",
       "task": "Add atom self link to RSS channel",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "182",
