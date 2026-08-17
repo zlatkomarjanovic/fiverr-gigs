@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 179,
-  "pending": 121,
+  "done": 180,
+  "pending": 120,
   "tasks": [
     {
       "id": "001",
@@ -1442,7 +1442,7 @@
       "category": "edge-cases",
       "task": "Handle unicode in sellerName esc",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "181",
