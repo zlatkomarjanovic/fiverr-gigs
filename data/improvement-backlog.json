@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 184,
-  "pending": 116,
+  "done": 185,
+  "pending": 115,
   "tasks": [
     {
       "id": "001",
@@ -1482,7 +1482,7 @@
       "category": "seo",
       "task": "Index page meta description under 160 chars check",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "186",
