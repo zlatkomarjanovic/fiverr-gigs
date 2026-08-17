@@ -503,5 +503,10 @@
     "at": "2026-09-03T22:04:53.534Z",
     "key": "bug-fixes-batch-13",
     "task": "Add atom self link to RSS channel"
+  },
+  {
+    "at": "2026-09-03T22:04:53.535Z",
+    "key": "ui-polish-batch-13",
+    "task": "Normalize panel border-radius token"
   }
 ]
