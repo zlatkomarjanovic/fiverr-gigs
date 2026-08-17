@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 183,
-  "pending": 117,
+  "done": 184,
+  "pending": 116,
   "tasks": [
     {
       "id": "001",
@@ -1474,7 +1474,7 @@
       "category": "a11y",
       "task": "Skip link uses focus-visible ring",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "185",
