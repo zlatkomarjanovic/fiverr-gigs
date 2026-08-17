@@ -483,5 +483,10 @@
     "at": "2026-09-03T22:04:53.531Z",
     "key": "tests-batch-12",
     "task": "Test validate slug kebab-case"
+  },
+  {
+    "at": "2026-09-03T22:04:53.532Z",
+    "key": "docs-batch-12",
+    "task": "Add troubleshooting section to README"
   }
 ]

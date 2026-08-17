@@ -124,3 +124,4 @@ Set `SITE_ORIGIN` in the workflow env to match the live GitHub Pages host.
 2. Run `npm run check` locally with `SITE_ORIGIN` set.
 3. Commit `data/gigs.json` plus regenerated HTML/XML files.
 Optional: `npm run pingomatic` runs the legacy Ping-O-Matic full check list (`scripts/pingomatic-full.mjs`).
+## Related gigs
