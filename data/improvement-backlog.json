@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 182,
-  "pending": 118,
+  "done": 183,
+  "pending": 117,
   "tasks": [
     {
       "id": "001",
@@ -1466,7 +1466,7 @@
       "category": "mobile",
       "task": "Customize tap highlight color for links",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "184",

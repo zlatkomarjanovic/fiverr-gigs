@@ -508,5 +508,10 @@
     "at": "2026-09-03T22:04:53.535Z",
     "key": "ui-polish-batch-13",
     "task": "Normalize panel border-radius token"
+  },
+  {
+    "at": "2026-09-03T22:04:53.535Z",
+    "key": "mobile-batch-13",
+    "task": "Customize tap highlight color for links"
   }
 ]
