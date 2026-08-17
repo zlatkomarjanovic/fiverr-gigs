@@ -478,5 +478,10 @@
     "at": "2026-09-03T22:04:53.530Z",
     "key": "refactoring-batch-12",
     "task": "Extract indexLd graph builder"
+  },
+  {
+    "at": "2026-09-03T22:04:53.531Z",
+    "key": "tests-batch-12",
+    "task": "Test validate slug kebab-case"
   }
 ]

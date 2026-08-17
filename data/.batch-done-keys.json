@@ -94,5 +94,6 @@
   "error-handling-batch-12",
   "validation-batch-12",
   "security-batch-12",
-  "refactoring-batch-12"
+  "refactoring-batch-12",
+  "tests-batch-12"
 ]
