@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 147,
-  "pending": 153,
+  "done": 148,
+  "pending": 152,
   "tasks": [
     {
       "id": "001",
@@ -1186,7 +1186,7 @@
       "category": "docs",
       "task": "Document validate exit codes",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "149",

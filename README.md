@@ -120,3 +120,6 @@ GitHub Actions workflow [`.github/workflows/hub.yml`](.github/workflows/hub.yml)
 
 Set `SITE_ORIGIN` in the workflow env to match the live GitHub Pages host.
 ## Add a gig
+1. Edit [`data/gigs.json`](data/gigs.json) (see [`data/gigs.schema.json`](data/gigs.schema.json) for the expected shape): add an object with a unique kebab-case `id`, matching `slug` and Fiverr `url`, lane, category, search terms, tags (≤5), and FAQ (≤5).
+2. Run `npm run check` locally with `SITE_ORIGIN` set.
+3. Commit `data/gigs.json` plus regenerated HTML/XML files.
