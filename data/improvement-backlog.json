@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 146,
-  "pending": 154,
+  "done": 147,
+  "pending": 153,
   "tasks": [
     {
       "id": "001",
@@ -1178,7 +1178,7 @@
       "category": "tests",
       "task": "Test validate rejects javascript urls",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "148",
