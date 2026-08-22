@@ -338,5 +338,10 @@
     "at": "2026-09-03T22:04:53.511Z",
     "key": "docs-batch-10",
     "task": "Document validate exit codes"
+  },
+  {
+    "at": "2026-09-03T22:04:53.512Z",
+    "key": "dx-batch-10",
+    "task": "Add npm run test:watch note in package"
   }
 ]
