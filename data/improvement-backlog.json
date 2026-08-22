@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 150,
-  "pending": 150,
+  "done": 151,
+  "pending": 149,
   "tasks": [
     {
       "id": "001",
@@ -1210,7 +1210,7 @@
       "category": "bug-fixes",
       "task": "Reject gig ids with leading or trailing whitespace",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "152",

@@ -348,5 +348,10 @@
     "at": "2026-09-03T22:04:53.512Z",
     "key": "edge-cases-batch-10",
     "task": "Handle single gig hub"
+  },
+  {
+    "at": "2026-09-03T22:04:53.513Z",
+    "key": "bug-fixes-batch-11",
+    "task": "Reject gig ids with leading or trailing whitespace"
   }
 ]
