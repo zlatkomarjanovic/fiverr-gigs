@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 149,
-  "pending": 151,
+  "done": 150,
+  "pending": 150,
   "tasks": [
     {
       "id": "001",
@@ -1202,7 +1202,7 @@
       "category": "edge-cases",
       "task": "Handle single gig hub",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "151",
