@@ -443,5 +443,10 @@
     "at": "2026-09-03T22:04:53.526Z",
     "key": "a11y-batch-12",
     "task": "Darken muted text for WCAG contrast"
+  },
+  {
+    "at": "2026-09-03T22:04:53.526Z",
+    "key": "seo-batch-12",
+    "task": "Add breadcrumb item scope on service pages"
   }
 ]
