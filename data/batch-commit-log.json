@@ -88,5 +88,10 @@
     "at": "2026-09-03T22:04:53.476Z",
     "key": "error-handling-batch-7",
     "task": "Clear message when styles.css is a directory"
+  },
+  {
+    "at": "2026-09-03T22:04:53.477Z",
+    "key": "validation-batch-7",
+    "task": "Require slug matches kebab-case pattern"
   }
 ]

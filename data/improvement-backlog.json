@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 98,
-  "pending": 202,
+  "done": 99,
+  "pending": 201,
   "tasks": [
     {
       "id": "001",
@@ -794,7 +794,7 @@
       "category": "validation",
       "task": "Require slug matches kebab-case pattern",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "100",

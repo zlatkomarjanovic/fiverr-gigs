@@ -151,3 +151,5 @@ function hasScriptTag(value) {
 export function validateGigsData(data) {
   const errors = [];
   const fail = (message) => errors.push(message);
+  for (const key of REQUIRED_ROOT) {
+    if (!(key in data)) fail(`Missing root field: ${key}`);
