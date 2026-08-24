@@ -98,5 +98,10 @@
     "at": "2026-09-03T22:04:53.478Z",
     "key": "security-batch-7",
     "task": "Reject data: URLs in seller links"
+  },
+  {
+    "at": "2026-09-03T22:04:53.478Z",
+    "key": "refactoring-batch-7",
+    "task": "Extract personLd builder function"
   }
 ]
