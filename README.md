@@ -108,3 +108,4 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md) for the contributor workflow.
 | `npm run submit` | Ping archives / sitemaps / IndexNow |
 | `npm run index` | Generate, then submit |
 | `npm run pingomatic` | Legacy Ping-O-Matic full check list |
+Static assets: [`favicon.svg`](favicon.svg) and [`styles.css`](styles.css) are hand-maintained (not generated).
