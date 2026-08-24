@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 99,
-  "pending": 201,
+  "done": 100,
+  "pending": 200,
   "tasks": [
     {
       "id": "001",
@@ -802,7 +802,7 @@
       "category": "security",
       "task": "Reject data: URLs in seller links",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "101",
