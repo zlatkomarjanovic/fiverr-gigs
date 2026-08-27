@@ -51,6 +51,24 @@ function fiverrLink(href, label, className) {
   return `<a${cls} href="${esc(href)}" target="_blank" rel="noopener noreferrer">${label}</a>`;
 }
 
+function gigTerms(gig) {
+  return [gig.primaryKeyword, gig.category, gig.subcategory, ...(gig.searchTerms || []), ...(gig.tags || [])]
+    .map((term) => String(term).toLowerCase());
+}
+
+function relatedGigs(gig, all, limit = 4) {
+  const mine = new Set(gigTerms(gig));
+  return all
+    .filter((other) => other.id !== gig.id)
+    .map((other) => ({
+      other,
+      score: gigTerms(other).filter((term) => mine.has(term)).length,
+    }))
+    .sort((a, b) => b.score - a.score || a.other.shortTitle.localeCompare(b.other.shortTitle))
+    .slice(0, limit)
+    .map((entry) => entry.other);
+}
+
 if (!fs.existsSync(path.join(ROOT, "styles.css"))) {
   throw new Error("styles.css is missing. The generator no longer emits CSS.");
 }
@@ -145,7 +163,7 @@ const servicesDir = path.join(ROOT, "services");
 fs.mkdirSync(servicesDir, { recursive: true });
 
 for (const g of gigs.gigs) {
-  const related = gigs.gigs.filter((x) => x.id !== g.id).slice(0, 4);
+  const related = relatedGigs(g, gigs.gigs);
   const body = `
     <section class="hero">
       <p class="kicker">${esc(g.category)} / ${esc(g.subcategory)}</p>
