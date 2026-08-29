@@ -7,9 +7,24 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadGigs } from "./lib/load-gigs.mjs";
+import { validateGigsData } from "./lib/validate-gigs-lib.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const gigs = loadGigs(ROOT);
+
+let gigs;
+try {
+  gigs = loadGigs(ROOT);
+} catch (err) {
+  console.error(err.message);
+  process.exit(1);
+}
+
+const validationErrors = validateGigsData(gigs);
+if (validationErrors.length) {
+  console.error(`gigs.json failed ${validationErrors.length} check${validationErrors.length === 1 ? "" : "s"}:`);
+  for (const error of validationErrors) console.error(`- ${error}`);
+  process.exit(1);
+}
 const SITE_ORIGIN = (process.env.SITE_ORIGIN || "").replace(/\/$/, "");
 const INDEXNOW_KEY = (process.env.INDEXNOW_KEY || "").trim();
 const HUB_ONLY = process.argv.includes("--hub-only") || process.env.HUB_ONLY === "1";
@@ -26,6 +41,7 @@ function hubUrls() {
     `${SITE_ORIGIN}/`,
     `${SITE_ORIGIN}/sitemap.xml`,
     `${SITE_ORIGIN}/rss.xml`,
+    `${SITE_ORIGIN}/llms.txt`,
     ...gigs.gigs.map((g) => `${SITE_ORIGIN}/services/${g.id}.html`),
   ];
 }

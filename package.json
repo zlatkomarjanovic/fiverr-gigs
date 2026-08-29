@@ -12,6 +12,7 @@
     "check": "npm run validate && npm test && npm run generate",
     "test": "node --test scripts/lib/*.test.mjs",
     "submit": "node scripts/submit-index.mjs",
-    "index": "node scripts/generate-hub.mjs && node scripts/submit-index.mjs"
+    "index": "node scripts/generate-hub.mjs && node scripts/submit-index.mjs",
+    "pingomatic": "node scripts/pingomatic-full.mjs"
   }
 }
