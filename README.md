@@ -96,3 +96,5 @@ Optional manual script: `scripts/pingomatic-full.mjs` is not wired to npm — ru
 The shared layout ends with an HTML comment hook before `</body>`. To add privacy-friendly analytics (Plausible, Fathom, etc.), edit `scripts/lib/layout.mjs` and insert your script tag there, then run `npm run generate`.
 
 Improvement sprint tasks are tracked in [`data/improvement-backlog.json`](data/improvement-backlog.json). Regenerate the list with `node scripts/generate-backlog.mjs`.
+
+See [`CONTRIBUTING.md`](CONTRIBUTING.md) for the contributor workflow.
