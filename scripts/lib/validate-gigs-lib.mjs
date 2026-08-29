@@ -61,6 +61,7 @@ export function validateGigsData(data) {
   const slugs = new Set();
   const urls = new Set();
   const keywords = new Set();
+  const shortTitles = new Set();
 
   for (const [index, gig] of (data.gigs || []).entries()) {
     const label = gig?.id || `#${index}`;
@@ -103,6 +104,10 @@ export function validateGigsData(data) {
 
     if (!isNonEmptyString(gig?.title)) fail(`${label}: title must be a non-empty string`);
     else if (gig.title.length > 80) fail(`${label}: title should be ≤80 chars (${gig.title.length})`);
+
+    if (!isNonEmptyString(gig?.shortTitle)) fail(`${label}: shortTitle must be a non-empty string`);
+    else if (shortTitles.has(gig.shortTitle)) fail(`Duplicate shortTitle: ${gig.shortTitle}`);
+    else shortTitles.add(gig.shortTitle);
 
     if (!isStringArray(gig?.searchTerms)) fail(`${label}: searchTerms must be a non-empty string array`);
     else hasUniqueStrings(gig.searchTerms, `${label}: searchTerms`, fail);

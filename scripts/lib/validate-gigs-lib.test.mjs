@@ -28,3 +28,11 @@ test("validateGigsData rejects http urls", () => {
   const errors = validateGigsData(broken);
   assert.ok(errors.some((e) => /https/i.test(e)));
 });
+
+test("validateGigsData rejects duplicate shortTitle", () => {
+  const gigs = loadGigs(ROOT);
+  const broken = structuredClone(gigs);
+  broken.gigs[1].shortTitle = broken.gigs[0].shortTitle;
+  const errors = validateGigsData(broken);
+  assert.ok(errors.some((e) => /Duplicate shortTitle/i.test(e)));
+});
