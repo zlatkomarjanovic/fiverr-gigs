@@ -9,6 +9,8 @@ import { validateGigsData } from "./lib/validate-gigs-lib.mjs";
 import { renderLayout } from "./lib/layout.mjs";
 import { buildSitemap } from "./lib/sitemap.mjs";
 import { buildRss } from "./lib/rss.mjs";
+import { buildRobots } from "./lib/robots.mjs";
+import { buildLlms } from "./lib/llms.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -78,7 +80,7 @@ const indexBody = `
     <p class="lede">${gigs.gigs.length} live Fiverr services with clean, indexable URLs. Each page maps to one search lane so the gigs do not cannibalize each other.</p>
     <p>${fiverrLink(gigs.sellerUrl, "Open Fiverr profile", "btn")}</p>
   </section>
-  <section id="gigs" class="grid">
+  <section id="gigs" class="grid" aria-label="All Fiverr gigs">
     ${gigs.gigs.map((g) => `
       <article class="card" aria-labelledby="gig-${esc(g.id)}">
         <p class="kicker">${esc(g.primaryKeyword)} · ${esc(g.lane)}</p>
@@ -179,7 +181,7 @@ for (const g of gigs.gigs) {
       url: g.url,
       availability: "https://schema.org/InStock",
     },
-    mainEntityOfPage: g.url,
+    mainEntityOfPage: SITE_ORIGIN ? `${SITE_ORIGIN}/services/${g.id}.html` : `services/${g.id}.html`,
   };
   const breadcrumbLd = {
     "@type": "BreadcrumbList",
@@ -226,17 +228,8 @@ for (const g of gigs.gigs) {
   }));
 }
 
-const robots = `User-agent: *
-Allow: /
-Sitemap: ${origin}/sitemap.xml
-`;
-
-const llms = `# ${gigs.sellerName} Fiverr gigs
-
-Index: ${origin}/
-
-${gigs.gigs.map((g) => `- [${g.title}](${origin}/services/${g.id}.html) — ${g.primaryKeyword}. Book: ${g.url}`).join("\n")}
-`;
+const robots = buildRobots({ origin });
+const llms = buildLlms({ origin, sellerName: gigs.sellerName, gigs: gigs.gigs });
 
 fs.writeFileSync(path.join(ROOT, "404.html"), renderLayout({
   gigs,
