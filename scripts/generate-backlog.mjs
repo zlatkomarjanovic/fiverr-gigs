@@ -77,7 +77,7 @@ const completed = new Set([
   "document-backlog-workflow",
   "document-test-command",
   "document-ci-workflow",
-  "document-contributing-gig",
+  "contributing-gig",
   "prettier-ignore-generated",
   "remove-unused-pingomatic-script",
   "submit-missing-site-origin",
@@ -86,6 +86,9 @@ const completed = new Set([
   "preconnect-none-needed",
   "jsdoc-html-helpers",
   "jsdoc-validate-gigs",
+  "readme-plausible-note",
+  "n/a-static-site",
+  "n/a-no-react",
 ]);
 
 const historical = [
@@ -201,7 +204,7 @@ while (tasks.length < 300) {
   const category = fillerCategories[tasks.length % fillerCategories.length];
   const n = Math.floor(tasks.length / fillerCategories.length) + 1;
   const key = `${category}-batch-${n}`;
-  add(category, key, `${category} improvement batch ${n}`, n <= 3 ? "XS" : "S");
+  add(category, key, `${category} improvement batch ${n} (sprint placeholder)`, n <= 3 ? "XS" : "S", "cancelled");
 }
 
 const payload = {
@@ -209,8 +212,9 @@ const payload = {
   total: tasks.length,
   done: tasks.filter((t) => t.status === "done").length,
   pending: tasks.filter((t) => t.status === "pending").length,
+  cancelled: tasks.filter((t) => t.status === "cancelled").length,
   tasks,
 };
 
 fs.writeFileSync(OUT, `${JSON.stringify(payload, null, 2)}\n`);
-console.log(`Wrote ${payload.total} tasks (${payload.done} done, ${payload.pending} pending).`);
+console.log(`Wrote ${payload.total} tasks (${payload.done} done, ${payload.pending} pending, ${payload.cancelled} cancelled).`);
