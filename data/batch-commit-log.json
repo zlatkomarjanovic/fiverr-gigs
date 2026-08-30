@@ -198,5 +198,10 @@
     "at": "2026-09-03T22:04:53.492Z",
     "key": "edge-cases-batch-8",
     "task": "Handle missing optional sellerSite"
+  },
+  {
+    "at": "2026-09-03T22:04:53.493Z",
+    "key": "bug-fixes-batch-9",
+    "task": "Coerce undefined in esc() to empty string safely"
   }
 ]

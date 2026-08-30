@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 120,
-  "pending": 180,
+  "done": 121,
+  "pending": 179,
   "tasks": [
     {
       "id": "001",
@@ -970,7 +970,7 @@
       "category": "bug-fixes",
       "task": "Coerce undefined in esc() to empty string safely",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "122",
