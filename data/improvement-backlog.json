@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 119,
-  "pending": 181,
+  "done": 120,
+  "pending": 180,
   "tasks": [
     {
       "id": "001",
@@ -962,7 +962,7 @@
       "category": "edge-cases",
       "task": "Handle missing optional sellerSite",
       "scope": "XS",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "121",
