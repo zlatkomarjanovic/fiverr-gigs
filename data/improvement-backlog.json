@@ -1,8 +1,8 @@
 {
   "generated": "2026-09-03",
   "total": 300,
-  "done": 121,
-  "pending": 179,
+  "done": 122,
+  "pending": 178,
   "tasks": [
     {
       "id": "001",
@@ -978,7 +978,7 @@
       "category": "ui-polish",
       "task": "Subtle card box-shadow on hover",
       "scope": "S",
-      "status": "pending"
+      "status": "done"
     },
     {
       "id": "123",

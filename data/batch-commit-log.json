@@ -203,5 +203,10 @@
     "at": "2026-09-03T22:04:53.493Z",
     "key": "bug-fixes-batch-9",
     "task": "Coerce undefined in esc() to empty string safely"
+  },
+  {
+    "at": "2026-09-03T22:04:53.494Z",
+    "key": "ui-polish-batch-9",
+    "task": "Subtle card box-shadow on hover"
   }
 ]
