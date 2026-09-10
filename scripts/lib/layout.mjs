@@ -86,7 +86,7 @@ export function renderLayout({
   </header>
   <main id="content" tabindex="-1">${body}</main>
   <footer role="contentinfo">
-    <p>Official Fiverr gigs for ${esc(gigs.sellerName)}. Clean URLs only — no tracking parameters.</p>
+    <p>Official Fiverr gigs for ${esc(gigs.sellerName)}. Clean URLs only, no tracking parameters.</p>
     <nav class="footer-links" aria-label="Footer">
       <a href="${homeHref}">Hub home</a>
       <a href="${sitemapHref}">Sitemap</a>

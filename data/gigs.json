@@ -4,7 +4,7 @@
   "sellerUrl": "https://www.fiverr.com/zlatkomarjanovi",
   "sellerSite": "https://www.zlatkomarjanovic.com",
   "githubUrl": "https://github.com/zlatkomarjanovic",
-  "updated": "2026-09-03",
+  "updated": "2026-09-10",
   "gigs": [
     {
       "id": "webflow-website-seo",
@@ -29,16 +29,16 @@
       "id": "ai-website-saas",
       "slug": "design-and-vibe-code-your-custom-ai-website-saas-or-web-app",
       "url": "https://www.fiverr.com/zlatkomarjanovi/design-and-vibe-code-your-custom-ai-website-saas-or-web-app",
-      "title": "I will design and vibe code your AI website or SaaS",
-      "shortTitle": "AI website or SaaS",
-      "primaryKeyword": "ai website",
-      "lane": "greenfield AI product",
-      "searchTerms": ["ai website", "vibe coding", "ai saas", "ai web app", "custom ai website"],
-      "tags": ["ai website", "vibe coding", "ai saas", "web app", "ai developer"],
+      "title": "I will build your AI SaaS MVP web app with Claude Code and Cursor",
+      "shortTitle": "AI SaaS MVP web app",
+      "primaryKeyword": "ai saas mvp",
+      "lane": "greenfield AI SaaS",
+      "searchTerms": ["ai saas mvp", "ai website", "vibe coding", "ai web app", "custom ai website"],
+      "tags": ["ai saas", "ai website", "vibe coding", "web app", "ai developer"],
       "category": "Programming & Tech",
       "subcategory": "AI Development",
-      "summary": "Design and vibe-code a custom AI website, SaaS, or web app from a blank canvas through a usable first product.",
-      "description": "Need a custom AI website, SaaS, or web app built with vibe coding? This gig is for new products: UX, interface, and working software in one engagement. Typical builds include AI chat, generation tools, dashboards, auth, and billing-ready structure. You get a designed product, not a disconnected mockup.",
+      "summary": "Build an AI SaaS MVP or web app with Claude Code, Cursor, Lovable, and a production-ready product flow.",
+      "description": "Need an AI SaaS MVP or web app built with Claude Code, Cursor, and Lovable? This gig is for new products: UX, interface, and working software in one engagement. Typical builds include AI chat, generation tools, dashboards, auth, and billing-ready structure. You get a designed product, not a disconnected mockup.",
       "faq": [
         { "q": "What does vibe code an AI website mean?", "a": "It means designing the product and implementing it with modern AI-assisted development so you get a working AI website or SaaS, not just slides." },
         { "q": "Can you build an AI SaaS MVP?", "a": "Yes. Scope usually covers the core user flow, AI feature, and a clean UI ready for first users." }
@@ -48,12 +48,12 @@
       "id": "vibe-coding-consultant",
       "slug": "be-your-ai-vibe-coding-consultant-and-fix-your-web-app",
       "url": "https://www.fiverr.com/zlatkomarjanovi/be-your-ai-vibe-coding-consultant-and-fix-your-web-app",
-      "title": "I will be your AI vibe coding consultant and fix your app",
-      "shortTitle": "Vibe coding consultant",
-      "primaryKeyword": "vibe coding",
-      "lane": "rescue and pair programming",
-      "searchTerms": ["vibe coding", "fix web app", "ai coding consultant", "debug website", "ai developer"],
-      "tags": ["vibe coding", "bug fix", "web app", "code review", "ai developer"],
+      "title": "I will fix your AI app and be your Claude Code consultant",
+      "shortTitle": "AI app fix consultant",
+      "primaryKeyword": "ai app fix",
+      "lane": "AI app rescue",
+      "searchTerms": ["ai app fix", "vibe coding", "fix web app", "ai coding consultant", "debug website"],
+      "tags": ["ai app", "vibe coding", "bug fix", "web app", "ai developer"],
       "category": "Programming & Tech",
       "subcategory": "Consulting",
       "summary": "Pair-program, review, and fix an existing web app that was vibe-coded and is now broken, slow, or stuck.",
@@ -61,6 +61,25 @@
       "faq": [
         { "q": "Can you fix a vibe-coded web app?", "a": "Yes. This gig is specifically for existing apps that need a consultant to debug, stabilize, and unblock development." },
         { "q": "Do I need to start a new project?", "a": "No. Bring the current repo, error, or staging URL and the work starts from what you already have." }
+      ]
+    },
+    {
+      "id": "claude-cursor-lovable-fix",
+      "slug": "fix-your-claude-code-cursor-lovable-or-vibe-coded-app",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/fix-your-claude-code-cursor-lovable-or-vibe-coded-app",
+      "title": "I will fix your Claude Code, Cursor, Lovable, or vibe-coded app",
+      "shortTitle": "Claude, Cursor, Lovable fix",
+      "primaryKeyword": "claude code fix",
+      "lane": "AI coding bug fix",
+      "searchTerms": ["claude code fix", "cursor app fix", "lovable app fix", "vibe coded app", "ai app bug fix"],
+      "tags": ["claude code", "cursor ai", "lovable", "bug fix", "vibe coding"],
+      "category": "Programming & Tech",
+      "subcategory": "Bug Fixes",
+      "summary": "Fix broken Claude Code, Cursor, Lovable, or vibe-coded apps so they can deploy, run, and keep moving.",
+      "description": "This is the focused fix lane for apps built with Claude Code, Cursor, Lovable, or other vibe-coding tools. Bring the repo, error, deploy issue, or broken feature. I will diagnose the actual blocker, fix it cleanly, and explain what changed so the app does not break again immediately.",
+      "faq": [
+        { "q": "Can you fix a Lovable or Cursor-built app?", "a": "Yes. This gig is for generated or AI-assisted apps that are stuck, broken, or failing to deploy." },
+        { "q": "What should I send before ordering?", "a": "Send the repo, staging URL, error message, and the exact action that currently fails." }
       ]
     },
     {
@@ -232,6 +251,63 @@
       "faq": [
         { "q": "What is an AI voice receptionist?", "a": "A phone agent that greets callers, answers common questions, and books appointments without a human on the line." },
         { "q": "Can it book appointments?", "a": "Yes. Booking into a calendar or scheduling tool is the core outcome of this gig." }
+      ]
+    },
+    {
+      "id": "med-spa-blogs",
+      "slug": "write-seo-optimized-med-spa-and-aesthetics-blogs-that-attract-patients",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/write-seo-optimized-med-spa-and-aesthetics-blogs-that-attract-patients",
+      "title": "I will write SEO med spa and aesthetics blogs that attract patients",
+      "shortTitle": "Med spa SEO blogs",
+      "primaryKeyword": "med spa blogs",
+      "lane": "healthcare SEO content",
+      "searchTerms": ["med spa blogs", "med spa SEO", "aesthetics blog", "medical spa content", "patient SEO content"],
+      "tags": ["med spa seo", "seo blog", "aesthetics", "medical spa", "healthcare seo"],
+      "category": "Writing & Translation",
+      "subcategory": "Articles & Blog Posts",
+      "summary": "SEO-optimized med spa and aesthetics blog content built to attract local patients and support treatment pages.",
+      "description": "This gig is for med spas, aesthetic clinics, and wellness brands that need blog content with real search intent behind it. Each article is written around patient questions, local SEO opportunities, treatment education, and clear next steps. The goal is not filler content. It is traffic that can turn into consultations.",
+      "faq": [
+        { "q": "Do you write for med spas and aesthetics clinics?", "a": "Yes. The content is built around treatments, patient questions, local search intent, and clinic conversion paths." },
+        { "q": "Can the blogs support SEO for treatment pages?", "a": "Yes. The articles can internally link to treatment pages and help build topical authority around your services." }
+      ]
+    },
+    {
+      "id": "med-spa-website",
+      "slug": "design-and-develop-a-premium-med-spa-or-aesthetic-clinic-website",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/design-and-develop-a-premium-med-spa-or-aesthetic-clinic-website",
+      "title": "I will design and develop a premium med spa or aesthetic clinic website",
+      "shortTitle": "Med spa website",
+      "primaryKeyword": "med spa website",
+      "lane": "clinic website",
+      "searchTerms": ["med spa website", "aesthetic clinic website", "medical spa website", "spa website design", "clinic web design"],
+      "tags": ["med spa", "clinic website", "spa website", "web design", "healthcare"],
+      "category": "Website Design",
+      "subcategory": "Business Websites",
+      "summary": "Premium med spa and aesthetic clinic websites designed to build trust, explain treatments, and book more consultations.",
+      "description": "This gig is for med spas and aesthetic clinics that need a premium website, not a generic beauty template. The structure focuses on treatments, before-and-after trust signals, booking CTAs, local SEO, mobile speed, and a clean patient journey from landing page to consultation request.",
+      "faq": [
+        { "q": "Do you build websites specifically for med spas?", "a": "Yes. The page structure, content blocks, and conversion flow are built around med spa and aesthetic clinic buyers." },
+        { "q": "Can the site include booking and treatment pages?", "a": "Yes. Treatment pages, booking CTAs, forms, and local SEO structure can be included." }
+      ]
+    },
+    {
+      "id": "chrome-extension-automation",
+      "slug": "develop-custom-chrome-extension-with-browser-automation",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/develop-custom-chrome-extension-with-browser-automation",
+      "title": "I will develop a custom Chrome extension with browser automation",
+      "shortTitle": "Chrome extension automation",
+      "primaryKeyword": "chrome extension",
+      "lane": "browser automation",
+      "searchTerms": ["chrome extension", "browser automation", "custom chrome extension", "chrome plugin", "automation extension"],
+      "tags": ["chrome extension", "automation", "browser", "javascript", "web scraping"],
+      "category": "Programming & Tech",
+      "subcategory": "Software Development",
+      "summary": "Custom Chrome extensions with browser automation for repetitive workflows, scraping helpers, and internal tools.",
+      "description": "Build a custom Chrome extension with browser automation for workflows that are too repetitive to do manually. This can include page actions, data extraction, form helpers, dashboard tools, or internal browser utilities. The work focuses on a practical extension that solves one clear workflow.",
+      "faq": [
+        { "q": "Can you build a Chrome extension for automation?", "a": "Yes. The gig covers custom Chrome extensions that automate browser actions or help with repetitive web workflows." },
+        { "q": "Can it scrape data from websites?", "a": "Yes, when the target site allows it and the workflow can be handled responsibly." }
       ]
     }
   ]

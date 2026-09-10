@@ -59,7 +59,7 @@ export function buildIndexBody(gigs) {
   return `
   <section class="hero" aria-labelledby="hero-title">
     <p class="kicker" role="doc-subtitle">Fiverr seller · ${esc(gigs.seller)}</p>
-    <h1 id="hero-title">${esc(gigs.sellerName)} — Webflow, AI apps, and vibe coding gigs</h1>
+    <h1 id="hero-title">${esc(gigs.sellerName)}: Webflow, AI apps, and vibe coding gigs</h1>
     <p class="lede">${gigs.gigs.length} live Fiverr services with clean, indexable URLs. Each page maps to one search lane so the gigs do not cannibalize each other.</p>
     <p>${fiverrLink(gigs.sellerUrl, "Open Fiverr profile", "btn")}</p>
   </section>
@@ -93,7 +93,7 @@ export function buildServiceBody(g, related) {
       <div class="panel">
         <h2>Related gigs</h2>
         <nav aria-label="Related gigs">
-        <ul>${related.length ? related.map((r) => `<li><a href="${esc(r.id)}.html">${esc(r.shortTitle)}</a> — ${esc(r.primaryKeyword)}</li>`).join("") : "<li>No related gigs indexed yet.</li>"}</ul>
+        <ul>${related.length ? related.map((r) => `<li><a href="${esc(r.id)}.html">${esc(r.shortTitle)}</a>: ${esc(r.primaryKeyword)}</li>`).join("") : "<li>No related gigs indexed yet.</li>"}</ul>
         </nav>
       </div>
     </section>`;

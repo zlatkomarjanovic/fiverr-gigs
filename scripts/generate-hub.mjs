@@ -42,7 +42,7 @@ if (validationErrors.length) {
 
 const SITE_ORIGIN = (process.env.SITE_ORIGIN || "").replace(/\/$/, "");
 if (!SITE_ORIGIN) {
-  console.warn("Warning: SITE_ORIGIN is unset — canonicals and sitemap will use https://example.com.");
+  console.warn("Warning: SITE_ORIGIN is unset. Canonicals and sitemap will use https://example.com.");
 }
 
 let INDEXNOW_KEY;
@@ -66,7 +66,7 @@ if (!fs.existsSync(stylesPath)) {
   process.exit(1);
 }
 if (fs.statSync(stylesPath).isDirectory()) {
-  console.error("[generate] styles.css is a directory — expected a CSS file.");
+  console.error("[generate] styles.css is a directory. Expected a CSS file.");
   process.exit(1);
 }
 
@@ -81,7 +81,7 @@ const indexHtml = renderLayout({
   gigs,
   siteOrigin: SITE_ORIGIN,
   abs,
-  title: `${gigs.sellerName} Fiverr gigs — Webflow, AI, Shopify, n8n`,
+  title: `${gigs.sellerName} Fiverr gigs: Webflow, AI, Shopify, n8n`,
   description: "Indexable directory of Zlatko Marjanović Fiverr gigs: Webflow websites, vibe coding, Next.js SaaS, Shopify, Framer, n8n agents, and AI voice receptionists.",
   canonical: "/",
   jsonLd: buildIndexLd(gigs, SITE_ORIGIN, origin, personLd),
