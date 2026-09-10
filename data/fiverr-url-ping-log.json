@@ -1,0 +1,365 @@
+{
+  "at": "2026-09-10T15:38:42.866Z",
+  "count": 17,
+  "accepted": 31,
+  "failed": 20,
+  "results": [
+    {
+      "service": "pingomatic",
+      "url": "https://www.fiverr.com/zlatkomarjanovi",
+      "status": 200,
+      "accepted": false,
+      "text": "You are too awesome for Ping-o-matic"
+    },
+    {
+      "service": "blo.gs",
+      "url": "https://www.fiverr.com/zlatkomarjanovi",
+      "status": 200,
+      "accepted": true,
+      "text": "<?xml version=\"1.0\"?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>0</boolean></value></member><member><name>message</name><value><string>Succeeded.</string></value></member></struct></value></par"
+    },
+    {
+      "service": "twingly",
+      "url": "https://www.fiverr.com/zlatkomarjanovi",
+      "status": 200,
+      "accepted": true,
+      "text": "<?xml version=\"1.0\" ?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>0</boolean></value></member><member><name>message</name><value><string>Thanks for the ping.</string></value></member></struct></"
+    },
+    {
+      "service": "pingomatic",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/create-a-professional-responsive-webflow-website-with-seo",
+      "status": 200,
+      "accepted": false,
+      "text": "You are too awesome for Ping-o-matic"
+    },
+    {
+      "service": "blo.gs",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/create-a-professional-responsive-webflow-website-with-seo",
+      "status": 200,
+      "accepted": true,
+      "text": "<?xml version=\"1.0\"?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>0</boolean></value></member><member><name>message</name><value><string>Succeeded.</string></value></member></struct></value></par"
+    },
+    {
+      "service": "twingly",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/create-a-professional-responsive-webflow-website-with-seo",
+      "status": 200,
+      "accepted": true,
+      "text": "<?xml version=\"1.0\" ?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>0</boolean></value></member><member><name>message</name><value><string>Thanks for the ping.</string></value></member></struct></"
+    },
+    {
+      "service": "pingomatic",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/design-and-vibe-code-your-custom-ai-website-saas-or-web-app",
+      "status": 200,
+      "accepted": false,
+      "text": "You are too awesome for Ping-o-matic"
+    },
+    {
+      "service": "blo.gs",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/design-and-vibe-code-your-custom-ai-website-saas-or-web-app",
+      "status": 200,
+      "accepted": true,
+      "text": "<?xml version=\"1.0\"?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>0</boolean></value></member><member><name>message</name><value><string>Succeeded.</string></value></member></struct></value></par"
+    },
+    {
+      "service": "twingly",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/design-and-vibe-code-your-custom-ai-website-saas-or-web-app",
+      "status": 200,
+      "accepted": true,
+      "text": "<?xml version=\"1.0\" ?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>0</boolean></value></member><member><name>message</name><value><string>Thanks for the ping.</string></value></member></struct></"
+    },
+    {
+      "service": "pingomatic",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/be-your-ai-vibe-coding-consultant-and-fix-your-web-app",
+      "status": 200,
+      "accepted": false,
+      "text": "You are too awesome for Ping-o-matic"
+    },
+    {
+      "service": "blo.gs",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/be-your-ai-vibe-coding-consultant-and-fix-your-web-app",
+      "status": 200,
+      "accepted": true,
+      "text": "<?xml version=\"1.0\"?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>0</boolean></value></member><member><name>message</name><value><string>Succeeded.</string></value></member></struct></value></par"
+    },
+    {
+      "service": "twingly",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/be-your-ai-vibe-coding-consultant-and-fix-your-web-app",
+      "status": 200,
+      "accepted": true,
+      "text": "<?xml version=\"1.0\" ?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>0</boolean></value></member><member><name>message</name><value><string>Thanks for the ping.</string></value></member></struct></"
+    },
+    {
+      "service": "pingomatic",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/fix-your-claude-code-cursor-lovable-or-vibe-coded-app",
+      "status": 200,
+      "accepted": false,
+      "text": "You are too awesome for Ping-o-matic"
+    },
+    {
+      "service": "blo.gs",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/fix-your-claude-code-cursor-lovable-or-vibe-coded-app",
+      "status": 200,
+      "accepted": true,
+      "text": "<?xml version=\"1.0\"?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>0</boolean></value></member><member><name>message</name><value><string>Succeeded.</string></value></member></struct></value></par"
+    },
+    {
+      "service": "twingly",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/fix-your-claude-code-cursor-lovable-or-vibe-coded-app",
+      "status": 200,
+      "accepted": true,
+      "text": "<?xml version=\"1.0\" ?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>0</boolean></value></member><member><name>message</name><value><string>Thanks for the ping.</string></value></member></struct></"
+    },
+    {
+      "service": "pingomatic",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/build-your-next-js-saas-mvp-using-claude-code",
+      "status": 200,
+      "accepted": false,
+      "text": "You are too awesome for Ping-o-matic"
+    },
+    {
+      "service": "blo.gs",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/build-your-next-js-saas-mvp-using-claude-code",
+      "status": 200,
+      "accepted": true,
+      "text": "<?xml version=\"1.0\"?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>0</boolean></value></member><member><name>message</name><value><string>Succeeded.</string></value></member></struct></value></par"
+    },
+    {
+      "service": "twingly",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/build-your-next-js-saas-mvp-using-claude-code",
+      "status": 200,
+      "accepted": true,
+      "text": "<?xml version=\"1.0\" ?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>0</boolean></value></member><member><name>message</name><value><string>Thanks for the ping.</string></value></member></struct></"
+    },
+    {
+      "service": "pingomatic",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/build-or-optimize-your-shopify-store-with-ai-powered-design",
+      "status": 200,
+      "accepted": false,
+      "text": "You are too awesome for Ping-o-matic"
+    },
+    {
+      "service": "blo.gs",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/build-or-optimize-your-shopify-store-with-ai-powered-design",
+      "status": 200,
+      "accepted": true,
+      "text": "<?xml version=\"1.0\"?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>0</boolean></value></member><member><name>message</name><value><string>Succeeded.</string></value></member></struct></value></par"
+    },
+    {
+      "service": "twingly",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/build-or-optimize-your-shopify-store-with-ai-powered-design",
+      "status": 200,
+      "accepted": true,
+      "text": "<?xml version=\"1.0\" ?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>0</boolean></value></member><member><name>message</name><value><string>Thanks for the ping.</string></value></member></struct></"
+    },
+    {
+      "service": "pingomatic",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/build-your-ai-mobile-app-for-ios-and-android",
+      "status": 200,
+      "accepted": false,
+      "text": "You are too awesome for Ping-o-matic"
+    },
+    {
+      "service": "blo.gs",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/build-your-ai-mobile-app-for-ios-and-android",
+      "status": 200,
+      "accepted": true,
+      "text": "<?xml version=\"1.0\"?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>0</boolean></value></member><member><name>message</name><value><string>Succeeded.</string></value></member></struct></value></par"
+    },
+    {
+      "service": "twingly",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/build-your-ai-mobile-app-for-ios-and-android",
+      "status": 200,
+      "accepted": true,
+      "text": "<?xml version=\"1.0\" ?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>0</boolean></value></member><member><name>message</name><value><string>Thanks for the ping.</string></value></member></struct></"
+    },
+    {
+      "service": "pingomatic",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/build-n8n-ai-agents-and-workflow-automations",
+      "status": 200,
+      "accepted": false,
+      "text": "You are too awesome for Ping-o-matic"
+    },
+    {
+      "service": "blo.gs",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/build-n8n-ai-agents-and-workflow-automations",
+      "status": 200,
+      "accepted": true,
+      "text": "<?xml version=\"1.0\"?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>0</boolean></value></member><member><name>message</name><value><string>Succeeded.</string></value></member></struct></value></par"
+    },
+    {
+      "service": "twingly",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/build-n8n-ai-agents-and-workflow-automations",
+      "status": 200,
+      "accepted": true,
+      "text": "<?xml version=\"1.0\" ?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>0</boolean></value></member><member><name>message</name><value><string>Thanks for the ping.</string></value></member></struct></"
+    },
+    {
+      "service": "pingomatic",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/design-and-develop-a-modern-responsive-framer-website",
+      "status": 200,
+      "accepted": false,
+      "text": "You are too awesome for Ping-o-matic"
+    },
+    {
+      "service": "blo.gs",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/design-and-develop-a-modern-responsive-framer-website",
+      "status": 200,
+      "accepted": true,
+      "text": "<?xml version=\"1.0\"?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>0</boolean></value></member><member><name>message</name><value><string>Succeeded.</string></value></member></struct></value></par"
+    },
+    {
+      "service": "twingly",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/design-and-develop-a-modern-responsive-framer-website",
+      "status": 200,
+      "accepted": true,
+      "text": "<?xml version=\"1.0\" ?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>0</boolean></value></member><member><name>message</name><value><string>Thanks for the ping.</string></value></member></struct></"
+    },
+    {
+      "service": "pingomatic",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/build-your-lovable-or-base44-prototype-into-a-production-app",
+      "status": 200,
+      "accepted": false,
+      "text": "You are too awesome for Ping-o-matic"
+    },
+    {
+      "service": "blo.gs",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/build-your-lovable-or-base44-prototype-into-a-production-app",
+      "status": 200,
+      "accepted": true,
+      "text": "<?xml version=\"1.0\"?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>0</boolean></value></member><member><name>message</name><value><string>Succeeded.</string></value></member></struct></value></par"
+    },
+    {
+      "service": "twingly",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/build-your-lovable-or-base44-prototype-into-a-production-app",
+      "status": 200,
+      "accepted": true,
+      "text": "<?xml version=\"1.0\" ?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>0</boolean></value></member><member><name>message</name><value><string>Thanks for the ping.</string></value></member></struct></"
+    },
+    {
+      "service": "pingomatic",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/design-and-setup-your-custom-webflow-website-seo-ready",
+      "status": 200,
+      "accepted": false,
+      "text": "You are too awesome for Ping-o-matic"
+    },
+    {
+      "service": "blo.gs",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/design-and-setup-your-custom-webflow-website-seo-ready",
+      "status": 200,
+      "accepted": true,
+      "text": "<?xml version=\"1.0\"?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>0</boolean></value></member><member><name>message</name><value><string>Succeeded.</string></value></member></struct></value></par"
+    },
+    {
+      "service": "twingly",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/design-and-setup-your-custom-webflow-website-seo-ready",
+      "status": 200,
+      "accepted": true,
+      "text": "<?xml version=\"1.0\" ?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>0</boolean></value></member><member><name>message</name><value><string>Thanks for the ping.</string></value></member></struct></"
+    },
+    {
+      "service": "pingomatic",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/be-your-claude-code-consultant-for-ai-apps-and-vibe-coding",
+      "status": 200,
+      "accepted": false,
+      "text": "You are too awesome for Ping-o-matic"
+    },
+    {
+      "service": "blo.gs",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/be-your-claude-code-consultant-for-ai-apps-and-vibe-coding",
+      "status": 200,
+      "accepted": true,
+      "text": "<?xml version=\"1.0\"?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>0</boolean></value></member><member><name>message</name><value><string>Succeeded.</string></value></member></struct></value></par"
+    },
+    {
+      "service": "twingly",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/be-your-claude-code-consultant-for-ai-apps-and-vibe-coding",
+      "status": 200,
+      "accepted": true,
+      "text": "<?xml version=\"1.0\" ?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>0</boolean></value></member><member><name>message</name><value><string>Thanks for the ping.</string></value></member></struct></"
+    },
+    {
+      "service": "pingomatic",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/build-an-ai-voice-receptionist-and-appointment-booking-agent",
+      "status": 200,
+      "accepted": false,
+      "text": "You are too awesome for Ping-o-matic"
+    },
+    {
+      "service": "blo.gs",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/build-an-ai-voice-receptionist-and-appointment-booking-agent",
+      "status": 200,
+      "accepted": false,
+      "text": "<?xml version=\"1.0\"?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>1</boolean></value></member><member><name>message</name><value><string>Got 403 response for https://www.fiverr.com/zlatkomarjanov"
+    },
+    {
+      "service": "twingly",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/build-an-ai-voice-receptionist-and-appointment-booking-agent",
+      "status": 200,
+      "accepted": true,
+      "text": "<?xml version=\"1.0\" ?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>0</boolean></value></member><member><name>message</name><value><string>Thanks for the ping.</string></value></member></struct></"
+    },
+    {
+      "service": "pingomatic",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/write-seo-optimized-med-spa-and-aesthetics-blogs-that-attract-patients",
+      "status": 200,
+      "accepted": false,
+      "text": "You are too awesome for Ping-o-matic"
+    },
+    {
+      "service": "blo.gs",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/write-seo-optimized-med-spa-and-aesthetics-blogs-that-attract-patients",
+      "status": 200,
+      "accepted": false,
+      "text": "<?xml version=\"1.0\"?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>1</boolean></value></member><member><name>message</name><value><string>Got 403 response for https://www.fiverr.com/zlatkomarjanov"
+    },
+    {
+      "service": "twingly",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/write-seo-optimized-med-spa-and-aesthetics-blogs-that-attract-patients",
+      "status": 200,
+      "accepted": true,
+      "text": "<?xml version=\"1.0\" ?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>0</boolean></value></member><member><name>message</name><value><string>Thanks for the ping.</string></value></member></struct></"
+    },
+    {
+      "service": "pingomatic",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/design-and-develop-a-premium-med-spa-or-aesthetic-clinic-website",
+      "status": 200,
+      "accepted": false,
+      "text": "You are too awesome for Ping-o-matic"
+    },
+    {
+      "service": "blo.gs",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/design-and-develop-a-premium-med-spa-or-aesthetic-clinic-website",
+      "status": 200,
+      "accepted": true,
+      "text": "<?xml version=\"1.0\"?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>0</boolean></value></member><member><name>message</name><value><string>Succeeded.</string></value></member></struct></value></par"
+    },
+    {
+      "service": "twingly",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/design-and-develop-a-premium-med-spa-or-aesthetic-clinic-website",
+      "status": 200,
+      "accepted": true,
+      "text": "<?xml version=\"1.0\" ?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>0</boolean></value></member><member><name>message</name><value><string>Thanks for the ping.</string></value></member></struct></"
+    },
+    {
+      "service": "pingomatic",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/develop-custom-chrome-extension-with-browser-automation",
+      "status": 200,
+      "accepted": false,
+      "text": "You are too awesome for Ping-o-matic"
+    },
+    {
+      "service": "blo.gs",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/develop-custom-chrome-extension-with-browser-automation",
+      "status": 200,
+      "accepted": false,
+      "text": "<?xml version=\"1.0\"?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>1</boolean></value></member><member><name>message</name><value><string>Got 403 response for https://www.fiverr.com/zlatkomarjanov"
+    },
+    {
+      "service": "twingly",
+      "url": "https://www.fiverr.com/zlatkomarjanovi/develop-custom-chrome-extension-with-browser-automation",
+      "status": 200,
+      "accepted": true,
+      "text": "<?xml version=\"1.0\" ?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>0</boolean></value></member><member><name>message</name><value><string>Thanks for the ping.</string></value></member></struct></"
+    }
+  ]
+}

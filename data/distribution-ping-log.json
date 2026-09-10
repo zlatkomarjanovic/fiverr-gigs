@@ -1,0 +1,173 @@
+{
+  "at": "2026-09-10T15:35:38.150Z",
+  "results": [
+    {
+      "service": "pingomatic",
+      "name": "Hub",
+      "url": "https://zlatkomarjanovic.github.io/fiverr-gigs/",
+      "status": 200,
+      "accepted": false,
+      "text": "You are too awesome for Ping-o-matic"
+    },
+    {
+      "service": "blo.gs",
+      "name": "Hub",
+      "url": "https://zlatkomarjanovic.github.io/fiverr-gigs/",
+      "status": 200,
+      "accepted": true,
+      "text": "<?xml version=\"1.0\"?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>0</boolean></value></member><member><name>message</name><value><string>Succeeded.</string></value></member></"
+    },
+    {
+      "service": "twingly",
+      "name": "Hub",
+      "url": "https://zlatkomarjanovic.github.io/fiverr-gigs/",
+      "status": 200,
+      "accepted": true,
+      "text": "<?xml version=\"1.0\" ?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>0</boolean></value></member><member><name>message</name><value><string>Thanks for the ping.</string></value>"
+    },
+    {
+      "service": "pingomatic",
+      "name": "WordPress roundup",
+      "url": "https://zlatkomarjanovic.wordpress.com/2026/09/10/16-fiverr-gigs-zlatko-marjanovic/",
+      "status": 200,
+      "accepted": false,
+      "text": "You are too awesome for Ping-o-matic"
+    },
+    {
+      "service": "blo.gs",
+      "name": "WordPress roundup",
+      "url": "https://zlatkomarjanovic.wordpress.com/2026/09/10/16-fiverr-gigs-zlatko-marjanovic/",
+      "status": 200,
+      "accepted": true,
+      "text": "<?xml version=\"1.0\"?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>0</boolean></value></member><member><name>message</name><value><string>Succeeded.</string></value></member></"
+    },
+    {
+      "service": "twingly",
+      "name": "WordPress roundup",
+      "url": "https://zlatkomarjanovic.wordpress.com/2026/09/10/16-fiverr-gigs-zlatko-marjanovic/",
+      "status": 200,
+      "accepted": true,
+      "text": "<?xml version=\"1.0\" ?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>0</boolean></value></member><member><name>message</name><value><string>Thanks for the ping.</string></value>"
+    },
+    {
+      "service": "pingomatic",
+      "name": "DEV roundup",
+      "url": "https://dev.to/zlatko_marjanovic_a206f1e/a-small-public-index-for-my-ai-webflow-and-automation-fiverr-gigs-533h",
+      "status": 200,
+      "accepted": false,
+      "text": "You are too awesome for Ping-o-matic"
+    },
+    {
+      "service": "blo.gs",
+      "name": "DEV roundup",
+      "url": "https://dev.to/zlatko_marjanovic_a206f1e/a-small-public-index-for-my-ai-webflow-and-automation-fiverr-gigs-533h",
+      "status": 200,
+      "accepted": true,
+      "text": "<?xml version=\"1.0\"?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>0</boolean></value></member><member><name>message</name><value><string>Succeeded.</string></value></member></"
+    },
+    {
+      "service": "twingly",
+      "name": "DEV roundup",
+      "url": "https://dev.to/zlatko_marjanovic_a206f1e/a-small-public-index-for-my-ai-webflow-and-automation-fiverr-gigs-533h",
+      "status": 200,
+      "accepted": true,
+      "text": "<?xml version=\"1.0\" ?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>0</boolean></value></member><member><name>message</name><value><string>Thanks for the ping.</string></value>"
+    },
+    {
+      "service": "pingomatic",
+      "name": "Telegraph mirror",
+      "url": "https://telegra.ph/Zlatko-Marjanovic-Fiverr-gigs-09-10",
+      "status": 200,
+      "accepted": false,
+      "text": "You are too awesome for Ping-o-matic"
+    },
+    {
+      "service": "blo.gs",
+      "name": "Telegraph mirror",
+      "url": "https://telegra.ph/Zlatko-Marjanovic-Fiverr-gigs-09-10",
+      "status": 200,
+      "accepted": true,
+      "text": "<?xml version=\"1.0\"?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>0</boolean></value></member><member><name>message</name><value><string>Succeeded.</string></value></member></"
+    },
+    {
+      "service": "twingly",
+      "name": "Telegraph mirror",
+      "url": "https://telegra.ph/Zlatko-Marjanovic-Fiverr-gigs-09-10",
+      "status": 200,
+      "accepted": true,
+      "text": "<?xml version=\"1.0\" ?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>0</boolean></value></member><member><name>message</name><value><string>Thanks for the ping.</string></value>"
+    },
+    {
+      "service": "pingomatic",
+      "name": "GitHub repo",
+      "url": "https://github.com/zlatkomarjanovic/fiverr-gigs",
+      "status": 200,
+      "accepted": false,
+      "text": "You are too awesome for Ping-o-matic"
+    },
+    {
+      "service": "blo.gs",
+      "name": "GitHub repo",
+      "url": "https://github.com/zlatkomarjanovic/fiverr-gigs",
+      "status": 200,
+      "accepted": true,
+      "text": "<?xml version=\"1.0\"?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>0</boolean></value></member><member><name>message</name><value><string>Succeeded.</string></value></member></"
+    },
+    {
+      "service": "twingly",
+      "name": "GitHub repo",
+      "url": "https://github.com/zlatkomarjanovic/fiverr-gigs",
+      "status": 200,
+      "accepted": true,
+      "text": "<?xml version=\"1.0\" ?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>0</boolean></value></member><member><name>message</name><value><string>Thanks for the ping.</string></value>"
+    },
+    {
+      "service": "pingomatic",
+      "name": "Bluesky post",
+      "url": "https://bsky.app/profile/zlajaa2000.bsky.social/post/3mv6evamyij2c",
+      "status": 200,
+      "accepted": false,
+      "text": "You are too awesome for Ping-o-matic"
+    },
+    {
+      "service": "blo.gs",
+      "name": "Bluesky post",
+      "url": "https://bsky.app/profile/zlajaa2000.bsky.social/post/3mv6evamyij2c",
+      "status": 200,
+      "accepted": true,
+      "text": "<?xml version=\"1.0\"?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>0</boolean></value></member><member><name>message</name><value><string>Succeeded.</string></value></member></"
+    },
+    {
+      "service": "twingly",
+      "name": "Bluesky post",
+      "url": "https://bsky.app/profile/zlajaa2000.bsky.social/post/3mv6evamyij2c",
+      "status": 200,
+      "accepted": true,
+      "text": "<?xml version=\"1.0\" ?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>0</boolean></value></member><member><name>message</name><value><string>Thanks for the ping.</string></value>"
+    },
+    {
+      "service": "pingomatic",
+      "name": "Mastodon post",
+      "url": "https://mastodon.social/@zlajaa2000/117247476201642239",
+      "status": 200,
+      "accepted": false,
+      "text": "You are too awesome for Ping-o-matic"
+    },
+    {
+      "service": "blo.gs",
+      "name": "Mastodon post",
+      "url": "https://mastodon.social/@zlajaa2000/117247476201642239",
+      "status": 200,
+      "accepted": true,
+      "text": "<?xml version=\"1.0\"?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>0</boolean></value></member><member><name>message</name><value><string>Succeeded.</string></value></member></"
+    },
+    {
+      "service": "twingly",
+      "name": "Mastodon post",
+      "url": "https://mastodon.social/@zlajaa2000/117247476201642239",
+      "status": 200,
+      "accepted": true,
+      "text": "<?xml version=\"1.0\" ?><methodResponse><params><param><value><struct><member><name>flerror</name><value><boolean>0</boolean></value></member><member><name>message</name><value><string>Thanks for the ping.</string></value>"
+    }
+  ]
+}
